@@ -1,0 +1,45 @@
+<footer id="footer">
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      <%- partial('plugins/sites/visit') %>
+<div id="cc-myssl-id" style="position: fixed;right: 0;bottom: 0;width: 65px;height: 65px;z-index: 99;">
+    <a href="https://myssl.com/www.slblog.ga?from=mysslid&ip=1.0.0.1&status=success"><img src="https://static.myssl.com/res/images/myssl-id.png" alt="" style="width:100%;height:100%"></a>
+</div>
+      <p>
+<!-- 网站运行时间的设置 -->
+<span id="timeDate">载入天数...</span>
+<span id="times">载入时分秒...</span> <br>
+<script>
+    var now = new Date();
+    function createtime() {
+        var grt= new Date("01/11/2020 13:14:21");
+        now.setTime(now.getTime()+250);
+        days = (now - grt ) / 1000 / 60 / 60 / 24; dnum = Math.floor(days);
+        hours = (now - grt ) / 1000 / 60 / 60 - (24 * dnum); hnum = Math.floor(hours);
+        if(String(hnum).length ==1 ){hnum = "0" + hnum;} minutes = (now - grt ) / 1000 /60 - (24 * 60 * dnum) - (60 * hnum);
+        mnum = Math.floor(minutes); if(String(mnum).length ==1 ){mnum = "0" + mnum;}
+        seconds = (now - grt ) / 1000 - (24 * 60 * 60 * dnum) - (60 * 60 * hnum) - (60 * mnum);
+        snum = Math.round(seconds); if(String(snum).length ==1 ){snum = "0" + snum;}
+        document.getElementById("timeDate").innerHTML = "小破站在不稳定的环境下安全运行 "+dnum+" 天 ";
+        document.getElementById("times").innerHTML = hnum + " 小时 " + mnum + " 分 " + snum + " 秒";
+    }
+setInterval("createtime()",250);
+</script>
+       Powered by Super工作室<br>
+        <a href="https://coding.net/pages" target="_blank">Hosting By Coding Pages</a><br>
+      &copy; <%= date(new Date(), 'YYYY') %> <%= config.author || config.title %><br>
+<div class="theme-info">
+  <div class="powered-by"></div>
+</div>
+<div id="cc-myssl-id">
+      <a href="https://myssl.com/www.slblog.ga?from=mysslid&ip=1.0.0.1&status=success"><img src="https://static.myssl.com/res/images/myssl-id1.png" alt="" style="max-height:50px;display:block;margin:0 auto"></a>
+<a href="https://console.upyun.com/register/?invite=ByTbEMrV-" target="_blank"><img src="/images/upyunlogo.png" alt="upyun网站联盟"><span></span></a>
+</div>
+      </p>
+<img src="https://badgen.net/badge/Hosting%20By%20/Coding/green?icon=appveyor">
+<img src="https://badgen.net/badge/Files%20CDN%20By%20/%20Fast.io&Zeit%20/green?icon=dockbit">
+<img src="https://badgen.net/badge/%E4%BD%BF%E7%94%A8%E7%B3%BB%E7%BB%9F/Hexo/green?icon=terminal">
+<img src="https://badgen.net/badge/JS&CSS%20CDN%20By/jsdelivrCDN/green?icon=jsdelivr">
+    </div>
+  </div>
+</footer>

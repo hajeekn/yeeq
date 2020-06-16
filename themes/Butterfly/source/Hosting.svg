@@ -1,0 +1,20 @@
+
+<svg width="137.9" height="20" viewBox="0 0 1379 200" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <linearGradient id="a" x2="0" y2="100%">
+    <stop offset="0" stop-opacity=".1" stop-color="#EEE"/>
+    <stop offset="1" stop-opacity=".1"/>
+  </linearGradient>
+  <mask id="m"><rect width="1379" height="200" rx="30" fill="#FFF"/></mask>
+  <g mask="url(#m)">
+    <rect width="897" height="200" fill="#555"/>
+    <rect width="482" height="200" fill="#3C1" x="897"/>
+    <rect width="1379" height="200" fill="url(#a)"/>
+  </g>
+  <g fill="#fff" text-anchor="start" font-family="Verdana,DejaVu Sans,sans-serif" font-size="110">
+    <text x="220" y="148" textLength="637" fill="#000" opacity="0.25">Hosting By </text>
+    <text x="210" y="138" textLength="637">Hosting By </text>
+    <text x="952" y="148" textLength="382" fill="#000" opacity="0.25">Coding</text>
+    <text x="942" y="138" textLength="382">Coding</text>
+  </g>
+  <image x="40" y="35" width="130" height="130" xlink:href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGZpbGw9IiNlZWUiIHZpZXdCb3g9IjAgMCA0MCA0MCI+PHBhdGggZD0iTTIwIDBjMTEgMCAyMCA5IDIwIDIwcy05IDIwLTIwIDIwUzAgMzEgMCAyMCA5IDAgMjAgMHptNC45IDIzLjljMi4yLTIuOCAxLjktNi44LS45LTguOS0yLjctMi4xLTYuNy0xLjYtOSAxLjItMi4yIDIuOC0xLjkgNi44LjkgOC45IDIuOCAyLjEgNi44IDEuNiA5LTEuMnptLTEwLjcgMTNjMS4yLjUgMy44IDEgNS4xIDFMMjggMjUuM2MyLjgtNC4yIDIuMS05LjktMS44LTEzLTMuNS0yLjgtOC40LTIuNy0xMS45IDBMMi4yIDIxLjZjLjMgMy4yIDEuMiA0LjggMS4yIDQuOWw2LjktNy41Yy0uNSAzLjMuNyA2LjcgMy41IDguOCAyLjQgMS45IDUuMyAyLjQgOC4xIDEuOGwtNy43IDcuM3oiLz48L3N2Zz4="/>
+</svg>

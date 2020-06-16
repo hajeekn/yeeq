@@ -1,0 +1,159 @@
+class:
+  class_name: 友情链接(排名按顺序，并没任何意思)
+  link_list:
+    1:
+      name: xiobb的博客
+      link: https://www.7i24.xyz/
+      avatar: https://cdn.slblog.ga/pic/XIO.png
+      descr:  一个小小小白～
+    2:
+      name: Z-hub
+      link: https://www.mxqblog.xyz/
+      avatar: https://cdn.slblog.ga/pic/xx.jpg
+      descr: 未提供 
+    3:
+      name: xiaoxu博客
+      link: https://www.xiaoxu-blog.cn/
+      avatar: https://cdn.slblog.ga/pic/xiaoxu.png
+      descr: wdnmd 
+    4:
+      name: bmyjacks的博客
+      link: https://www.bmyjacks.cn/
+      avatar: https://cdn.slblog.ga/pic/bmyjacks.png
+      descr: 寻找互联网上的新奇消息，发现编程世界的大门，了解程序员们的日常工作，探讨互联网时代的小技巧
+    5:
+      name: MBRjun的博客
+      link: https://blog.mbrjun.cn/
+      avatar: https://cdn.slblog.ga/pic/MBRjun.png
+      descr: LLLL 一只萌萌的MBR LLLL
+    6:
+      name: Cnoim's Blog
+      link: https://233.chat/
+      avatar: https://cdn.slblog.ga/pic/NT.png
+      descr: 别恰我（
+    7:
+      name: amemz的博客
+      link: https://www.jvav.tk/
+      avatar: https://cdn.slblog.ga/pic/amemz.png
+      descr: 未提供
+    8:
+      name: Fachep's Blog
+      link: https://blog.fachep.com/
+      avatar: https://sdn.geekzu.org/avatar/a428c2d6dd92b2dfcfa8aec470bd4088
+      descr: lolololololol
+    9:
+      name: 云淡风轻
+      link: https://ioliu.cn/
+      avatar: https://ioliu.cn/images/avatar.jpg
+      descr: 一个安静的角落
+    10:
+      name: 萌城·博客
+      link: https://bili.bio/
+      avatar: https://bili.bio/images/avatar.png
+      descr: 一个小小科技UP主!
+    11:
+      name: ilyfairy's Blog
+      link: https://ilyfairy.com
+      avatar: https://cdn.slblog.ga/pic/il.png
+      descr: 承受不住の小仙女
+    12:
+      name: 璃心
+      link: https://luoyou.art/
+      avatar: https://user-images.githubusercontent.com/60562661/74096556-7c5f5e80-4b3b-11ea-817b-b289ffba24a3.jpg
+      descr: 人工智能-深度学习，计算机视觉，算法，数学
+    13:
+      name: Spoience
+      link: https://spoience.com/
+      avatar: https://cdn.jsdelivr.net/gh/Spoience/pic/img/avatar.jpg
+      descr: 记录我的碎碎念念
+
+class2:
+   class_name: 跟着大佬走，那岂不轻而易举当上小大佬?
+   link_list:
+     1:
+       name: 小康博客
+       link: https://www.antmoe.com/
+       avatar: https://cdn.jsdelivr.net/gh/sviptzk/HexoStaticFile@latest/avatar.jpg
+       descr: 一个收藏回忆与分享技术的地方！
+     2:
+       name: 依尘
+       link: https://www.yichen.online/
+       avatar: https://cdn.slblog.ga/pic/YiChen.png/
+       descr: Ting 花落的声音
+
+
+class3:
+   class_name: 博客使用工具
+   link_list:
+     1:
+       name: Hexo
+       link: https://hexo.io/
+       avatar: https://cdn.jsdelivr.net/gh/xingjiahui/CDN/link/pluginButterflylogo.png
+       descr: 快速、简洁的博客框架
+     2:
+       name: Butterfly
+       link: https://github.com/jerryc127/hexo-theme-butterfly
+       avatar: https://cdn.jsdelivr.net/gh/xingjiahui/CDN/link/butterfly.png
+       descr: 超美的一款Hexo卡片式主题
+     3:
+       name: Coding
+       link: https://coding.net/
+       avatar: https://assets.codehub.cn/resources/logo1-png.png
+       descr: 国内超棒的代码托管平台
+     4:
+       name: GitHub
+       link: https://www.github.com/
+       avatar: https://cdn.jsdelivr.net/gh/xingjiahui/CDN/link/github.png
+       descr: 每个程序猿的必经之路
+     5:
+       name: Livere
+       link: https://www.livere.com/
+       avatar: https://supermicors.coding.net/p/Blog_NoPublicCDN/d/Blog_NoPublicCDN/git/raw/master/Livere.png
+       descr: 多登录方式的评论系统
+     6:
+       name: PicGo
+       link: https://github.com/Molunerfinn/PicGo
+       avatar: https://cdn.jsdelivr.net/gh/xingjiahui/CDN/about/20200408110808.png
+       descr: 开源免费的图片上传工具
+     7:
+       name: Typora
+       link: https://www.typora.io/
+       avatar: https://cdn.jsdelivr.net/gh/xingjiahui/CDN/about/20200408105630.png
+       descr: 免费强大的MarkDown编辑器
+     8:
+       name: 又拍云
+       link: https://www.upyun.com/
+       avatar: data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD0AAAAUCAMAAAAJH8UlAAAAZlBMVEUAAAD///9+fn76+vp1dXXo6OhRUVHV1dWUlJTj4+OZmZm7u7vExMSLi4u+vr60tLTd3d309PQkJCSgoKCurq4xMTGnp6fNzc1iYmIaGho5OTlZWVkqKipsbGwfHx9LS0sMDAxCQkKaqwVwAAABl0lEQVQ4jZ2S7XqDIAyFExURtEX8wtV2rvd/kyMJdG33Y487P/IE5JWTBABR1fZeBQv/0QlF0x6Gw7BOcA8xrAdhk2CEHg/jTlDt5lGyD9r9qpJoNagYGu/LO30qRAxfmOhgL5ZkoaPt2SsWbnHxiTFc11VsKUNSnLcEOFD4o68nZxjbOLY43aaONL4ZL+Nxz5Gunan0k3iiuFFcOnS3srXWBvMKXwlqbLp15eGd5daanHFOzktaFm90TdCWZ+a57Vq6SfXjTunwRD8mhCbTU965mAc9xJLbnrLTgrb2rrFN18MwX2usrvM8D+K8hEfT6L0k5zCZDfnpnTXqwvchBMV/6/RL19Y6wU2FuWs0GrxJ8kHO91z3HX+e8/lpVAtfjZ/yZcWyk2wmesu0mQiT2d0TqZoCah5cgPQQKjDM8PS4a2P0fEPpdj4lFTcuFU9XFwE1+WvQVFD46KF01jp6eRWeogqccnlRdR651Noul1SZtRDIpYtNO/M7t5qVuxNnPO4ZruCoxgCJ7S9/n/6tOijv9bIfo74BpCoR6wu256cAAAAASUVORK5CYII=
+       descr: 国内为数不多的良心品牌
+
+class4:
+   class_name: 个人项目
+   link_list:
+     1:
+       name: 音乐解锁
+       link: /unmusic/
+       avatar: /unmusic//img/icons/favicon-32x32.png
+       descr: 加密音乐去屎吧
+     2:
+       name: 状态显示服务
+       link: https://status.ytuty-blog.ga/
+       avatar: https://uptimerobot.com/assets/ico/favicon.ico
+       descr: 本站各项服务的监控
+     3:
+       name: Mikutap
+       link: https://cdn.slblog.ga/Mikutap/
+       avatar: /img/miicon.png
+       descr: 玩了就绝对停不下来的网页小游戏
+class5:
+   class_name: 效果测试
+   link_list:
+     1:
+       name: SL's Blog
+       link: /
+       avatar: /avatar.png
+       descr: awa
+       width: 0px
+       style: solid
+       color: "#881B12"
+       custom: link_custom 1s infinite alternate
+       rotate: 360deg

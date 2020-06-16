@@ -1,0 +1,32 @@
+<%- partial('_partial/head') %>
+<body>
+  <div id="container">
+      <%- partial('_partial/header', null, {cache: !config.relative_link}) %>
+      <div class="outer">
+        <section id="main" class="body-wrap"><%- body %></section>
+        <% if (theme.sidebar && theme.sidebar !== 'bottom'){ %>
+          <%- partial('_partial/sidebar', null, {cache: !config.relative_link}) %>
+        <% } %>
+      </div>
+      <%- partial('_partial/footer', null, {cache: !config.relative_link}) %>
+    <%- partial('_partial/after-footer') %>
+<!--单击显示文字-->
+<script type="text/javascript" src="/js/click_show_text.js"></script>
+<!--浏览器搞笑标题-->
+<script type="text/javascript" src="/js/FunnyTitle.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/animejs/anime.min.js"></script> 
+<script src="https://cdn.jsdelivr.net/npm/jquery/dist/jquery.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome/css/font-awesome.min.css">
+<!--复制弹窗-->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2/dist/sweetalert2.min.css">
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/sweetalert2/dist/sweetalert2.min.js"></script>
+<script>
+  window.onload = function(){
+    document.body.oncopy = function() {
+      swal("复制成功！", "SL温馨提示：若要转载请保留原文链接，谢谢合作!
+};
+  }
+</script>
+  </div>
+</body>
+</html>

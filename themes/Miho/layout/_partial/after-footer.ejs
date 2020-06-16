@@ -1,0 +1,53 @@
+<script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+<script src="https://cdn.jsdelivr.net/jquery/3.2.1/jquery.min.js"></script>
+<script>
+  var mihoConfig = {
+      root: "<%=config.url%>",
+      animate: <%=theme.open_animation%>,
+      isHome: <%=is_home()%>,
+      share: <%=theme.share%>,
+      reward: <%=theme.reward.status%>
+  }
+</script>
+<%- partial('_partial/sidebar') %>
+<%- js('js/search') %>
+<%- js('js/main') %>
+
+<% if (theme.open_bg_particle){ %>
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <div id="particles"></div>
+  <%- js('js/particles') %>
+<% } %>
+
+<% if (config.disqus_shortname){ %>
+<script>
+  var disqus_shortname = '<%= config.disqus_shortname %>';
+  <% if (page.permalink){ %>
+  var disqus_url = '<%= page.permalink %>';
+  <% } %>
+  (function(){
+    var dsq = document.createElement('script');
+    dsq.type = 'text/javascript';
+    dsq.async = true;
+    dsq.src = '//' + disqus_shortname + '.disqus.com/<% if (page.comments) { %>embed.js<% } else { %>count.js<% } %>';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+</script>
+<% } %>
+
+<% if (theme.fancybox){ %>
+  <%- css('fancybox/jquery.fancybox') %>
+  <%- js('fancybox/jquery.fancybox.pack') %>
+<% } %>
+
+<% if (theme.open_animation){ %>
+  <%- css('https://cdn.jsdelivr.net/npm/animate.css/animate.min.css') %>
+  <script src="https://cdn.jsdelivr.net/gh/jlmakes/scrollreveal/dist/scrollreveal.js"></script>
+  <%- js('js/animate') %>
+<% } %>
+<% if (! is_home()){ %>
+  <%- js('js/pop-img') %>
+  <script>
+     $(".article-entry p img").popImg();
+  </script>
+<% } %>
