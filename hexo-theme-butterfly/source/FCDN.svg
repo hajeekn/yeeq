@@ -1,0 +1,20 @@
+
+<svg width="145.1" height="20" viewBox="0 0 1451 200" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <linearGradient id="a" x2="0" y2="100%">
+    <stop offset="0" stop-opacity=".1" stop-color="#EEE"/>
+    <stop offset="1" stop-opacity=".1"/>
+  </linearGradient>
+  <mask id="m"><rect width="1451" height="200" rx="30" fill="#FFF"/></mask>
+  <g mask="url(#m)">
+    <rect width="1007" height="200" fill="#555"/>
+    <rect width="444" height="200" fill="#3C1" x="1007"/>
+    <rect width="1451" height="200" fill="url(#a)"/>
+  </g>
+  <g fill="#fff" text-anchor="start" font-family="Verdana,DejaVu Sans,sans-serif" font-size="110">
+    <text x="220" y="148" textLength="747" fill="#000" opacity="0.25">Files CDN By </text>
+    <text x="210" y="138" textLength="747">Files CDN By </text>
+    <text x="1062" y="148" textLength="344" fill="#000" opacity="0.25">upyun</text>
+    <text x="1052" y="138" textLength="344">upyun</text>
+  </g>
+  <image x="40" y="35" width="130" height="130" xlink:href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzOCAzOCI+PHBhdGggZmlsbD0iI2ZmZiIgZD0iTTI5LjA3MyA5Ljk2NEwxOC44OTggNC4wOTFhMy4yNTUgMy4yNTUgMCAwMC0zLjI1OSAwTDUuNDY1IDkuOTY0YTMuMjU5IDMuMjU5IDAgMDAtMS42MjkgMi44MjJ2MTEuNzQ5YzAgMS4xNjQuNjIxIDIuMjQgMS42MjkgMi44MmwxMC4xNzUgNS44NzdhMy4yNiAzLjI2IDAgMDAzLjI1OSAwbDEwLjE3NS01Ljg3N2EzLjI1MiAzLjI1MiAwIDAwMS42MjgtMi44MlYxMi43ODZhMy4yNjIgMy4yNjIgMCAwMC0xLjYyOS0yLjgyMm0tLjk3OCAxNC4yNjVjMCAuMzUtLjE4Ny42NzItLjQ4Ny44NDZsLTIuMzgxIDEuMzc3YS45ODEuOTgxIDAgMDEtLjk3OCAwbC0yLjM4My0xLjM3N2EuOTc1Ljk3NSAwIDAxLS40ODgtLjg0NlYyMS40OGMwLS4zNS4xODgtLjY3Mi40ODgtLjg0OGwyLjM4My0xLjM3NGEuOTcyLjk3MiAwIDAxLjk3OCAwbDIuMzgxIDEuMzc0YS45ODIuOTgyIDAgMDEuNDg3Ljg0OHYyLjc0OXoiLz48L3N2Zz4="/>
+</svg>

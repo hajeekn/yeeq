@@ -66,6 +66,11 @@ class:
       link: https://spoience.com/
       avatar: https://cdn.jsdelivr.net/gh/Spoience/pic/img/avatar.jpg
       descr: 记录我的碎碎念念
+    14:
+      name: impdx-忧郁的派大星
+      link: https://www.impdx.vip/
+      avatar: https://www.impdx.vip/img/avatar.png
+      descr: 越学习，越发现自己的无知——笛卡尔
 
 class2:
    class_name: 跟着大佬走，那岂不轻而易举当上小大佬?
@@ -152,8 +157,28 @@ class5:
        link: /
        avatar: /avatar.png
        descr: awa
-       width: 0px
+       width: 2px
        style: solid
        color: "#881B12"
-       custom: link_custom 1s infinite alternate
+       custom: link_custom2
+       rotate: 360deg
+     2:
+       name: SL's Blog
+       link: /
+       avatar: /avatar.png
+       descr: awa
+       width: 2px
+       style: solid
+       color: "#FFD700"
+       custom: link_custom
+       rotate: 360deg
+     3:
+       name: SL's Blog
+       link: /
+       avatar: /avatar.png
+       descr: awa
+       width: 2px
+       style: solid
+       color: "#FFD780"
+       custom: link_custom2
        rotate: 360deg
