@@ -16,12 +16,9 @@ description:
   head:处
 添加
 ```
-      - <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/sviptzk/StaticFile_HEXO@master/butterfly/css/pool.css">
-      - <link rel="stylesheet" href="https://tagplcss.slqwq.cn/update">
-(https://tagplcss.slqwq.cn/update会自动跳转至Jsdelivr的最新版本，免去每次更新的烦恼)
+      - <link rel="stylesheet" href="https://unpkg.com/more-beautiful-div-framework@1.0.7/more-beautiful-div-framework.min.css">
 ```
 
-一个都不能少，因为这是根据小康的外挂标签做的拓展。
 文章内引用方法:
 ```
 <div class="tip wtgo"><p>文字</p><p></p></div>
@@ -32,6 +29,7 @@ description:
 <div class="tip ffa"><p>魔改标签6</p><p></p></div>
 <div class="tip key"><p>魔改标签7</p><p></p></div>
 <div class="tip socd"><p>魔改标签8</p><p></p></div>
+<div class="tip qq"><p>魔改标签9</p><p></p></div>
 ```
 
 例子:
@@ -43,12 +41,28 @@ description:
 <div class="tip ffa faa-bounce animated"><p>魔改标签6</p><p></p></div>
 <div class="tip key faa-spin animated-hover"><p>魔改标签7</p><p></p></div>
 <div class="tip socd faa-bounce animated"><p>魔改标签8</p><p></p></div>
+<div class="tip qq faa-spin animated-hover"><p>魔改标签9</p><p></p></div>
 
 目前此拓展会持续更新
 
-注:网站请开启FontAwesome
+# 依赖
+
+依赖如下:
+
+FontAwesome5/4
 
 # 更新日志:
+2020/6/17
+20:29 版本号V1.7(跳过1.6)
+添加压缩过的css(more-beautiful-div-framework.min.css)
+提供jsdelivr的CSS地址
+兼容V5
+添加QQ样式
+
+17:52 版本号V1.5
+取消pool.css依赖
+将jsdelivr地址换为unpkg地址
+
 2020/6/15
 14:55 版本号V1.4
 添加socd样式

@@ -26,19 +26,9 @@ beautify()
       top: calc(50% - .35rem)
       color: $title-prefix-icon-color
       content: $title-prefix-icon
-      font-style: normal
-      font-variant: normal
       line-height: 1
       transition: all .2s ease-out
-      text-rendering: auto
-      -webkit-font-smoothing: antialiased
-
-      if hexo-config('fontawesome_v5') && hexo-config('fontawesome_v5.enable')
-        font-weight: 600
-        font-family: 'Font Awesome 5 Free'
-      else
-        font-weight: normal
-        font-family: FontAwesome
+      @extend .fontawesomeIcon
 
     &:hover
       &:before
@@ -77,9 +67,10 @@ beautify()
       padding-left: .5rem
 
     li
-      position: relative
-      margin: .2rem 0
-      padding: .1rem .5rem .1rem 1.5rem
+      &:not(.tab)
+        position: relative
+        margin: .2rem 0
+        padding: .1rem .5rem .1rem 1.5rem
 
       &:hover
         &:before
@@ -108,7 +99,7 @@ beautify()
         line-height: h
 
   ul
-    > li
+    > li:not(.tab)
       &:hover
         &:before
           border-color: $theme-button-hover-color
@@ -176,57 +167,6 @@ a.fancybox
 img
   max-width: 100%
   transition: all .2s
-
-// highlight
-.highlight-tools
-  .code-expand
-    position: absolute
-    top: 0
-    z-index: 1
-    padding: 7px 10px
-    color: $highlight-foreground
-    cursor: pointer
-    transition: all .3s
-    transform: rotate(0)
-
-    & + .code-lang
-      left: 30px
-
-    &.code-closed
-      transition: all .3s
-      transform: rotate(-90deg) !important
-
-  .code-lang
-    position: absolute
-    left: 15px
-    z-index: 1
-    color: $highlight-foreground
-    text-transform: capitalize
-    font-weight: bold
-    font-size: .8rem
-    line-height: 1.4rem
-    cursor: pointer
-
-  .copy-notice
-    position: absolute
-    top: 0
-    right: 0
-    z-index: 1
-    background: darken($highlight-background, 5)
-    color: $highlight-aqua
-    opacity: 0
-
-  .fa-clipboard
-    position: absolute
-    top: .4rem
-    right: 10px
-    z-index: 1
-    color: $highlight-aqua
-    cursor: pointer
-    transition: color .2s
-
-    &:hover
-      color: darken($highlight-aqua, 20%)
 
 .katex-wrap
   overflow: auto
@@ -338,6 +278,9 @@ img
   p
     margin: 0 0 .8rem
 
+  iframe
+    margin: 0 0 1rem
+
 @media screen and (max-width: 1024px)
   .layout_post
     width: auto
@@ -359,61 +302,3 @@ img
 
     &.hide-aside
       max-width: 1300px
-
-// 颜色块-黄
-span#inline-yellow {
-display:inline;
-padding:.2em .6em .3em;
-font-size:90%;
-font-weight:normal;
-line-height:1;
-color:#000;
-text-align:center;
-white-space:nowrap;
-vertical-align:baseline;
-border-radius:0.1rem;
-background-color: #FFD700;
-}
-    
-// 左侧边框红色块级
-p#div-border-left-red {
-display: block;
-padding: 10px;
-margin: 10px 0;
-border: 1px solid #ccc;
-border-left-width: 5px;
-border-radius: 3px;
-border-left-color: #df3e3e;
-}
-// 左侧边框黄色块级
-p#div-border-left-yellow {
-display: block;
-padding: 10px;
-margin: 10px 0;
-border: 1px solid #ccc;
-border-left-width: 5px;
-border-radius: 3px;
-border-left-color: #f0ad4e;
-}
-
-// 右侧边框黄色块级
-p#div-border-right-yellow {
-display: block;
-padding: 10px;
-margin: 10px 0;
-border: 1px solid #ccc;
-border-right-width: 5px;
-border-radius: 3px;
-border-right-color: #f0ad4e;
-}
-
-// 上侧边框红色
-p#div-border-top-red {
-display: block;
-padding: 10px;
-margin: 10px 0;
-border: 1px solid #ccc;
-border-top-width: 5px;
-border-radius: 3px;
-border-top-color: #df3e3e;
-}

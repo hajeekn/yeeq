@@ -20,8 +20,8 @@
       color: $button-color
       cursor: default
 
-  img.prev_cover,
-  img.next_cover
+  img.prev-cover,
+  img.next-cover
     position: absolute
     width: 100%
     height: 100%
@@ -38,10 +38,8 @@
 
   .prev_info,
   .next_info
-    overflow: hidden
+    @extend .limit-one-line
     color: $button-color
-    text-overflow: ellipsis
-    white-space: nowrap
     font-weight: 500
 
   .next-post
@@ -68,12 +66,12 @@
       height: 150px
 
     &:hover
-      img.prev_cover,
-      img.next_cover
+      img.prev-cover,
+      img.next-cover
         opacity: .8
         transform: scale(1.1)
 
-  &.pagination_post
+  &.pagination-post
     margin: 2rem 0 !important
     background: $dark-black
 
@@ -81,42 +79,3 @@
   .prev-post,
   .next-post
     width: 100% !important
-& >.recent-post-info
-  display: inline-block
-  overflow: hidden
-  padding: 50px 40px
-  width: 55%
-
-  & > .article-title
-    display: -webkit-box
-    overflow: hidden
-    margin-bottom: 1.2rem
-    color: $font-black
-    text-overflow: ellipsis
-    word-wrap: break-word
-    font-size: 1.2rem
-    line-height: 1.5
-    transition: all .2s ease-in-out
-    -webkit-box-orient: vertical
-    -webkit-line-clamp: 2
-display: -webkit-box
-overflow: scroll
-margin-top: .2rem
-height: 97px
-word-break: break-word
--webkit-line-clamp: 3
--webkit-box-orient: vertical
-.page-number
-  display: inline-block
-  margin: 0 .2rem
-  min-width: w = 1.5rem
-  height: w
-  text-align: center
-  line-height: w
-  cursor: pointer
-
-&.current
-  background: $theme-color
-  color: $button-color
-  cursor: default
-  border-radius: 20px

@@ -95,8 +95,8 @@ highlight:
 hexo_external_link:
   enable: true
   enable_base64_encode: true
-  url_param_name: 'u'
-  html_file_name: 'go.html'
+  url_param_name: 'url'
+  html_file_name: 'Jump.html'
   target_blank: true
   link_rel: 'external nofollow noopener noreferrer'
   domain: '' # 如果开启了防盗链

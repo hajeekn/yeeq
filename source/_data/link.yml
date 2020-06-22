@@ -71,7 +71,22 @@ class:
       link: https://www.impdx.vip/
       avatar: https://www.impdx.vip/img/avatar.png
       descr: 越学习，越发现自己的无知——笛卡尔
-
+    15:
+      name: Zoom
+      link: https://zoom1111.github.io/
+      avatar: https://s1.ax1x.com/2020/06/17/NVr35j.jpg
+      descr: 一只菜鸟
+    16:
+      name: 保温杯的小栈
+      link: https://fuckzuoye.ga
+      avatar: https://cdn.jsdelivr.net/gh/hanghang0891/hanghang0891.github.io/img/avatar.jpg
+      descr: 就是俺啦！
+      width: 2px
+      style: solid
+      color: "#abff07"
+      custom: link_custom 1s infinite alternate
+      rotate: 520deg
+     
 class2:
    class_name: 跟着大佬走，那岂不轻而易举当上小大佬?
    link_list:
@@ -132,7 +147,7 @@ class3:
        descr: 国内为数不多的良心品牌
 
 class4:
-   class_name: 个人项目
+   class_name: 个人项目&很棒的工具
    link_list:
      1:
        name: 音乐解锁
@@ -149,6 +164,26 @@ class4:
        link: https://cdn.slblog.ga/Mikutap/
        avatar: /img/miicon.png
        descr: 玩了就绝对停不下来的网页小游戏
+     4:
+       name: more-beautiful-div-framework(个人项目)
+       link: https://www.npmjs.com/package/more-beautiful-div-framework
+       avatar: https://static.npmjs.com/58a19602036db1daee0d7863c94673a4.png
+       descr: 个人CSS项目-更美丽的div框架
+       width: 2px
+       style: solid
+       color: "#FFD700"
+       custom: link_custom
+       rotate: 360deg
+     5:
+       name: 博客分站(感谢impdx提供域名、Upyun提供CDN加速)
+       link: https://sblfz.impdx.vip/
+       avatar: https://cdn.slblog.ga/pic/logo.png
+       descr: 梦中做梦，做了个白日梦
+       width: 2px
+       style: solid
+       color: "#FFD700"
+       custom: link_custom
+       rotate: 250deg
 class5:
    class_name: 效果测试
    link_list:
