@@ -37,12 +37,14 @@ jobs:
         if: steps.cache-dependencies.outputs.cache-hit != 'true'
         run: |
           npm install
-      - name: 設置部署密鑰
+      - name: 設置部署密鑰并信任GitHub主機
         env:
           HEXO_DEPLOY_PRIVATE_KEY: ${{ secrets.HEXO_DEPLOY_PRIVATE_KEY }}
         run: |
           mkdir -p ~/.ssh/
-          echo "$HEXO_DEPLOY_PRIVATE_KEY" > ~/.ssh/id_rsa 
+          echo "$HEXO_DEPLOY_PRIVATE_KEY" > ~/.ssh/id_rsa.pub
+          echo "$HEXO_POP" > ~/.ssh/id_rsa
+          chmod 600 ~/.ssh/id_rsa.pub
           chmod 600 ~/.ssh/id_rsa
           ssh-keyscan github.com >> ~/.ssh/known_hosts
           git config --global user.email "sladmin@slwebtap.onmicrosoft.com"
