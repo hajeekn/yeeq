@@ -48,4 +48,4 @@ jobs:
 
       - name: 提交生成后的HTML
         run: |
-          hexo clean && hexo d && hexo g
+          hexo clean && hexo d -g
