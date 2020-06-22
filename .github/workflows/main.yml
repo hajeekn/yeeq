@@ -40,6 +40,7 @@ jobs:
       - name: 設置部署密鑰并信任GitHub主機
         env:
           HEXO_DEPLOY_PRIVATE_KEY: ${{ secrets.HEXO_DEPLOY_PRIVATE_KEY }}
+          HEXO_POP: ${{ secrets.HEXO_POP }}
         run: |
           mkdir -p ~/.ssh/
           echo "$HEXO_DEPLOY_PRIVATE_KEY" > ~/.ssh/id_rsa.pub
@@ -49,8 +50,7 @@ jobs:
           ssh-keyscan github.com >> ~/.ssh/known_hosts
           git config --global user.email "sladmin@slwebtap.onmicrosoft.com"
           git config --global user.name "Open-super"
-          ssh -T git@github.com
-          
+                    
       - name: 提交生成后的HTML
         run: |
           hexo clean && hexo d -g
