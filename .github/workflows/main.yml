@@ -37,7 +37,7 @@ jobs:
         if: steps.cache-dependencies.outputs.cache-hit != 'true'
         run: |
           npm install
-      - name: Setup Deploy Private Key
+      - name: 設置部署密鑰
         env:
           HEXO_DEPLOY_PRIVATE_KEY: ${{ secrets.HEXO_DEPLOY_PRIVATE_KEY }}
         run: |
@@ -45,7 +45,9 @@ jobs:
           echo "$HEXO_DEPLOY_PRIVATE_KEY" > ~/.ssh/id_rsa 
           chmod 600 ~/.ssh/id_rsa
           ssh-keyscan github.com >> ~/.ssh/known_hosts
-
+          git config --global user.email "sladmin@slwebtap.onmicrosoft.com"
+          git config --global user.name "Open-super"
+          
       - name: 提交生成后的HTML
         run: |
           hexo clean && hexo d -g
