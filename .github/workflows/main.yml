@@ -49,6 +49,9 @@ jobs:
           chmod 600 ~/.ssh/id_rsa.pub
           chmod 600 ~/.ssh/id_rsa
           ssh-keyscan github.com >> ~/.ssh/known_hosts
+          ssh-keyscan coding.net >> ~/.ssh/known_hosts
+          ssh-keyscan git@e.coding.net >> ~/.ssh/known_hosts
+          ssh-keyscan git@github.com >> ~/.ssh/known_hosts
           git config --global user.email "sladmin@slwebtap.onmicrosoft.com"
           git config --global user.name "slblog-github"
    
