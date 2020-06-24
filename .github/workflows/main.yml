@@ -44,13 +44,13 @@ jobs:
           HEXO_POP: ${{ secrets.HEXO_POP }}
         run: |
           mkdir -p ~/.ssh/
-          echo "${{ secrets.HEXO_DEPLOY_PRIVATE_KEY }}" > ~/.ssh/id_rsa.pub
-          echo "${{ secrets.HEXO_POP }}" > ~/.ssh/id_rsa
+          echo "$HEXO_DEPLOY_PRIVATE_KEY" > ~/.ssh/id_rsa.pub
+          echo "$HEXO_POP" > ~/.ssh/id_rsa
           chmod 600 ~/.ssh/id_rsa.pub
           chmod 600 ~/.ssh/id_rsa
           ssh-keyscan github.com >> ~/.ssh/known_hosts
           git config --global user.email "sladmin@slwebtap.onmicrosoft.com"
-          git config --global user.name "slblog-github
+          git config --global user.name "slblog-github"
    
       - name: 提交生成后的HTML
         run: |
