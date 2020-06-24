@@ -100,8 +100,17 @@ class2:
        link: https://www.yichen.online/
        avatar: https://cdn.slblog.ga/pic/YiChen.png/
        descr: Ting 花落的声音
-
-
+     3:
+       name: Uncle_drew
+       link: https://cndrew.cn/
+       avatar: https://cdn.jsdelivr.net/gh/drew233/cdn/dreww.webp
+       descr: Hand down,man down
+       width: 2px
+       style: solid
+       color: "#FFD700"
+       custom: link_custom
+       rotate: 250deg
+       
 class3:
    class_name: 博客使用工具
    link_list:

@@ -16,7 +16,7 @@ description:
   head:处
 添加
 ```
-      - <link rel="stylesheet" href="https://unpkg.com/more-beautiful-div-framework@1.0.7/more-beautiful-div-framework.min.css">
+      - <link rel="stylesheet" href="https://unpkg.com/more-beautiful-div-framework/more-beautiful-div-framework.min.css">
 ```
 
 文章内引用方法:
@@ -49,9 +49,17 @@ description:
 
 依赖如下:
 
-FontAwesome5/4
+FontAwesome 5 / 4(除QQ样式以外的其他样式依赖项)
+
+iconfont(QQ样式的依赖项)
 
 # 更新日志:
+2020/6/22
+
+14:05 版本号V1.8
+
+将QQ样式的图标替换为iconfont图标
+
 2020/6/17
 20:29 版本号V1.7(跳过1.6)
 添加压缩过的css(more-beautiful-div-framework.min.css)

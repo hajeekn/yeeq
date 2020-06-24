@@ -7,18 +7,17 @@
 #   name || link || icon
 
 menu:
-  主页: / || fa fa-home
-  文章: /archives/ || fa fa-archive faa-bounce animated
-  友链: /link/ || fa fa-link 
-  关于: /about/ || fa fa-heart faa-bounce animated
-  分页: /categories/ || fa fa-folder-open 
-  更新: /update/ || fa fa-book faa-bounce animated
-  说说: /Artitalk/ || fa fa-pencil-square-o 
-  icp备案(仅供娱乐): /icp备案/ || fab-angular
-  实验室||fa fa-flask faa-spin animated:
-    - Mikutap || https://cdn.slblog.ga/mikutap/ || fa fa-play  faa-bounce animated
-    - 音乐播放器 || https://music.slqwq.cn/ || fa fa-music faa-bounce animated
-    - 图床 || https://pic.slqwq.cn/ || fa-picture-o faa-bounce animated
+  主页: / || iconfont icon-home 
+  文章: /archives/ || iconfont icon-archive faa-bounce animated
+  友链: /link/ || iconfont icon-link
+  关于: /about/ || iconfont icon-love faa-bounce animated
+  分页: /categories/ || iconfont icon-folder-open
+  更新: /update/ || iconfont icon-book faa-bounce animated
+  说说: /Artitalk/ || fab fa-autoprefixer 
+  实验室|| iconfont icon-flask faa-spin animated:
+    - Mikutap || https://cdn.slblog.ga/mikutap/ || iconfont icon-play  faa-bounce animated
+    - 音乐播放器 || https://music.slqwq.cn/ || iconfont icon-MusicEntertainment faa-bounce animated
+    - 图床 || https://pic.slqwq.cn/ || iconfont icon-pic2 faa-bounce animated
 
 # Code Blocks (代碼相關)
 # --------------------------------------
@@ -39,10 +38,10 @@ copy:
 # formal:
 #   icon: link || the description
 social:
-  fa fa-github: https://github.com/Open-super || Github
-  fa fa-envelope: mailto:sladmin@slwebtap.onmicrosoft.com || Email
-  fa fa-rss: /atom.xml || RSS
-  fa fa-cloud: https://coding.net/ || Coding Pages
+  iconfont icon-github: https://github.com/Open-super || Github
+  iconfont icon-MailII: mailto:sladmin@slwebtap.onmicrosoft.com || Email
+  iconfont icon-rss: /atom.xml || RSS
+  iconfont icon-cloud: https://coding.net/ || Coding Pages
 
 # search (搜索)
 # --------------------------------------
@@ -290,7 +289,7 @@ valine:
   emojiCDN: https://valinecdn.bili33.top/ # emoji CDN
   enableQQ: true # enable the Nickname box to automatically get QQ Nickname and QQ Avatar
   requiredFields: nick,mail # required fields nick/mail/link
-  bg: /img/pg.png # valine background
+  bg: https://cdn.jsdelivr.net/gh/jerryc127/CDN@latest/Photo/comment_bg.png # valine background
   count: false # dispaly comment count in top_img
   master:
        - c00803e63faa455b9dc55e914f7741fc
@@ -742,11 +741,12 @@ inject:
       - <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/sviptzk/StaticFile_HEXO@v3.2/butterfly/css/pool.css"> #小康的一键CSS
       - <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/sviptzk/HexoStaticFile/Hexo/css/buttons.min.css"> #还是小康的CSS
       - <meta name="google-site-verification" content="qAOA3HXexaF_5uvs3Ghmqp_eB0pIzLgQ1eFRTFGb0Sk" /> #谷歌收录
-      - <link rel="stylesheet" href="https://unpkg.com/more-beautiful-div-framework@1.0.7/more-beautiful-div-framework.min.css"> #我的CSS
+      - <link rel="stylesheet" href="https://unpkg.com/more-beautiful-div-framework@1.0.8/more-beautiful-div-framework.min.css"> #我的CSS
       - <link rel="stylesheet" href="/css/font-awesome-animation.min.css"> #抖动特效
       - <script src="https://cdn.jsdelivr.net/gh/HCLonely/hclonely.github.io@1.4.7/js/custom/pace.min.js"></script> #PACE.JS的核心
       - <link rel="styleheet" herf="https://cdn.jsdelivr.net/gh/sviptzk/StaticFile_HEXO@v3.2/butterfly/css/flink.min.css"> #友链样式
       - <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/HCLonely/hclonely.github.io@1.4.7/css/custom/pace-theme-flash.min.css"> #PACE.JS的CSS
+      - <link rel="stylesheet" href="/css/iconfont.min.css"> #阿里图标CSS
 
   bottom:
       - <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/sviptzk/StaticFile_HEXO@master/butterfly/css/footer.min.css"> #小康的渐变CSS

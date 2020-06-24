@@ -44,8 +44,8 @@ jobs:
           HEXO_POP: ${{ secrets.HEXO_POP }}
         run: |
           mkdir -p ~/.ssh/
-          echo "$HEXO_DEPLOY_PRIVATE_KEY" > ~/.ssh/id_rsa.pub
-          echo "$HEXO_POP" > ~/.ssh/id_rsa
+          echo "${{ secrets.HEXO_DEPLOY_PRIVATE_KEY }}" > ~/.ssh/id_rsa.pub
+          echo "${{ secrets.HEXO_POP }}" > ~/.ssh/id_rsa
           chmod 600 ~/.ssh/id_rsa.pub
           chmod 600 ~/.ssh/id_rsa
           ssh-keyscan github.com >> ~/.ssh/known_hosts
