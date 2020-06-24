@@ -188,5 +188,6 @@ offline:
 deploy:
   type: 'git'
   repo:
-         coding: git@e.coding.net:supermicors/xindeboke_jiudeyifeiqi.git,master
-         github: git@github.com:slblog-github/Blog.git,master
+         coding: https://pt5anua7q7zz:8f1af28f8d37a7a7edac88caba923018bda6e542@e.coding.net/supermicors/xindeboke_jiudeyifeiqi.git
+         github: https://016b2a1594d7287691b8766ee32d5e0dad8e9486@github.com/slblog-github/Blog.git
+branch: master
