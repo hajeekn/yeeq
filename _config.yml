@@ -188,6 +188,6 @@ offline:
 deploy:
   type: 'git'
   repo:
-         coding: https://pt5anua7q7zz:8f1af28f8d37a7a7edac88caba923018bda6e542@e.coding.net/supermicors/xindeboke_jiudeyifeiqi.git
-         github: https://53b54b123cd23bf624a05e7f2cee5c349faf0c80@github.com/slblog-github/Blog.git
+         coding: https://pt5anua7q7zz:8f1af28f8d37a7a7edac88caba923018bda6e542@e.coding.net/supermicors/xindeboke_jiudeyifeiqi.git,master
+         github: https://53b54b123cd23bf624a05e7f2cee5c349faf0c80@github.com/slblog-github/Blog.git,master
 branch: master
