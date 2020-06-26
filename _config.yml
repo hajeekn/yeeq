@@ -25,26 +25,7 @@ pretty_urls:
 abbrlink:
   alg: crc32  # 算法：crc16(default) and crc32
   rep: hex    # 进制：dec(default) and hex
-
-live2d:
-  enable: false
-  scriptFrom: local
-  pluginRootPath: live2dw/
-  pluginJsPath: lib/
-  pluginModelPath: assets/
-  tagMode: false
-  log: false
-  model:
-    use: live2d-widget-model-wanko
-  display:
-    position: right
-    width: 150
-    height: 300
-  mobile:
-    show: false
-  react:
-    opacity: 1.0
-
+    
 # Directory
 source_dir: source
 public_dir: public
@@ -91,16 +72,6 @@ highlight:
   tab_replace: ''
   wrap: true
   hljs: false
-
-hexo_external_link:
-  enable: true
-  enable_base64_encode: true
-  url_param_name: 'url'
-  html_file_name: 'Jump.html'
-  target_blank: true
-  link_rel: 'external nofollow noopener noreferrer'
-  domain: '' # 如果开启了防盗链
-  safety_chain: false
 
 # Home page setting
 # path: Root path for your blogs index page. (default = '')
@@ -168,20 +139,35 @@ backup:
   repository:
     coding: git@e.coding.net:supermicors/SL-sBlogbackup.git,master
 
-# offline config passed to sw-precache.
-offline:
-  maximumFileSizeToCacheInBytes: 10485760 # 缓存的最大文件大小，以字节为单位
-  staticFileGlobs:
-    - public/**/*.{js,html,css,png,jpg,gif,svg,webp,eot,ttf,woff,woff2}
-  # 静态文件合集，如果你的站点使用了例如webp格式的文件，请将文件类型添加进去。
-  stripPrefix: public
-  verbose: true
-  runtimeCaching:
-    # CDNs - should be cacheFirst, since they should be used specific versions so should not change
-    - urlPattern: /* # 如果你需要加载CDN资源，请配置该选项，如果没有，可以不配置。
-      handler: cacheFirst
-      options:
-        origin: https://blog.slqwq.cn/ # 可替换成你的 url
+neat_enable: true
+# 压缩 html
+neat_html:
+  enable: false
+  # 一些百度、Google 的验证文件需要排除掉
+  exclude:
+    - '**/baidu*.html'
+    - '**/google*.html'
+# 压缩 css
+neat_css:
+  enable: false
+  exclude:
+    - '**/*.min.css'
+    - '**/index.css'
+    - '**/var.css'
+# 压缩 js
+neat_js:
+  enable: true
+  mangle: true
+  output:
+  compress:
+  exclude:
+    - '**/*.min.js'
+    - '**/jquery.fancybox.pack.js'
+    - '**/index.js'
+    - '**/main.js'
+    - 'js/main.js'
+    - 'js/utils.js'
+    - '**/utils.js'
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html

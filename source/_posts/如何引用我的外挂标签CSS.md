@@ -6,6 +6,8 @@ abbrlink: 7d8b55fe
 date: 2020-06-14 12:32:18
 description:
 ---
+<link rel="stylesheet" href="/css/font-awesome-animation.min.css">
+
 在ButterflyQQ群里的人都知道我对小康的外挂标签进行了拓展
 现在我来教大家如何引用
 首先打开主题配置
@@ -15,6 +17,7 @@ description:
 找到inject:
   head:处
 添加
+
 ```
       - <link rel="stylesheet" href="https://unpkg.com/more-beautiful-div-framework/more-beautiful-div-framework.min.css">
 ```

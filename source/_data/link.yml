@@ -86,6 +86,17 @@ class:
       color: "#abff07"
       custom: link_custom 1s infinite alternate
       rotate: 520deg
+    17:
+      name: FadeAway
+      link: https://fadeawayol.github.io/
+      avatar: https://i.loli.net/2020/06/23/kfrgHqSe8tEhX9F.jpg
+      descr: 相遇总有原因，不是恩赐就是教训
+      width: 2px
+      style: solid
+      color: "#f19ec2"
+      custom: link_custom 1s infinite alternate
+      rotate: 360deg
+      
      
 class2:
    class_name: 跟着大佬走，那岂不轻而易举当上小大佬?
