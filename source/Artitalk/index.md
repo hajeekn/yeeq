@@ -11,7 +11,6 @@ date: 2020-05-26 17:39:53
     var appKEY="dgVYyWlrfCY6u25FAeaofsOd";
     </script>
     {% endraw %}
-    <div id="lazy"></div>
-    <div id="artitalk"></div>
+    <div id="artitalk_main"></div>
     <script type="text/javascript" src="https://unpkg.com/artitalk"></script>
 </body>

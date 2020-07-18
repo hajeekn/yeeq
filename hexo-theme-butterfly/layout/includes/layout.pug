@@ -1,5 +1,5 @@
 - var hideAside = !theme.aside.enable || page.aside === false ? 'hide-aside' : ''
-- var pageHighlightShrinkSet = page.highlight_shrink !== undefined ? page.highlight_shrink : theme.highlight_shrink
+- var pageHighlightShrinkSet = page.highlight_shrink === true || page.highlight_shrink === false ? page.highlight_shrink : theme.highlight_shrink
 - var pageHighlightShrink = theme.highlight_shrink !== 'none' && pageHighlightShrinkSet ? 'code-close' : ''
 
 doctype html
@@ -15,13 +15,12 @@ html(lang=config.language data-theme=theme.display_mode)
 
     !=partial('includes/mobile-sidebar/index', {}, {cache:theme.fragment_cache})
 
-    include ./sidebar.pug
-
     #body-wrap(class=pageHighlightShrink)
       if theme.background
         - var is_photo = theme.background.startsWith('url') ? 'photo':'color'
         #web_bg(data-type=is_photo)
 
+      include ./sidebar.pug
       include ./header/index.pug
 
       if (!is_post())

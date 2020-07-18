@@ -8,7 +8,7 @@ class:
       descr:  一个小小小白～
     2:
       name: Z-hub
-      link: https://www.mxqblog.xyz/
+      link: https://mxq1314.top/
       avatar: https://cdn.slblog.ga/pic/xx.jpg
       descr: 未提供 
     3:
@@ -28,7 +28,7 @@ class:
       descr: LLLL 一只萌萌的MBR LLLL
     6:
       name: Cnoim's Blog
-      link: https://233.chat/
+      link: https://blog.233.chat/
       avatar: https://cdn.slblog.ga/pic/NT.png
       descr: 别恰我（
     7:
@@ -48,8 +48,8 @@ class:
       descr: 一个安静的角落
     10:
       name: 萌城·博客
-      link: https://bili.bio/
-      avatar: https://bili.bio/images/avatar.png
+      link: https://mengchengqwq.com/
+      avatar: https://yanxuan.nosdn.127.net/622956195aa99b98d6cbc595d3c485fa.jpg
       descr: 一个小小科技UP主!
     11:
       name: ilyfairy's Blog
@@ -95,6 +95,12 @@ class:
       style: solid
       color: "#f19ec2"
       custom: link_custom 1s infinite alternate
+      rotate: 360deg
+    18:
+      name: 诸葛亮杀毒
+      link: https://lightd.top/
+      avatar: https://lightd.top/favicon.ico
+      descr: 诸葛亮杀毒,给您轻快的体验~
       rotate: 360deg
       
      
@@ -171,8 +177,8 @@ class4:
    link_list:
      1:
        name: 音乐解锁
-       link: /unmusic/
-       avatar: /unmusic//img/icons/favicon-32x32.png
+       link: https://cdn.slblog.ga/unmusic/
+       avatar: https://cdn.slblog.ga/unmusic/img/icons/favicon-32x32.png
        descr: 加密音乐去屎吧
      2:
        name: 状态显示服务
@@ -186,9 +192,9 @@ class4:
        descr: 玩了就绝对停不下来的网页小游戏
      4:
        name: more-beautiful-div-framework(个人项目)
-       link: https://www.npmjs.com/package/more-beautiful-div-framework
+       link: https://mdbf-css.js.org
        avatar: https://static.npmjs.com/58a19602036db1daee0d7863c94673a4.png
-       descr: 个人CSS项目-更美丽的div框架
+       descr: 个人CSS项目-more-beautiful-div-framework
        width: 2px
        style: solid
        color: "#FFD700"

@@ -56,23 +56,17 @@ generator_amp:
 new_post_name: :title.md # File name of new posts
 default_layout: post
 titlecase: false # Transform title into titlecase
-external_link:
-  enable: true # Open external links in new tab
-  field: site # Apply to the whole site
-  exclude: ''
-filename_case: 0
-render_drafts: false
-post_asset_folder: true
-relative_link: false
-future: true
-highlight:
-  enable: true
-  line_number: true
-  auto_detect: false
-  tab_replace: ''
-  wrap: true
-  hljs: false
 
+hexo_external_link: 
+  enable: true 
+  enable_base64_encode: true 
+  url_param_name: 'url' 
+  html_file_name: 'Jump.html' 
+  target_blank: true 
+  link_rel: 'external nofollow noopener noreferrer' 
+  domain: '' # 如果开启了防盗链 
+  safety_chain: false
+  
 # Home page setting
 # path: Root path for your blogs index page. (default = '')
 # per_page: Posts displayed per page. (0 = disable pagination)
@@ -142,7 +136,7 @@ backup:
 neat_enable: true
 # 压缩 html
 neat_html:
-  enable: false
+  enable: true
   # 一些百度、Google 的验证文件需要排除掉
   exclude:
     - '**/baidu*.html'
@@ -168,6 +162,8 @@ neat_js:
     - 'js/main.js'
     - 'js/utils.js'
     - '**/utils.js'
+    - '**/click_heart.js'
+    - 'js/click_heart.js'
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html

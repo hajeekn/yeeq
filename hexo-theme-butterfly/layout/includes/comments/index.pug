@@ -1,29 +1,38 @@
-- var d = theme.disqus && theme.disqus.enable
-- var dj = theme.disqusjs && theme.disqusjs.enable
-- var l = theme.livere && theme.livere.enable
-- var gt = theme.gitalk && theme.gitalk.enable
-- var v = theme.valine && theme.valine.enable
-- var u = theme.utterances && theme.utterances.enable
-- var fb = theme.facebook_comments && theme.facebook_comments.enable
-- var isComment = d || dj || l || gt || v || u || fb
-
-if isComment
-  hr
-  #post-comment
-    .comment_headling
+- let defaultComment = theme.comments.use[0]
+hr
+#post-comment
+  .comment-head
+    .comment-headling
       i.fas.fa-comments.fa-fw
       span= ' ' + _p('comment')
-    if d
-      include ./disqus.pug
-    else if dj
-      include ./disqusjs.pug
-    else if l
-      include ./livere.pug
-    else if gt
-      include ./gitalk.pug
-    else if v
-      include ./valine.pug
-    else if u
-      include ./utterances.pug
-    else if fb
-      include ./facebook_comments.pug
+    
+    if theme.comments.use.length > 1
+      .comment-switch
+        span.first-comment=defaultComment
+        label
+          input#switch-comments-btn(type="checkbox")
+          span.slider
+        span.second-comment=theme.comments.use[1]
+
+
+  .comment-wrap
+    each name in theme.comments.use
+      div
+        case name
+          when 'Disqus'
+            #disqus_thread
+          when 'Valine'
+            #vcomment.vcomment
+          when 'Disqusjs'
+            #disqus_thread
+          when 'Livere'
+            #lv-container(data-id="city" data-uid=theme.livere.uid)
+          when 'Gitalk'
+            #gitalk-container
+          when 'Utterances'
+            #utterances-wrap
+          when 'Facebook Comments'
+            .fb-comments(data-colorscheme = theme.display_mode === 'dark' ? 'dark' : 'light'
+                        data-numposts= theme.facebook_comments.pageSize || 10
+                        data-order-by= theme.facebook_comments.order_by || 'social'
+                        data-width="100%")

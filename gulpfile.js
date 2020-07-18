@@ -25,7 +25,7 @@ var imagemin = require('gulp-imagemin')
 //    .pipe(gulp.dest('./public'))
 // )
 
-// minify js - tester (如果使用tester,把下面前面的//去掉)
+ // minify js - tester (如果使用tester,把下面前面的//去掉)
  gulp.task('compress', function (cb) {
    var options = {}
    pump([
