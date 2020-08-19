@@ -5,15 +5,19 @@ abbrlink: d6df3a18
 date: 2020-05-28 11:03:12
 tags:
 description:
+ - 白嫖
+cover: https://cdn.jsdelivr.net/gh/slblog-github/BlogFlies/Blog/Pic/2528Cover.png
 ---
 hi，各位好。
 今天我来教大家白嫖CDN
+
 # 创建仓库
 登陆GitHub
 新建一个仓库，名字随意
 {% note info %}
 一定要是公开!
 {% endnote %}
+
 # 生成Tokens
 打开
 https://github.com/settings/tokens

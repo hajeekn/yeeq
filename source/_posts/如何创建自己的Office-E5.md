@@ -5,6 +5,9 @@ abbrlink: 143f7edb
 date: 2020-05-14 17:38:44
 tags:
 description:
+ - 白嫖
+ - Office
+cover: https://cdn.jsdelivr.net/gh/slblog-github/BlogFlies/Blog/Pic/2356Cover.png
 ---
 
 注：本文转载自MBRjun的学习记录
@@ -12,9 +15,7 @@ https://blog.mbrjun.cn/archives/10/
 
 教程首先点击这里，然后点击Join Now
 
-然后登录，似乎个人和工作教育账户都可以，也可以Github登录
-
-<img src="https://cdn.slblog.ga/pic/post/2020514/1.png">
+然后登录，似乎个人和工作教育账户都可以，也可以Github登录<img src="https://cdn.slblog.ga/pic/post/2020514/1.png">
 
 小编（营销号内味）用Windows Hello登录给大家演示
 

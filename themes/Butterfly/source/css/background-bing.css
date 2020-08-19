@@ -1,0 +1,8 @@
+#web_bg {
+  /* 背景图像的地址  */
+  background: url(https://bing.ioliu.cn/v1/blur?w=1920,h=1080);
+  /* 背景图像不重复 */
+  background-repeat: no-repeat;
+  /* 背景图像大小 */
+  background-size: cover;
+}

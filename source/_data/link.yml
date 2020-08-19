@@ -7,8 +7,8 @@ class:
       avatar: https://cdn.slblog.ga/pic/XIO.png
       descr:  一个小小小白～
     2:
-      name: Z-hub
-      link: https://mxq1314.top/
+      name: MuXin's Blog
+      link: https://blog.muxi1314.top/
       avatar: https://cdn.slblog.ga/pic/xx.jpg
       descr: 未提供 
     3:
@@ -42,41 +42,31 @@ class:
       avatar: https://sdn.geekzu.org/avatar/a428c2d6dd92b2dfcfa8aec470bd4088
       descr: lolololololol
     9:
-      name: 云淡风轻
-      link: https://ioliu.cn/
-      avatar: https://ioliu.cn/images/avatar.jpg
-      descr: 一个安静的角落
-    10:
-      name: 萌城·博客
-      link: https://mengchengqwq.com/
-      avatar: https://yanxuan.nosdn.127.net/622956195aa99b98d6cbc595d3c485fa.jpg
-      descr: 一个小小科技UP主!
-    11:
       name: ilyfairy's Blog
       link: https://ilyfairy.com
       avatar: https://cdn.slblog.ga/pic/il.png
       descr: 承受不住の小仙女
-    12:
+    10:
       name: 璃心
       link: https://luoyou.art/
       avatar: https://user-images.githubusercontent.com/60562661/74096556-7c5f5e80-4b3b-11ea-817b-b289ffba24a3.jpg
       descr: 人工智能-深度学习，计算机视觉，算法，数学
-    13:
+    11:
       name: Spoience
       link: https://spoience.com/
       avatar: https://cdn.jsdelivr.net/gh/Spoience/pic/img/avatar.jpg
       descr: 记录我的碎碎念念
-    14:
+    12:
       name: impdx-忧郁的派大星
       link: https://www.impdx.vip/
       avatar: https://www.impdx.vip/img/avatar.png
       descr: 越学习，越发现自己的无知——笛卡尔
-    15:
+    13:
       name: Zoom
       link: https://zoom1111.github.io/
       avatar: https://s1.ax1x.com/2020/06/17/NVr35j.jpg
       descr: 一只菜鸟
-    16:
+    14:
       name: 保温杯的小栈
       link: https://fuckzuoye.ga
       avatar: https://cdn.jsdelivr.net/gh/hanghang0891/hanghang0891.github.io/img/avatar.jpg
@@ -86,7 +76,7 @@ class:
       color: "#abff07"
       custom: link_custom 1s infinite alternate
       rotate: 520deg
-    17:
+    15:
       name: FadeAway
       link: https://fadeawayol.github.io/
       avatar: https://i.loli.net/2020/06/23/kfrgHqSe8tEhX9F.jpg
@@ -96,7 +86,7 @@ class:
       color: "#f19ec2"
       custom: link_custom 1s infinite alternate
       rotate: 360deg
-    18:
+    16:
       name: 诸葛亮杀毒
       link: https://lightd.top/
       avatar: https://lightd.top/favicon.ico
@@ -112,6 +102,8 @@ class2:
        link: https://www.antmoe.com/
        avatar: https://cdn.jsdelivr.net/gh/sviptzk/HexoStaticFile@latest/avatar.jpg
        descr: 一个收藏回忆与分享技术的地方！
+       width: 1px (代表边框的大小border-width)
+       color: "#881B12"
      2:
        name: 依尘
        link: https://www.yichen.online/
@@ -127,6 +119,26 @@ class2:
        color: "#FFD700"
        custom: link_custom
        rotate: 250deg
+     4:
+       name: PluShine
+       link: https://plushine.cn
+       avatar: https://cdn.jsdelivr.net/gh/xingjiahui/CDN@latest/touxiang.jpg
+       descr: 💕菜徐坤💕
+       width: 3px
+       style: solid
+       color: "#FFD700"
+       custom: link_custom
+       rotate: 360deg
+     5:  
+       name: 云淡风轻
+       link: https://ioliu.cn/
+       avatar: https://ioliu.cn/images/avatar.jpg
+       descr: 一个安静的角落
+       width: 3px
+       style: solid
+       color: "#FFD700"
+       custom: link_custom
+       rotate: 360deg
        
 class3:
    class_name: 博客使用工具

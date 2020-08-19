@@ -1,0 +1,23 @@
+language: node_js
+node_js: stable
+
+sudo: required
+
+# Travis-CI Caching
+cache:
+  directories:
+    - node_modules
+
+# S: Build Lifecycle
+install:
+  - npm install hexo-cli -g
+  - npm install
+
+script:
+  - hexo clean && hexo d -g
+
+# after_script:
+
+branches:
+  only:
+    - hexo

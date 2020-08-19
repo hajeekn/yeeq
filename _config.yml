@@ -150,8 +150,8 @@ neat_css:
     - '**/var.css'
 # 压缩 js
 neat_js:
-  enable: true
-  mangle: true
+  enable: false
+  mangle: false
   output:
   compress:
   exclude:

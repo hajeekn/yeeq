@@ -5,6 +5,8 @@ abbrlink: 2c805e6b
 date: 2020-05-16 14:07:44
 tags:
 description:
+ - PACE
+cover: https://cdn.jsdelivr.net/gh/slblog-github/BlogFlies/Blog/Pic/2516Cover.png
 ---
 
 相信各位站长们不喜欢网站普普通通的加载方式，那么今天SL就带来如何给自己网站添加pace.js进度条的教程
@@ -22,6 +24,7 @@ description:
 找到head.XXX
 双击打开
 接下来在&lt;html&gt;内部添加
+
 ```
 &lt;script src="/js/pace-1.0.2/pace.min.js'>"&lt;/script&gt;
 &lt;ink href="/js/pace-1.0.2/themes/blue/pace-theme-loading-bar.css" rel="stylesheet"&gt;

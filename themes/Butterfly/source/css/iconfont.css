@@ -17,6 +17,11 @@
 
 }
 
+.icon-gonggao:before {
+  content: "\e606";
+  color: #ff1e00;
+}
+
 .icon-autoprefixer:before {
   content: "\e601";
   color: #d81e06;
