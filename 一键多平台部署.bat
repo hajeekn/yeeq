@@ -7,7 +7,9 @@ title 已完成~
 color 4
 pause
 title 正在进行GitLab平台部署
-git add --all && git commit -m "Update Website" && git push -u gitlab master -f
+git add --all
+git commit -m "Update Website"
+git push -u gitlab master -f
 title 部署完成~
 color 1
 pause
