@@ -1,0 +1,18 @@
+# This file is a template, and might need editing before it works on your project.
+# Full project: https://gitlab.com/pages/hexo
+image: node:12.18.3
+
+pages:
+  script:
+    - npm install hexo-cli -g
+    - npm i
+    - hexo generate
+  artifacts:
+    paths:
+      - public
+  cache:
+    paths:
+      - node_modules
+    key: project
+  only:
+    - master

@@ -1,11 +1,12 @@
 ---
 title: 使用Travis CI持续集成工具自动化部署Hexo
 sticky: 1
+abbrlink: 9ed5997f
 date: 2020-08-19 16:02:36
 tags:
 description:
 categories:
-cover:
+cover: https://cdn.jsdelivr.net/gh/slblog-github/BlogFlies/Blog/Pic/20819Cover.png
 ---
 
 众所周知，Hexo是一款免费开源的静态博客生成工具，使用它可以快速生成一个博客。但随着文章之类的东西增加，生成的速度也会逐渐变慢，如果你配置不够，那搞不好就要几小时才能生成，并且还有一个好处:

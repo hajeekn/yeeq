@@ -6,7 +6,7 @@
       display: inline-block
       vertical-align: middle
       font-weight: 700
-      font-size: 20px
+      font-size: 1.43em
 
     .comment-switch
       display: inline-block
@@ -17,7 +17,7 @@
         padding: .2rem .8rem
         width: max-content
         border-radius: 8px
-        background: #f6f8fa00
+        background: $comments-switch-bg
       else
         vertical-align: middle
 
@@ -25,18 +25,18 @@
           display: none
 
       .first-comment
-        color: #FF9800
+        color: $comments-switch-first-text
 
       .second-comment
-        color: #FFC107
+        color: $comments-switch-second-text
 
       label
         position: relative
         display: inline-block
-        margin: 0 .4rem
+        margin: -4px .4rem 0
         width: 42px
         height: 22px
-        vertical-align: sub
+        vertical-align: middle
 
         input#switch-comments-btn
           width: 0

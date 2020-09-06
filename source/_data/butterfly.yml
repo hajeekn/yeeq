@@ -13,7 +13,7 @@ menu:
   关于: /about/ || iconfont icon-love faa-bounce animated
   分页: /categories/ || iconfont icon-folder-open
   更新: /update/ || iconfont icon-book faa-bounce animated 
-  说说: /preaching/ || iconfont icon-autoprefixer
+  日志: /time/ || iconfont icon-autoprefixer
   实验室|| iconfont icon-flask faa-spin animated:
     - Mikutap || https://cdn.slblog.ga/mikutap/ || iconfont icon-play  faa-bounce animated
     - 音乐播放器 || https://music.slqwq.cn/ || iconfont icon-MusicEntertainment faa-bounce animated
@@ -32,7 +32,9 @@ code_word_wrap: true
 # copyright: Add the copyright information after copied content (複製的內容後面加上版權信息)
 copy:
   enable: true
-  copyright: true
+  copyright:
+    enable: false
+    limit_count: 50
 
 # social settings (社交圖標設置)
 # formal:
@@ -99,7 +101,7 @@ avatar:
   img: https://cdn.slblog.ga/pic/logo.png
   effect: false
 
-# the banner image of home page
+# The banner image of home page
 index_img: https://bing.ioliu.cn/v1/blur?w=1920,h=1080
 
 default_top_img: https://bing.ioliu.cn/v1/blur?w=1920,h=1080
@@ -125,8 +127,8 @@ cover:
   # left/right/both
   position: both
   # When cover is not set, the default cover is displayed (當沒有設置cover時，默認的封面顯示)
-  default_cover: 
-    - https://i.loli.net/2020/05/01/gkihqEjXxJ5UZ1C.jpg
+  default_cover:
+    # - https://i.loli.net/2020/05/01/gkihqEjXxJ5UZ1C.jpg
 
 # Replace Broken Images (替換無法顯示的圖片)
 error_img:
@@ -205,6 +207,15 @@ photofigcaption: false
 # when you scroll in post, the URL will update according to header id.
 anchor: false
 
+# Displays outdated notice for a post (文章過期提醒)
+noticeOutdate:
+  enable: true
+  style: flat # style: simple/flat
+  limit_day: 500 # When will it be shown
+  position: top # position: top/bottom
+  message_prev: It has been
+  message_next: days since the last update, the content of the article may be outdated.
+
 # Share System (分享功能)
 # --------------------------------------
 
@@ -224,15 +235,7 @@ sharejs:
 # https://www.addtoany.com/
 addtoany:
   enable: false
-  item:
-    - facebook
-    - twitter
-    - wechat
-    - sina_weibo
-    - facebook_messenger
-    - email
-    - copy_link
-
+  item: facebook,twitter,wechat,sina_weibo,facebook_messenger,email,copy_link
 # Comments System
 # --------------------------------------
 
@@ -240,7 +243,7 @@ comments:
   # Up to two comments system, the first will be shown as default
   # Choose: Disqus/Disqusjs/Livere/Gitalk/Valine/Utterances/Facebook Comments
   use:
-   - Valine
+   - Gitalk
    - Livere
   text: true # Display the comment name next to the button
   # lazyload: The comment system will be load when comment element enters the browser's viewport.
@@ -273,12 +276,12 @@ livere:
 # gitalk
 # https://github.com/gitalk/gitalk
 gitalk:
-  client_id:
-  client_secret:
-  repo:
-  owner:
-  admin:
-  language: en # en, zh-CN, zh-TW, es-ES, fr, ru
+  client_id: c3b37d1bc9386268dbfa
+  client_secret: 145d89e96530e66b2f6062559cb0c90a6351e884
+  repo: comment-app
+  owner: slblog-github
+  admin: slblog-github
+  language: zh-CN # en, zh-CN, zh-TW, es-ES, fr, ru
   perPage: 10 # Pagination size, with maximum 100.
   distractionFreeMode: false # Facebook-like distraction free mode.
   pagerDirection: last # Comment sorting direction, available values are last and first.
@@ -361,7 +364,7 @@ footer:
   owner:
     enable: true
     since: 2020
-  custom_text: <center><img src="https://cdn.jsdelivr.net/gh/TRHX/CDN-for-itrhx.com@3.0.9/images/moeicp.png" style="width:18px;height:18px;margin-bottom:-3px" alt="MOE ICP"><a href="https://icp.gov.moe" target="_blank">萌ICP备 </a><a href="https://icp.gov.moe/?keyword=20205150" target="_blank"> 20205150号</a></center><center><img src="https://cdn.jsdelivr.net/gh/slblog-github/SRCDN@master/Blog/Hosting.svg"><img src="https://cdn.jsdelivr.net/gh/slblog-github/SRCDN@master/Blog/FCDN.svg"><img src="https://cdn.jsdelivr.net/gh/slblog-github/SRCDN@master/Blog/WT.svg"><img src="https://cdn.jsdelivr.net/gh/slblog-github/SRCDN@master/Blog/cdn.svg"></center><center><a><a href="https://console.upyun.com/register/?invite=S1GEzxU2U" target="_blank"><img src="https://www.laobuluo.com/banner/upyun.png"></a></center>
+  custom_text: <center><img src="https://cdn.jsdelivr.net/gh/TRHX/CDN-for-itrhx.com@3.0.9/images/moeicp.png" style="width:18px;height:18px;margin-bottom:-3px" alt="MOE ICP"><a href="https://icp.gov.moe" target="_blank">萌ICP备 </a><a href="https://icp.gov.moe/?keyword=20205150" target="_blank"> 20205150号</a></center><center><img src="https://cdn.jsdelivr.net/gh/slblog-github/SRCDN@master/Blog/Hosting.svg"><img src="https://cdn.jsdelivr.net/gh/slblog-github/SRCDN@master/Blog/FCDN.svg"><img src="https://cdn.jsdelivr.net/gh/slblog-github/SRCDN@master/Blog/WT.svg"><img src="https://cdn.jsdelivr.net/gh/slblog-github/SRCDN@master/Blog/cdn.svg"></center><center><a><a href="https://console.upyun.com/register/?invite=S1GEzxU2U" target="_blank"><img src="https://www.laobuluo.com/banner/upyun.png"></a></script></center><br><div class="time"></div>
   copyright: true # Copyright of theme and framework
 
 ICP:
@@ -381,6 +384,9 @@ google_analytics:
 
 # Tencent Analytics ID
 tencent_analytics: 66557710
+# CNZZ Analytics
+# https://www.umeng.com/
+cnzz_analytics:
 
 # Advertisement
 # --------------------------------------
@@ -390,7 +396,7 @@ google_adsense:
   enable: false
   js: https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js
   client:
-  enable_page_level_ads: true
+  enable_page_level_ads: false
 
 # Insert ads manually (手動插入廣告)
 # ad:
@@ -531,8 +537,10 @@ beautify:
 # Global font settings
 # Don't modify the following settings unless you know how they work (非必要不要修改)
 font:
+  global-font-size:
+  code-font-size:
   font-family:
-  code-font:
+  code-font-family:
 
 # Font settings for the site title and site subtitle
 # 左上角網站名字 主頁居中網站名字
@@ -604,7 +612,10 @@ aside:
     format: MMMM YYYY # eg: YYYY年MM月
     order: -1 # Sort of order. 1, asc for ascending; -1, desc for descending
     limit: 8 # if set 0 will show all
-  card_webinfo: true
+  card_webinfo:
+    enable: true
+    post_count: true
+    last_push_date: true
   card_weather: true
   card_web: false
 
@@ -620,6 +631,27 @@ busuanzi:
 runtimeshow:
   enable: true
   publish_date: 2019/12/13 09:12:35
+
+
+# Aside widget - Newest Comments
+newest_comments:
+  enable: true
+  limit: 6
+  avatar: true
+  leancloud:
+    enable: false
+    appId: # leancloud application app id
+    appKey: # leancloud application app key
+    serverURL: # This configuration is suitable for domestic custom domain name users, overseas version will be automatically detected (no need to manually fill in)
+    default_avatar: # mp/identicon/monsterid/wavatar/retro/robohash/blank
+  github_issues:
+    enable: true
+    owner: slblog-github
+    repo: comment-app
+  disqus:
+    enable: false
+    forum:
+    api_key: 
 
 # Bottom right button (右下角按鈕)
 # --------------------------------------
@@ -694,8 +726,17 @@ note:
 # Pjax [Beta]
 # It may contain bugs and unstable, give feedback when you find the bugs.
 # https://github.com/MoOx/pjax
-pjax: false
+pjax:
+  enable: true
+  exclude:
+    # - xxxx
+	# - xxxx
 
+# Inject the css and script (aplayer/meting)
+aplayerInject:
+  enable: false
+  per_page: true
+  
 # Snackbar (Toast Notification 彈窗)
 # https://github.com/polonel/SnackBar
 # position 彈窗位置
@@ -709,6 +750,10 @@ snackbar:
 # Baidu Push (百度推送)
 baidu_push: false
 
+#LIVE2D
+live2d:
+  enable: true
+
 # https://instant.page/
 # prefetch (預加載)
 instantpage: true
@@ -716,7 +761,7 @@ instantpage: true
 # https://github.com/vinta/pangu.js
 # Insert a space between Chinese character and English character (中英文之間添加空格)
 pangu:
-  enable: false
+  enable: true
   field: site # site/post
 
 # Lazyload (圖片懶加載)
@@ -729,13 +774,12 @@ lazyload:
 # See https://github.com/JLHwung/hexo-offline
 # ---------------
 # pwa:
-#  enable: false
-#  manifest: /manifest.json
-#  theme_color: "#fff"
-#  apple_touch_icon: /images/icons/icon-96x96.png
-#  favicon_32_32: /images/icons/icon-72x72.png
-#  favicon_16_16: /images/icons/icon-72x72.png
-#  mask_icon: /images/icons/icon-96x96.png
+#   enable: false
+#   manifest: /image/pwa/manifest.json
+#   apple_touch_icon: /image/pwa/apple-touch-icon.png
+#   favicon_32_32: /image/pwa/32.png
+#   favicon_16_16: /image/pwa/16.png
+#   mask_icon: /image/pwa/safari-pinned-tab.svg
 
 # Disable Baidu transformation on mobile devices (禁止百度轉碼)
 disable_baidu_transformation: true
@@ -760,26 +804,29 @@ inject:
       - <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/slblog-github/SRCDN/Blog/css/iconfont.css"> #阿里图标CSS
       # - <script src="https://cdn.jsdelivr.net/gh/slblog-github/SRCDN/Blog/js/CaO.js"></script> #控制台JS
       - <link rel="preload" href="https://cdn.jsdelivr.net/gh/emeomo/vieu@master/webmo.woff2" as="font" type="font/woff2" crossorigin> #预加载字体
-
+      - <script src="https://cdn.jsdelivr.net/npm/jquery/dist/jquery.min.js"></script>
+      - <script src="/gz.js"></script>
   bottom:
       - <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/sviptzk/StaticFile_HEXO@master/butterfly/css/footer.min.css"> #小康的渐变CSS
-     # - <script src="https://cdn.jsdelivr.net/gh/slblog-github/SRCDN/Blog/music.js"></script> #音乐JS
-      - <script src="https://cdn.jsdelivr.net/gh/xiabo2/CDN@latest/fishes.js"></script> #页脚养鱼
+      - '<style type="text/css">.aplayer.aplayer-fixed.aplayer-narrow .aplayer-body{left:-66px!important}.aplayer.aplayer-fixed.aplayer-narrow .aplayer-body:hover{left:0!important}</style>'
+      - <script src="https://cdn.jsdelivr.net/gh/slblog-github/SRCDN/Blog/music.js"></script> #音乐JS
+     # - <script src="https://cdn.jsdelivr.net/gh/xiabo2/CDN@latest/fishes.js"></script> #页脚养鱼
       - <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/slblog-github/SRCDN/Blog/css/banner.css"> #背景css
       - <script src="https://unpkg.com/xiaokang-style/butterfly/js/xkTool.js"></script> #小康工具箱
       - <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/slblog-github/SRCDN/Blog/css/button.css"> #Button css
       - <link rel="stylesheet" href="https://unpkg.com/more-beautiful-div-framework@1.0.9/more-beautiful-div-framework.min.css"> #我的CSS
       - <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/sviptzk/HexoStaticFile/Hexo/css/buttons.min.css"> #小康的按钮CSS
+      - <script src="/livj/autoload.js"></script> # LIVE2D
 
 # CDN
 # Don't modify the following settings unless you know how they work
 # 非必要請不要修改
 CDN:
   # main
-  main_css: https://cdn.jsdelivr.net/gh/slblog-github/SRCDN/Blog/css/index.css
+  main_css: /css/index.css
   jquery: https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js
-  main: https://cdn.jsdelivr.net/gh/slblog-github/SRCDN/Blog/js/main.js
-  utils: https://cdn.jsdelivr.net/gh/slblog-github/SRCDN/Blog/js/utils.js
+  main: /js/main.js
+  utils: /js/utils.js
 
   # pjax
   pjax: https://cdn.jsdelivr.net/npm/pjax/pjax.min.js
@@ -798,8 +845,8 @@ CDN:
   sharejs_css: https://cdn.jsdelivr.net/npm/social-share.js/dist/css/share.min.css
 
   # search
-  local_search: https://cdn.jsdelivr.net/gh/slblog-github/SRCDN@master/Blog/js/search/local-search.js
-  algolia_js: https://cdn.jsdelivr.net/gh/slblog-github/SRCDN@master/Blog/js/search/algolia.js
+  local_search: /js/search/local-search.js
+  algolia_js: /js/search/algolia.js
   algolia_search: https://cdn.jsdelivr.net/npm/instantsearch.js@2.10.5/dist/instantsearch.min.js
   algolia_search_css: https://cdn.jsdelivr.net/npm/instantsearch.js@2.10.5/dist/instantsearch.min.css
 
@@ -814,9 +861,9 @@ CDN:
   busuanzi: https://cdn.jsdelivr.net/gh/slblog-github/SRCDN/Blog/js/busuanzi.min.js
 
   # background effect
-  canvas_ribbon: https://cdn.jsdelivr.net/gh/slblog-github/SRCDN/Blog/js/third-party/canvas-ribbon.js
-  canvas_ribbon_piao: https://cdn.jsdelivr.net/gh/slblog-github/SRCDN/Blog/js/third-party/piao.js
-  canvas_nest: https://cdn.jsdelivr.net/gh/slblog-github/SRCDN/Blog/js/third-party/canvas-nest.js
+  canvas_ribbon: /js/third-party/canvas-ribbon.js
+  canvas_ribbon_piao: /js/third-party/piao.js
+  canvas_nest: /js/third-party/canvas-nest.js
 
   lazyload: https://cdn.jsdelivr.net/npm/vanilla-lazyload/dist/lazyload.iife.min.js
   instantpage: https://cdn.jsdelivr.net/npm/instant.page/instantpage.min.js
@@ -834,16 +881,16 @@ CDN:
 
   # effect
   anime: https://cdn.jsdelivr.net/npm/animejs@latest/anime.min.js
-  activate_power_mode: https://cdn.jsdelivr.net/gh/slblog-github/SRCDN/Blog/js/third-party/activate-power-mode.js
-  fireworks: https://cdn.jsdelivr.net/gh/slblog-github/SRCDN/Blog/js/third-party/fireworks.js
-  click_heart: https://cdn.jsdelivr.net/gh/slblog-github/SRCDN/Blog/js/third-party/click_heart.js
-  ClickShowText: https://cdn.jsdelivr.net/gh/slblog-github/SRCDN/Blog/js/third-party/ClickShowText.js
+  activate_power_mode: /js/third-party/activate-power-mode.js
+  fireworks: /js/third-party/fireworks.js
+  click_heart: /js/third-party/click_heart.js
+  ClickShowText: /js/third-party/ClickShowText.js
 
   # fontawesome
   fontawesome: https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css
 
   # Conversion between Traditional and Simplified Chinese
-  translate: https://cdn.jsdelivr.net/gh/slblog-github/SRCDN/Blog/js/tw_cn.js
+  translate: /js/tw_cn.js
 
   # justifiedGallery
   justifiedGallery_js: https://cdn.jsdelivr.net/npm/justifiedGallery/dist/js/jquery.justifiedGallery.min.js
