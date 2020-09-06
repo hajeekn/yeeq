@@ -1,7 +1,7 @@
 @echo
 title SL专属多平台部署脚本
 color 6
-title 正在进行Coding&GitHub平台部署
+title 正在进行Coding平台部署
 "./Hexo Deploy Tools.exe"
 title 已完成~
 color 4
