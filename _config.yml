@@ -133,37 +133,19 @@ backup:
   repository:
     coding: git@e.coding.net:supermicors/SL-sBlogbackup.git,master
 
-neat_enable: true
-# 压缩 html
-neat_html:
-  enable: true
-  # 一些百度、Google 的验证文件需要排除掉
-  exclude:
-    - '**/baidu*.html'
-    - '**/google*.html'
-# 压缩 css
-neat_css:
-  enable: false
-  exclude:
-    - '**/*.min.css'
-    - '**/index.css'
-    - '**/var.css'
-# 压缩 js
-neat_js:
-  enable: false
-  mangle: false
+uglify:
+  mangle: true
   output:
   compress:
   exclude:
-    - '**/*.min.js'
-    - '**/jquery.fancybox.pack.js'
-    - '**/index.js'
-    - '**/main.js'
-    - 'js/main.js'
-    - 'js/utils.js'
-    - '**/utils.js'
-    - '**/click_heart.js'
-    - 'js/click_heart.js'
+   # - *.min.js
+  es6: true
+  
+  browsersync:
+    logLevel: "警告"
+    ghostMode:
+      scroll: true
+    instanceName: "uniqueString"
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
