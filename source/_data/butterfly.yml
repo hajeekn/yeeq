@@ -14,10 +14,9 @@ menu:
   分页: /categories/ || iconfont icon-folder-open
   更新: /update/ || iconfont icon-book faa-bounce animated 
   日志: /time/ || iconfont icon-autoprefixer
-  实验室|| iconfont icon-flask faa-spin animated:
+  实验室 || iconfont icon-flask faa-spin animated:
     - Mikutap || https://cdn.slblog.ga/mikutap/ || iconfont icon-play  faa-bounce animated
-    - 音乐播放器 || https://music.slqwq.cn/ || iconfont icon-MusicEntertainment faa-bounce animated
-    - 图床 || https://pic.slqwq.cn/ || iconfont icon-pic2 faa-bounce animated
+    - 视频播放器 || /VideoPlayer || iconfont icon-MusicEntertainment faa-bounce animated
 
 # Code Blocks (代碼相關)
 # --------------------------------------

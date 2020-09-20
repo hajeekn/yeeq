@@ -1,4 +1,4 @@
-@echo
+@echo off
 title SL专属多平台部署脚本
 color 6
 title 正在进行Coding平台部署
