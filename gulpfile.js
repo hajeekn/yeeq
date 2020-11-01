@@ -11,15 +11,15 @@ gulp.task('generate-service-worker', () => {
     swDest: './public/sw.js',
     globDirectory: './public',
     globPatterns: [
-        "**/*.{html,css,js,json,woff2}"
+      "**/*.{html,css,js,json,woff2}"
     ],
     modifyURLPrefix: {
-        "": "./"
+      "": "./"
     }
   });
 });
 
 // 执行 gulp 命令时执行的任务
 gulp.task("default", gulp.series("generate-service-worker", gulp.parallel(
-    'minify-images'
+  'minify-images'
 )));
