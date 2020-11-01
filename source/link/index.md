@@ -6,7 +6,14 @@ type: "link"
 comments: false
 aside: false
 ---
-<div id="friend1"></div><script src="https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js"></script><script src="https://unpkg.com/ifriend/index.js"></script><script> new Friend({        el: '#friend1',        owner: "slqwq",        repo: 'Friends',        labels: 'active',        direction_sort: "asc",        labelDescr: {            Gitee友链: "<span style='color:red;'>这是通过Gitee Issues添加的小伙伴们哦!</span>",            乐特大佬: "<span style='color:red;'>这可是乐特大佬专属的哦!</span>",        }    })</script>
+<script>$(document).ready(function () {
+    if(location.href.indexOf("#reloaded")==-1){
+        location.href=location.href+"#reloaded";
+        location.reload();
+    }
+    })</script><div id="friend1"></div><script src="https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js"></script><script src="https://unpkg.com/ifriend/dist/index.js"></script><script> new Friend({        el: '#friend1',        owner: "slqwq",        repo: 'Friends',        labels: 'active',        direction_sort: "asc",        labelDescr: {            Gitee友链: "<span style='color:red;'>这是通过Gitee Issues添加的小伙伴们哦!</span>",            乐特大佬: "<span style='color:red;'>这可是乐特大佬专属的哦!</span>",        }    })</script>
+
+
 
 # 申请友链
 
