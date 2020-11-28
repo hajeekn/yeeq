@@ -805,6 +805,7 @@ inject:
       - <link rel="preload" href="https://cdn.jsdelivr.net/gh/emeomo/vieu@master/webmo.woff2" as="font" type="font/woff2" crossorigin> #预加载字体
       - <script src="https://cdn.jsdelivr.net/npm/jquery/dist/jquery.min.js"></script>
       - <script src="/gz.js"></script>
+      - <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/glahajeekn/imcdn@main/baka.css"
 
   bottom:
       - <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/sviptzk/StaticFile_HEXO@master/butterfly/css/footer.min.css"> #小康的渐变CSS
