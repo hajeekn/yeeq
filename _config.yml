@@ -25,7 +25,6 @@ pretty_urls:
 abbrlink:
   alg: crc32  # 算法：crc16(default) and crc32
   rep: hex    # 进制：dec(default) and hex
-    
 # Directory
 source_dir: source
 public_dir: public
@@ -36,37 +35,32 @@ code_dir: downloads/code
 i18n_dir: :lang
 skip_render:
 
-# hexo-generator-amp
-# The following settings is the quick start options.
-
-generator_amp:
-  templateDir:  amp-template
-  assetDistDir: amp-dist
-  logo:
-    path:   images/mylogo.png
-    width:  600
-    height: 60
-  substituteTitleImage:
-    path:   sample/sample-substituteTitleImage.png
-    width:  1024
-    height: 800
-  warningLog: false   # To display warning, please set true.
-
 # Writing
 new_post_name: :title.md # File name of new posts
 default_layout: post
 titlecase: false # Transform title into titlecase
+external_link:
+  enable: true # Open external links in new tab
+  field: site # Apply to the whole site
+  exclude: ''
+filename_case: 0
+render_drafts: false
+post_asset_folder: false
+relative_link: false
+future: true
+highlight:
+  enable: true
+  line_number: true
+  auto_detect: false
+  tab_replace: ''
+  wrap: true
+  hljs: false
+prismjs:
+  enable: false
+  preprocess: true
+  line_number: true
+  tab_replace: ''
 
-hexo_external_link: 
-  enable: true 
-  enable_base64_encode: true 
-  url_param_name: 'url' 
-  html_file_name: 'Jump.html' 
-  target_blank: true 
-  link_rel: 'external nofollow noopener noreferrer' 
-  domain: '' # 如果开启了防盗链 
-  safety_chain: false
-  
 # Home page setting
 # path: Root path for your blogs index page. (default = '')
 # per_page: Posts displayed per page. (0 = disable pagination)
@@ -91,8 +85,8 @@ meta_generator: true
 ## http://momentjs.com/docs/#/displaying/format/
 date_format: YYYY-MM-DD
 time_format: HH:mm:ss
-## Use post's date for updated date unless set in front-matter
-use_date_for_updated: false
+## updated_option supports 'mtime', 'date', 'empty'
+updated_option: 'mtime'
 
 # Pagination
 ## Set per_page to 0 to disable pagination
@@ -108,6 +102,22 @@ ignore:
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
+theme: butterfly
+
+# Link
+hexo_external_link: 
+  enable: true 
+  enable_base64_encode: true 
+  url_param_name: 'url' 
+  html_file_name: 'Jump.html' 
+  target_blank: true 
+  link_rel: 'external nofollow noopener noreferrer' 
+  domain: '' # 如果开启了防盗链 
+  safety_chain: false
+
+  # Extensions
+## Plugins: https://hexo.io/plugins/
+## Themes: https://hexo.io/themes/
 #RSS订阅
 plugin:
 - hexo-generator-feed
@@ -117,7 +127,6 @@ Type: atom
 Path: atom.xml
 Limit: 20
 
-theme: Butterfly
 # sitemap
 # 提交谷歌搜索引擎 
 sitemap:
@@ -126,27 +135,7 @@ sitemap:
 baidusitemap:
     path: baidusitemap.xml
 
-backup:
-  type: git
-  theme: Butterfly
-  message: Backup SL.SL's Blog Files
-  repository:
-    coding: git@e.coding.net:supermicors/SL-sBlogbackup.git,master
-
-uglify:
-  mangle: true
-  output:
-  compress:
-  exclude:
-   # - *.min.js
-  es6: true
-  
-  browsersync:
-    logLevel: "警告"
-    ghostMode:
-      scroll: true
-    instanceName: "uniqueString"
-
+    
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
