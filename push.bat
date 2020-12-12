@@ -1,15 +1,14 @@
 @echo off
-title SL×¨Êô¶àÆ½Ì¨²¿Êğ½Å±¾
+title SL×¨ï¿½ï¿½ï¿½ï¿½Æ½Ì¨ï¿½ï¿½ï¿½ï¿½Å±ï¿½
 color 6
-title ÕıÔÚ½øĞĞCodingÆ½Ì¨²¿Êğ
+title ï¿½ï¿½ï¿½Ú½ï¿½ï¿½ï¿½CodingÆ½Ì¨ï¿½ï¿½ï¿½ï¿½
 "./Hexo Deploy Tools.exe"
-title ÒÑÍê³É~
+title ï¿½ï¿½ï¿½ï¿½ï¿½~
 color 3
-pause
-title ÕıÔÚ½øĞĞGitLabÆ½Ì¨²¿Êğ
+title ï¿½ï¿½ï¿½Ú½ï¿½ï¿½ï¿½GitLabÆ½Ì¨ï¿½ï¿½ï¿½ï¿½
 git add --all
 git commit -m "Update Website"
 git push -u gitlab master -f
-title ²¿ÊğÍê³É~
+title ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½~
 color 1
-pause
+

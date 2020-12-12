@@ -6,7 +6,7 @@ pages:
   script:
     - npm install hexo-cli -g
     - npm i
-    - hexo generate
+    - hexo g && gulp
   artifacts:
     paths:
       - public
