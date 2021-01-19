@@ -12,12 +12,13 @@ aside: false
         location.href=location.href+"#reloaded";
         location.reload();
     }
-    })</script>
+})</script>
 <center><p><strong>本页面仅作为视频播放器，此页面的所有资源均未去水印，所有内容归作者版权所有，播放器采用 DPlayer.js</strong><br><strong>视频采用m3u8格式，采用Jsdelivr加速</strong></p></center>
-<marquee> <font size="5"> <font color="#0000FF">当</font> <font color="#FF0000">前</font> <font color="#FF7F00">正</font> <font color="#34A853">播</font> <font color="#9B30FF">放</font> <font color="#00C5CD">[</font> <font color="#D02090">T</font> <font color="#00688B">S</font> <font color="#34A853">K</font> <font color="#9B30FF">]</font> <font color="#00C5CD">的</font> <font color="#D02090">视</font> <font color="#0000FF">频</font> <font color="#00688B">!</font> <font color="#34A853">!</font> <font color="#00C5CD">!</font></font></marquee>
+
+<marquee> <font size="5"> <font color="#0000FF">当</font> <font color="#FF0000">前</font> <font color="#FF7F00">正</font> <font color="#34A853">播</font> <font color="#9B30FF">放</font> <font color="#00C5CD">来自[</font> <font color="#D02090">爱</font> <font color="#00688B">奇</font> <font color="#34A853">艺</font><font color="#9B30FF">]</font> <font color="#00C5CD">的</font> <font color="#D02090">视</font> <font color="#0000FF">频</font> <font color="#00688B">!</font> <font color="#34A853">!</font> <font color="#00C5CD">!</font></font></marquee>
 
 <center><strong><p>
-    视频地址:https://www.bilibili.com/video/BV1hK411T7ba
+    视频地址:https://www.iqiyi.com/v_i4z49lkcp0.html
     </p></strong></center>
 <script src="https://cdn.jsdelivr.net/gh/MoePlayer/DPlayer/dist/DPlayer.min.js"></script>
 
@@ -33,14 +34,15 @@ aside: false
       container: document.getElementById('dplayer'),
       autoplay:!0,theme:"#42b983",loop:true,lang:"zh-cn",preload:"auto",volume:Number("0"),
       video: {
-          url: 'https://cdn.jsdelivr.net/gh/glahajeekn/vdts@master/go/playlist.m3u8', //自己的m3u8地址
+          url: 'https://vdoplay.52msr.cn/go/playlist.m3u8', //自己的m3u8地址
           type: 'hls',
           defaultQuality: 0,
-          pic: 'https://i2.hdslb.com/bfs/archive/37785c661455874fe424a6731a9c6b82e31cef7a.jpg', //视频未播放前的封面
+          pic: 'https://pic5.iqiyipic.com/image/20210114/bc/4f/v_154295503_m_601_m2_260_360.jpg', //视频未播放前的封面
           thumbnails: 'thumbnails.jpg',
       },
   });
 })
 </script>
+
 
 {% endraw %}

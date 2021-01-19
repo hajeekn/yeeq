@@ -1,47 +1,46 @@
-# 掌握技能
+---
+title: about
+sticky: 1
+comments: false
+aside: false
+---
+{% raw %}
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/dreamy-tzk/Static_butterfly/dist/css/051eaa7d.min.css">
+<center><img src="https://rmt.dogedoge.com/fetch/hajeekn/storage/Logo@B_3508X4961.png?w=141" data-fancybox="group" data-caption="My Avatar" class="fancybox"></center>
+<style>@font-face{font-family:myfont;font-weight:700;src:url(https://cdn.jsdelivr.net/gh/sviptzk/xiaokang.me/www/myfont.ttf)}</style>
+<center style="font-size:1.7rem;background-image:linear-gradient(92deg,#f35626 0,#feab3a 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;font-family:myfont">Hajeekn</center>
+{% endraw %}
+🍀 个人简介
+{% checkbox green checked, 初中 现居住:🌏 保持一颗充满童趣的心♥ %}
+🌌 博客简介
+{% checkbox plus green checked, 全站HTTPS %}
+{% checkbox plus green checked, 静态博客(Hexo) + 近完美主题(Butterfly) %}
+{% checkbox plus red checked, 博客中少部分图片收集于Network 侵删 %}
 
-CSS3
-HTML5
+📞联系方式
 
-# 未掌握技能
+Twitter: [@hajeekn](https://twitter.com/hajeekn)
 
-JavaScript(学习中)
-Node.js(学习中)
+Facebook: [Hajeekn](https://www.facebook.com/yutong.wu.16121/)
 
-# 坐标
-China Hubei Enshi XianFeng
+QQ: 3356620252
 
-# 年龄
-12
+微信: 就不告诉你
 
-# 年级
-初中
+微博: 就不告诉你
 
-# 博客状态
+EMail: [sladmin@slwebtap.onmicrosoft.com](mailto:sladmin@slwebtap.onmicrosoft.com)/[hajeekn@slwebtap.onmicrosoft.com](mailto:hajeekn@slwebtap.onmicrosoft.com)/[superxzlove@qq.com](mailto:superxzlove@qq.com)
 
-<div class="tip lite"><p>全站HTTPS</p></div>
-<div class="tip lite"><p>Hexo+Butterfly</p></div>
+Google Account: blackout33566@gmail.com
 
-# 搭建博客帮助
+Mojang Account / Minecraft Account: Hajeekn
 
-1.[简书(Hexo搭建帮助)](https://www.jianshu.com/p/4818be9093f5)
-
-2.[小康博客(Hexo美化/魔改帮助)](https://www.antmoe.com/)
-
-3.[Hexo官方文档(Hexo搭建帮助)](https://hexo.io/zh-cn/docs)
-
-4.[木槿博客(Hexo美化/魔改帮助)](https://mujin.js.org)
-
-5.[bmyjacks(部分技术帮助)](https://www.bmyjacks.cn/)
-
-6.[腾讯云(域名提供商)](https://cloud.tencent.com)
-
-7.[DNS.LA(域名解析商)](http://dns.la/)
-
-8.[又拍云(部分文件存储/CDN提供商)](https://www.upyun.com/)
-
-9.[Coding(博客主机提供商/博客源码存储)](https://www.coding.net)
-
-10.[GitHub(博客主机提供商/博客源码存储)](https://www.github.com/)
-
-感谢!
+☁ 个人基本信息
+各账户主要情况:
+![](https://github-stats.hclonely.com/api/top-langs/?username=glahajeekn)
+![](https://github-stats.hclonely.com/api/top-langs/?username=slblog-github)
+![](https://github-stats.hclonely.com/api/top-langs/?username=Open-super)
+各账户GitHub状态:
+![](https://github-stats.hclonely.com/api?username=glahajeekn&show_icons=true&count_private=true&layout=compact&theme=vue)
+![](https://github-stats.hclonely.com/api?username=slblog-github&show_icons=true&count_private=true&layout=compact&theme=vue)
+![](https://github-stats.hclonely.com/api?username=Open-super&show_icons=true&count_private=true&layout=compact&theme=vue)

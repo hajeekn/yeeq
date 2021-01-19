@@ -6,12 +6,23 @@ type: "link"
 comments: false
 aside: false
 ---
-<script>$(document).ready(function () {
-    if(location.href.indexOf("#reloaded")==-1){
-        location.href=location.href+"#reloaded";
-        location.reload();
-    }
-    })</script><div id="friend1"></div><script src="https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js"></script><script src="https://unpkg.com/ifriend/dist/index.js"></script><script> new Friend({        el: '#friend1',        owner: "slqwq",        repo: 'Friends',        labels: 'active',        direction_sort: "asc",        labelDescr: {            Gitee友链: "<span style='color:red;'>这是通过Gitee Issues添加的小伙伴们哦!</span>",            乐特大佬: "<span style='color:red;'>这可是乐特大佬专属的哦!</span>",        }    })</script>
+<script>if(typeof(Friend)=='undefined'){
+  // 这个地址按照你的地址填写，主要是为了防止pjax不加载重新刷新页面
+  location.href='/link'
+}
+try {
+  btf.isJqueryLoad(function () {
+    $('.flink').prepend("<div id='friend1'></div>")
+  })
+} catch (error) {
+  window.onload = function () {
+    btf.isJqueryLoad(function () {
+      $('.flink').prepend("<div id='friend1'></div>")
+    })
+  }
+}
+</script><div id="myfriend"></div><script src="https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js"></script><script src='https://unpkg.com/butterfly-friend/dist/friend.min.js'></script></script><script> var obj({        el: '#friend1',        owner: "slqwq",        repo: 'Friends',        direction_sort: "asc",        labelDescr: {            Gitee友链: "<span style='color:red;'>这是通过Gitee Issues添加的小伙伴们哦!</span>",            乐特大佬: "<span style='color:red;'>这可是乐特大佬专属的哦!</span>",        }    })</script>
+
 
 
 

@@ -139,6 +139,11 @@ class2:
        color: "#FFD700"
        custom: link_custom
        rotate: 360deg
+     6:
+       name: CC的部落格
+       link: https://blog.ccknbc.cc
+       avatar: https://cdn.jsdelivr.net/gh/ccknbc-backup/cdn/logo/ccknbc.png
+       descr: CC康纳百川
        
 class3:
    class_name: 博客使用工具
