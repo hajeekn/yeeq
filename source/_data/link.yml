@@ -148,7 +148,10 @@ class2:
        name: Heo
        link: https://blog.zhheo.com/
        avatar: https://blog.zhheo.com/img/avatar.png
-       descr: 爱折腾的设计师 
+       descr: 爱折腾的设计师
+       --primary-color: #49b1f5
+       custom: link_custom
+       rotate: 360deg
 
 class3:
    class_name: 博客使用工具
