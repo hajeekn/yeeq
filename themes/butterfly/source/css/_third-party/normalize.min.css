@@ -178,7 +178,3 @@ template {
 [hidden] {
   display: none
 }
-// 自定义修改
-@font-face { font-family:MyFont;
-src: url(https://cdn.jsdelivr.net/gh/emeomo/vieu@master/webmo.woff2)}
-body{font-family:MyFont!important;}
