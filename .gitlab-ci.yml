@@ -5,9 +5,8 @@ image: node:12.18.3
 pages:
   script:
     - npm cache clean
-    - npm install hexo@5.2.0 -g
+    - npm install hexo-cli -g
     - npm install
-    - yarn install
     - hexo g
   artifacts:
     paths:
