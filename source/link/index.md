@@ -11,7 +11,38 @@ aside: false
         location.href=location.href+"#reloaded";
         location.reload();
     }
-})</script><div id="myfriend"></div><script src="https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js"></script><script src='https://unpkg.com/butterfly-friend/dist/friend.min.js'></script></script><script> var obj({        el: '#friend1',        owner: "slqwq",        repo: 'Friends',        direction_sort: "asc",        labelDescr: {            Gitee友链: "<span style='color:red;'>这是通过Gitee Issues添加的小伙伴们哦!</span>",            乐特大佬: "<span style='color:red;'>这可是乐特大佬专属的哦!</span>",        }    })</script>
+})</script><div id='myfriend'></div><script>  var obj = {
+    // 容器选择器
+    el: '#friend1',
+    // gitee主人id
+    owner: 'slqwq',
+    // gitee仓库
+    repo: 'Friends',
+    // 排序方式
+    direction_sort: 'asc',
+    // 按标签排序
+    sort_container: ['乐特大佬', 'NOts大佬', 'Gitee友链'],
+    // 标签描述
+    labelDescr: {
+      乐特大佬: "<span style='color:red;'>这可是乐特大佬专属的位置哦!!</span>",
+      Nots大佬: "<span style='color:red;'>这可是Nots大佬专属的位置哦!!</span>",
+      Gitee友链: "<span style='color:red;'>这些都是我的友链啦~</span>",
+    }
+  }
+  try {
+    btf.isJqueryLoad(function () {
+      $('.flink').prepend("<div id='friend1'></div>")
+      new Friend(obj)
+    })
+  } catch (error) {
+    window.onload = function () {
+      btf.isJqueryLoad(function () {
+        $('.flink').prepend("<div id='friend1'></div>")
+        new Friend(obj)
+      })
+    }
+  }</script>
+
 
 
 
