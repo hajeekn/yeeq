@@ -13,7 +13,7 @@ aside: false
     }
 })</script><div id='myfriend'></div><script>  var obj = {
     // 容器选择器
-    el: '#friend1',
+    el: '#myfriend',
     // gitee主人id
     owner: 'slqwq',
     // gitee仓库
