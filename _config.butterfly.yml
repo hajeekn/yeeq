@@ -756,7 +756,7 @@ note:
 # It may contain bugs and unstable, give feedback when you find the bugs.
 # https://github.com/MoOx/pjax
 pjax:
-  enable: true
+  enable: false
   exclude:
     # - xxxx
 	# - xxxx
@@ -836,8 +836,8 @@ inject:
       - <link ref="stylesheet" href="https://cdn.jsdelivr.net/combine/npm/color-buttons">
       - <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/glahajeekn/imcdn@main/baka.css">
   bottom:
-      - '<style type="text/css">.aplayer.aplayer-fixed.aplayer-narrow .aplayer-body{left:-66px!important}.aplayer.aplayer-fixed.aplayer-narrow .aplayer-body:hover{left:0!important}</style>'
-      - <script src="https://cdn.jsdelivr.net/gh/slblog-github/SRCDN/Blog/music.js"></script> #音乐JS
+     # - '<style type="text/css">.aplayer.aplayer-fixed.aplayer-narrow .aplayer-body{left:-66px!important}.aplayer.aplayer-fixed.aplayer-narrow .aplayer-body:hover{left:0!important}</style>'
+     # - <script src="https://cdn.jsdelivr.net/gh/slblog-github/SRCDN/Blog/music.js"></script> #音乐JS
      # - <script src="https://cdn.jsdelivr.net/gh/xiabo2/CDN@latest/fishes.js"></script> #页脚养鱼
       - <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/slblog-github/SRCDN/Blog/css/banner.css"> #背景css
       - <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/slblog-github/SRCDN/Blog/css/button.css"> #Button css
