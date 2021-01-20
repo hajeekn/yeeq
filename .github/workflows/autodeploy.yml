@@ -41,6 +41,7 @@ jobs:
         if: steps.cache.outputs.cache-hit != 'true'
         run: |
           npm install --save
+          npm install highlight.js --save
 
       - name: 生成静态文件
         run: |
