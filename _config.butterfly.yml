@@ -834,8 +834,8 @@ inject:
       # - <script src="https://cdn.jsdelivr.net/gh/slblog-github/SRCDN/Blog/js/CaO.js"></script> #控制台JS
       - <link red="stylesheet" href="https://cdn.jsdelivr.net/gh/sviptzk/StaticFile_HEXO@latest/butterfly/css/tags.css">
       - <link ref="stylesheet" href="https://cdn.jsdelivr.net/combine/npm/color-buttons">
-      - <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/glahajeekn/imcdn@1.0/baka.css">
       - <script src="https://cdn.jsdelivr.net/npm/jquery"></script>
+      - <link rel="stylesheet" href="https://unpkg.zhimg.com/blog-beatiful/majt.css">
   bottom:
      # - '<style type="text/css">.aplayer.aplayer-fixed.aplayer-narrow .aplayer-body{left:-66px!important}.aplayer.aplayer-fixed.aplayer-narrow .aplayer-body:hover{left:0!important}</style>'
      # - <script src="https://cdn.jsdelivr.net/gh/slblog-github/SRCDN/Blog/music.js"></script> #音乐JS
