@@ -7,68 +7,38 @@ class:
       avatar: https://cdn.slblog.ga/pic/XIO.png
       descr:  一个小小小白～
     2:
-      name: MuXin's Blog
-      link: https://blog.muxi1314.top/
-      avatar: https://cdn.slblog.ga/pic/xx.jpg
-      descr: 未提供 
-    3:
-      name: xiaoxu博客
-      link: https://www.xiaoxu-blog.cn/
-      avatar: https://cdn.slblog.ga/pic/xiaoxu.png
-      descr: wdnmd 
-    4:
       name: bmyjacks的博客
       link: https://www.bmyjacks.cn/
       avatar: https://cdn.slblog.ga/pic/bmyjacks.png
       descr: 寻找互联网上的新奇消息，发现编程世界的大门，了解程序员们的日常工作，探讨互联网时代的小技巧
-    5:
+    3:
       name: MBRjun的博客
       link: https://blog.mbrjun.cn/
       avatar: https://cdn.slblog.ga/pic/MBRjun.png
       descr: LLLL 一只萌萌的MBR LLLL
-    6:
+    4:
       name: Cnoim's Blog
       link: https://blog.233.chat/
       avatar: https://cdn.slblog.ga/pic/NT.png
       descr: 别恰我（
-    7:
-      name: amemz的博客
-      link: https://www.jvav.tk/
-      avatar: https://cdn.slblog.ga/pic/amemz.png
-      descr: 未提供
-    8:
+    5:
       name: Fachep's Blog
       link: https://blog.fachep.com/
       avatar: https://sdn.geekzu.org/avatar/a428c2d6dd92b2dfcfa8aec470bd4088
       descr: lolololololol
-    9:
-      name: ilyfairy's Blog
-      link: https://ilyfairy.com
-      avatar: https://cdn.slblog.ga/pic/il.png
-      descr: 承受不住の小仙女
-    10:
+    6:
       name: 璃心
       link: https://luoyou.art/
       avatar: https://user-images.githubusercontent.com/60562661/74096556-7c5f5e80-4b3b-11ea-817b-b289ffba24a3.jpg
       descr: 人工智能-深度学习，计算机视觉，算法，数学
-    11:
-      name: Spoience
-      link: https://spoience.com/
-      avatar: https://cdn.jsdelivr.net/gh/Spoience/pic/img/avatar.jpg
-      descr: 记录我的碎碎念念
-    12:
+    7:
       name: impdx-忧郁的派大星
       link: https://www.impdx.vip/
       avatar: https://www.impdx.vip/img/avatar.png
       descr: 越学习，越发现自己的无知——笛卡尔
-    13:
-      name: Zoom
-      link: https://zoom1111.github.io/
-      avatar: https://s1.ax1x.com/2020/06/17/NVr35j.jpg
-      descr: 一只菜鸟
-    14:
+    8:
       name: 保温杯的小栈
-      link: https://fuckzuoye.ga
+      link: https://1357.ga/
       avatar: https://cdn.jsdelivr.net/gh/hanghang0891/hanghang0891.github.io/img/avatar.jpg
       descr: 就是俺啦！
       width: 2px
@@ -76,7 +46,7 @@ class:
       color: "#abff07"
       custom: link_custom 1s infinite alternate
       rotate: 520deg
-    15:
+    9:
       name: FadeAway
       link: https://fadeawayol.github.io/
       avatar: https://i.loli.net/2020/06/23/kfrgHqSe8tEhX9F.jpg
@@ -86,13 +56,6 @@ class:
       color: "#f19ec2"
       custom: link_custom 1s infinite alternate
       rotate: 360deg
-    16:
-      name: 诸葛亮杀毒
-      link: https://lightd.top/
-      avatar: https://lightd.top/favicon.ico
-      descr: 诸葛亮杀毒,给您轻快的体验~
-      rotate: 360deg
-      
      
 class2:
    class_name: 跟着大佬走，那岂不轻而易举当上小大佬?
@@ -177,10 +140,10 @@ class3:
        avatar: https://cdn.jsdelivr.net/gh/xingjiahui/CDN/link/github.png
        descr: 每个程序猿的必经之路
      5:
-       name: Livere
-       link: https://www.livere.com/
-       avatar: https://supermicors.coding.net/p/Blog_NoPublicCDN/d/Blog_NoPublicCDN/git/raw/master/Livere.png
-       descr: 多登录方式的评论系统
+       name: Waline
+       link: https://waline.js.org
+       avatar: https://p5.ssl.qhimg.com/t01ec54674f5912eea9.png
+       descr: 匿名、安装、基于Valine衍生出来的评论
      6:
        name: PicGo
        link: https://github.com/Molunerfinn/PicGo
@@ -191,11 +154,6 @@ class3:
        link: https://www.typora.io/
        avatar: https://cdn.jsdelivr.net/gh/xingjiahui/CDN/about/20200408105630.png
        descr: 免费强大的MarkDown编辑器
-     8:
-       name: 又拍云
-       link: https://www.upyun.com/
-       avatar: data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD0AAAAUCAMAAAAJH8UlAAAAZlBMVEUAAAD///9+fn76+vp1dXXo6OhRUVHV1dWUlJTj4+OZmZm7u7vExMSLi4u+vr60tLTd3d309PQkJCSgoKCurq4xMTGnp6fNzc1iYmIaGho5OTlZWVkqKipsbGwfHx9LS0sMDAxCQkKaqwVwAAABl0lEQVQ4jZ2S7XqDIAyFExURtEX8wtV2rvd/kyMJdG33Y487P/IE5JWTBABR1fZeBQv/0QlF0x6Gw7BOcA8xrAdhk2CEHg/jTlDt5lGyD9r9qpJoNagYGu/LO30qRAxfmOhgL5ZkoaPt2SsWbnHxiTFc11VsKUNSnLcEOFD4o68nZxjbOLY43aaONL4ZL+Nxz5Gunan0k3iiuFFcOnS3srXWBvMKXwlqbLp15eGd5daanHFOzktaFm90TdCWZ+a57Vq6SfXjTunwRD8mhCbTU965mAc9xJLbnrLTgrb2rrFN18MwX2usrvM8D+K8hEfT6L0k5zCZDfnpnTXqwvchBMV/6/RL19Y6wU2FuWs0GrxJ8kHO91z3HX+e8/lpVAtfjZ/yZcWyk2wmesu0mQiT2d0TqZoCah5cgPQQKjDM8PS4a2P0fEPpdj4lFTcuFU9XFwE1+WvQVFD46KF01jp6eRWeogqccnlRdR651Noul1SZtRDIpYtNO/M7t5qVuxNnPO4ZruCoxgCJ7S9/n/6tOijv9bIfo74BpCoR6wu256cAAAAASUVORK5CYII=
-       descr: 国内为数不多的良心品牌
 
 class4:
    class_name: 个人项目&很棒的工具
@@ -235,36 +193,3 @@ class4:
        color: "#FFD700"
        custom: link_custom
        rotate: 250deg
-class5:
-   class_name: 效果测试
-   link_list:
-     1:
-       name: SL's Blog
-       link: /
-       avatar: /avatar.png
-       descr: awa
-       width: 2px
-       style: solid
-       color: "#881B12"
-       custom: link_custom2
-       rotate: 360deg
-     2:
-       name: SL's Blog
-       link: /
-       avatar: /avatar.png
-       descr: awa
-       width: 2px
-       style: solid
-       color: "#FFD700"
-       custom: link_custom
-       rotate: 360deg
-     3:
-       name: SL's Blog
-       link: /
-       avatar: /avatar.png
-       descr: awa
-       width: 2px
-       style: solid
-       color: "#FFD780"
-       custom: link_custom2
-       rotate: 360deg
