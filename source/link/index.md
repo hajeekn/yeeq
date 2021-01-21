@@ -6,22 +6,25 @@ type: "link"
 comments: false
 aside: false
 ---
+<div id='friend1'></div>
+<script src="https://cdn.jsdelivr.net/npm/jquery"></script>
 <script>$(document).ready(function () {
     if(location.href.indexOf("#reloaded")==-1){
         location.href=location.href+"#reloaded";
         location.reload();
     }
-})</script><div id='myfriend'></div><script>  var obj = {
+})</script><script src='https://unpkg.com/butterfly-friend/dist/friend.min.js'></script>
+<script>var obj = {
     // 容器选择器
-    el: '#myfriend',
+    el: '#friend1',
     // gitee主人id
-    owner: 'slqwq',
+    owner: 'SLQWQ',
     // gitee仓库
     repo: 'Friends',
     // 排序方式
     direction_sort: 'asc',
     // 按标签排序
-    sort_container: ['乐特大佬', 'NOts大佬', 'Gitee友链'],
+    sort_container: ['乐特大佬', 'N0ts大佬', 'Gitee友链'],
     // 标签描述
     labelDescr: {
       乐特大佬: "<span style='color:red;'>这可是乐特大佬专属的位置哦!!</span>",
@@ -29,6 +32,7 @@ aside: false
       Gitee友链: "<span style='color:red;'>这些都是我的友链啦~</span>",
     }
   }
+      //  1.1.0 版本之前
   try {
     btf.isJqueryLoad(function () {
       $('.flink').prepend("<div id='friend1'></div>")
@@ -41,12 +45,11 @@ aside: false
         new Friend(obj)
       })
     }
-  }</script>
-
-
-
-
-
+  }
+  //  1.1.0 版本之后
+    document.querySelector('.flink').insertAdjacentHTML('afterbegin',"<div id='friend1'></div>")
+  new Friend(obj)
+</script>
 
 # 申请友链
 
@@ -64,7 +67,7 @@ aside: false
 
 {% tabs 个人信息 %}
 <!-- tab -->
-```
+```yaml
 name: SL's Blog
 link: https://blog.slqwq.cn
 avatar: https://cdn.slblog.ga/pic/logo.png
