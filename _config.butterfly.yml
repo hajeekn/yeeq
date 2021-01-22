@@ -577,7 +577,7 @@ font:
 # Font settings for the site title and site subtitle
 # 左上角網站名字 主頁居中網站名字
 blog_title_font:
-  font_link: https://fonts.googleapis.com/css?family=Titillium+Web&display=swap
+  font_link: https://cdn.jsdelivr.net/gh/emeomo/vieu@master/webmo.woff2
   font-family: Titillium Web, 'PingFang SC', 'Hiragino Sans GB', Microsoft YaHei', sans-serif
 
 # The setting of divider icon (水平分隔線圖標設置)
@@ -835,7 +835,7 @@ inject:
       - <link red="stylesheet" href="https://cdn.jsdelivr.net/gh/sviptzk/StaticFile_HEXO@latest/butterfly/css/tags.css">
       - <link ref="stylesheet" href="https://cdn.jsdelivr.net/combine/npm/color-buttons">
       - <script src="https://cdn.jsdelivr.net/npm/jquery"></script>
-      - <link rel="stylesheet" href="https://unpkg.zhimg.com/blog-beatiful/majt.css">
+      - <link rel="stylesheet" href="https://unpkg.zhimg.com/blog-beatiful@1.0.5/majt.css">
       - <link href="https://fonts.googleapis.com/css2?family=Potta+One&display=swap" rel="stylesheet">
   bottom:
      # - '<style type="text/css">.aplayer.aplayer-fixed.aplayer-narrow .aplayer-body{left:-66px!important}.aplayer.aplayer-fixed.aplayer-narrow .aplayer-body:hover{left:0!important}</style>'
