@@ -115,6 +115,11 @@ class2:
        --primary-color: #49b1f5
        custom: link_custom
        rotate: 360deg
+     8:
+       name: Ln's Blog
+       link: https://weilining.cf
+       avatar: https://cdn.jsdelivr.net/gh/weilining/img@main/img/20201120235415.png
+       descr: 时不我待
 
 class3:
    class_name: 博客使用工具
