@@ -827,21 +827,21 @@ inject:
       - <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/sviptzk/StaticFile_HEXO@v3.2/butterfly/css/pool.min.css"> #小康的一键CSS
       - <meta name="google-site-verification" content="qAOA3HXexaF_5uvs3Ghmqp_eB0pIzLgQ1eFRTFGb0Sk" /> #谷歌收录
       - <script src="https://cdn.jsdelivr.net/gh/HCLonely/hclonely.github.io@1.4.7/js/custom/pace.min.js"></script> #PACE.JS的核心
-      - <link rel="styleheet" herf="https://cdn.jsdelivr.net/gh/sviptzk/StaticFile_HEXO@v3.2/butterfly/css/flink.min.css"> #友链样式
+     # - <link rel="styleheet" herf="https://cdn.jsdelivr.net/gh/sviptzk/StaticFile_HEXO@v3.2/butterfly/css/flink.min.css"> #友链样式
       - <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/HCLonely/hclonely.github.io@1.4.7/css/custom/pace-theme-flash.min.css"> #PACE.JS的CSS
       - <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/slblog-github/SRCDN/Blog/css/iconfont.css"> #阿里图标CSS
-      # - <script src="https://cdn.jsdelivr.net/gh/slblog-github/SRCDN/Blog/js/CaO.js"></script> #控制台JS
+     # - <script src="https://cdn.jsdelivr.net/gh/slblog-github/SRCDN/Blog/js/CaO.js"></script> #控制台JS
       - <link red="stylesheet" href="https://cdn.jsdelivr.net/gh/sviptzk/StaticFile_HEXO@latest/butterfly/css/tags.css">
       - <link ref="stylesheet" href="https://cdn.jsdelivr.net/combine/npm/color-buttons">
-      - <script src="https://cdn.jsdelivr.net/npm/jquery"></script>
+     # - <script src="https://cdn.jsdelivr.net/npm/jquery"></script>
       - <link rel="stylesheet" href="https://unpkg.zhimg.com/blog-beatiful@1.1.0/majt.css">
       - <link href="https://fonts.googleapis.com/css2?family=Potta+One&display=swap" rel="stylesheet">
   bottom:
-     # - '<style type="text/css">.aplayer.aplayer-fixed.aplayer-narrow .aplayer-body{left:-66px!important}.aplayer.aplayer-fixed.aplayer-narrow .aplayer-body:hover{left:0!important}</style>'
-     # - <script src="https://cdn.jsdelivr.net/gh/slblog-github/SRCDN/Blog/music.js"></script> #音乐JS
+      - '<style type="text/css">.aplayer.aplayer-fixed.aplayer-narrow .aplayer-body{left:-66px!important}.aplayer.aplayer-fixed.aplayer-narrow .aplayer-body:hover{left:0!important}</style>'
+      - <script src="https://cdn.jsdelivr.net/gh/slblog-github/SRCDN/Blog/music.js"></script> #音乐JS
      # - <script src="https://cdn.jsdelivr.net/gh/xiabo2/CDN@latest/fishes.js"></script> #页脚养鱼
       - <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/slblog-github/SRCDN/Blog/css/banner.css"> #背景css
-      - <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/slblog-github/SRCDN/Blog/css/button.css"> #Button css
+     # - <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/slblog-github/SRCDN/Blog/css/button.css"> #Button css
      # - <link rel="stylesheet" href="https://unpkg.com/more-beautiful-div-framework@1.0.9/more-beautiful-div-framework.min.css"> #我的CSS
       - <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/sviptzk/HexoStaticFile/Hexo/css/buttons.min.css"> #小康的按钮CSS
 

@@ -35,6 +35,8 @@ Google Account: blackout33566@gmail.com
 
 Mojang Account / Minecraft Account: Hajeekn
 
+Xbox Account(Minecraft for Windows10): Super02Love
+
 ☁ 个人基本信息
 各账户主要情况:
 ![](https://github-stats.hclonely.com/api/top-langs/?username=glahajeekn)
