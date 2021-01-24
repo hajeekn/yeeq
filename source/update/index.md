@@ -2,84 +2,122 @@
 title: update
 sticky: 1
 date: 2020-05-15 10:02:18
+comments: false
+aside: false
 ---
-更新:
+{% timeline 小动作 %}
 
-2021/1/20
+{% timenode 2021/1/24 压缩博客%}
 
-- 关闭Pjax(等到BUG少时在启用)
-- 移除音乐播放器
-- 新增语雀文章同步到Hexo的功能!(重磅更新)
+1. 使用gulp工具对博客进行压缩
+2. 移除Gitalk评论系统
 
-2020/8/18
+{% endtimenode %}
 
-- 更换cdn.slblog.ga的节点提供商
+{% timenode 2021/1/20  对博客做了一些很小的改动 %}
 
-2020/8/16
+1. 移除音乐播放器
 
-+ 更换友链申请方式为添加Issues(只需博主审核，其他不用操作)
+2. 新增语雀文章同步到Hexo的功能!(重磅更新)
+3. 移除Valine评论系统
+4. 新增Waline评论系统
 
-2020/8/8
+{% endtimenode %}
 
-- 关闭Pjax(与页脚养鱼不兼容)
-- 移除Aplayer播放器
 
-+ 添加页脚养鱼
 
-+ 公告栏更变🤭
+{% timenode 2020/8/18 CDN更换 %}
 
-2020/8/1
+1. 更换cdn.slblog.ga的节点提供商
+2. 添加APlayer播放器
 
-+ 更改Valine评论字体颜色
-+ 更改一些小细节
+{% endtimenode %}
 
-2020/7/18
+{% timenode 2020/8/16 友链申请方式改变 %}
 
-+ 升级主题为Pjax分支
+1. 更换友链申请方式为添加Issues(只需博主审核，其他不用操作)
 
-+ 添加Aplayer播放器
+{% endtimenode %}
 
-2020/6/29
+{% timenode 2020/8/8  做了一些小改动 %}
 
-- 删除音乐播放器
+1. 移除Aplayer播放器
 
-+ 更新全局字体
+2. 公告栏更变🤭
 
-+ 使用Hexo-Neat压缩
+{% endtimenode %}
 
-- 关闭侧边栏的Discord功能
+{% timenode 2020/8/1  做了一些小改动 %}
 
-+ 提高加载速度
+1. 更改Valine评论系统字体颜色
 
-- 即将废弃 cdn.slblog.ga
+2. 更改一些小细节
 
-2020/6/8
+{% endtimenode %}
 
-+ 新增文件CDN(每月15GB流量)
-+ 侧边栏新增访客信息
+{% timenode 2020/7/8 做了一些小改动 %}
 
-- 移除阿里云(大陆)CDN
+1. 升级主题为Pjax分支
+2. 添加Aplayer播放器
+3. 移除Hexo-neat压缩工具🗜，否则会造成主题报错💀
 
-2020/6/2
+{% endtimenode %}
 
-- 即将停止 www.slblog.ga 的访问	
+{% timenode 2020/6/29 做了一些小改动 %}
 
-+ 实验室新增音乐播放器功能
+1. 删除音乐播放器
 
-+ 替换新的播放器
+2. 更新全局字体
 
-2020/6/1
+3. 使用Hexo-Neat压缩
 
-+ 更换新的域名(blog.slqwq.cn)
+4. 关闭侧边栏的Discord功能
 
-2020/5/23
+5. 提高加载速度
 
-+ 新增阿里云CDN(大陆节点)(不带HTTPS)
+{% endtimenode %}
 
-2020/5/16
+{% timenode 2020/6/8 做了一些小改动 %}
 
-+ 新增cdn.slblog.ga(带HTTPS)cdn
+1. 新增文件CDN(每月15GB流量)
+2. 侧边栏新增访客信息
 
-2020/5/15
+3. 移除阿里云(大陆)CDN
 
-- CloudFlare出现回源故障，删除CloudFlare。
+{% endtimenode %}
+
+{% timenode 2020/6/2 做了一些小改动 %}
+
+1. 将slblog.ga跳转到blog.slqwq.cn	
+
+2. 实验室新增音乐播放器功能
+
+3. 替换新的播放器
+
+{% endtimenode %}
+
+{% timenode 2020/6/2 做了一些小改动 %}
+
+1. 更换新的域名-blog.slqwq.cn
+
+{% endtimenode %}
+
+{% timenode 2020/5/23 做了一些小改动 %}
+
+1. 新增阿里云大陆CDN
+
+{% endtimenode %}
+
+{% timenode 2020/5/16 做了一些小改动 %}
+
+1. 新增cdn.slblog.ga CDN
+
+{% endtimenode %}
+
+{% timenode 2020/5/15 更换博客CDN %}
+
+1. 由于CloudFlare回源故障，现删除CloudFlare
+
+{% endtimenode %}
+
+{% endtimeline %}

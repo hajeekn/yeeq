@@ -1,0 +1,527 @@
+@import url('https://fonts.googleapis.com/css2?family=Potta+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Zhi+Mang+Xing&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Long+Cang&display=swap');
+#footer {
+    background: rgba(255,255,255,.15);
+    color: #000;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    backdrop-filter: saturate(100%) blur(5px)
+}
+
+#footer::before {
+    background: rgba(255,255,255,.15)
+}
+
+#footer #footer-wrap {
+    color: var(--font-color);
+}
+
+#footer #footer-wrap a {
+    color: var(--font-color);
+}
+/* snote夜间模式 */
+[data-theme="dark"] .snote {
+  color: #4c4948;
+}
+[data-theme="dark"] .snote {
+  filter: brightness(0.7);
+}
+
+div.tabs div.snote{
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+/* TAG 小标签 */
+.snote {
+  position: relative;
+  margin: 0 0 1rem;
+  padding: 15px;
+  border: initial;
+  border-left: 5px solid #eee;
+  background-color: #f9f9f9;
+  border-radius: 3px;
+}
+
+.snote h2,
+.snote h3,
+.snote h4,
+.snote h5,
+.snote h6 {
+  margin-top: 3px;
+  margin-bottom: 0;
+  padding-top: 0 !important;
+  border-bottom: initial;
+}
+.snote p:first-child,
+.snote ul:first-child,
+.snote ol:first-child,
+.snote table:first-child,
+.snote pre:first-child,
+.snote blockquote:first-child,
+.snote img:first-child {
+  margin-top: 0 !important;
+}
+.snote p:last-child,
+.snote ul:last-child,
+.snote ol:last-child,
+.snote table:last-child,
+.snote pre:last-child,
+.snote blockquote:last-child,
+.snote img:last-child {
+  margin-bottom: 0 !important;
+}
+.snote:not(.no-icon) {
+  padding-left: 45px;
+}
+.snote:not(.no-icon)::before {
+  position: absolute;
+  top: 13px;
+  left: 15px;
+  font-size: larger;
+  font-weight: 600;
+  font-family: "Font Awesome 5 Free";
+}
+.snote.default {
+  background-color: #f7f7f7;
+  border-left-color: #777;
+}
+.snote.default h2,
+.snote.default h3,
+.snote.default h4,
+.snote.default h5,
+.snote.default h6 {
+  color: #777;
+}
+.snote.default:not(.no-icon)::before {
+  content: "\f0a9";
+  color: #777;
+}
+.snote.primary {
+  background-color: #f5f0fa;
+  border-left-color: #6f42c1;
+}
+.snote.primary h2,
+.snote.primary h3,
+.snote.primary h4,
+.snote.primary h5,
+.snote.primary h6 {
+  color: #6f42c1;
+}
+.snote.primary:not(.no-icon)::before {
+  content: "\f055";
+  color: #6f42c1;
+}
+.snote.info {
+  background-color: #eef7fa;
+  border-left-color: #428bca;
+}
+.snote.info h2,
+.snote.info h3,
+.snote.info h4,
+.snote.info h5,
+.snote.info h6 {
+  color: #428bca;
+}
+.snote.info:not(.no-icon)::before {
+  content: "\f05a";
+  color: #428bca;
+}
+.snote.success {
+  background-color: #eff8f0;
+  border-left-color: #5cb85c;
+}
+.snote.success h2,
+.snote.success h3,
+.snote.success h4,
+.snote.success h5,
+.snote.success h6 {
+  color: #5cb85c;
+}
+.snote.success:not(.no-icon)::before {
+  content: "\f058";
+  color: #5cb85c;
+}
+.snote.warning {
+  background-color: #fdf8ea;
+  border-left-color: #f0ad4e;
+}
+.snote.warning h2,
+.snote.warning h3,
+.snote.warning h4,
+.snote.warning h5,
+.snote.warning h6 {
+  color: #f0ad4e;
+}
+.snote.warning:not(.no-icon)::before {
+  content: "\f06a";
+  color: #f0ad4e;
+}
+.snote.danger {
+  background-color: #fcf1f2;
+  border-left-color: #d9534f;
+}
+.snote.danger h2,
+.snote.danger h3,
+.snote.danger h4,
+.snote.danger h5,
+.snote.danger h6 {
+  color: #d9534f;
+}
+.snote.danger:not(.no-icon)::before {
+  content: "\f056";
+  color: #d9534f;
+}
+
+div.snote {
+  position: relative;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  padding: 0.6rem 16px 0.5rem 16px;
+  padding-left: calc(16px + 16px);
+  border-radius: 4px;
+  background: #f6f6f6;
+  border-left: 4px solid #767676;
+}
+div.snote h2,
+div.snote h3,
+div.snote h4,
+div.snote h5,
+div.snote h6 {
+  margin-top: 3px;
+  margin-bottom: 0;
+  padding-top: 0 !important;
+  border-bottom: initial;
+}
+div.snote p,
+div.snote ul,
+div.snote ol,
+div.snote blockquote,
+div.snote img {
+  font-size: 14px;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+div.snote::before {
+  position: absolute;
+  top: calc(50% - 24px * 0.5);
+  left: 4px;
+  width: 24px;
+  height: 24px;
+  text-align: center;
+  font-weight: 600;
+  line-height: 24px;
+  vertical-align: middle;
+  font-family: "Font Awesome 5 Free";
+}
+div.snote::before {
+  color: #767676;
+  content: "\f054";
+}
+div.snote::before {
+  content: "\f054";
+}
+div.snote.quote {
+  background: #e8f4fd;
+  border-color: #2196f3;
+}
+div.snote.quote::before {
+  color: #2196f3;
+  content: "\f10d";
+}
+div.snote.info {
+  background: #e8f4fd;
+  border-color: #2196f3;
+}
+div.snote.info::before {
+  color: #2196f3;
+  content: "\f129";
+}
+div.snote.success,
+div.snote.done {
+  background: #ebf9ed;
+  border-color: #3dc550;
+}
+div.snote.success::before,
+div.snote.done::before {
+  color: #3dc550;
+  content: "\f00c";
+}
+div.snote.warning {
+  background: #fff8e9;
+  border-color: #ffbd2b;
+}
+div.snote.warning::before {
+  color: #ffbd2b;
+  content: "\f12a";
+}
+div.snote.danger,
+div.snote.error {
+  background: #feefee;
+  border-color: #fe5f58;
+}
+div.snote.danger::before,
+div.snote.error::before {
+  color: #fe5f58;
+  content: "\f00d";
+}
+div.snote.radiation::before {
+  content: "\f7b9";
+}
+div.snote.bug::before {
+  content: "\f188";
+}
+div.snote.idea::before {
+  content: "\f0eb";
+}
+div.snote.link::before {
+  content: "\f0c1";
+}
+div.snote.paperclip::before {
+  content: "\f0c6";
+}
+div.snote.todo::before {
+  content: "\f0ae";
+}
+div.snote.message::before {
+  content: "\f4ad";
+}
+div.snote.guide::before {
+  content: "\f277";
+}
+div.snote.download::before {
+  content: "\f019";
+}
+div.snote.up::before {
+  content: "\f102";
+}
+div.snote.undo::before {
+  content: "\f2ea";
+}
+div.snote.play::before {
+  content: "\f144";
+}
+div.snote.clear {
+  background: none;
+  border-color: none;
+}
+div.snote.light {
+  background: #f6f6f6;
+  border-color: #aaa;
+}
+div.snote.light::before {
+  color: #aaa;
+}
+div.snote.gray {
+  background: #f6f6f6;
+  border-color: #767676;
+}
+div.snote.gray::before {
+  color: #767676;
+}
+div.snote.red {
+  background: #feefee;
+  border-color: #fe5f58;
+}
+div.snote.red::before {
+  color: #fe5f58;
+}
+div.snote.yellow {
+  background: #fff8e9;
+  border-color: #ffbd2b;
+}
+div.snote.yellow::before {
+  color: #ffbd2b;
+}
+div.snote.green {
+  background: #ebf9ed;
+  border-color: #3dc550;
+}
+div.snote.green::before {
+  color: #3dc550;
+}
+div.snote.cyan {
+  background: #e8fafe;
+  border-color: #1bcdfc;
+}
+div.snote.cyan::before {
+  color: #1bcdfc;
+}
+div.snote.blue {
+  background: #e8f4fd;
+  border-color: #2196f3;
+}
+div.snote.blue::before {
+  color: #2196f3;
+}
+/* TAG Link */
+
+#post a.link-card {
+  text-decoration: none;
+  margin: 0.2rem auto;
+  background: var(--tab-botton-bg);
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+  text-align: left;
+  font-size: 0.575rem;
+  min-width: 200px;
+  max-width: 361px;
+  color: var(--tab-botton-color);
+  border-radius: 8px;
+}
+@media screen and (max-width: 425px) {
+  #post a.link-card {
+    max-width: 100%;
+  }
+}
+@media screen and (max-width: 375px) {
+  #post a.link-card {
+    width: 100%;
+  }
+}
+#post a.link-card:hover {
+  box-shadow: 0 4px 8px 0px rgba(0, 0, 0, 0.1);
+}
+#post a.link-card div.left,
+#post a.link-card div.right {
+  pointer-events: none;
+}
+#post a.link-card div.left {
+  width: 48px;
+  height: 48px;
+  margin: 12px;
+  overflow: hidden;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  position: relative;
+}
+#post a.link-card div.left i {
+  font-size: 32px;
+  line-height: 48px;
+  margin-left: 4px;
+}
+#post a.link-card div.left img {
+  display: block;
+  position: absolute;
+  border-radius: 8px/4;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#post a.link-card div.right {
+  overflow: hidden;
+  margin-right: 12px;
+}
+#post a.link-card p {
+  margin: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+#post a.link-card p.text {
+  font-weight: bold;
+}
+#post a.link-card p.url {
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  color: var(--search-input-color);
+  font-size: 0.7125rem;
+}
+/* TAG 时间线 */
+span.p.h2,
+p.p.h2 {
+  font-size: 1.375rem;
+  color: var(--font-color);
+  padding-top: 0.8rem;
+  border-bottom: 1px solid var(--hr-border);
+}
+div.timenode {
+  position: relative;
+}
+div.timenode:before,
+div.timenode:after {
+  content: "";
+  z-index: 1;
+  position: absolute;
+  background: rgba(68, 215, 182, 0.5);
+  width: 2px;
+  left: 7px;
+}
+div.timenode:before {
+  top: 0px;
+  height: 6px;
+}
+div.timenode:after {
+  top: 26px;
+  height: calc(100% - 26px);
+}
+div.timenode:last-child:after {
+  height: calc(100% - 26px - 16px);
+  border-bottom-left-radius: 2px;
+  border-bottom-right-radius: 2px;
+}
+div.timenode .meta {
+  position: relative;
+  color: var(--tab-botton-color);
+  font-size: 0.375rem;
+  line-height: 32px;
+  height: 32px;
+  left: 27px;
+}
+div.timenode .meta:before,
+div.timenode .meta:after {
+  content: "";
+  position: absolute;
+  top: 8px;
+  z-index: 2;
+  left: -27px;
+}
+div.timenode .meta:before {
+  background: rgba(68, 215, 182, 0.5);
+  width: 16px;
+  height: 16px;
+  border-radius: 8px;
+}
+div.timenode .meta:after {
+  background: #44d7b6;
+  margin-left: 2px;
+  margin-top: 2px;
+  width: 12px;
+  height: 12px;
+  border-radius: 6px;
+  transform: scale(0.5);
+  transition: all 0.28s ease;
+  -moz-transition: all 0.28s ease;
+  -webkit-transition: all 0.28s ease;
+  -o-transition: all 0.28s ease;
+}
+div.timenode .meta p {
+  font-weight: bold;
+  margin: 0 0 0 24px;
+}
+div.timenode .body {
+  margin: 4px 0 16px 24px;
+  padding: 16px;
+  border-radius: 8px;
+  background: var(--blockquote-bg);
+}
+div.timenode .body p:first-child {
+  margin-top: 0;
+}
+div.timenode .body p:last-child {
+  margin-bottom: 0;
+}
+div.timenode:hover .meta {
+  color: var(--text-highlight-color);
+}
+div.timenode:hover .meta:before {
+  background: rgba(255, 87, 34, 0.5);
+}
+div.timenode:hover .meta:after {
+  background: #ff5722;
+  transform: scale(1);
+}
