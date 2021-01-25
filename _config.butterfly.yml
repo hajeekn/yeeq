@@ -832,7 +832,7 @@ inject:
   head:
       - <meta name="google-site-verification" content="qAOA3HXexaF_5uvs3Ghmqp_eB0pIzLgQ1eFRTFGb0Sk" /> #谷歌收录
       - <script src="https://cdn.jsdelivr.net/gh/HCLonely/hclonely.github.io@1.4.7/js/custom/pace.min.js"></script> #PACE.JS的核心
-      - <link rel="stylesheet" href="/css/atuban.min.css" media="defer" onload="this.media='screen'">
+      - <link rel="stylesheet" href="/css/atuban.css" media="defer" onload="this.media='screen'">
       - <link rel="stylesheet" href="https://unpkg.zhimg.com/blog-beatiful@1.1.0/majt.css">
       - <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css">
   bottom:
