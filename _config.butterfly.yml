@@ -830,29 +830,13 @@ fragment_cache: true
 # 插入代码到头部 </head> 之前 和 底部 </body> 之前
 inject:
   head:
-      - <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/sviptzk/StaticFile_HEXO@v3.2/butterfly/css/pool.min.css"> #小康的一键CSS
       - <meta name="google-site-verification" content="qAOA3HXexaF_5uvs3Ghmqp_eB0pIzLgQ1eFRTFGb0Sk" /> #谷歌收录
       - <script src="https://cdn.jsdelivr.net/gh/HCLonely/hclonely.github.io@1.4.7/js/custom/pace.min.js"></script> #PACE.JS的核心
-     # - <link rel="styleheet" herf="https://cdn.jsdelivr.net/gh/sviptzk/StaticFile_HEXO@v3.2/butterfly/css/flink.min.css"> #友链样式
-      - <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/HCLonely/hclonely.github.io@1.4.7/css/custom/pace-theme-flash.min.css"> #PACE.JS的CSS
-      - <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/slblog-github/SRCDN/Blog/css/iconfont.css"> #阿里图标CSS
-     # - <script src="https://cdn.jsdelivr.net/gh/slblog-github/SRCDN/Blog/js/CaO.js"></script> #控制台JS
-      - <link red="stylesheet" href="https://cdn.jsdelivr.net/gh/sviptzk/StaticFile_HEXO@latest/butterfly/css/tags.css">
-      - <link ref="stylesheet" href="https://cdn.jsdelivr.net/combine/npm/color-buttons">
-      - '<style type="text/css">.app-refresh{position:fixed;top:-2.2rem;left:0;right:0;z-index:99999;padding:0 1rem;font-size:15px;height:2.2rem;transition:all .3s ease}.app-refresh-wrap{display:flex;color:#fff;height:100%;align-items:center;justify-content:center}.app-refresh-wrap a{color:#fff;text-decoration:underline;cursor:pointer}</style>'
-     # - <script src="https://cdn.jsdelivr.net/npm/jquery"></script>
+      - <link rel="stylesheet" href="/css/atuban.min.css" media="defer" onload="this.media='screen'">
       - <link rel="stylesheet" href="https://unpkg.zhimg.com/blog-beatiful@1.1.0/majt.css">
-      - <link href="https://fonts.googleapis.com/css2?family=Potta+One&display=swap" rel="stylesheet">
-      - <link href="stylesheet" href="https://cdn.jsdelivr.net/gh/sviptzk/StaticFile_HEXO@latest/butterfly/css/font-awesome-animation.min.css">
-      - <link rel="stylesheet" href="/css/atuban.css" media="defer" onload="this.media='screen'">
+      - <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css">
   bottom:
-      - '<style type="text/css">.aplayer.aplayer-fixed.aplayer-narrow .aplayer-body{left:-66px!important}.aplayer.aplayer-fixed.aplayer-narrow .aplayer-body:hover{left:0!important}</style>'
-      - <script src="https://cdn.jsdelivr.net/gh/slblog-github/SRCDN/Blog/music.js"></script> #音乐JS
-     # - <script src="https://cdn.jsdelivr.net/gh/xiabo2/CDN@latest/fishes.js"></script> #页脚养鱼
-      - <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/slblog-github/SRCDN/Blog/css/banner.css"> #背景css
-     # - <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/slblog-github/SRCDN/Blog/css/button.css"> #Button css
-     # - <link rel="stylesheet" href="https://unpkg.com/more-beautiful-div-framework@1.0.9/more-beautiful-div-framework.min.css"> #我的CSS
-      - <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/sviptzk/HexoStaticFile/Hexo/css/buttons.min.css"> #小康的按钮CSS
+      - <script src="/js/genplayer.js"></script>
       - '<div class="app-refresh" id="app-refresh"> <div class="app-refresh-wrap"> <label>✨ Hajeekn的小博客已更新最新版本 👉</label> <a href="javascript:void(0)" onclick="location.reload()">点我刷新</a> </div></div><script>function showNotification(){if(GLOBAL_CONFIG.Snackbar){var t="light"===document.documentElement.getAttribute("data-theme")?GLOBAL_CONFIG.Snackbar.bgLight:GLOBAL_CONFIG.Snackbar.bgDark,e=GLOBAL_CONFIG.Snackbar.position;Snackbar.show({text:"已更新最新版本",backgroundColor:t,duration:5e5,pos:e,actionText:"点我刷新",actionTextColor:"#fff",onActionClick:function(t){location.reload()}})}else{var o=`top: 0; background: ${"light"===document.documentElement.getAttribute("data-theme")?"#49b1f5":"#1f1f1f"};`;document.getElementById("app-refresh").style.cssText=o}}"serviceWorker"in navigator&&(navigator.serviceWorker.controller&&navigator.serviceWorker.addEventListener("controllerchange",function(){showNotification()}),window.addEventListener("load",function(){navigator.serviceWorker.register("/sw.js")}));</script>'
 
 # CDN

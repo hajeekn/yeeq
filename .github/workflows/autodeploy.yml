@@ -29,6 +29,8 @@ jobs:
           npm install yuque-hexo -g
           yuque-hexo clean
           yuque-hexo sync
+          npm i --save
+          npm install highlight.js --save
 
       - name: 缓存 Hexo
         uses: actions/cache@v1
