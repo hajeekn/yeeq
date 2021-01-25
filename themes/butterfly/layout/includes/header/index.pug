@@ -29,8 +29,11 @@ else
   - var isHomeClass = 'no-top-img'
 
 header#page-header(class=isHomeClass style=bg_img)
-  !=partial('includes/header/nav', {}, {cache:theme.fragment_cache})
+  include ./nav.pug
   if top_img !== false
+    - var bilibili_banner = (typeof(page.bilibili_banner) != "undefined" && page.bilibili_banner!=null) ? page.bilibili_banner : theme.bilibili_banner.enable
+    if (bilibili_banner)
+      include ./bilibili-banner.pug
     if is_post()
       include ./post-info.pug
     else if is_home() 

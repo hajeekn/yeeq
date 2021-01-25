@@ -14,9 +14,15 @@ menu:
   分页: /categories/ || iconfont icon-folder-open
   更新: /update/ || iconfont icon-book faa-bounce animated 
   日志: /time/ || iconfont icon-autoprefixer
+  留言板: /messagesboard/ || fas fa-sms faa-bounce animated
   实验室 || iconfont icon-flask faa-spin animated:
     - Mikutap || https://cdn.slblog.ga/mikutap/ || iconfont icon-play  faa-bounce animated
     - 视频播放器 || /VideoPlayer || iconfont icon-MusicEntertainment faa-bounce animated
+
+# bilibanner
+bilibili_banner:
+  enable: true
+  style: winter
 
 # Code Blocks (代碼相關)
 # --------------------------------------
@@ -837,6 +843,8 @@ inject:
      # - <script src="https://cdn.jsdelivr.net/npm/jquery"></script>
       - <link rel="stylesheet" href="https://unpkg.zhimg.com/blog-beatiful@1.1.0/majt.css">
       - <link href="https://fonts.googleapis.com/css2?family=Potta+One&display=swap" rel="stylesheet">
+      - <link href="stylesheet" href="https://cdn.jsdelivr.net/gh/sviptzk/StaticFile_HEXO@latest/butterfly/css/font-awesome-animation.min.css">
+      - <link rel="stylesheet" href="/css/atuban.css" media="defer" onload="this.media='screen'">
   bottom:
       - '<style type="text/css">.aplayer.aplayer-fixed.aplayer-narrow .aplayer-body{left:-66px!important}.aplayer.aplayer-fixed.aplayer-narrow .aplayer-body:hover{left:0!important}</style>'
       - <script src="https://cdn.jsdelivr.net/gh/slblog-github/SRCDN/Blog/music.js"></script> #音乐JS
@@ -856,6 +864,7 @@ CDN:
   jquery: https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js
   main: /js/main.js
   utils: /js/utils.js
+  bilibili_banner: /js/atuban.js
 
   # pjax
   pjax: https://cdn.jsdelivr.net/npm/pjax/pjax.min.js
