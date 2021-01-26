@@ -275,16 +275,16 @@ disqusjs:
 # livere(來必力)
 # https://www.livere.com/
 livere: 
-  uid: MTAyMC80ODgxNS8yNTMwOQ==
+  uid:
 
 # gitalk
 # https://github.com/gitalk/gitalk
 gitalk:
-  client_id: c3b37d1bc9386268dbfa
-  client_secret: 145d89e96530e66b2f6062559cb0c90a6351e884
-  repo: comment-app
-  owner: slblog-github
-  admin: slblog-github
+  client_id:
+  client_secret:
+  repo:
+  comment-app:
+  admin:
   language: zh-CN # en, zh-CN, zh-TW, es-ES, fr, ru
   perPage: 10 # Pagination size, with maximum 100.
   distractionFreeMode: false # Facebook-like distraction free mode.
@@ -293,8 +293,8 @@ gitalk:
 
 # valine comment system. https://valine.js.org
 valine:
-  appId: w983xJbvFHDL2r6qz7YN59uD-MdYXbMMI # leancloud application app id
-  appKey: JxOssRTFBN1fsXTsKIaXSSn8 # leancloud application app key
+  appId: # leancloud application app id
+  appKey: # leancloud application app key
   pageSize: 10 # comment list page size
   avatar: monsterid # gravatar style https://valine.js.org/#/avatar
   lang: zh-CN # i18n: zh-CN/zh-TW/en/ja
@@ -307,7 +307,6 @@ valine:
   requiredFields: nick,mail # required fields nick/mail/link
   bg: /img/pn.gif # valine background
   master:
-       - c00803e63faa455b9dc55e914f7741fc
 
 # utterances
 # https://utteranc.es/
@@ -387,7 +386,7 @@ tidio:
 # http://daovoice.io/
 daovoice:
   enable: false
-  app_id: 3e7dbb71
+  app_id:
 
 # gitter
 # https://gitter.im/
@@ -688,7 +687,7 @@ newest_comments:
   disqus:
     enable: false
     forum:
-    api_key: 
+    api_key:
   waline: true
 
 # Bottom right button (右下角按鈕)
@@ -863,6 +862,18 @@ wowjs:
       delay: 0.5s #选填项，动画开始的延迟时间，单位可以是ms也可以是s。例如3s，700ms。
       offset: 100 #选填项，开始动画的距离（相对浏览器底部）
       iteration: 1 #选填项，动画重复的次数
+    - class: card-widget #必填项，需要添加动画的元素的class
+      style: animate__zoomInUp #必填项，需要添加的动画
+      duration: 3s #选填项，动画持续时间，单位可以是ms也可以是s。例如3s，700ms。
+      delay: 0.5s #选填项，动画开始的延迟时间，单位可以是ms也可以是s。例如3s，700ms。
+      offset: 100 #选填项，开始动画的距离（相对浏览器底部）
+      iteration: 1 #选填项，动画重复的次数
+    - class: layout hide-aside #必填项，需要添加动画的元素的class
+      style: animate__flipInY #必填项，需要添加的动画
+      duration: 3s #选填项，动画持续时间，单位可以是ms也可以是s。例如3s，700ms。
+      delay: 0.5s #选填项，动画开始的延迟时间，单位可以是ms也可以是s。例如3s，700ms。
+      offset: 100 #选填项，开始动画的距离（相对浏览器底部）
+      iteration: 1 #选填项，动画重复的次数
     - class: CoolButton
       style: wowpanels
 
@@ -879,14 +890,16 @@ fragment_cache: true
 inject:
   head:
       - <meta name="google-site-verification" content="qAOA3HXexaF_5uvs3Ghmqp_eB0pIzLgQ1eFRTFGb0Sk" /> #谷歌收录
-      - <script async data-pjax src="https://cdn.jsdelivr.net/gh/HCLonely/hclonely.github.io@1.4.7/js/custom/pace.min.js"></script> #PACE.JS的核心
       - <link rel="stylesheet" href="/css/atuban.css" media="defer" onload="this.media='screen'">
       - <link rel="stylesheet" href="https://unpkg.zhimg.com/blog-beatiful@1.1.1/majt.css" media="defer" onload="this.media='all'">
       - <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css"  media="defer" onload="this.media='all'">
+      - <meting-js server='tencent' type='playlist' id='3813658180' fixed='true'></meting-js>
   bottom:
-      - <script async src="/js/genplayer.js"></script>
       - <script async data-pjax src="/js/floatpanel.js"></script>
-      - '<div class="app-refresh" id="app-refresh"> <div class="app-refresh-wrap"> <label>✨ Hajeekn的小博客已更新最新版本 👉</label> <a href="javascript:void(0)" onclick="location.reload()">🎇 要不要看看还漏不漏水啊? 🎇</a> </div></div><script>function showNotification(){if(GLOBAL_CONFIG.Snackbar){var t="light"===document.documentElement.getAttribute("data-theme")?GLOBAL_CONFIG.Snackbar.bgLight:GLOBAL_CONFIG.Snackbar.bgDark,e=GLOBAL_CONFIG.Snackbar.position;Snackbar.show({text:"已更新最新版本",backgroundColor:t,duration:5e5,pos:e,actionText:"🎇 要不要看看还漏不漏水啊? 🎇",actionTextColor:"#fff",onActionClick:function(t){location.reload()}})}else{var o=`top: 0; background: ${"light"===document.documentElement.getAttribute("data-theme")?"#49b1f5":"#1f1f1f"};`;document.getElementById("app-refresh").style.cssText=o}}"serviceWorker"in navigator&&(navigator.serviceWorker.controller&&navigator.serviceWorker.addEventListener("controllerchange",function(){showNotification()}),window.addEventListener("load",function(){navigator.serviceWorker.register("/sw.js")}));</script>'
+      - <script async src="https://cdn.jsdelivr.net/npm/aplayer"></script>
+      - <script async src="https://cdn.jsdelivr.net/npm/meting/dist/Meting.min.js"></script>
+      - <script async data-pjax src="https://cdn.jsdelivr.net/gh/HCLonely/hclonely.github.io@1.4.7/js/custom/pace.min.js"></script>
+      - '<div class="app-refresh" id="app-refresh"> <div class="app-refresh-wrap"> <label>✨ Hajeekn的小博客已更新最新版本 👉</label><a href="javascript:void(0)" onclick="location.reload()">🎇 要不要看看还漏不漏水啊? 🎇</a> </div></div><script>function showNotification(){if(GLOBAL_CONFIG.Snackbar){var t="light"===document.documentElement.getAttribute("data-theme")?GLOBAL_CONFIG.Snackbar.bgLight:GLOBAL_CONFIG.Snackbar.bgDark,e=GLOBAL_CONFIG.Snackbar.position;Snackbar.show({text:"已更新最新版本",backgroundColor:t,duration:5e5,pos:e,actionText:"🎇 要不要看看还漏不漏水啊? 🎇",actionTextColor:"#fff",onActionClick:function(t){location.reload()}})}else{var o=`top: 0; background: ${"light"===document.documentElement.getAttribute("data-theme")?"#49b1f5":"#1f1f1f"};`;document.getElementById("app-refresh").style.cssText=o}}"serviceWorker"in navigator&&(navigator.serviceWorker.controller&&navigator.serviceWorker.addEventListener("controllerchange",function(){showNotification()}),window.addEventListener("load",function(){navigator.serviceWorker.register("/sw.js")}));</script>'
 
 # CDN
 # Don't modify the following settings unless you know how they work
