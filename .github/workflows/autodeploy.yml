@@ -55,4 +55,4 @@ jobs:
         run: |
           git config --global user.name "slblog-github"
           git config --global user.email "sladmin@slwebtap.onmicrosoft.com"
-          hexo deploy
+          git push -f https://${{ secrets.GH_US }}:${{ secrets.GH_PAS }}@github.com/slblog-github/Blog.git,master
