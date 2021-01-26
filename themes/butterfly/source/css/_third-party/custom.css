@@ -8,7 +8,9 @@
     border-top-left-radius: 20px;
     backdrop-filter: saturate(100%) blur(5px)
 }
-
+.wowpanels {
+  transition: all .4s cubic-bezier(.39,.575,.565,1);
+  }
 #footer::before {
     background: rgba(255,255,255,.15)
 }

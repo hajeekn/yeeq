@@ -7,8 +7,9 @@ html(lang=config.language data-theme=theme.display_mode class=htmlClassHideAside
   head
     include ./head.pug
   body
-    if theme.preloader
-      !=partial('includes/loading/loading', {}, {cache:theme.fragment_cache})
+    if theme.preloader.enable
+        a(href='javascript:void(0);' onclick='preloader.endLoading();' title='点击跳过动画')
+          !=partial('includes/loading/loading', {}, {cache:theme.fragment_cache})
 
     if theme.background
       #web_bg

@@ -1,6 +1,14 @@
 nav#nav
-  span#blog_name
-    a#site-name(href=url_for('/')) #[=config.title]
+  - var pagedescr = (typeof(page.description) != "undefined" && page.description!=null) ? page.description : '欢迎您来到了Hajeekn的小木屋呢,不过看起来有点漏水🐕'
+    if is_post()
+      span#blog_name
+        a#site-name(onclick='btf.scrollToDest(0,500)' data-title=pagedescr) #[=config.title]
+    else if is_page()
+      span#blog_name
+        a#site-name(href=url_for('/') data-title=pagedescr) #[=page.title]
+    else
+      span#blog_name
+        a#site-name(href=url_for('/') data-title=pagedescr) #[=config.title]
     
   #menus
     if (theme.algolia_search.enable || theme.local_search.enable)
@@ -13,5 +21,3 @@ nav#nav
     #toggle-menu
       a.site-page
         i.fas.fa-bars.fa-fw
-
-

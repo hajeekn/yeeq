@@ -28,7 +28,7 @@ gulp.task('generate-service-worker', () => {
 
 //minify js babel
 gulp.task('compress', () =>
-  gulp.src(['./public/**/*.js', '!./public/**/*.min.js'])
+  gulp.src(['./public/**/*.js', '!./public/**/*.min.js','!./public/js/wow_init.js'])
 		.pipe(babel({
 			presets: ['@babel/preset-env']
 		}))
@@ -57,7 +57,7 @@ gulp.task('minify-css', () => {
 
 // 壓縮 public 目錄內 html
 gulp.task('minify-html', () => {
-  return gulp.src('./public/**/*.html')
+  return gulp.src(['./public/**/*.html','!./public/comments/index.html'])
     .pipe(htmlclean())
     .pipe(htmlmin({
       removeComments: true, //清除 HTML 註釋
