@@ -141,5 +141,5 @@ baidusitemap:
 deploy:
   type: 'git'
   repo:
-         github: https://530415631bb35ccbeae882ed82981b388c8f3088@github.com/slblog-github/Blog.git,master
+         github: https://2cefa404f5f0518a2d5ffc2734d0f49652ddb2b2@github.com/slblog-github/Blog.git,master
 branch: master
