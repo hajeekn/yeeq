@@ -30,3 +30,34 @@
     display -webkit-box
     -webkit-box-orient vertical
     overflow hidden
+#nav 
+  &.show 
+    opacity 1
+    -ms-filter none
+    filter none
+    background transparent
+#nav 
+  a 
+    color #212121
+#nav 
+  .menus_items 
+    position absolute
+    width 400px
+    text-align center
+    left 0
+    right 0
+    margin auto
+#nav 
+  .menus_items 
+    .menus_item 
+      &:hover 
+        .menus_item_child 
+          display block
+        i 
+          &.expand 
+            -webkit-transform rotate(180deg) !important
+            -moz-transform rotate(180deg) !important
+            -o-transform rotate(180deg) !important
+            -ms-transform rotate(180deg) !important
+            transform rotate(180deg) !important
+            color #212121

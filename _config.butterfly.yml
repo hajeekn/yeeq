@@ -7,17 +7,18 @@
 #   name || link || icon
 
 menu:
-  主页: / || iconfont icon-home 
-  文章: /archives/ || iconfont icon-archive faa-bounce animated
-  友链: /link/ || iconfont icon-link
-  关于: /about/ || iconfont icon-love faa-bounce animated
-  分页: /categories/ || iconfont icon-folder-open
-  更新: /update/ || iconfont icon-book faa-bounce animated 
-  日志: /time/ || iconfont icon-autoprefixer
-  留言板: /messagesboard/ || fas fa-sms faa-bounce animated
   实验室 || iconfont icon-flask faa-spin animated:
-    - Mikutap || https://cdn.slblog.ga/mikutap/ || iconfont icon-play  faa-bounce animated
-    - 视频播放器 || /VideoPlayer || iconfont icon-MusicEntertainment faa-bounce animated
+    - 视频播放器 || /VideoPlayer || iconfont icon-play
+  网站 || fab fa-hive:
+    - 文章 || /archives/ || iconfont icon-archive
+    - 友链 || /link/ || iconfont icon-link
+  我的信息 || far fa-address-card:
+    - 关于 || /about/ || iconfont icon-love
+    - 更新 || /update/ || iconfont icon-book
+    - 视频播放器 || /VideoPlayer || iconfont icon-play
+  一些话 || fas fa-user-ninja:
+    - 日志 || /time || iconfont icon-autoprefixer
+    - 留言板 || /messagesboard/ || fas fa-sms
 
 # bilibanner
 bilibili_banner:
@@ -507,46 +508,6 @@ rightside-bottom:
 # Background effects (背景特效)
 # --------------------------------------
 
-# canvas_ribbon (靜止彩帶背景)
-# See: https://github.com/hustcc/ribbon.js
-canvas_ribbon:
-  enable: false
-  size: 150
-  alpha: 0.6
-  zIndex: -2
-  click_to_change: false
-  mobile: false
-
-# Dynamic ribbon (動態彩帶)
-canvas_ribbon_piao:
-  enable: false
-  mobile: false
-
-# canvas_nest
-# https://github.com/hustcc/canvas-nest.js
-canvas_nest:
-  enable: false
-  color: '0,0,255' #color of lines, default: '0,0,0'; RGB values: (R,G,B).(note: use ',' to separate.)
-  opacity: 0.7 # the opacity of line (0~1), default: 0.5.
-  zIndex: -1 # z-index property of the background, default: -1.
-  count: 99 # the number of lines, default: 99.
-  mobile: false
-
-# Typewriter Effect (打字效果)
-# https://github.com/disjukr/activate-power-mode
-activate_power_mode:
-  enable: false
-  colorful: false # open particle animation (冒光特效)
-  shake: false #  open shake (抖動特效)
-
-# Mouse click effects: fireworks (鼠標點擊效果: 煙火特效)
-fireworks:
-  enable: false
-  zIndex: 9999 # -1 or 9999
-
-# Mouse click effects: Heart symbol (鼠標點擊效果: 愛心)
-click_heart: false
-
 # Mouse click effects: words (鼠標點擊效果: 文字)
 ClickShowText:
   enable: false
@@ -581,7 +542,7 @@ font:
 # Font settings for the site title and site subtitle
 # 左上角網站名字 主頁居中網站名字
 blog_title_font:
-  font_link: https://fonts.googleapis.com/css2?family=ZCOOL+KuaiLe&display=swap
+  font_link:
   font-family: 'ZCOOL KuaiLe'
 
 # The setting of divider icon (水平分隔線圖標設置)
@@ -613,7 +574,7 @@ subtitle:
 
 # Loading Animation (加載動畫)
 preloader:
-  enable: true
+  enable: false
   load_color: '#37474f'
   load_style: wizard
   load_image:
