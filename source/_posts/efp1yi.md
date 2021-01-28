@@ -4,8 +4,8 @@ sticky: 1
 tags: [Hexo, 主题魔改]
 description: 想魔改自己的主题却总是报错?这篇文章我会将我的主题魔改贡献出来。
 categories: [Hexo, 主题魔改]
-cover:
-photos:
+cover: https://rmt.dogedoge.com/fetch/hajeekn/storage/Covv.png
+photos: https://rmt.dogedoge.com/fetch/hajeekn/storage/Covv.png
 abbrlink: bbr35lia
 date: 2021-01-26 20:00:46
 copyright_author_href: https://blog.slqwq.cn
@@ -26,8 +26,6 @@ id: 27
 # 通过 wowjs 给博客添加好看的样式
 
 ## 基础样式篇
-
-这个模块将会教大家如果给博客中添加浮动的样式
 
 - 1.创建 JS
 
@@ -167,7 +165,7 @@ wowjs:
 ## 浮动样式篇
 
 {% note info simple %}
-浮动样式篇参考[Aklilar](https://akilar.top/)大佬的文章[给博客元素添加浮动特效](https://akilar.top/posts/9e3bccc6)
+浮动样式篇参考[Aklilar](https://akilar.top/)大佬的文章[给博客元素添加浮动特效](https://akilar.top/posts/9e3bccc6)和[洪哥](https://blog.zhheo.com/)的博客效果
 {% endnote %}
 
 - 1.前往`%brt%\themes\butterfly\source\js\`目录,新建一个名为`floatpanel.js`的文件
@@ -282,6 +280,14 @@ wowjs:
       iteration: 1 #选填项，动画重复的次数
     - class: CoolButton
       style: wowpanels
+```
+
+**如果您想让动画更滑丝滑流畅,可以新建 css,在内部写入以下代码:**
+
+```css
+.wowpanels {
+  transition: all 0.4s cubic-bezier(0.39, 0.575, 0.565, 1);
+}
 ```
 
 # 添加 BiliBili 同款的动态 Banner
@@ -621,3 +627,582 @@ a#site-name(href=url_for('/')) #[=config.title]
     -webkit-box-orient vertical
     overflow hidden
 ```
+
+# 主页置顶的 ♂gitcalendar♂
+
+哪个男孩纸不想拥有一个状态显示呢?
+这个模块就会教大家在 Butterfly 使用 gitcalendar
+
+## 准备好了吗?Go Go!
+
+- 1.前往`%brt\themes\butterfly\layout\includes\`新建一个名为`gitcalendar.pug`的文件
+
+在其内部添加以下代码(请直接复制粘贴,避免缩进错误 ❌):
+
+```javascript
+#gitcalendar.gitcalendar
+  #gitmessage(:style='{top:y+px,left:x+px,position: fixed,zIndex:9999}')
+    .angle-wrapper
+      span {{span1}} &nbsp;
+      span {{span2}} 次上传
+  .position-relative
+    .border.py-2.graph-before-activity-overview
+      .js-gitcalendar-graph.mx-md-2.mx-3.d-flex.flex-column.flex-items-end.flex-xl-items-center.overflow-hidden.pt-1.is-graph-loading.graph-canvas.gitcalendar-graph.height-full.text-center
+        #gitcalendarcanvasbox(v-if='simplemode')
+          canvas#gitcanvas(style='animation: none;')
+        svg.js-gitcalendar-graph-svg(width='100%', viewBox='0 0 770 128', v-if='!simplemode')
+          text.month(:x='32 + monthindex*64', y='20', v-for='(month,monthindex) in monthchange') {{month}}
+          text.wday(text-anchor='start', dx='0', dy='40')  日
+          text.wday(text-anchor='start', dx='0', dy='65')  二
+          text.wday(text-anchor='start', dx='0', dy='90')  四
+          text.wday(text-anchor='start', dx='0', dy='115') 六
+          g(v-for='(weekitem,weekIndex) in data', :transform='\'translate(\'+ (16 + weekIndex*14) + \',\' + \'0)\'')
+            rect(@mouseover="selectStyle(dayitem,$event)"  @mouseleave="outStyle()" v-for='(dayitem,dayIndex) in weekitem', :style='{fill:thiscolor(dayitem.count),shapeRendering:crispedges}', :data-score='dayitem.count', :data-date='dayitem.date', x='0', :y=' 30 + dayIndex*13 ', width='11', height='11')
+      .contrib-footer.clearfix.mt-1.mx-3.px-3.pb-1
+        .float-left.text-gray
+          | 数据来源
+          a(:href="'https://github.com/'+ user ", target='blank') @{{user}}
+        .contrib-legend.text-gray
+          | Less
+
+          ul.legend
+            li(:style='{backgroundColor:color[0]}')
+            li(:style='{backgroundColor:color[2]}')
+            li(:style='{backgroundColor:color[4]}')
+            li(:style='{backgroundColor:color[6]}')
+            li(:style='{backgroundColor:color[8]}')
+          | More
+
+  .contrib-column.contrib-column-first.table-column
+    span.text-muted 过去一年提交
+    span.contrib-number {{total}}
+    span.text-muted {{oneyearbeforeday}}&nbsp;-&nbsp;{{thisday}}
+  .contrib-column.table-column
+    span.text-muted 最近一月提交
+    span.contrib-number {{thisweekdatacore}}
+    span.text-muted {{amonthago}}&nbsp;-&nbsp;{{thisday}}
+  .contrib-column.table-column
+    span.text-muted 最近一周提交
+    span.contrib-number {{weekdatacore}}
+    span.text-muted {{aweekago}}&nbsp;-&nbsp;{{thisday}}
+
+```
+
+- 2.继续在这个目录下新建一个名为`gitcalendar-js.pug`的文件
+
+在内部写入以下代码(请直接复制粘贴,避免缩进错误 ❌):
+
+```javascript
+script.
+  var gitcalendar = new Vue({
+    el: '#gitcalendar',
+    data: {
+      simplemode: !{theme.gitcalendar.simplemode},
+      user: '!{theme.gitcalendar.user}',
+      fixed: 'fixed',
+      px: 'px',
+      x: '',
+      y: '',
+      span1: '',
+      span2: '',
+      month: ['一月', '二月', '三月', '四月', '五月', '六月', '七月', '八月', '九月', '十月', '十一月', '十二月'],
+      monthchange: [],
+      oneyearbeforeday: '',
+      thisday: '',
+      amonthago: '',
+      aweekago: '',
+      weekdatacore: 0,
+      datacore: 0,
+      total: 0,
+      datadate: '',
+      data: [],
+      positionplusdata: [],
+      firstweek: [],
+      lastweek: [],
+      beforeweek: [],
+      thisweekdatacore: 0,
+      mounthbeforeday: 0,
+      mounthfirstindex: 0,
+      crispedges: 'crispedges',
+      thisdayindex: 0,
+      amonthagoindex: 0,
+      amonthagoweek: [],
+      firstdate: [],
+      first2date: [],
+      montharrbefore: [],
+      monthindex: 0,
+      color: !{theme.gitcalendar.color}
+    },
+    methods: {
+      selectStyle(data, event) {
+        document.querySelector('.angle-wrapper').style.display = 'block'
+        this.span1 = data.date;
+        this.span2 = data.count;
+        this.x = event.clientX - 100;
+        this.y = event.clientY - 60
+      },
+      outStyle() {
+        document.querySelector('.angle-wrapper').style.display = 'none'
+      },
+      thiscolor(x) {
+        if (x === 0) {
+          let i = parseInt(x / 2);
+          return this.color[0]
+        } else if (x < 2) {
+          return this.color[1]
+        } else if (x < 20) {
+          let i = parseInt(x / 2);
+          return this.color[i]
+        } else {
+          return this.color[9]
+        }
+      },
+    }
+  });
+  var apiurl = '!{theme.gitcalendar.apiurl}' ? 'https://!{theme.gitcalendar.apiurl}/api?' : 'https://githubapi.ryanchristian.dev/user/'
+  var githubapiurl = apiurl + gitcalendar.user;
+  //canvas绘图
+  function responsiveChart() {
+    let c = document.getElementById("gitcanvas");
+    if (c) {
+      let cmessage = document.getElementById("gitmessage");
+      let ctx = c.getContext("2d");
+      c.width = document.getElementById("gitcalendarcanvasbox").offsetWidth;
+      let linemaxwitdh = 0.96 * c.width / gitcalendar.data.length;
+      c.height = 9 * linemaxwitdh;
+      let lineminwitdh = 0.8 * linemaxwitdh;
+      let setposition = {
+        x: 0.02 * c.width,
+        y: 0.025 * c.width
+      };
+      for (let week in gitcalendar.data) {
+        weekdata = gitcalendar.data[week];
+        for (let day in weekdata) {
+          let dataitem = {
+            date: "",
+            count: "",
+            x: 0,
+            y: 0
+          };
+          gitcalendar.positionplusdata.push(dataitem);
+          ctx.fillStyle = gitcalendar.thiscolor(weekdata[day].count);
+          setposition.y = Math.round(setposition.y * 100) / 100;
+          dataitem.date = weekdata[day].date;
+          dataitem.count = weekdata[day].count;
+          dataitem.x = setposition.x;
+          dataitem.y = setposition.y;
+          ctx.fillRect(setposition.x, setposition.y, lineminwitdh, lineminwitdh);
+          setposition.y = setposition.y + linemaxwitdh
+        };
+        setposition.y = 0.025 * c.width;
+        setposition.x = setposition.x + linemaxwitdh
+      };
+      ctx.font = "600  Arial";
+      ctx.fillStyle = '#aaa';
+      ctx.fillText("日", 0, 1.9 * linemaxwitdh);
+      ctx.fillText("二", 0, 3.9 * linemaxwitdh);
+      ctx.fillText("四", 0, 5.9 * linemaxwitdh);
+      ctx.fillText("六", 0, 7.9 * linemaxwitdh);
+      let monthindexlist = c.width / 24;
+      for (let index in gitcalendar.monthchange) {
+        ctx.fillText(gitcalendar.monthchange[index], monthindexlist, 0.7 * linemaxwitdh);
+        monthindexlist = monthindexlist + c.width / 12
+      };
+      cmessage.onmousemove = function(event) {
+        document.querySelector('.angle-wrapper').style.display = 'none'
+      };
+      c.onmousemove = function(event) {
+        document.querySelector('.angle-wrapper').style.display = 'none'
+        getMousePos(c, event);
+      };
+
+      function getMousePos(canvas, event) {
+        var rect = canvas.getBoundingClientRect();
+        var x = event.clientX - rect.left * (canvas.width / rect.width);
+        var y = event.clientY - rect.top * (canvas.height / rect.height);
+        //console.log("x:"+x+",y:"+y);
+        for (let item of gitcalendar.positionplusdata) {
+          let lenthx = x - item.x;
+          let lenthy = y - item.y;
+          //console.log(lenthx,lenthy);
+          if (0 < lenthx && lenthx < lineminwitdh) {
+            if (0 < lenthy && lenthy < lineminwitdh) {
+              //console.log(item.date,item.count)
+              document.querySelector('.angle-wrapper').style.display = 'block'
+              gitcalendar.span1 = item.date;
+              gitcalendar.span2 = item.count;
+              gitcalendar.x = event.clientX - 100;
+              gitcalendar.y = event.clientY - 60
+            }
+          }
+          //if(0< x - item.x <lineminwitdh&&0< y - item.y <lineminwitdh){
+          //console.log(item.count,item.date);
+          //}
+        }
+      }
+    }
+  }
+  //数据统计算法
+  function addlastmonth() {
+    if (gitcalendar.thisdayindex === 0) {
+      thisweekcore(52);
+      thisweekcore(51);
+      thisweekcore(50);
+      thisweekcore(49);
+      thisweekcore(48);
+      gitcalendar.thisweekdatacore += gitcalendar.firstdate[6].count;
+      gitcalendar.amonthago = gitcalendar.firstdate[6].date
+    } else {
+      thisweekcore(52);
+      thisweekcore(51);
+      thisweekcore(50);
+      thisweekcore(49);
+      thisweek2core();
+      gitcalendar.amonthago = gitcalendar.first2date[gitcalendar.thisdayindex - 1].date
+    }
+  };
+
+  function thisweek2core() {
+    for (let i = gitcalendar.thisdayindex - 1; i < gitcalendar.first2date.length; i++) {
+      gitcalendar.thisweekdatacore += gitcalendar.first2date[i].count
+    }
+  };
+
+  function thisweekcore(index) {
+    for (let item of gitcalendar.data[index]) {
+      gitcalendar.thisweekdatacore += item.count
+    }
+  };
+
+  function addlastweek() {
+    for (let item of gitcalendar.lastweek) {
+      gitcalendar.weekdatacore += item.count
+    }
+  };
+
+  function addbeforeweek() {
+    for (let i = gitcalendar.thisdayindex; i < gitcalendar.beforeweek.length; i++) {
+      gitcalendar.weekdatacore += gitcalendar.beforeweek[i].count
+    }
+  };
+
+  function addweek(data) {
+    if (gitcalendar.thisdayindex === 6) {
+      gitcalendar.aweekago = gitcalendar.lastweek[0].date;
+      addlastweek()
+    } else {
+      lastweek = data.contributions[51];
+      gitcalendar.aweekago = lastweek[gitcalendar.thisdayindex + 1].date;
+      addlastweek();
+      addbeforeweek()
+    }
+  }
+
+  fetch(githubapiurl)
+    .then(data => data.json())
+    .then(data => {
+      gitcalendar.data = data.contributions;
+      gitcalendar.total = data.total;
+      gitcalendar.first2date = gitcalendar.data[48];
+      gitcalendar.firstdate = gitcalendar.data[47];
+      gitcalendar.firstweek = data.contributions[0];
+      gitcalendar.lastweek = data.contributions[52];
+      gitcalendar.beforeweek = data.contributions[51];
+      gitcalendar.thisdayindex = gitcalendar.lastweek.length - 1;
+      gitcalendar.thisday = gitcalendar.lastweek[gitcalendar.thisdayindex].date;
+      gitcalendar.oneyearbeforeday = gitcalendar.firstweek[0].date;
+      gitcalendar.monthindex = gitcalendar.thisday.substring(5, 7) * 1;
+      gitcalendar.montharrbefore = gitcalendar.month.splice(gitcalendar.monthindex, 12 - gitcalendar.monthindex);
+      gitcalendar.monthchange = gitcalendar.montharrbefore.concat(gitcalendar.month);
+      addweek(data);
+      addlastmonth();
+      responsiveChart();
+    })
+    .catch(function(error) {
+      console.log(error);
+    });
+
+  //手机版更换为svg绘制
+  if (document.getElementById("gitcalendarcanvasbox").offsetWidth < 500) {
+    gitcalendar.simplemode = false
+  }
+
+  //当改变窗口大小时重新绘制canvas
+  window.onresize = function() {
+    if (gitcalendar.simplemode) responsiveChart()
+  }
+
+  //解决滚动滑轮时出现的标签显示
+  window.onscroll = function() {
+    if (document.querySelector('.angle-wrapper')) {
+      document.querySelector('.angle-wrapper').style.display = 'none'
+    }
+  };
+```
+
+然后你要去创建 Stylus 样式辣
+
+- 3.进入`%brt%\themes\butterfly\source\css\_layout\`新建一个名为`gitcalendar.styl`的文件
+
+用 编 辑 器 打开
+在文件内部 植 入 以下代码:
+
+```css
+if hexo-config('gitcalendar.enable')
+  .gitcalendar
+    font-family SourceHanSans-Medium
+    border 1px solid #DDDDDD
+    border-radius 3px
+    min-height 120px
+    text-align center
+    margin 0 auto
+    border-width 0px
+    width 100%
+    display flex
+    display -webkit-flex
+    justify-content center
+    align-items center
+    flex-wrap wrap
+    img
+      &.spinner
+        width 70px
+        margin-top 50px
+        min-height 70px
+
+  .gitcalendar-graph text.wday,
+  .gitcalendar-graph text.month
+    font-size 10px
+    fill #aaa
+
+  .contrib-legend
+    text-align right
+    padding 0 14px 10px 0
+    display inline-block
+    float right
+    .legend
+      display inline-block
+      list-style none
+      margin 0 5px
+      position relative
+      bottom -1px
+      padding 0
+      li
+        display inline-block
+        width 10px
+        height 10px
+
+  .text-small
+    font-size 12px
+    color #767676
+
+  .gitcalendar-graph
+    padding 15px 0 0
+    text-align center
+
+  .contrib-column
+    text-align center
+    border-left 1px solid #ddd
+    border-top 1px solid #ddd
+    font-size 11px
+
+  .contrib-column-first
+    border-left 0
+
+  .table-column
+    padding 10px
+    display table-cell
+    width 33%
+    vertical-align top
+
+  .contrib-number
+    font-weight 300
+    line-height 1.3em
+    font-size 24px
+    display block
+
+  .monospace
+    text-align center
+    color #000
+    font-family monospace
+    a
+      color #1D75AB
+      text-decoration none
+
+  .contrib-footer
+    font-size 11px
+    padding 0 10px 12px
+    text-align left
+    width 100%
+    box-sizing border-box
+    height 26px
+
+  .left
+    &.text-muted
+      float left
+      margin-left 9px
+      color #767676
+      a
+        color #4078c0
+        text-decoration none
+
+  .left.text-muted a:hover,
+  .monospace a:hover
+    text-decoration underline
+
+  h2
+    &.f4
+      &.text-normal
+        &.mb-3
+          display none
+
+  .float-left
+    &.text-gray
+      float left
+
+  #user-activity-overview
+    display none
+
+  .day-tooltip
+    white-space nowrap
+    position absolute
+    z-index 99999
+    padding 10px
+    font-size 12px
+    color #959da5
+    text-align center
+    background rgba(0,0,0,.85)
+    border-radius 3px
+    display none
+    pointer-events none
+    strong
+      color #dfe2e5
+    &.is-visible
+      display block
+    &:after
+      position absolute
+      bottom -10px
+      left 50%
+      width 5px
+      height 5px
+      box-sizing border-box
+      margin 0 0 0 -5px
+      content " "
+      border 5px solid transparent
+      border-top-color rgba(0,0,0,.85)
+
+  .position-relative
+    width 100%
+    padding-left 20px
+    padding-right 20px
+
+  @media screen and (max-width: 650px)
+    .contrib-column
+      display none
+
+  .angle-wrapper
+    z-index 9999
+    display inline
+    display none
+    width 200px
+    height 40px
+    position relative
+    padding 5px 0
+    background rgba(0, 0, 0, 0.8)
+    border-radius 8px
+    text-align center
+    color white
+    span
+      padding-bottom 1em
+    &:before
+      content ''
+      width 0
+      height 0
+      border 10px solid transparent
+      border-top-color rgba(0, 0, 0, 0.8)
+      position absolute
+      left 47.5%
+      top 100%
+
+  .angle-box
+    position fixed
+    padding 10px
+```
+
+- 4.快马加鞭的前往`%brt%\themes\butterfly\layout\`找到我们的 食 物 `index.pug`
+
+为了方便我们食用,找到#recent-posts.recent-posts 在下面插入一段代码
+
+```javascript
+    if theme.gitcalendar.enable
+      .recent-post-item(style='width:100%')
+        !=partial('includes/gitcalendar', {}, {cache:theme.fragment_cache})
+    if theme.categoryBar.enable
+      .recent-post-item(style='height:auto;width:100%;padding:0px;')
+        #categoryBar!= list_categories(site.categories,{class: 'categoryBar',depth: 1})
+```
+
+**记得一定要放在+postUI 的前一行哦**
+**-** 5.进入`%brt%\themes\butterfly\layout\includes\`的`additional-js.pug`文件
+在 script(src=url_for(theme.CDN.utils))的上面加入以下内容
+
+```javascript
+script((src = url_for(theme.CDN.vue)));
+```
+
+然后再找到 script(defer src=url_for(theme.CDN.busuanzi))配置项
+在这下面放入以下代码
+
+```javascript
+    if theme.gitcalendar.enable
+      !=partial('includes/gitcalendar-js', {}, {cache:theme.fragment_cache})
+  !=partial('includes/third-party/prismjs', {}, {cache:theme.fragment_cache})
+```
+
+好的,修改完了,接下来我们就可以去添加 CDN 配置项和 gitcalendar 配置项了
+进入`%brt%\_config.butterfly.yml`
+找到 CDN 配置项
+在 utils: /js/utils.js 配置项的下面插入以下代码
+
+```javascript
+  vue: https://cdn.jsdelivr.net/npm/vue@2.6.11
+```
+
+然后随便找一个屑位置,插入以下代码:
+
+```yaml
+#gitcalendar
+gitcalendar:
+  enable: true
+  simplemode: true
+  #设为true时使用canvas绘制gitgitcalendar，
+  #设为false时使用svg绘制gitgitcalendar
+  #canvas：dom数少，但图像会发生模糊，自适应一般
+  #svg：dom数多，图像清晰，自适应更佳
+  user: slblog-github #这里填写你的github用户名
+  apiurl: # 留空为默认公共API
+  # 以下色调选择喜欢的一行保留即可。其余注释。
+  color: "['#e4dfd7', '#f9f4dc', '#f7e8aa', '#f7e8aa', '#f8df72', '#fcd217', '#fcc515', '#f28e16', '#fb8b05', '#d85916', '#f43e06']" #橘黄色调
+  # color: "['#ebedf0', '#fdcdec', '#fc9bd9', '#fa6ac5', '#f838b2', '#f5089f', '#c4067e', '#92055e', '#540336', '#48022f', '#30021f']" #浅紫色调
+  # color: "['#ebedf0', '#f0fff4', '#dcffe4', '#bef5cb', '#85e89d', '#34d058', '#28a745', '#22863a', '#176f2c', '#165c26', '#144620']" #翠绿色调
+  # color: "['#ebedf0', '#f1f8ff', '#dbedff', '#c8e1ff', '#79b8ff', '#2188ff', '#0366d6', '#005cc5', '#044289', '#032f62', '#05264c']" #天青色调
+```
+
+然后参照上面的配置就行辣~
+关于配置 apiurl 可以参照[Akilar 大佬的文章](https://akilar.top/posts/1f9c68c9/#%E8%87%AA%E5%BB%BAAPI%E9%83%A8%E7%BD%B2)自建 API 哦
+各位有什么想魔改的可以评论以一下(只要不太难,毕竟我还是个 初 中 生)
+
+# 在你的网站添加一个 ♂ 美妙 ♂ 的 PACE 加载进度条
+
+## 这个很简单,只需要一个 JS 和一个 CSS 就可以了
+
+现在我们开始吧
+首先进入`%brt%\_config.butterfly.yml`
+找到 inject 大项
+在 bottom 配置项下面添加如下配置:
+
+```yaml
+- <script async data-pjax src="https://cdn.jsdelivr.net/gh/HCLonely/hclonely.github.io@1.4.7/js/custom/pace.min.js"></script>
+- <link rel=stylesheet href="https://cdn.jsdelivr.net/gh/HCLonely/hclonely.github.io@1.4.7/css/custom/pace-theme-flash.min.css">
+```
+
+然后就行了,哈哈其实是用来水一下字数的

@@ -22,7 +22,7 @@ menu:
 
 # bilibanner
 bilibili_banner:
-  enable: true
+  enable: false
   style: winter
 
 # Code Blocks (代碼相關)
@@ -499,7 +499,7 @@ tag_ui: # 留空或 index
 # The formal of color: '#49B202'
 # The formal of image: url(http://xxxxxx.com/xxx.jpg)
 # White color will be shown as default
-background: url(https://cdn.jsdelivr.net/gh/Daibi-mua/cdn@main/wallhaven-y8mgog.jpg)
+background: url(https://cdn.jsdelivr.net/gh/ladjeek-cloudtap/letmin@main/wallhaven-y8mgog.webp)
 footer_bg: false
 
 # the position of bottom right button/default unit: px (右下角按鈕距離底部的距離/默認單位為px)
@@ -835,6 +835,18 @@ wowjs:
       delay: 0.5s #选填项，动画开始的延迟时间，单位可以是ms也可以是s。例如3s，700ms。
       offset: 100 #选填项，开始动画的距离（相对浏览器底部）
       iteration: 1 #选填项，动画重复的次数
+    - class: btn-beautify button--animated orange larger #必填项，需要添加动画的元素的class
+      style: animate__wobble #必填项，需要添加的动画
+      duration: 2.5s #选填项，动画持续时间，单位可以是ms也可以是s。例如3s，700ms。
+      delay: 0s #选填项，动画开始的延迟时间，单位可以是ms也可以是s。例如3s，700ms。
+      offset: 100 #选填项，开始动画的距离（相对浏览器底部）
+      iteration: 1000 #选填项，动画重复的次数
+    - class: aplayer aplayer-withlist aplayer-fixed #必填项，需要添加动画的元素的class
+      style: animate__heartBeat #必填项，需要添加的动画
+      duration: 2.5s #选填项，动画持续时间，单位可以是ms也可以是s。例如3s，700ms。
+      delay: 0s #选填项，动画开始的延迟时间，单位可以是ms也可以是s。例如3s，700ms。
+      offset: 100 #选填项，开始动画的距离（相对浏览器底部）
+      iteration: 1000 #选填项，动画重复的次数
     - class: CoolButton
       style: wowpanels
 
@@ -857,6 +869,7 @@ inject:
       - <meting-js server='tencent' type='playlist' id='3813658180' fixed='true'></meting-js>
   bottom:
       - <script async data-pjax src="/js/floatpanel.js"></script>
+      - <script async data-pjax src="/js/cen.js"></script>
       - <script async src="https://cdn.jsdelivr.net/npm/aplayer"></script>
       - <script async src="https://cdn.jsdelivr.net/npm/meting/dist/Meting.min.js"></script>
       - <script async data-pjax src="https://cdn.jsdelivr.net/gh/HCLonely/hclonely.github.io@1.4.7/js/custom/pace.min.js"></script>

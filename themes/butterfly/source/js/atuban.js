@@ -39,3 +39,4 @@ if (winterBanner) {
     winterBanner.style.setProperty('--percentage', percentage)
   })
 }
+console.clear()
