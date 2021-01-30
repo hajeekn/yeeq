@@ -125,79 +125,79 @@ class2:
       descr: It’s a beautiful day!
 
 class3:
-   class_name: 博客使用工具
-   link_list:
-     1:
-       name: Hexo
-       link: https://hexo.io/
-       avatar: https://cdn.jsdelivr.net/gh/xingjiahui/CDN/link/pluginButterflylogo.png
-       descr: 快速、简洁的博客框架
-     2:
-       name: Butterfly
-       link: https://github.com/jerryc127/hexo-theme-butterfly
-       avatar: https://cdn.jsdelivr.net/gh/xingjiahui/CDN/link/butterfly.png
-       descr: 超美的一款Hexo卡片式主题
-     3:
-       name: Coding
-       link: https://coding.net/
-       avatar: https://assets.codehub.cn/resources/logo1-png.png
-       descr: 国内超棒的代码托管平台
-     4:
-       name: GitHub
-       link: https://www.github.com/
-       avatar: https://cdn.jsdelivr.net/gh/xingjiahui/CDN/link/github.png
-       descr: 每个程序猿的必经之路
-     5:
-       name: Waline
-       link: https://waline.js.org
-       avatar: https://p5.ssl.qhimg.com/t01ec54674f5912eea9.png
-       descr: 匿名、安装、基于Valine衍生出来的评论
-     6:
-       name: PicGo
-       link: https://github.com/Molunerfinn/PicGo
-       avatar: https://cdn.jsdelivr.net/gh/xingjiahui/CDN/about/20200408110808.png
-       descr: 开源免费的图片上传工具
-     7:
-       name: Typora
-       link: https://www.typora.io/
-       avatar: https://cdn.jsdelivr.net/gh/xingjiahui/CDN/about/20200408105630.png
-       descr: 免费强大的MarkDown编辑器
+  class_name: 博客使用工具
+  link_list:
+    1:
+      name: Hexo
+      link: https://hexo.io/
+      avatar: https://cdn.jsdelivr.net/gh/xingjiahui/CDN/link/pluginButterflylogo.png
+      descr: 快速、简洁的博客框架
+    2:
+      name: Butterfly
+      link: https://github.com/jerryc127/hexo-theme-butterfly
+      avatar: https://cdn.jsdelivr.net/gh/xingjiahui/CDN/link/butterfly.png
+      descr: 超美的一款Hexo卡片式主题
+    3:
+      name: Coding
+      link: https://coding.net/
+      avatar: https://assets.codehub.cn/resources/logo1-png.png
+      descr: 国内超棒的代码托管平台
+    4:
+      name: GitHub
+      link: https://www.github.com/
+      avatar: https://cdn.jsdelivr.net/gh/xingjiahui/CDN/link/github.png
+      descr: 每个程序猿的必经之路
+    5:
+      name: Waline
+      link: https://waline.js.org
+      avatar: https://p5.ssl.qhimg.com/t01ec54674f5912eea9.png
+      descr: 匿名、安装、基于Valine衍生出来的评论
+    6:
+      name: PicGo
+      link: https://github.com/Molunerfinn/PicGo
+      avatar: https://cdn.jsdelivr.net/gh/xingjiahui/CDN/about/20200408110808.png
+      descr: 开源免费的图片上传工具
+    7:
+      name: Typora
+      link: https://www.typora.io/
+      avatar: https://cdn.jsdelivr.net/gh/xingjiahui/CDN/about/20200408105630.png
+      descr: 免费强大的MarkDown编辑器
 
 class4:
-   class_name: 个人项目&很棒的工具
-   link_list:
-     1:
-       name: 音乐解锁
-       link: https://cdn.slblog.ga/unmusic/
-       avatar: https://cdn.slblog.ga/unmusic/img/icons/favicon-32x32.png
-       descr: 加密音乐去屎吧
-     2:
-       name: 状态显示服务
-       link: https://status.ytuty-blog.ga/
-       avatar: https://uptimerobot.com/assets/ico/favicon.ico
-       descr: 本站各项服务的监控
-     3:
-       name: Mikutap
-       link: https://cdn.slblog.ga/Mikutap/
-       avatar: /img/miicon.png
-       descr: 玩了就绝对停不下来的网页小游戏
-     4:
-       name: more-beautiful-div-framework(个人项目)
-       link: https://mdbf-css.js.org
-       avatar: https://static.npmjs.com/58a19602036db1daee0d7863c94673a4.png
-       descr: 个人CSS项目-more-beautiful-div-framework
-       width: 2px
-       style: solid
-       color: "#FFD700"
-       custom: link_custom
-       rotate: 360deg
-     5:
-       name: 博客分站(感谢impdx提供域名、Upyun提供CDN加速)
-       link: https://sblfz.impdx.vip/
-       avatar: https://cdn.slblog.ga/pic/logo.png
-       descr: 梦中做梦，做了个白日梦
-       width: 2px
-       style: solid
-       color: "#FFD700"
-       custom: link_custom
-       rotate: 250deg
+  class_name: 个人项目&很棒的工具
+  link_list:
+    1:
+      name: 音乐解锁
+      link: https://cdn.slblog.ga/unmusic/
+      avatar: https://cdn.slblog.ga/unmusic/img/icons/favicon-32x32.png
+      descr: 加密音乐去屎吧
+    2:
+      name: 状态显示服务
+      link: https://status.ytuty-blog.ga/
+      avatar: https://uptimerobot.com/assets/ico/favicon.ico
+      descr: 本站各项服务的监控
+    3:
+      name: Mikutap
+      link: https://cdn.slblog.ga/Mikutap/
+      avatar: /img/miicon.png
+      descr: 玩了就绝对停不下来的网页小游戏
+    4:
+      name: more-beautiful-div-framework(个人项目)
+      link: https://mdbf-css.js.org
+      avatar: https://static.npmjs.com/58a19602036db1daee0d7863c94673a4.png
+      descr: 个人CSS项目-more-beautiful-div-framework
+      width: 2px
+      style: solid
+      color: "#FFD700"
+      custom: link_custom
+      rotate: 360deg
+    5:
+      name: 博客分站(感谢impdx提供域名、Upyun提供CDN加速)
+      link: https://sblfz.impdx.vip/
+      avatar: https://cdn.slblog.ga/pic/logo.png
+      descr: 梦中做梦，做了个白日梦
+      width: 2px
+      style: solid
+      color: "#FFD700"
+      custom: link_custom
+      rotate: 250deg
