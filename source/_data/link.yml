@@ -56,74 +56,73 @@ class:
       color: "#f19ec2"
       custom: link_custom 1s infinite alternate
       rotate: 360deg
-     
 class2:
-   class_name: 跟着大佬走，那岂不轻而易举当上小大佬?
-   link_list:
-     1:
-       name: 小康博客
-       link: https://www.antmoe.com/
-       avatar: https://cdn.jsdelivr.net/gh/sviptzk/HexoStaticFile@latest/avatar.jpg
-       descr: 一个收藏回忆与分享技术的地方！
-       width: 1px (代表边框的大小border-width)
-       color: "#881B12"
-     2:
-       name: 依尘
-       link: https://www.yichen.online/
-       avatar: https://cdn.slblog.ga/pic/YiChen.png/
-       descr: Ting 花落的声音
-     3:
-       name: Uncle_drew
-       link: https://cndrew.cn/
-       avatar: https://cdn.jsdelivr.net/gh/drew233/cdn/dreww.webp
-       descr: Hand down,man down
-       width: 2px
-       style: solid
-       color: "#FFD700"
-       custom: link_custom
-       rotate: 250deg
-     4:
-       name: PluShine
-       link: https://plushine.cn
-       avatar: https://cdn.jsdelivr.net/gh/xingjiahui/CDN@latest/touxiang.jpg
-       descr: 💕菜徐坤💕
-       width: 3px
-       style: solid
-       color: "#FFD700"
-       custom: link_custom
-       rotate: 360deg
-     5:  
-       name: 云淡风轻
-       link: https://ioliu.cn/
-       avatar: https://ioliu.cn/images/avatar.jpg
-       descr: 一个安静的角落
-       width: 3px
-       style: solid
-       color: "#FFD700"
-       custom: link_custom
-       rotate: 360deg
-     6:
-       name: CC的部落格
-       link: https://blog.ccknbc.cc
-       avatar: https://cdn.jsdelivr.net/gh/ccknbc-backup/cdn/logo/ccknbc.png
-       descr: CC康纳百川
-     7:
-       name: Heo
-       link: https://blog.zhheo.com/
-       avatar: https://blog.zhheo.com/img/avatar.png
-       descr: 爱折腾的设计师
-       --primary-color: #49b1f5
-       custom: link_custom
-       rotate: 360deg
-     8:
-       name: Ln's Blog
-       link: https://weilining.cf
-       avatar: https://cdn.jsdelivr.net/gh/weilining/img@main/img/20201120235415.png
-       descr: 时不我待
-     9: name: 学习与生活
-       link: https://ql-isaac.cn/
-       avatar: https://image.ql-isaac.cn/站长头像.jpg
-       descr: It’s a beautiful day!
+  class_name: 跟着大佬走，那岂不轻而易举当上小大佬?
+  link_list:
+    1:
+      name: 小康博客
+      link: https://www.antmoe.com/
+      avatar: https://cdn.jsdelivr.net/gh/sviptzk/HexoStaticFile@latest/avatar.jpg
+      descr: 一个收藏回忆与分享技术的地方！
+      width: 1px (代表边框的大小border-width)
+      color: "#881B12"
+    2:
+      name: 依尘
+      link: https://www.yichen.online/
+      avatar: https://cdn.slblog.ga/pic/YiChen.png/
+      descr: Ting 花落的声音
+    3:
+      name: Uncle_drew
+      link: https://cndrew.cn/
+      avatar: https://cdn.jsdelivr.net/gh/drew233/cdn/dreww.webp
+      descr: Hand down,man down
+      width: 2px
+      style: solid
+      color: "#FFD700"
+      custom: link_custom
+      rotate: 250deg
+    4:
+      name: PluShine
+      link: https://plushine.cn
+      avatar: https://cdn.jsdelivr.net/gh/xingjiahui/CDN@latest/touxiang.jpg
+      descr: 💕菜徐坤💕
+      width: 3px
+      style: solid
+      color: "#FFD700"
+      custom: link_custom
+      rotate: 360deg
+    5:
+      name: 云淡风轻
+      link: https://ioliu.cn/
+      avatar: https://ioliu.cn/images/avatar.jpg
+      descr: 一个安静的角落
+      width: 3px
+      style: solid
+      color: "#FFD700"
+      custom: link_custom
+      rotate: 360deg
+    6:
+      name: CC的部落格
+      link: https://blog.ccknbc.cc
+      avatar: https://cdn.jsdelivr.net/gh/ccknbc-backup/cdn/logo/ccknbc.png
+      descr: CC康纳百川
+    7:
+      name: Heo
+      link: https://blog.zhheo.com/
+      avatar: https://blog.zhheo.com/img/avatar.png
+      descr: 爱折腾的设计师
+      --primary-color: #49b1f5
+      custom: link_custom
+      rotate: 360deg
+    8:
+      name: Ln's Blog
+      link: https://weilining.cf
+      avatar: https://cdn.jsdelivr.net/gh/weilining/img@main/img/20201120235415.png
+      descr: 时不我待
+    9: name: 学习与生活
+      link: https://ql-isaac.cn/
+      avatar: https://image.ql-isaac.cn/站长头像.jpg
+      descr: It’s a beautiful day!
 
 class3:
    class_name: 博客使用工具
