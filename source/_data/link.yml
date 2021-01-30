@@ -112,7 +112,7 @@ class2:
       link: https://blog.zhheo.com/
       avatar: https://blog.zhheo.com/img/avatar.png
       descr: 爱折腾的设计师
-      --primary-color: #49b1f5
+      --primary-color: '#49b1f5'
       custom: link_custom
       rotate: 360deg
     8:
@@ -120,7 +120,8 @@ class2:
       link: https://weilining.cf
       avatar: https://cdn.jsdelivr.net/gh/weilining/img@main/img/20201120235415.png
       descr: 时不我待
-    9: name: 学习与生活
+    9:
+      name: 学习与生活
       link: https://ql-isaac.cn/
       avatar: https://image.ql-isaac.cn/站长头像.jpg
       descr: It’s a beautiful day!
