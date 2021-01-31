@@ -7,7 +7,7 @@ script(src=url_for(theme.CDN.pjax))
 script.
   let pjaxSelectors = [
     'title',
-    '#config_change',
+    '#config-diff',
     '#body-wrap',
     '#rightside-config-hide',
     '#rightside-config-show',
@@ -29,7 +29,7 @@ script.
   document.addEventListener('pjax:complete', function () {
     window.refreshFn()
 
-    document.querySelectorAll('script[data-pjax], .pjax-reload script').forEach(item => {
+    document.querySelectorAll('script[data-pjax]').forEach(item => {
       const newScript = document.createElement('script')
       const content = item.text || item.textContent || item.innerHTML || ""
       Array.from(item.attributes).forEach(attr => newScript.setAttribute(attr.name, attr.value))
@@ -77,4 +77,10 @@ script.
     const $bodyClassList = document.body.classList
     $bodyClassList.contains('read-mode') && $bodyClassList.remove('read-mode')
 
+  })
+
+  document.addEventListener('pjax:error', (e) => {
+    if (e.request.status === 404) {
+      pjax.loadUrl('/404.html')
+    }
   })
