@@ -1,16 +1,17 @@
 document.addEventListener('DOMContentLoaded', function () {
-  const $blogName = document.getElementById('site-name')
-  let blogNameWidth = $blogName && $blogName.offsetWidth
+  let blogNameWidth = document.getElementById('site-name').offsetWidth
   const $menusEle = document.querySelector('#menus .menus_items')
   let menusWidth = $menusEle && $menusEle.offsetWidth
   const $searchEle = document.querySelector('#search-button')
   let searchWidth = $searchEle && $searchEle.offsetWidth
+  let detectFontSizeChange = false
 
-  const adjustMenu = (change = false) => {
-    if (change) {
-      blogNameWidth = $blogName && $blogName.offsetWidth
+  const adjustMenu = () => {
+    if (detectFontSizeChange) {
+      blogNameWidth = document.getElementById('site-name').offsetWidth
       menusWidth = $menusEle && $menusEle.offsetWidth
       searchWidth = $searchEle && $searchEle.offsetWidth
+      detectFontSizeChange = false
     }
     const $nav = document.getElementById('nav')
     let t
@@ -315,7 +316,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     let initTop = 0
     let isChatShow = true
-    const $header = document.getElementById('page-header')
+    const $nav = document.getElementById('nav')
     const isChatBtnHide = typeof chatBtnHide === 'function'
     const isChatBtnShow = typeof chatBtnShow === 'function'
     window.addEventListener('scroll', btf.throttle(function (e) {
@@ -323,25 +324,25 @@ document.addEventListener('DOMContentLoaded', function () {
       const isDown = scrollDirection(currentTop)
       if (currentTop > 56) {
         if (isDown) {
-          if ($header.classList.contains('nav-visible')) $header.classList.remove('nav-visible')
+          if ($nav.classList.contains('visible')) $nav.classList.remove('visible')
           if (isChatBtnShow && isChatShow === true) {
             chatBtnHide()
             isChatShow = false
           }
         } else {
-          if (!$header.classList.contains('nav-visible')) $header.classList.add('nav-visible')
+          if (!$nav.classList.contains('visible')) $nav.classList.add('visible')
           if (isChatBtnHide && isChatShow === false) {
             chatBtnShow()
             isChatShow = true
           }
         }
-        $header.classList.add('nav-fixed')
+        $nav.classList.add('fixed')
         if (window.getComputedStyle($rightside).getPropertyValue('opacity') === '0') {
           $rightside.style.cssText = 'opacity: 1; transform: translateX(-38px)'
         }
       } else {
         if (currentTop === 0) {
-          $header.classList.remove('nav-fixed', 'nav-visible')
+          $nav.classList.remove('fixed', 'visible')
         }
         $rightside.style.cssText = "opacity: ''; transform: ''"
       }
@@ -448,7 +449,7 @@ document.addEventListener('DOMContentLoaded', function () {
       let currentIndex = ''
 
       list.forEach(function (ele, index) {
-        if (top > btf.getEleTop(ele) - 80) {
+        if (top > btf.getEleTop(ele) - 70) {
           currentId = '#' + encodeURI(ele.getAttribute('id'))
           currentIndex = index
         }
@@ -535,16 +536,17 @@ document.addEventListener('DOMContentLoaded', function () {
     adjustFontSize: (plus) => {
       const fontSizeVal = parseInt(window.getComputedStyle(document.documentElement).getPropertyValue('--global-font-size'))
       let newValue = ''
+      detectFontSizeChange = true
       if (plus) {
         if (fontSizeVal >= 20) return
         newValue = fontSizeVal + 1
         document.documentElement.style.setProperty('--global-font-size', newValue + 'px')
-        !document.getElementById('nav').classList.contains('hide-menu') && adjustMenu(true)
+        !document.getElementById('nav').classList.contains('hide-menu') && adjustMenu()
       } else {
         if (fontSizeVal <= 10) return
         newValue = fontSizeVal - 1
         document.documentElement.style.setProperty('--global-font-size', newValue + 'px')
-        document.getElementById('nav').classList.contains('hide-menu') && adjustMenu(true)
+        document.getElementById('nav').classList.contains('hide-menu') && adjustMenu()
       }
 
       saveToLocal.set('global-font-size', newValue, 2)
@@ -796,7 +798,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
   const unRefreshFn = function () {
     window.addEventListener('resize', adjustMenu)
-    window.addEventListener('orientationchange', () => { setTimeout(adjustMenu(true), 100) })
 
     clickFnOfSubMenu()
     GLOBAL_CONFIG.islazyload && lazyloadImg()
@@ -834,3 +835,4 @@ document.addEventListener('DOMContentLoaded', function () {
   refreshFn()
   unRefreshFn()
 })
+console.clear()

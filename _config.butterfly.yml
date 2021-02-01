@@ -255,7 +255,6 @@ comments:
   # If you set it to false, the comment count will be invalid
   lazyload: true
   count: false # Display comment count in top_img
-  card_post_count: true
   
 # disqus
 # https://disqus.com/
@@ -361,6 +360,7 @@ waline:
   option:
 
 
+
 # Chat Services
 # --------------------------------------
 
@@ -431,7 +431,7 @@ cnzz_analytics:
 # Google Adsense (谷歌廣告)
 google_adsense:
   enable: false
-  js:
+  js: https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js
   client:
   enable_page_level_ads: false
 
@@ -638,9 +638,7 @@ runtimeshow:
 # Aside widget - Newest Comments
 newest_comments:
   enable: true
-  sort_order: # Don't modify the setting unless you know how it works
   limit: 10
-  storage: 10
   avatar: true
   valine: false
   github_issues:
@@ -652,21 +650,6 @@ newest_comments:
     forum:
     api_key:
   waline: true
-
-# post_paginationnn
-# value: 1 || 2 || false
-# 1: The 'next post' will link to old post
-# 2: The 'next post' will link to new post
-# false: disable pagination
-#post_pagination: 1
-
-# Disable all banner image
-disable_top_img: false
-
-# Post edit
-post_edit:
-  enable: true
-  url: https://github.com/ladjeek-actions/blogsour
 
 # Bottom right button (右下角按鈕)
 # --------------------------------------
@@ -762,6 +745,9 @@ snackbar:
   bg_light: '#49b1f5' # The background color of Toast Notification in light mode
   bg_dark: '#121212' # The background color of Toast Notification in dark mode
 
+# Baidu Push (百度推送)
+baidu_push: false
+
 #LIVE2D
 live2d:
   enable: false
@@ -824,6 +810,9 @@ categoryBar:
     - url('https://cdn.jsdelivr.net/gh/Akilarlxh/Akilarlxh.github.io@v3.3.3_2/img/cover5.webp')
     - url('https://cdn.jsdelivr.net/gh/Akilarlxh/Akilarlxh.github.io@v3.3.3_2/img/cover6.webp')
 
+# Disable Baidu transformation on mobile devices (禁止百度轉碼)
+disable_baidu_transformation: true
+
 # wowjs
 wowjs:
   enable: true #控制动画开关。true是打开，false是关闭
@@ -848,6 +837,12 @@ wowjs:
       iteration: 1 #选填项，动画重复的次数
     - class: btn-beautify button--animated orange larger #必填项，需要添加动画的元素的class
       style: animate__wobble #必填项，需要添加的动画
+      duration: 2.5s #选填项，动画持续时间，单位可以是ms也可以是s。例如3s，700ms。
+      delay: 0s #选填项，动画开始的延迟时间，单位可以是ms也可以是s。例如3s，700ms。
+      offset: 100 #选填项，开始动画的距离（相对浏览器底部）
+      iteration: 1000 #选填项，动画重复的次数
+    - class: aplayer aplayer-withlist aplayer-fixed #必填项，需要添加动画的元素的class
+      style: animate__heartBeat #必填项，需要添加的动画
       duration: 2.5s #选填项，动画持续时间，单位可以是ms也可以是s。例如3s，700ms。
       delay: 0s #选填项，动画开始的延迟时间，单位可以是ms也可以是s。例如3s，700ms。
       offset: 100 #选填项，开始动画的距离（相对浏览器底部）

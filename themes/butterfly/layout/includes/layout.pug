@@ -9,12 +9,12 @@ html(lang=config.language data-theme=theme.display_mode class=htmlClassHideAside
   body
     if theme.preloader.enable
         a(href='javascript:void(0);' onclick='preloader.endLoading();' title='点击跳过动画')
-          !=partial('includes/loading/loading', {}, {cache: true})
+          !=partial('includes/loading/loading', {}, {cache:theme.fragment_cache})
 
     if theme.background
       #web_bg
       
-    !=partial('includes/sidebar', {}, {cache: true})
+    !=partial('includes/sidebar', {}, {cache:theme.fragment_cache})
 
     #body-wrap(class=pageType)
       include ./header/index.pug
@@ -32,13 +32,13 @@ html(lang=config.language data-theme=theme.display_mode class=htmlClassHideAside
         if (footerBg === true)
           - var footer_bg = bg_img
         else
-          - var footer_bg = theme.footer_bg.indexOf('/') !== -1 ? `background-image: url('${url_for(footerBg)}')` : `background: ${footerBg}`
+          - var footer_bg = theme.footer_bg.indexOf('/') !== -1 ? `background-image: url(${url_for(footerBg)})` : `background: ${footerBg}`
       else
         - var footer_bg = ''
 
       footer#footer(style=footer_bg)
-        !=partial('includes/footer', {}, {cache: true})
+        !=partial('includes/footer', {}, {cache:theme.fragment_cache})
 
     include ./rightside.pug
-    !=partial('includes/third-party/search/index', {}, {cache: true})
+    !=partial('includes/third-party/search/index', {}, {cache:theme.fragment_cache})
     include ./additional-js.pug
