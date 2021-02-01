@@ -250,6 +250,7 @@ comments:
   # Choose: Disqus/Disqusjs/Livere/Gitalk/Valine/Utterances/Facebook Comments
   use:
    - Waline
+   - Twikoo
   text: true # Display the comment name next to the button
   # lazyload: The comment system will be load when comment element enters the browser's viewport.
   # If you set it to false, the comment count will be invalid
@@ -357,6 +358,12 @@ waline:
   highlight: true
   lang: zh-CN
   avatarCDN: https://gravatar.loli.net/avatar/
+  option:
+
+#twikoo
+twikoo:
+  envId: aertwk-3gi21mot2765fd75
+  region:
   option:
 
 
