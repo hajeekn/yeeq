@@ -2,7 +2,7 @@ script.
   var gitcalendar = new Vue({
     el: '#gitcalendar',
     data: {
-      simplemode: !{theme.gitcalendar.simplemode}, 
+      simplemode: !{theme.gitcalendar.simplemode},
       user: '!{theme.gitcalendar.user}',
       fixed: 'fixed',
       px: 'px',
@@ -120,7 +120,7 @@ script.
         document.querySelector('.angle-wrapper').style.display = 'none'
         getMousePos(c, event);
       };
-  
+
       function getMousePos(canvas, event) {
         var rect = canvas.getBoundingClientRect();
         var x = event.clientX - rect.left * (canvas.width / rect.width);
@@ -166,31 +166,31 @@ script.
       gitcalendar.amonthago = gitcalendar.first2date[gitcalendar.thisdayindex - 1].date
     }
   };
-  
+
   function thisweek2core() {
     for (let i = gitcalendar.thisdayindex - 1; i < gitcalendar.first2date.length; i++) {
       gitcalendar.thisweekdatacore += gitcalendar.first2date[i].count
     }
   };
-  
+
   function thisweekcore(index) {
     for (let item of gitcalendar.data[index]) {
       gitcalendar.thisweekdatacore += item.count
     }
   };
-  
+
   function addlastweek() {
     for (let item of gitcalendar.lastweek) {
       gitcalendar.weekdatacore += item.count
     }
   };
-  
+
   function addbeforeweek() {
     for (let i = gitcalendar.thisdayindex; i < gitcalendar.beforeweek.length; i++) {
       gitcalendar.weekdatacore += gitcalendar.beforeweek[i].count
     }
   };
-  
+
   function addweek(data) {
     if (gitcalendar.thisdayindex === 6) {
       gitcalendar.aweekago = gitcalendar.lastweek[0].date;
@@ -202,7 +202,7 @@ script.
       addbeforeweek()
     }
   }
-  
+
   fetch(githubapiurl)
     .then(data => data.json())
     .then(data => {
@@ -226,17 +226,17 @@ script.
     .catch(function(error) {
       console.log(error);
     });
-  
+
   //手机版更换为svg绘制
   if (document.getElementById("gitcalendarcanvasbox").offsetWidth < 500) {
     gitcalendar.simplemode = false
   }
-  
+
   //当改变窗口大小时重新绘制canvas
   window.onresize = function() {
     if (gitcalendar.simplemode) responsiveChart()
   }
-  
+
   //解决滚动滑轮时出现的标签显示
   window.onscroll = function() {
     if (document.querySelector('.angle-wrapper')) {

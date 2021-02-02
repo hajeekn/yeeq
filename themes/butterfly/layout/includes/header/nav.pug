@@ -1,15 +1,16 @@
 nav#nav
-  - var pagedescr = (typeof(page.description) != "undefined" && page.description!=null) ? page.description : '欢迎您来到了Hajeekn的小木屋呢,不过看起来有点漏水🐕'
+  - var pagedescr = page.description ? page.description : '欢迎来到Hajeekn的小木屋,现已重构房子的整体结构哦!'
+  - var subtitle = page.subtitle ? page.subtitle : page.title
     if is_post()
       span#blog_name
-        a#site-name(onclick='btf.scrollToDest(0,500)' data-title=pagedescr) #[=config.title]
+        a#site-name(onclick='btf.scrollToDest(0, 500)' data-title=pagedescr) #[=subtitle]
     else if is_page()
       span#blog_name
-        a#site-name(href=url_for('/') data-title=pagedescr) #[=page.title]
+        a#site-name(href=url_for('/') data-title=pagedescr) #[=subtitle]
     else
       span#blog_name
         a#site-name(href=url_for('/') data-title=pagedescr) #[=config.title]
-    
+
   #menus
     if (theme.algolia_search.enable || theme.local_search.enable)
       #search-button
@@ -21,3 +22,5 @@ nav#nav
     #toggle-menu
       a.site-page
         i.fas.fa-bars.fa-fw
+
+

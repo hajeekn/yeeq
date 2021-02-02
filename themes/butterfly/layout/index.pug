@@ -4,10 +4,7 @@ block content
   include ./includes/mixins/post-ui.pug
   #recent-posts.recent-posts
     if theme.gitcalendar.enable
-      .recent-post-item(style='width:100%')
-        !=partial('includes/gitcalendar', {}, {cache:theme.fragment_cache})
-    if theme.categoryBar.enable
-      .recent-post-item(style='height:auto;width:100%;padding:0px;')
-        #categoryBar!= list_categories(site.categories,{class: 'categoryBar',depth: 1})
+      .recent-post-item(style='width:100%;overflow:hidden;')
+        !=partial('includes/gitcalendar', {}, {cache: true})
     +postUI
     include includes/pagination.pug

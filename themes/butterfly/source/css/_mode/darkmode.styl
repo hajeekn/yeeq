@@ -7,7 +7,7 @@ if hexo-config('darkmode.enable') || hexo-config('display_mode') == 'dark'
     --search-bg: #121212
     --search-input-color: alpha(#FFFFFF, .7)
     --search-result-title: alpha(#FFFFFF, .9)
-    --preloader-bg: darken(#ca3b3e, -2)
+    --preloader-bg: darken(#121212, 2)
     --preloader-color: alpha(#FFFFFF, .7)
     --tab-border-color: #2c2c2c
     --tab-botton-bg: #2c2c2c
@@ -53,8 +53,8 @@ if hexo-config('darkmode.enable') || hexo-config('display_mode') == 'dark'
 
     // 頭部
     #page-header
-      & > #nav.fixed,
-      &.no-top-img #nav
+      &.nav-fixed > #nav,
+      &.not-top-img > #nav
         background: alpha(#121212, .8)
         box-shadow: 0 5px 6px -5px rgba(133, 133, 133, 0)
 

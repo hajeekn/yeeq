@@ -1,4 +1,4 @@
-script(async).
+script.
   var preloader = {
     endLoading: () => {
       document.body.style.overflow = 'auto';
@@ -10,4 +10,4 @@ script(async).
 
     }
   }
-  window.addEventListener('load',()=> {preloader.endLoading()})
+  window.addEventListener('load',preloader.endLoading())
