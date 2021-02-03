@@ -4,7 +4,7 @@ block content
   include ./includes/mixins/post-ui.pug
   #recent-posts.recent-posts
     if theme.gitcalendar.enable
-      .recent-post-item(style='width:100%;overflow:hidden;')
-        !=partial('includes/gitcalendar', {}, {cache: true})
+      .recent-post-item(style='width:100%')
+        !=partial('includes/third-party/gitcalendar', {}, {cache: true})
     +postUI
     include includes/pagination.pug

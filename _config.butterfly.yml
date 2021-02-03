@@ -826,7 +826,7 @@ pjax:
 # Inject the css and script (aplayer/meting)
 aplayerInject:
   enable: false
-  per_page: true
+  per_page: falses
 
 # Snackbar (Toast Notification 彈窗)
 # https://github.com/polonel/SnackBar
