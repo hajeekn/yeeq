@@ -125,6 +125,11 @@ class2:
       link: https://ql-isaac.cn/
       avatar: https://image.ql-isaac.cn/站长头像.jpg
       descr: It’s a beautiful day!
+    10:
+      name: Spoience
+      link: https://www.spoience.com/
+      avatar: https://spoience.com/images/avatar.webp
+      descr: 记录我的碎碎念
 
 class3:
   class_name: 博客使用工具
