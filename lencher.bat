@@ -1,2 +1,0 @@
-@echo off
-hexo clean &&yuque-hexo clean && git add --all && git commit -m "🥧🍬DouBi Update~🍬🥧Π" && git push -f https://ladjeek-actions:qpalzm131+2+3+4+@github.com/ladjeek-actions/blogsour.git && git push -f https://ladjeek-actions:qpalzm131+2+3+4+@github.com/ladjeek-actions/yeeq.git

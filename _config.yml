@@ -141,5 +141,3 @@ baidusitemap:
 deploy:
   type: 'git'
   repo:
-         github: https://slblog-github:qpalzm131+2+3+4+@github.com/slblog-github/Blog.git,master
-branch: master
