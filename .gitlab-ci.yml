@@ -4,10 +4,11 @@ image: node:12.18.3
 
 pages:
   script:
-    - npm cache clean
     - npm install hexo-cli -g
     - npm install
+    - hexo clean
     - hexo g
+    - gulp
   artifacts:
     paths:
       - public
