@@ -4,7 +4,7 @@ db.json
 *.log
 node_modules/
 .deploy*/
-lencher.bat
+./lencher.bat
 *.exe
 *.bat
 .vscode/
