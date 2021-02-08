@@ -12,9 +12,6 @@ jobs:
         with:
           ref: master
 
-      #2020年10月后github新建仓库默认分支改为main，注意更改
-      #但私有仓库貌似还是master并没有变
-
       - name: 安装 Node
         uses: actions/setup-node@v1
         with:
@@ -55,8 +52,4 @@ jobs:
         run: |
           git config --global user.name "slblog-github"
           git config --global user.email "sladmin@slwebtap.onmicrosoft.com"
-          git add public/
-          git commit -m "🎇 Update from GitHub Actions Auto Robot🎇"
-          git add --all
-          git commit -m "Update website in github actions"
-          git push -f ${{ secrets.WEBP }}
+          hexo d
