@@ -6,7 +6,7 @@ comments: false
 aside: false
 ---
 {% raw %}
-<div id="friend_link_circle" >
+<div id="friend_link_circle">
 <h2>统计信息</h2>
 
 <div id="info_user_poor" class="article-sort-item" 
