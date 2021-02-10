@@ -12,10 +12,10 @@ menu:
   网站 || fab fa-hive:
     - 文章 || /archives/ || iconfont icon-archive
     - 友链 || /link/ || iconfont icon-link
+    - 友链们的朋友圈 || /circle/ || fas fa-network-wired
   我的信息 || far fa-address-card:
     - 关于 || /about/ || iconfont icon-love
     - 更新 || /update/ || iconfont icon-book
-    - 视频播放器 || /VideoPlayer || iconfont icon-play
   一些话 || fas fa-user-ninja:
     - 日志 || /time || iconfont icon-autoprefixer
     - 留言板 || /messagesboard/ || fas fa-sms
@@ -904,12 +904,6 @@ wowjs:
       delay: 0s #选填项，动画开始的延迟时间，单位可以是ms也可以是s。例如3s，700ms。
       offset: 100 #选填项，开始动画的距离（相对浏览器底部）
       iteration: 1000 #选填项，动画重复的次数
-    - class: aplayer aplayer-withlist aplayer-fixed #必填项，需要添加动画的元素的class
-      style: animate__heartBeat #必填项，需要添加的动画
-      duration: 2.5s #选填项，动画持续时间，单位可以是ms也可以是s。例如3s，700ms。
-      delay: 0s #选填项，动画开始的延迟时间，单位可以是ms也可以是s。例如3s，700ms。
-      offset: 100 #选填项，开始动画的距离（相对浏览器底部）
-      iteration: 1000 #选填项，动画重复的次数
     - class: CoolButton
       style: wowpanels
 
@@ -937,6 +931,8 @@ inject:
       - <script async src="https://cdn.jsdelivr.net/npm/meting/dist/Meting.min.js"></script>
       - <script async data-pjax src="https://cdn.jsdelivr.net/gh/HCLonely/hclonely.github.io@1.4.7/js/custom/pace.min.js"></script>
       - '<div class="app-refresh" id="app-refresh"> <div class="app-refresh-wrap"> <label>✨ Hajeekn的小博客已更新最新版本 👉</label><a href="javascript:void(0)" onclick="location.reload()">🎇 要不要看看还漏不漏水啊? 🎇</a> </div></div><script>function showNotification(){if(GLOBAL_CONFIG.Snackbar){var t="light"===document.documentElement.getAttribute("data-theme")?GLOBAL_CONFIG.Snackbar.bgLight:GLOBAL_CONFIG.Snackbar.bgDark,e=GLOBAL_CONFIG.Snackbar.position;Snackbar.show({text:"已更新最新版本",backgroundColor:t,duration:5e5,pos:e,actionText:"🎇 要不要看看还漏不漏水啊? 🎇",actionTextColor:"#fff",onActionClick:function(t){location.reload()}})}else{var o=`top: 0; background: ${"light"===document.documentElement.getAttribute("data-theme")?"#49b1f5":"#1f1f1f"};`;document.getElementById("app-refresh").style.cssText=o}}"serviceWorker"in navigator&&(navigator.serviceWorker.controller&&navigator.serviceWorker.addEventListener("controllerchange",function(){showNotification()}),window.addEventListener("load",function(){navigator.serviceWorker.register("/sw.js")}));</script>'
+      - <script src="https://cdn.jsdelivr.net/npm/vue@2.6.11"></script>
+      - <script src="/circle/request.js"></script>
 
 # CDN
 # Don't modify the following settings unless you know how they work
