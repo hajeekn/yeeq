@@ -19,6 +19,7 @@ menu:
   一些话 || fas fa-user-ninja:
     - 日志 || /time || iconfont icon-autoprefixer
     - 留言板 || /messagesboard/ || fas fa-sms
+    - 说一说 || /talk/ || fas fa-sms
 
 # Hide the child menu items in mobile sidebar
 hide_sidebar_menu_child: false
