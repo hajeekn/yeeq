@@ -19,7 +19,7 @@ menu:
   一些话 || fas fa-user-ninja:
     - 日志 || /time || iconfont icon-autoprefixer
     - 留言板 || /messagesboard/ || fas fa-sms
-    - 说一说 || /talk/ || fas fa-sms
+    - 说一说 || /talk/ || fas fa-bomb
 
 # Hide the child menu items in mobile sidebar
 hide_sidebar_menu_child: false
@@ -602,7 +602,7 @@ ClickShowText:
 
 # Default display mode (網站默認的顯示模式)
 # light (default) / dark
-display_mode: light
+display_mode: newyear
 
 # Beautify (美化頁面顯示)
 beautify:
@@ -926,7 +926,7 @@ inject:
   head:
       - <meta name="google-site-verification" content="qAOA3HXexaF_5uvs3Ghmqp_eB0pIzLgQ1eFRTFGb0Sk" /> #谷歌收录
       - <link rel="stylesheet" href="/css/atuban.css" media="defer" onload="this.media='screen'">
-      - <link rel="stylesheet" href="https://unpkg.zhimg.com/blog-beatiful@1.1.2/majt.css" media="defer" onload="this.media='all'">
+      - <link rel="stylesheet" href="https://unpkg.zhimg.com/ygeeky@1.0.3/assets/.cn/blogbe.min.css" media="defer" onload="this.media='all'">
       - <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css"  media="defer" onload="this.media='all'">
       - <meting-js server='tencent' type='playlist' id='3813658180' fixed='true'></meting-js>
   bottom:

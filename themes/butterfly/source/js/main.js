@@ -502,6 +502,22 @@ document.addEventListener('DOMContentLoaded', function () {
 
       newEle.addEventListener('click', clickFn)
     },
+    switchNewYearMode: () => { // Switch Between Light And Newyaer mode
+      const nowMode = document.documentElement.getAttribute('data-theme') === 'newyear' ? 'newyear' : 'light'
+      if (nowMode === 'light') {
+        activateNewYearMode()
+        saveToLocal.set('theme', 'newyear', 2)
+        GLOBAL_CONFIG.Snackbar !== undefined && btf.snackbarShow('🎇 成功切换到新年模式')
+      } else {
+        activateLightMode()
+        saveToLocal.set('theme', 'light', 2)
+        GLOBAL_CONFIG.Snackbar !== undefined && btf.snackbarShow('🍬 成功还原到普通亮色')
+      }
+      // handle some cases
+      typeof utterancesTheme === 'function' && utterancesTheme()
+      typeof FB === 'object' && window.loadFBComment()
+      window.DISQUS && document.getElementById('disqus_thread').children.length && setTimeout(() => window.disqusReset(), 200)
+    },
     switchDarkMode: () => { // Switch Between Light And Dark Mode
       const nowMode = document.documentElement.getAttribute('data-theme') === 'dark' ? 'dark' : 'light'
       if (nowMode === 'light') {
@@ -560,6 +576,9 @@ document.addEventListener('DOMContentLoaded', function () {
         break
       case 'rightside_config':
         rightSideFn.showOrHideBtn()
+        break
+      case 'NewYearMode':
+        rightSideFn.switchNewYearMode()
         break
       case 'readmode':
         rightSideFn.switchReadMode()

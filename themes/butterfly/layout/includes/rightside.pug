@@ -27,6 +27,8 @@
     else if theme.translate.enable || (theme.darkmode.enable && theme.darkmode.button) || theme.change_font_size
       button#rightside_config(type="button" title=_p("rightside.setting"))
         i.fas.fa-cog.fa-spin
+      button#NewYearMode(type="button" title=_p("切换新年模式"))
+        i.fas.fa-glass-cheers
 
     if theme.chat_btn
       button#chat_btn(type="button" title=_p("rightside.chat_btn"))
