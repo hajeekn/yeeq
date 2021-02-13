@@ -6,6 +6,13 @@ comments: false
 aside: false
 ---
 {% raw %}
+<script>$(document).ready(function () {
+    if(location.href.indexOf("#reloaded")==-1){
+        location.href=location.href+"#reloaded";
+        location.reload();
+    }
+})</script>
+<script src="https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js"></script>
 <div id="friend_link_circle">
 <h2>统计信息</h2>
 
