@@ -46,9 +46,15 @@ jobs:
           gulp
 
       - name: Deploy Blog in Network
+        env:
+          DEK: ${{ secrets.DEK }}
         run: |
+          mkdir -p ~/.ssh/
+          echo "$DEK" > ~/.ssh/id_rsa 
+          chmod 600 ~/.ssh/id_rsa
+          ssh-keyscan github.com >> ~/.ssh/known_hosts
           git config --global user.name "slblog-github"
           git config --global user.email "sladmin@slwebtap.onmicrosoft.com"
           git add public/
           git commit -m "Update Blog from GitHub Actions"
-          git push --force --quiet https://${{ secrets.USE }}:${{ secrets.PAS }}/slblog-github/Blog.git
+          git push --force --quiet git@github.com:slblog-github/Blog.git
