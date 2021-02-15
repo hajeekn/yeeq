@@ -654,9 +654,9 @@ subtitle:
 
 # Loading Animation (加載動畫)
 preloader:
-  enable: true
+  enable: false
   load_color: '#37474f'
-  load_style: snack
+  load_style: svghook
   load_image:
 
 # aside (側邊欄)
@@ -926,8 +926,9 @@ inject:
   head:
       - <meta name="google-site-verification" content="qAOA3HXexaF_5uvs3Ghmqp_eB0pIzLgQ1eFRTFGb0Sk" /> #谷歌收录
       - <link rel="stylesheet" href="/css/atuban.css" media="defer" onload="this.media='screen'">
-      - <link rel="stylesheet" href="https://unpkg.zhimg.com/ygeeky@1.0.3/assets/.cn/blogbe.min.css" media="defer" onload="this.media='all'">
+      - <link rel="stylesheet" href="https://unpkg.zhimg.com/ygeeky@1.0.7/assets/.cn/blogbe.min.css" media="defer" onload="this.media='all'">
       - <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css"  media="defer" onload="this.media='all'">
+      - <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/Blog-Beatiful/majt.css">
       - <meting-js server='tencent' type='playlist' id='3813658180' fixed='true'></meting-js>
   bottom:
       - <script async data-pjax src="/js/floatpanel.js"></script>

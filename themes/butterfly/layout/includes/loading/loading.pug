@@ -38,3 +38,10 @@ if theme.preloader.enable
       .loading-left-bg
       .loading-right-bg
       img.load-image(src=url_for(theme.preloader.load_image) alt='')
+  else if (theme.preloader.load_style === 'svghook')
+    script(src='./js/load/svghook.js')
+    #loading-box
+      .loading-left-bg
+      .loading-right-bg
+      img#logo(width='150' height='80' src='https://assets.codepen.io/721952/logoWhite.png')
+      svg#container(version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink')
