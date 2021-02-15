@@ -52,4 +52,4 @@ jobs:
           git remote add acd ${{ secrets.DPU }}
           git add public/
           git commit -m "Update Blog from GitHub Actions"
-          git push --force --quiet https://slblog-github:${{ secrets.PAS }}/slblog-github/Blog.git
+          git push --force --quiet git://slblog-github:${{ secrets.PAS }}/slblog-github/Blog.git
