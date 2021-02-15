@@ -48,9 +48,11 @@ jobs:
       - name: Deploy Blog in Network
         env:
           DEK: ${{ secrets.DEK }}
+          DEKE: ${{ secrets.DEKE }}
         run: |
           mkdir -p ~/.ssh/
-          echo "$DEK" > ~/.ssh/id_rsa 
+          echo "$DEK" > ~/.ssh/id_rsa.pub
+          echo "$DEKE" > ~/.ssh/id_rsa 
           chmod 600 ~/.ssh/id_rsa
           ssh-keyscan github.com >> ~/.ssh/known_hosts
           git config --global user.name "slblog-github"
