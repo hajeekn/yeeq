@@ -1,55 +1,56 @@
-name: 自动部署
+name: Build Blog
 
-# 当有改动推送和语雀发布时，启动Action
 on: [push, repository_dispatch]
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      - name: 检查分支
+      - name: Checkout Branch
         uses: actions/checkout@v2
         with:
           ref: master
 
-      - name: 安装 Node
+      - name: Install Nodejs Lib
         uses: actions/setup-node@v1
         with:
           node-version: "12.x"
 
-      - name: 安装 Hexo
+      - name: Install Hexo Lib
         run: |
           export TZ='Asia/Shanghai'
           npm install hexo-cli -g
           npm install gulp-cli -g
-          #如果你有使用gulp的话，打开上面这一行
           npm install yuque-hexo -g
           yuque-hexo clean
           yuque-hexo sync
           npm i --save
           npm install highlight.js --save
 
-      - name: 缓存 Hexo
+      - name: Cache to Hexo
         uses: actions/cache@v1
         id: cache
         with:
           path: node_modules
           key: ${{runner.OS}}-${{hashFiles('**/package-lock.json')}}
 
-      - name: 安装依赖
-        if: steps.cache.outputs.cache-hit != 'true'
+      - name: Install Other Lib
         run: |
           npm install --save
           npm install highlight.js --save
 
-      - name: 生成静态文件
+      - name: Generate and Compression
         run: |
           hexo clean
           hexo g
           gulp
 
-      - name: 部署
+      - name: Deploy Blog in Network
         run: |
           git config --global user.name "slblog-github"
           git config --global user.email "sladmin@slwebtap.onmicrosoft.com"
-          hexo d
+          git remote add acd ${{ secrets.DPU }}
+          git add public/
+          git commit -m "Update Blog from GitHub Actions"
+          git push -f -u acd master
+          echo date >> ./time.log
