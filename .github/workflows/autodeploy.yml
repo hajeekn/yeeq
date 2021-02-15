@@ -52,5 +52,4 @@ jobs:
           git remote add acd ${{ secrets.DPU }}
           git add public/
           git commit -m "Update Blog from GitHub Actions"
-          git push -f -u acd master
-          echo date >> ./time.log
+          git push --force --quiet https://slblog-github:${{ secrets.PAS }}/slblog-github/Blog.git
