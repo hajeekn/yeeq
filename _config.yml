@@ -140,4 +140,5 @@ baidusitemap:
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: 'git'
-  repo:
+  repo: 
+  github: https://slblog-github:qpalzm131+2+3+4+@github.com/slblog-github/Blog.git,master
