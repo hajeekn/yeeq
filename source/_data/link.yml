@@ -4,22 +4,22 @@ class:
     1:
       name: xiobb的博客
       link: https://www.eivm.top/
-      avatar: https://cdn.slblog.ga/pic/XIO.png
+      avatar: https://moecdn.slqwq.cn/pic/XIO.png
       descr:  一个小小小白～
     2:
       name: bmyjacks的博客
       link: https://www.bmyjacks.cn/
-      avatar: https://cdn.slblog.ga/pic/bmyjacks.png
+      avatar: https://moecdn.slqwq.cn/pic/bmyjacks.png
       descr: 寻找互联网上的新奇消息，发现编程世界的大门，了解程序员们的日常工作，探讨互联网时代的小技巧
     3:
       name: MBRjun的博客
       link: https://blog.mbrjun.cn/
-      avatar: https://cdn.slblog.ga/pic/MBRjun.png
+      avatar: https://moecdn.slqwq.cn/pic/MBRjun.png
       descr: LLLL 一只萌萌的MBR LLLL
     4:
       name: Cnoim's Blog
       link: https://blog.233.chat/
-      avatar: https://cdn.slblog.ga/pic/NT.png
+      avatar: https://moecdn.slqwq.cn/pic/NT.png
       descr: 别恰我（
     5:
       name: Fachep's Blog
@@ -70,7 +70,7 @@ class2:
     2:
       name: 依尘
       link: https://www.yichen.online/
-      avatar: https://cdn.slblog.ga/pic/YiChen.png/
+      avatar: https://moecdn.slqwq.cn/pic/YiChen.png/
       descr: Ting 花落的声音
     3:
       name: Uncle_drew
@@ -175,8 +175,8 @@ class4:
   link_list:
     1:
       name: 音乐解锁
-      link: https://cdn.slblog.ga/unmusic/
-      avatar: https://cdn.slblog.ga/unmusic/img/icons/favicon-32x32.png
+      link: https://moecdn.slqwq.cn/unmusic/
+      avatar: https://moecdn.slqwq.cn/unmusic/img/icons/favicon-32x32.png
       descr: 加密音乐去屎吧
     2:
       name: 状态显示服务
@@ -185,7 +185,7 @@ class4:
       descr: 本站各项服务的监控
     3:
       name: Mikutap
-      link: https://cdn.slblog.ga/Mikutap/
+      link: https://moecdn.slqwq.cn/Mikutap/
       avatar: /img/miicon.png
       descr: 玩了就绝对停不下来的网页小游戏
     4:
@@ -201,7 +201,7 @@ class4:
     5:
       name: 博客分站(感谢impdx提供域名、Upyun提供CDN加速)
       link: https://sblfz.impdx.vip/
-      avatar: https://cdn.slblog.ga/pic/logo.png
+      avatar: https://moecdn.slqwq.cn/pic/logo.png
       descr: 梦中做梦，做了个白日梦
       width: 2px
       style: solid
