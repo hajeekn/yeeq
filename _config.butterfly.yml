@@ -926,10 +926,13 @@ inject:
   head:
       - <meta name="google-site-verification" content="qAOA3HXexaF_5uvs3Ghmqp_eB0pIzLgQ1eFRTFGb0Sk" /> #谷歌收录
       - <link rel="stylesheet" href="/css/atuban.css" media="defer" onload="this.media='screen'">
-      - <link rel="stylesheet" href="https://unpkg.zhimg.com/ygeeky@1.0.7/assets/.cn/blogbe.min.css" media="defer" onload="this.media='all'">
+      - <link rel="stylesheet" href="https://unpkg.zhimg.com/ygeeky@1.0.8/assets/.cn/blogbe.min.css" media="defer" onload="this.media='all'">
       - <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css"  media="defer" onload="this.media='all'">
-      - <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/Blog-Beatiful/majt.css">
       - <meting-js server='tencent' type='playlist' id='3813658180' fixed='true'></meting-js>
+      - <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=ZCOOL+KuaiLe&amp;display=swap"> #傻逼钴铬
+      - <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Potta+One&display=swap" media="defer" onload="this.media='all'">>
+      - <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Zhi+Mang+Xing&display=swap" media="defer" onload="this.media='all'">>
+      - <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Long+Cang&display=swap"m edia="defer" onload="this.media='all'">>
   bottom:
       - <script async data-pjax src="/js/floatpanel.js"></script>
       - <script async data-pjax src="/js/cen.js"></script>
