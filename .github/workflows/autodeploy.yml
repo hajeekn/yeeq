@@ -24,8 +24,6 @@ jobs:
           npm install yuque-hexo -g
           yuque-hexo clean
           yuque-hexo sync
-          npm i --save
-          npm install highlight.js --save
 
       - name: Cache to Hexo
         uses: actions/cache@v1
@@ -46,10 +44,15 @@ jobs:
           gulp
 
       - name: Deploy Blog in Network
-        env:
-          DEK: ${{ secrets.DEK }}
-          DEKE: ${{ secrets.DEKE }}
         run: |
           git config --global user.name "slblog-github"
           git config --global user.email "sladmin@slwebtap.onmicrosoft.com"
           hexo deploy
+
+      - name: Send reminder message to telegram
+        if: cancelled() == false
+        uses: xinthink/action-telegram@v1.1
+        with:
+          botToken: ${{ secrets.TG_BOT_TOKEN }}
+          chatId: ${{ secrets.TG_CHAT_ID }}
+          skipSuccess: false
