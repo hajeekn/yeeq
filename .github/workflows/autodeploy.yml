@@ -52,7 +52,8 @@ jobs:
       - name: Send reminder message to telegram
         if: cancelled() == false
         uses: xinthink/action-telegram@v1.1
-        with:
+        env:
           botToken: ${{ secrets.TG_BOT_TOKEN }}
           chatId: ${{ secrets.TG_CHAT_ID }}
+          jobStatus: ${{ job.status }}
           skipSuccess: false
