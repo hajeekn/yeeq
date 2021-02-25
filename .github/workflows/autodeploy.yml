@@ -22,6 +22,9 @@ jobs:
           npm install hexo-cli -g
           npm install gulp-cli -g
           npm install yuque-hexo -g
+          
+      - name: Clear the local language cache and synchronize language articles
+        run: |
           yuque-hexo clean
           yuque-hexo sync
 
@@ -33,9 +36,9 @@ jobs:
           key: ${{runner.OS}}-${{hashFiles('**/package-lock.json')}}
 
       - name: Install Other Lib
+        if: steps.cache.outputs.cache-hit != 'true'
         run: |
           npm install --save
-          npm install highlight.js --save
           
       - name: Update Yuque pull cache and articles
         run: |
