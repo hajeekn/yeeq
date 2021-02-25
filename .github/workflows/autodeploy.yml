@@ -36,6 +36,19 @@ jobs:
         run: |
           npm install --save
           npm install highlight.js --save
+          
+      - name: Update Yuque pull cache and articles
+        run: |
+          echo `date +"%Y-%m-%d %H:%M:%S"` begin > time.log
+          git config --global user.name "slblog-github"
+          git config --global user.email "sladmin@slwebtap.onmicrosoft.com"
+          git add .
+          git commit -m "Refresh yuque json" -a
+        
+      - name: Push Yuque to pull cache and articles
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.GET }}
 
       - name: Generate and Compression
         run: |
