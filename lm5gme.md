@@ -4,8 +4,8 @@ sticky: 1
 tags: [魔改, 友链朋友圈]
 description: 基于冰卡诺老师的友链朋友圈,支持直接在主题配置文件配置
 categories: [魔改, 友链朋友圈]
-cover:
-photos:
+cover: https://rmt.dogedoge.com/fetch/hajeekn/storage/20210314135158.png
+photos: https://rmt.dogedoge.com/fetch/hajeekn/storage/20210314135158.png
 abbrlink: lm5gmeak
 date: 2021-03-14 12:58:42
 copyright_author_href: https://blog.slqwq.cn
