@@ -215,9 +215,6 @@ jobs:
         with:
           ref: master
 
-      #2020年10月后github新建仓库默认分支改为main，注意更改
-      #但私有仓库貌似还是master并没有变
-
       - name: 安装 Node
         uses: actions/setup-node@v1
         with:
