@@ -6,7 +6,7 @@ description: 基于冰卡诺老师的友链朋友圈,支持直接在主题配置
 categories: [魔改, 友链朋友圈]
 cover: https://rmt.dogedoge.com/fetch/hajeekn/storage/20210314135158.png
 photos: https://rmt.dogedoge.com/fetch/hajeekn/storage/20210314135158.png
-abbrlink: lm5gmeak
+abbrlink: alopakmn
 date: 2021-03-14 12:58:42
 copyright_author_href: https://blog.slqwq.cn
 author: Hajeekn
@@ -25,7 +25,7 @@ author: Hajeekn
 
 你是否经常烦恼于友链过多但没有时间浏览？那么友链朋友圈将解决这一痛点。你可以随时获取友链网站的更新内容，并了解友链的活跃情况 。
 效果图如下：
-[![image.png](https://cdn.nlark.com/yuque/0/2021/png/8391485/1612877553087-3087b091-93ce-40fd-a49f-8baf0f0f49c4.png#align=left&display=inline&height=521&margin=%5Bobject%20Object%5D&name=image.png&originHeight=521&originWidth=386&size=161076&status=done&style=none&width=386#align=left&display=inline&height=521&margin=%5Bobject%20Object%5D&originHeight=521&originWidth=386&status=done&style=none&width=386)](https://cdn.nlark.com/yuque/0/2021/png/8391485/1612877553087-3087b091-93ce-40fd-a49f-8baf0f0f49c4.png#align=left&display=inline&height=521&margin=%5Bobject%20Object%5D&name=image.png&originHeight=521&originWidth=386&size=161076&status=done&style=none&width=386)
+[![image.png](https://cdn.nlark.com/yuque/0/2021/png/8391485/1612877553087-3087b091-93ce-40fd-a49f-8baf0f0f49c4.png#align=left&display=inline&height=521&margin=%5Bobject%20Object%5D&name=image.png&originHeight=521&originWidth=386&size=161076&status=done&style=none&width=386#align=left&display=inline&height=521&margin=%5Bobject%20Object%5D&originHeight=521&originWidth=386&status=done&style=shadow&width=386)](https://cdn.nlark.com/yuque/0/2021/png/8391485/1612877553087-3087b091-93ce-40fd-a49f-8baf0f0f49c4.png#align=left&display=inline&height=521&margin=%5Bobject%20Object%5D&name=image.png&originHeight=521&originWidth=386&size=161076&status=done&style=none&width=386)
 ~~因为是 beta 版本，所以不可避免还有错误，为了更好制作这个项目，发现 bug。我首先 release 这个 beta 版本。~~
 目前 release1.5 版本：
 ① 支持**butterfly、volantis、matery 主题**的友链获取
