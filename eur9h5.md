@@ -4,8 +4,8 @@ sticky: 1
 tags: [书签同步]
 description: 书签还在傻傻的导入导出?快来试试 Floccus
 categories: [书签同步]
-cover:
-photos:
+cover: https://cdn.jsdelivr.net/gh/ladjeek-actions/lookcovers@main//QM/blogcovers/20210418114346.png
+photos: https://cdn.jsdelivr.net/gh/ladjeek-actions/lookcovers@main//QM/blogcovers/20210418114346.png
 abbrlink: eur9h5la
 date: 2021-04-18 10:49:42
 copyright_author_href: https://blog.slqwq.cn
