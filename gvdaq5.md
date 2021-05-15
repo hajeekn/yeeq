@@ -122,12 +122,10 @@ $(function () {
     preload: "auto",
     volume: Number("0"),
     video: {
-      url:
-        "https://cdn.jsdelivr.net/gh/glahajeekn/vdts@master/go/playlist.m3u8", //自己的m3u8地址
+      url: "https://cdn.jsdelivr.net/gh/glahajeekn/vdts@master/go/playlist.m3u8", //自己的m3u8地址
       type: "hls",
       defaultQuality: 0,
-      pic:
-        "https://i2.hdslb.com/bfs/archive/37785c661455874fe424a6731a9c6b82e31cef7a.jpg", //视频未播放前的封面
+      pic: "https://i2.hdslb.com/bfs/archive/37785c661455874fe424a6731a9c6b82e31cef7a.jpg", //视频未播放前的封面
       thumbnails: "thumbnails.jpg",
     },
   });
