@@ -1,23 +1,21 @@
 ---
-
-title: 物理机安装及体验Windows 11
+title: 物理机安装 Windows 11
 sticky: 1
-tags: [Windows,Windows11]
-description:
-categories: [Windows,Windows11]
+tags: [Windows, Windows11]
+description: 最近Windows 11发布了,我趁机白嫖了个预览版镜像在虚拟机里面装着玩玩,之后便给实体机也装上了
+categories: [Windows, Windows11]
 cover: https://cdn.jsdelivr.net/gh/ladjeek-actions/lookcovers@main/QM/blogcovers/20210710214057.png
 photos: https://cdn.jsdelivr.net/gh/ladjeek-actions/lookcovers@main/QM/blogcovers/20210710214057.png
-abbrlink:alioalnh
+abbrlink: alioalnh
 date: 2021-07-10 20:55:32
 copyright_author_href: https://blog.slqwq.cn
 author: Hajeekn
-
 ---
 
 本文章首发于[语雀](https://www.yuque.com/ladjeek/ygg4q6)!
 通过各种高科技功能同步到[Hajeekn 的博客](https://blog.slqwq.cn)
 最近 Windows 11 发布了,我趁机白嫖了个预览版镜像在虚拟机里面装着玩玩,之后便给实体机也装上了
-本文章说说如何安装 Windows 11 和我的使用情况
+本文章说说如何安装 Windows 11 和对于笔记本如何优化动效
 
 # 安装 Windows 11
 
