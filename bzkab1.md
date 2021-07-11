@@ -49,12 +49,7 @@ author: Hajeekn
 
 手机上接收下验证码
 等待分配资源
-
-![9[59_7I{DU)@3R70O{$YBFC.png](https://cdn.nlark.com/yuque/0/2021/png/12488964/1625971310933-be845bb2-8c04-4bdd-a0aa-84c3488e7d9f.png#clientId=u9f2427a1-2f47-4&from=drop&id=ub4fea72d&margin=%5Bobject%20Object%5D&name=9%5B59_7I%7BDU%29%403R70O%7B%24YBFC.png&originHeight=583&originWidth=560&originalType=binary&ratio=1&size=24852&status=done&style=none&taskId=u39244577-7c71-47d9-b49b-48f8b76704d)
-
 分配完成
-
-![JH(E7Z0P~`O%EVKSW1MS382.png](https://cdn.nlark.com/yuque/0/2021/png/12488964/1625971319153-3374d22b-a436-49e8-aadf-0bff7f68a4d0.png#clientId=u9f2427a1-2f47-4&from=drop&id=u5f3326ee&margin=%5Bobject%20Object%5D&name=JH%28E7Z0P~%60O%25EVKSW1MS382.png&originHeight=434&originWidth=387&originalType=binary&ratio=1&size=24203&status=done&style=none&taskId=ufc922d58-6c39-4f34-a7c1-e35ab85de69)
 
 到这里你已经成功的白嫖到了 Microsoft 365，点击查看资源开始使用
 
