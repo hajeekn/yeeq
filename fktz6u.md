@@ -4,8 +4,8 @@ sticky: 1
 tags: [cloudflare]
 description: "白嫖一个免费的内网穿透(bushi"
 categories: [cloudflare]
-cover:
-photos:
+cover: https://cdn.nlark.com/yuque/0/2021/png/12488964/1628248322189-058ec486-b73f-4025-a37e-833a664f5ff5.png?x-oss-process=image%2Fresize%2Cw_900
+photos: https://cdn.nlark.com/yuque/0/2021/png/12488964/1628248322189-058ec486-b73f-4025-a37e-833a664f5ff5.png?x-oss-process=image%2Fresize%2Cw_900
 abbrlink: fktz6u
 date: 2021-08-06 18:38:20
 copyright_author_href: https://blog.slqwq.cn
