@@ -6,55 +6,47 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout Branch
+      - name: 检查分支
         uses: actions/checkout@v2
         with:
           ref: master
 
-      - name: Install Nodejs Lib
+      - name: 安装 Node.js
         uses: actions/setup-node@v1
         with:
           node-version: "12.x"
 
-      - name: Install Hexo Lib
+      - name: 安装 Hexo 库
         run: |
           export TZ='Asia/Shanghai'
           npm install hexo-cli -g
           npm install gulp-cli -g
           npm install yuque-hexo -g
 
-      - name: Clear the local language cache and synchronize language articles
+      - name: 清除语雀本地缓存并同步文档
         env:
           YUQUE_TOKEN: ${{ secrets.YUQUE_TOKEN }}
         run: |
           yuque-hexo clean
           yuque-hexo sync
-      - name: Cache to Hexo
+      - name: 缓存 Hexo
         uses: actions/cache@v1
         id: cache
         with:
           path: node_modules
           key: ${{runner.OS}}-${{hashFiles('**/package-lock.json')}}
 
-      - name: Install Other Lib
+      - name: 安装其他库
         if: steps.cache.outputs.cache-hit != 'true'
         run: |
           npm install --save
 
-      - name: Update Yuque pull cache and articles
-        run: |
-          echo `date +"%Y-%m-%d %H:%M:%S"` begin > time.log
-          git config --global user.name "slblog-github"
-          git config --global user.email "sladmin@slwebtap.onmicrosoft.com"
-          git add .
-          git commit -m "Refresh yuque json" -a
-
-      - name: Push Yuque to pull cache and articles
+      - name: 推送合并后的语雀文章及缓存
         uses: ad-m/github-push-action@master
         with:
           github_token: ${{ secrets.GET }}
 
-      - name: Upload the synchronized article to the posts branch
+      - name: 上传语雀文章到指定分支
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GET }}
@@ -64,12 +56,12 @@ jobs:
           user_email: 'github-actions[bot]@users.noreply.github.com'
           full_commit_message: ${{ github.event.head_commit.message }}
 
-      - name: Generate and Compression
+      - name: 生成文件和压缩
         run: |
           hexo clean
           hexo g
           gulp
-      - name: Deploy Blog in Network
+      - name: 部署博客到网络
         run: |
           cd ./public
           git config --global init.defaultBranch master
@@ -82,13 +74,13 @@ jobs:
           git commit -m "更新: ${{ github.event.head_commit.message }} 于 $(date +"%Z %Y-%m-%d %A %H:%M:%S")在 GitHub Actions 上执行"
           git push --force --quiet "https://slblog-github:${{ secrets.DP_TOKEN }}@github.com/slblog-github/Blog.git" master:master
 
-      - name: Delete Workflow Runs
+      - name: 删除工作流信息
         uses: Mattraks/delete-workflow-runs@main
         with:
           retain_days: 1
           keep_minimum_runs: 1
 
-      - name: Send reminder message to telegram
+      - name: 推送消息到作者电报
         if: cancelled() == false
         uses: xinthink/action-telegram@v1.1
         with:
