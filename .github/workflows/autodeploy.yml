@@ -1,0 +1,98 @@
+name: Build Blog
+
+on: [push, repository_dispatch]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Branch
+        uses: actions/checkout@v2
+        with:
+          ref: master
+
+      - name: Install Nodejs Lib
+        uses: actions/setup-node@v1
+        with:
+          node-version: "12.x"
+
+      - name: Install Hexo Lib
+        run: |
+          export TZ='Asia/Shanghai'
+          npm install hexo-cli -g
+          npm install gulp-cli -g
+          npm install yuque-hexo -g
+
+      - name: Clear the local language cache and synchronize language articles
+        env:
+          YUQUE_TOKEN: ${{ secrets.YUQUE_TOKEN }}
+        run: |
+          yuque-hexo clean
+          yuque-hexo sync
+      - name: Cache to Hexo
+        uses: actions/cache@v1
+        id: cache
+        with:
+          path: node_modules
+          key: ${{runner.OS}}-${{hashFiles('**/package-lock.json')}}
+
+      - name: Install Other Lib
+        if: steps.cache.outputs.cache-hit != 'true'
+        run: |
+          npm install --save
+
+      - name: Update Yuque pull cache and articles
+        run: |
+          echo `date +"%Y-%m-%d %H:%M:%S"` begin > time.log
+          git config --global user.name "slblog-github"
+          git config --global user.email "sladmin@slwebtap.onmicrosoft.com"
+          git add .
+          git commit -m "Refresh yuque json" -a
+
+      - name: Push Yuque to pull cache and articles
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.GET }}
+
+      - name: Upload the synchronized article to the posts branch
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GET }}
+          publish_branch: posts
+          publish_dir: ./source/_posts
+          user_name: 'github-actions[bot]'
+          user_email: 'github-actions[bot]@users.noreply.github.com'
+          full_commit_message: ${{ github.event.head_commit.message }}
+
+      - name: Generate and Compression
+        run: |
+          hexo clean
+          hexo g
+          gulp
+      - name: Deploy Blog in Network
+        run: |
+          cd ./public
+          git config --global init.defaultBranch master
+          git config --global http.postBuffer 524288000
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git init
+          git add --all
+          git branch -m master
+          git commit -m "更新: ${{ github.event.head_commit.message }} 于 $(date +"%Z %Y-%m-%d %A %H:%M:%S")在 GitHub Actions 上执行"
+          git push --force --quiet "https://slblog-github:${{ secrets.DP_TOKEN }}@github.com/slblog-github/Blog.git" master:master
+
+      - name: Delete Workflow Runs
+        uses: Mattraks/delete-workflow-runs@main
+        with:
+          retain_days: 1
+          keep_minimum_runs: 1
+
+      - name: Send reminder message to telegram
+        if: cancelled() == false
+        uses: xinthink/action-telegram@v1.1
+        with:
+          botToken: ${{ secrets.TG_BOT_TOKEN }}
+          chatId: ${{ secrets.TG_CHAT_ID }}
+          jobStatus: ${{ job.status }}
+          skipSuccess: false

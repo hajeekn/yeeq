@@ -1,0 +1,63 @@
+/*标题悬停显示文章描述*/
+#site-name
+  &:hover
+    &:before
+      position: fixed
+      width:fit-content
+      margin:auto
+      left:0;
+      right:0
+      top:10%
+      border-radius: 10px
+      text-align: center
+      z-index: 100
+      content: attr(data-title)
+      font-size: 20px
+      color: #fff
+      padding: 10px
+      background-color: rgba(#49B1F5,0.9)
+/* 夜间模式适配 */
+[data-theme=dark]
+  a#site-name
+    &:hover
+      &:before
+        background-color: rgba(#121212,0.8)
+/*标题超过隐藏并显示省略号*/
+@media screen and (max-width: 768px)
+  a#site-name
+    -webkit-line-clamp 1
+    word-break break-all
+    display -webkit-box
+    -webkit-box-orient vertical
+    overflow hidden
+#nav 
+  &.show 
+    opacity 1
+    -ms-filter none
+    filter none
+    background transparent
+#nav 
+  a 
+    color #212121
+#nav 
+  .menus_items 
+    position absolute
+    width 400px
+    text-align center
+    left 0
+    right 0
+    margin auto
+#nav 
+  .menus_items 
+    .menus_item 
+      &:hover 
+        .menus_item_child 
+          display block
+        i 
+          &.expand 
+            -webkit-transform rotate(180deg) !important
+            -moz-transform rotate(180deg) !important
+            -o-transform rotate(180deg) !important
+            -ms-transform rotate(180deg) !important
+            transform rotate(180deg) !important
+            color #212121
