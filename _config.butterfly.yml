@@ -401,7 +401,7 @@ daovoice:
 # https://gitter.im/
 gitter:
   enable: true
-  room: ajeeknloger/blogger
+  room: hajeeknloger/blogger
 
 # crisp
 # https://crisp.chat/en/
