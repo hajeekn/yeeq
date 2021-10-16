@@ -18,53 +18,53 @@ id: 31
 转眼望去,离上一篇已经有 7 天左右了,今天入手了一位大神写的[flowerss bot](https://github.com/indes/flowerss-bot)
 挺好用的,今天给大家安利一下搭建方法( 白 嫖 )
 首先呢，各位要注意下，flowerss bot 需要依赖一个 VPS，我知道你没钱买<s>其实我也是辣</s>，所以这篇教程用 Euserv 示范
-获得 Euserv 的教程挺多的，各位可以自行翻翻钴铬找找巨硬，这边就不讲了。
+白嫖 Euserv 鸡子的教程挺多的，各位可以自行 Bing 一下这边就不讲了。
 
 # 开始
 
 首先连接上 Euserv(我用的是嘿哟终端)
-输入
+接着用
 
 ```bash
-mkdir flbot
-cd flbot
+$ mkdir flbot
+$ cd flbot
 ```
 
 然后根据你的系统版本安装对应的版本
 我是 64 就用
 
 ```bash
-curl -LJO https://github.com/indes/flowerss-bot/releases/download/v0.8.3/flowerss-bot-v0.8.3-linux-amd64.tar.gz
+$ curl -LJO https://github.com/indes/flowerss-bot/releases/download/v0.8.3/flowerss-bot-v0.8.3-linux-amd64.tar.gz
 ```
 
 如果你的 32 就用
 
 ```bash
-curl -LJO https://github.com/indes/flowerss-bot/releases/download/v0.8.3/flowerss-bot-v0.8.3-linux-386.tar.gz
+$ curl -LJO https://github.com/indes/flowerss-bot/releases/download/v0.8.3/flowerss-bot-v0.8.3-linux-386.tar.gz
 ```
 
 然后用 tar 命令解压包
 
 ```bash
-tar zxvf  flowerss-bot-v0.8.3-linux-amd64.tar.gz
+$ tar zxvf  flowerss-bot-v0.8.3-linux-amd64.tar.gz
 ```
 
 如果是 32 位请用
 
 ```bash
-tar zxvf  flowerss-bot-v0.8.3-linux-amd386.tar.gz
+$ tar zxvf  flowerss-bot-v0.8.3-linux-amd386.tar.gz
 ```
 
 再用 rm 命令删除包
 
 ```bash
-rm flowerss-bot-v0.8.3-linux-amd64.tar.gz
+$ rm flowerss-bot-v0.8.3-linux-amd64.tar.gz
 ```
 
 如果是 32 位请用
 
 ```bash
-rm flowerss-bot-v0.8.3-linux-amd386.tar.gz
+$ rm flowerss-bot-v0.8.3-linux-amd386.tar.gz
 ```
 
 然后执行 ls 查看文件
@@ -80,13 +80,13 @@ flbot                          # 文件所在的目录
 然后你需要用 mv 指令去重命名 config.yml.sample
 
 ```bash
-mv config.yml.sample config.yml
+$ mv config.yml.sample config.yml
 ```
 
 然后你就可以用 vim 编辑配置文件了
 
 ```bash
-vim config.yml
+$ vim config.yml
 ```
 
 配置项如下:
@@ -124,47 +124,46 @@ allowed_users:
 安装 screen
 
 ```bash
-apt-get update
-apt-get install screen
+$ apt-get update
+$ apt-get install screen
 ```
 
 在终端执行
 
 ```bash
-screen
+$ screen
 ```
 
 创建一个 screen 窗口
 然后在里面启动就可以了
------ 以下部分取自 Spoience 的博客 -----
 
 # 配置项说明
 
-配置项 含义 是否必填
-bot_token Telegram Bot Token 必填
-telegraph_token Telegraph Token, 用于转存原文到 Telegraph 可忽略（不转存原文到 Telegraph ）
-preview_text 纯文字预览字数（不借助 Telegraph） 可忽略（默认 0, 0 为禁用）
-user_agent User Agent 可忽略
-disable_web_page_preview 是否禁用 web 页面预览 可忽略（默认 false, true 为禁用）
-update_interval RSS 源扫描间隔（分钟） 可忽略（默认 10）
-error_threshold 源最大出错次数 可忽略（默认 100）
-socks5 用于无法正常 Telegram API 的环境 可忽略（能正常连接上 Telegram API 服务器）
-mysql MySQL 数据库配置 可忽略（使用 SQLite ）
-sqlite SQLite 配置 可忽略（已配置 mysql 时，该项失效）
-telegram.endpoint 自定义 telegram bot api url 可忽略（使用默认 api url）
-allowed_users 允许使用 bot 的用户 telegram id， 可忽略，为空时所有用户都能使用 bot
+bot_token(Telegram Bot Token)(必填)
+telegraph_token(Telegraph Token 用于转存原文到 Telegraph)(可忽略)
+preview_text(纯文字预览字数)(可忽略)
+user_agent(User Agent)(可忽略)
+disable_web_page_preview(是否禁用 web 页面预览)(可忽略)
+update_interval(RSS 源扫描间隔/分钟)(可忽略)
+error_threshold(源最大出错次数)(可忽略）
+socks5(用于无法正常 Telegram API 的环境)(可忽略)
+mysql(MySQL 数据库配置)(可忽略)
+sqlite(SQLite 配置)(可忽略(已配置 mysql 时，该项失效))
+telegram.endpoint(自定义 telegram bot api url)(可忽略)
+allowed_users(允许使用 bot 的用户 telegram id)(可忽略(为空时所有用户都能使用 bot))
 
 # 申请 Telegram Bot Token
 
+以下部分截图和文章来自[Spoience 的博客](https://www.dejavu.moe/)
 打开 Telegram 搜索 @BotFather
 
-![](https://cdn.nlark.com/yuque/0/2021/png/12488964/1613639972440-ba09c84b-a571-4141-9037-9c0ece992d55.png#align=left&display=inline&height=203&margin=%5Bobject%20Object%5D&originHeight=203&originWidth=351&size=0&status=done&style=none&width=351)
+![](https://cdn.nlark.com/yuque/0/2021/png/12488964/1613639972440-ba09c84b-a571-4141-9037-9c0ece992d55.png#height=203&id=SrWxp&originHeight=203&originWidth=351&originalType=binary&ratio=1&size=0&status=done&style=none&width=351)
 
 点击 Start，发送 /newbot
-![](https://cdn.nlark.com/yuque/0/2021/png/12488964/1613639979319-4c416a05-c890-44a5-ae56-c14da42f82af.png#align=left&display=inline&height=711&margin=%5Bobject%20Object%5D&originHeight=711&originWidth=637&size=0&status=done&style=none&width=637)
+![](https://cdn.nlark.com/yuque/0/2021/png/12488964/1613639979319-4c416a05-c890-44a5-ae56-c14da42f82af.png#height=711&id=HHZ9P&originHeight=711&originWidth=637&originalType=binary&ratio=1&size=0&status=done&style=none&width=637)
 
 然后给你的 Telegram Bot 取一个昵称和名字，框中马赛克部分就是创建的 Telegram Bot Token，请妥善保管该 Token：
-![](https://cdn.nlark.com/yuque/0/2021/png/12488964/1613639986411-19a7f2dd-238c-45a9-b40e-8b1cb0a02bbf.png#align=left&display=inline&height=763&margin=%5Bobject%20Object%5D&originHeight=763&originWidth=643&size=0&status=done&style=none&width=643)
+![](https://cdn.nlark.com/yuque/0/2021/png/12488964/1613639986411-19a7f2dd-238c-45a9-b40e-8b1cb0a02bbf.png#height=763&id=q5Vsh&originHeight=763&originWidth=643&originalType=binary&ratio=1&size=0&status=done&style=none&width=643)
 
 # 申请 Telegraph Token
 
@@ -181,7 +180,7 @@ curl https://api.telegra.ph/createAccount?short_name=DaiRSS_Bot&author_name=Spoi
 
 | 默认的配置是允许所有用户使用我们刚刚创建的 Telegram RSS Bot，但为了安全、防止被滥用我们可以设置指定 ID 的 Telegram 用户能够使用该 Bot，获取允许使用用户（比如自己）的 Telegram ID 并填入配置文件的 allowed_users 字段
 获取 Telegram ID：[https://t.me/getmyid_bot?start=botostore](https://t.me/getmyid_bot?start=botostore)
-![5(ZSYVG[72)ANM}@N9_5Z8R.png](https://cdn.nlark.com/yuque/0/2021/png/12488964/1613640126118-e819956a-ba3e-4948-97c1-582ae1ee78bf.png#align=left&display=inline&height=729&margin=%5Bobject%20Object%5D&name=5%28ZSYVG%5B72%29ANM%7D%40N9_5Z8R.png&originHeight=729&originWidth=632&size=267703&status=done&style=none&width=632)
+![5(ZSYVG[72)ANM}@N9_5Z8R.png](https://cdn.nlark.com/yuque/0/2021/png/12488964/1613640126118-e819956a-ba3e-4948-97c1-582ae1ee78bf.png#height=729&id=ZCroy&margin=%5Bobject%20Object%5D&name=5%28ZSYVG%5B72%29ANM%7D%40N9_5Z8R.png&originHeight=729&originWidth=632&originalType=binary&ratio=1&size=267703&status=done&style=none&width=632)
 
 # 使用
 
@@ -202,8 +201,4 @@ curl https://api.telegra.ph/createAccount?short_name=DaiRSS_Bot&author_name=Spoi
 
 然后这样一个机器人就配置好啦，你可以把它拉入你的频道,然后自己配置下 RSS
 配置完成后你就可以看到更新文章时你的频道会有提示辣
-
-我的频道: [Click Me](https://t.me/hajeekn_home)
 Spoience 的频道: [Click Me](https://t.me/Spoience_com)
-
-# Thanks for you~
