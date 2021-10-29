@@ -4,8 +4,8 @@ sticky: 1
 tags: [Windows]
 description:
 categories: [Windows]
-cover:
-photos:
+cover: https://cdn.nlark.com/yuque/0/2021/png/12488964/1635510052019-c5c44f1d-7462-48c8-a64e-6f8b0f65f3ee.png
+photos: https://cdn.nlark.com/yuque/0/2021/png/12488964/1635510052019-c5c44f1d-7462-48c8-a64e-6f8b0f65f3ee.png
 abbrlink: yoelghal
 date: 2021-10-29 19:05:11
 copyright_author_href: https://blog.slqwq.cn
