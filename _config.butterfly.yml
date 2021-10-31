@@ -44,10 +44,9 @@ copy:
 # formal:
 #   icon: link || the description
 social:
-  iconfont icon-github: https://github.com/Open-super || Github
-  iconfont icon-MailII: mailto:sladmin@slwebtap.onmicrosoft.com || Email
+  iconfont icon-github: https://github.com/ladjeek-actions || Github
+  iconfont icon-MailII: mailto:superxzlove@qq.com || Email
   iconfont icon-rss: /atom.xml || RSS
-  iconfont icon-cloud: https://coding.net/ || Coding Pages
 
 # search (搜索)
 # --------------------------------------
@@ -89,7 +88,7 @@ favicon: /favicon.ico
 
 # Avatar (頭像)
 avatar:
-  img: https://cdn.slblog.ga/pic/logo.png
+  img: https://cdn.hesiy.cn
   effect: true
 
 # Disable all banner image
@@ -400,7 +399,7 @@ daovoice:
 # gitter
 # https://gitter.im/
 gitter:
-  enable: true
+  enable: false
   room: hajeeknloger/blogger
 
 # crisp
@@ -452,10 +451,10 @@ microsoft_clarity:
 # Google Adsense (谷歌廣告)
 google_adsense:
   enable: false
-  auto_ads: true
+  auto_ads: false
   js: https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js
   client:
-  enable_page_level_ads: true
+  enable_page_level_ads: false
 
 # Insert ads manually (手動插入廣告)
 # ad:
@@ -569,7 +568,7 @@ canvas_nest:
 activate_power_mode:
   enable: false
   colorful: true # open particle animation (冒光特效)
-  shake: true #  open shake (抖動特效)
+  shake: false #  open shake (抖動特效)
   mobile: false
 
 # Mouse click effects: fireworks (鼠標點擊效果: 煙火特效)
@@ -712,7 +711,7 @@ runtimeshow:
 
 # Aside widget - Newest Comments
 newest_comments:
-  enable: true
+  enable: false
   sort_order: # Don't modify the setting unless you know how it works
   limit: 6
   storage: 10 # unit: mins, save data to localStorage
@@ -727,7 +726,7 @@ newest_comments:
     forum:
     api_key:
   twikoo: false
-  waline: true
+  waline: false
 
 # Bottom right button (右下角按鈕)
 # -----------------------------------------
@@ -812,8 +811,6 @@ pjax:
   enable: true
   exclude:
     - /link/
-    - /bber/
-    - /talk/
 
 # Inject the css and script (aplayer/meting)
 aplayerInject:
@@ -827,8 +824,8 @@ aplayerInject:
 snackbar:
   enable: true
   position: top-center
-  bg_light: '#49b1f5' # The background color of Toast Notification in light mode
-  bg_dark: '#121212' # The background color of Toast Notification in dark mode
+  bg_light: 'var(--loger-card-bg)' # The background color of Toast Notification in light mode
+  bg_dark: 'var(--loger-card-bg)' # The background color of Toast Notification in dark mode
 
 # https://instant.page/
 # prefetch (預加載)
@@ -913,8 +910,7 @@ inject:
       - <link rel="stylesheet" href="https://unpkg.slqwq.cn/hajeekn-static/styles/resource.min.css"> #万能魔改CSS
       - <script async data-pjax src="https://cdn.jsdelivr.net/npm/vue@2.6.11"></script> #虽然臃肿,不得不用🙅‍
       - <script src="https://cdn.jsdelivr.net/npm/hajeekn-static/scripts/kearuty.js"></script> #IE别用了
-      - <script src="https://unpkg.com/nprogress@0.2.0/nprogress.js"></script> #NProgress
-      - <link rel="stylesheet" href="https://unpkg.com/nprogress@0.2.0/nprogress.css">
+      - <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/HCLonely/hclonely.github.io@1.4.7/js/custom/pace.min.css">
       # - <script src="http://cdn.jsdelivr.net/npm/jquery"></script> #Jquery(取消)
       - <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/more-beautiful-div-framework@1.0.9/more-beautiful-div-framework.min.css"> #奇怪的文字框架
       - <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css"> #Aplayer音乐播放
@@ -923,8 +919,7 @@ inject:
       - <script async src="https://cdn.jsdelivr.net/npm/meting/dist/Meting.min.js"></script> #metingjs核心
   bottom:
       - <script async data-pjax src="https://cdn.jsdelivr.net/npm/hajeekn-static/scripts/floatpanel.js"></script> #浮动按钮效果
-      - <script async data-pjax src="https://cdn.jsdelivr.net/npm/hajeekn-static/scripts/cen.js"></script> #控制台不断输出
-      # - <script async data-pjax src="https://cdn.jsdelivr.net/gh/HCLonely/hclonely.github.io@1.4.7/js/custom/pace.min.js"></script> #pace进度条
+      - <script async data-pjax src="https://cdn.jsdelivr.net/gh/HCLonely/hclonely.github.io@1.4.7/js/custom/pace.min.js"></script> #pace进度条
       - '<div class="app-refresh" id="app-refresh"> <div class="app-refresh-wrap"> <label>✨ Hajeekn的小博客已更新最新版本 👉</label><a href="javascript:void(0)" onclick="location.reload()">🎇 要不要看看还漏不漏水啊? 🎇</a> </div></div><script>function showNotification(){if(GLOBAL_CONFIG.Snackbar){var t="light"===document.documentElement.getAttribute("data-theme")?GLOBAL_CONFIG.Snackbar.bgLight:GLOBAL_CONFIG.Snackbar.bgDark,e=GLOBAL_CONFIG.Snackbar.position;Snackbar.show({text:"已更新最新版本",backgroundColor:t,duration:5e5,pos:e,actionText:"🎇 要不要看看还漏不漏水啊? 🎇",actionTextColor:"#fff",onActionClick:function(t){location.reload()}})}else{var o=`top: 0; background: ${"light"===document.documentElement.getAttribute("data-theme")?"#49b1f5":"#1f1f1f"};`;document.getElementById("app-refresh").style.cssText=o}}"serviceWorker"in navigator&&(navigator.serviceWorker.controller&&navigator.serviceWorker.addEventListener("controllerchange",function(){showNotification()}),window.addEventListener("load",function(){navigator.serviceWorker.register("/sw.js")}));</script>'
       - <script src="https://cdn.jsdelivr.net/gh/ladjeek-actions/blog-cdn@main/static/request.js"></script> #奇怪的东西
 
