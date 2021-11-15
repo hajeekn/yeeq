@@ -7,7 +7,6 @@ aside: false
 ---
 {% raw %}
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Rock-Candy-Tea/hexo-friendcircle-demo@main/css/akilar-SAO.css">
 <div id="fcircleContainer"></div>
 <script>
   var fdata = {
