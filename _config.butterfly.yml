@@ -524,7 +524,7 @@ tag_ui: # 留空或 index
 # The formal of color: '#49B202'
 # The formal of image: url(http://xxxxxx.com/xxx.jpg)
 # White color will be shown as default
-background: url(https://cdn.jsdelivr.net/npm/hajeekn-static@1.0.4/photo/01.webp)
+background: url(https://unpkg.zhimg.com/hajeekn-static@1.0.4/photo/01.webp)
 
 # Footer Background
 footer_bg: false
@@ -903,25 +903,26 @@ css_prefix: true
 # 插入代码到头部 </head> 之前 和 底部 </body> 之前
 inject:
   head:
+      - <script src="/freecdn-loader.min.js"></script>
       - <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=ZCOOL+QingKe+HuangYou&display=swap" rel="stylesheet">
-      - <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@2.1.8/css/lightgallery.css"> #吼嘎 LightGallery
-      - <script src="https://cdn.jsdelivr.net/npm/lightgallery@2.1.8/lightgallery.min.js"></script> #吼嘎 LightGallery
+      - <link rel="stylesheet" href="https://unpkg.zhimg.com/lightgallery@2.1.8/css/lightgallery.css"> #吼嘎 LightGallery
+      - <script src="https://unpkg.zhimg.com/lightgallery@2.1.8/lightgallery.min.js"></script> #吼嘎 LightGallery
       - <meta name="google-site-verification" content="qAOA3HXexaF_5uvs3Ghmqp_eB0pIzLgQ1eFRTFGb0Sk" /> #谷歌收录
       - <link rel="stylesheet" href="https://unpkg.slqwq.cn/hajeekn-static/styles/resource.min.css"> #万能魔改CSS
-      - <script async data-pjax src="https://cdn.jsdelivr.net/npm/vue@2.6.11"></script> #虽然臃肿,不得不用🙅‍
-      - <script src="https://cdn.jsdelivr.net/npm/hajeekn-static/scripts/kearuty.js"></script> #IE别用了
-      - <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/HCLonely/hclonely.github.io@1.4.7/js/custom/pace.min.css">
-      # - <script src="http://cdn.jsdelivr.net/npm/jquery"></script> #Jquery(取消)
-      - <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/more-beautiful-div-framework@1.0.9/more-beautiful-div-framework.min.css"> #奇怪的文字框架
-      - <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css"> #Aplayer音乐播放
+      - <script async data-pjax src="https://unpkg.zhimg.com/vue@2.6.11"></script> #虽然臃肿,不得不用🙅‍
+      - <script src="https://unpkg.zhimg.com/hajeekn-static/scripts/kearuty.js"></script> #IE别用了
+      - <link rel="stylesheet" href="https://blog.slqwq.cn/css/pace-theme-flash.min.css">
+      # - <script src="http://unpkg.zhimg.com/jquery"></script> #Jquery(取消)
+      - <link rel="stylesheet" href="https://unpkg.zhimg.com/more-beautiful-div-framework@1.0.9/more-beautiful-div-framework.min.css"> #奇怪的文字框架
+      - <link rel="stylesheet" href="https://unpkg.zhimg.com/aplayer/dist/APlayer.min.css"> #Aplayer音乐播放
       - <meting-js server='tencent' type='playlist' id='3813658180' fixed='true'></meting-js> #metingjs操纵器
-      - <script async src="https://cdn.jsdelivr.net/npm/aplayer"></script> #Aplayer音乐播放核心
-      - <script async src="https://cdn.jsdelivr.net/npm/meting/dist/Meting.min.js"></script> #metingjs核心
+      - <script async src="https://unpkg.zhimg.com/aplayer"></script> #Aplayer音乐播放核心
+      - <script async src="https://unpkg.zhimg.com/meting/dist/Meting.min.js"></script> #metingjs核心
   bottom:
-      - <script async data-pjax src="https://cdn.jsdelivr.net/npm/hajeekn-static/scripts/floatpanel.js"></script> #浮动按钮效果
-      - <script async data-pjax src="https://cdn.jsdelivr.net/gh/HCLonely/hclonely.github.io@1.4.7/js/custom/pace.min.js"></script> #pace进度条
+      - <script async data-pjax src="https://unpkg.zhimg.com/hajeekn-static/scripts/floatpanel.js"></script> #浮动按钮效果
+      - <script async data-pjax src="../js/pace.min.js"></script> #pace进度条
       - '<div class="app-refresh" id="app-refresh"> <div class="app-refresh-wrap"> <label>✨ Hajeekn的小博客已更新最新版本 👉</label><a href="javascript:void(0)" onclick="location.reload()">🎇 要不要看看还漏不漏水啊? 🎇</a> </div></div><script>function showNotification(){if(GLOBAL_CONFIG.Snackbar){var t="light"===document.documentElement.getAttribute("data-theme")?GLOBAL_CONFIG.Snackbar.bgLight:GLOBAL_CONFIG.Snackbar.bgDark,e=GLOBAL_CONFIG.Snackbar.position;Snackbar.show({text:"已更新最新版本",backgroundColor:t,duration:5e5,pos:e,actionText:"🎇 要不要看看还漏不漏水啊? 🎇",actionTextColor:"#fff",onActionClick:function(t){location.reload()}})}else{var o=`top: 0; background: ${"light"===document.documentElement.getAttribute("data-theme")?"#49b1f5":"#1f1f1f"};`;document.getElementById("app-refresh").style.cssText=o}}"serviceWorker"in navigator&&(navigator.serviceWorker.controller&&navigator.serviceWorker.addEventListener("controllerchange",function(){showNotification()}),window.addEventListener("load",function(){navigator.serviceWorker.register("/sw.js")}));</script>'
-      - <script src="https://cdn.jsdelivr.net/gh/ladjeek-actions/blog-cdn@main/static/request.js"></script> #奇怪的东西
+      - <script src="https://blog.slqwq.cn/js/request.js"></script> #奇怪的东西
 
 
 # CDN
@@ -930,91 +931,91 @@ inject:
 CDN:
   # main
   main_css: /css/index.css
-  jquery: https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js
-  main: https://cdn.jsdelivr.net/npm/hajeekn-static/scripts/main.js
-  utils: https://cdn.jsdelivr.net/npm/hajeekn-static/scripts/utils.js
-  bilibili_banner: https://cdn.jsdelivr.net/npm/hajeekn-static/scripts/atuban.js
-  vue: https://cdn.jsdelivr.net/npm/vue@2.6.11
-  wowjs: https://cdn.jsdelivr.net/gh/graingert/wow@1.3.0/dist/wow.min.js
-  wowjs_init: https://cdn.jsdelivr.net/npm/hajeekn-static/scripts/wow_init.js
-  animate_css: https://cdn.jsdelivr.net/npm/hajeekn-static/styles/animate.min.css
+  jquery: https://unpkg.zhimg.com/jquery@latest/dist/jquery.min.js
+  main: https://unpkg.zhimg.com/hajeekn-static/scripts/main.js
+  utils: https://unpkg.zhimg.com/hajeekn-static/scripts/utils.js
+  bilibili_banner: https://unpkg.zhimg.com/hajeekn-static/scripts/atuban.js
+  vue: https://unpkg.zhimg.com/vue@2.6.11
+  wowjs: https://blog.slqwq.cn/js/wow.min.js
+  wowjs_init: https://unpkg.zhimg.com/hajeekn-static/scripts/wow_init.js
+  animate_css: https://unpkg.zhimg.com/hajeekn-static/styles/animate.min.css
 
   # pjax
-  pjax: https://cdn.jsdelivr.net/npm/pjax/pjax.min.js
+  pjax: https://unpkg.zhimg.com/pjax/pjax.min.js
 
   # comments
-  gitalk: https://cdn.jsdelivr.net/npm/gitalk@latest/dist/gitalk.min.js
-  gitalk_css: https://cdn.jsdelivr.net/npm/gitalk/dist/gitalk.min.css
+  gitalk: https://unpkg.zhimg.com/gitalk@latest/dist/gitalk.min.js
+  gitalk_css: https://unpkg.zhimg.com/gitalk/dist/gitalk.min.css
   valine: https://cdn.jsdelivr.net/gh/slblog-github/BlogFlies@V1.6/js/Valine.min.js
-  disqusjs: https://cdn.jsdelivr.net/npm/disqusjs@1/dist/disqus.js
-  disqusjs_css: https://cdn.jsdelivr.net/npm/disqusjs@1/dist/disqusjs.css
+  disqusjs: https://unpkg.zhimg.com/disqusjs@1/dist/disqus.js
+  disqusjs_css: https://unpkg.zhimg.com/disqusjs@1/dist/disqusjs.css
   utterances: https://utteranc.es/client.js
-  twikoo: https://cdn.jsdelivr.net/npm/twikoo@1.4.0/dist/twikoo.all.min.js
-  waline: https://cdn.jsdelivr.net/npm/@waline/client/dist/Waline.min.js
+  twikoo: https://unpkg.zhimg.com/twikoo@1.4.0/dist/twikoo.all.min.js
+  waline: https://unpkg.zhimg.com/@waline/client/dist/Waline.min.js
 
   # share
   addtoany: https://static.addtoany.com/menu/page.js
-  sharejs: https://cdn.jsdelivr.net/npm/social-share.js/dist/js/social-share.min.js
-  sharejs_css: https://cdn.jsdelivr.net/npm/social-share.js/dist/css/share.min.css
+  sharejs: https://unpkg.zhimg.com/social-share.js/dist/js/social-share.min.js
+  sharejs_css: https://unpkg.zhimg.com/social-share.js/dist/css/share.min.css
 
   # search
   local_search: /js/search/local-search.js
   algolia_js: /js/search/algolia.js
-  algolia_search: https://cdn.jsdelivr.net/npm/instantsearch.js@2.10.5/dist/instantsearch.min.js
-  algolia_search_css: https://cdn.jsdelivr.net/npm/instantsearch.js@2.10.5/dist/instantsearch.min.css
+  algolia_search: https://unpkg.zhimg.com/instantsearch.js@2.10.5/dist/instantsearch.min.js
+  algolia_search_css: https://unpkg.zhimg.com/instantsearch.js@2.10.5/dist/instantsearch.min.css
 
   # math
-  mathjax: https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
-  katex: https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.css
-  katex_copytex: https://cdn.jsdelivr.net/npm/katex@latest/dist/contrib/copy-tex.min.js
-  katex_copytex_css: https://cdn.jsdelivr.net/npm/katex@latest/dist/contrib/copy-tex.css
-  mermaid: https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js
+  mathjax: https://unpkg.zhimg.com/mathjax@3/es5/tex-mml-chtml.js
+  katex: https://unpkg.zhimg.com/katex@latest/dist/katex.min.css
+  katex_copytex: https://unpkg.zhimg.com/katex@latest/dist/contrib/copy-tex.min.js
+  katex_copytex_css: https://unpkg.zhimg.com/katex@latest/dist/contrib/copy-tex.css
+  mermaid: https://unpkg.zhimg.com/mermaid/dist/mermaid.min.js
 
   # count
   busuanzi: https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js
 
   # background effect
-  canvas_ribbon: https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/canvas-ribbon.min.js
-  canvas_fluttering_ribbon: https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/canvas-fluttering-ribbon.min.js
-  canvas_nest: https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/canvas-nest.min.js
+  canvas_ribbon: https://unpkg.zhimg.com/butterfly-extsrc@1/dist/canvas-ribbon.min.js
+  canvas_fluttering_ribbon: https://unpkg.zhimg.com/butterfly-extsrc@1/dist/canvas-fluttering-ribbon.min.js
+  canvas_nest: https://unpkg.zhimg.com/butterfly-extsrc@1/dist/canvas-nest.min.js
 
-  lazyload: https://cdn.jsdelivr.net/npm/vanilla-lazyload/dist/lazyload.iife.min.js
-  instantpage: https://cdn.jsdelivr.net/npm/instant.page/instantpage.min.js
-  typed: https://cdn.jsdelivr.net/npm/typed.js/lib/typed.min.js
-  pangu: https://cdn.jsdelivr.net/npm/pangu/dist/browser/pangu.min.js
+  lazyload: https://unpkg.zhimg.com/vanilla-lazyload/dist/lazyload.iife.min.js
+  instantpage: https://unpkg.zhimg.com/instant.page/instantpage.min.js
+  typed: https://unpkg.zhimg.com/typed.js/lib/typed.min.js
+  pangu: https://unpkg.zhimg.com/pangu/dist/browser/pangu.min.js
 
   # photo
-  fancybox_css: https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.css
-  fancybox: https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js
-  medium_zoom: https://cdn.jsdelivr.net/npm/medium-zoom/dist/medium-zoom.min.js
-  lightgallery: https://cdn.jsdelivr.net/npm/lightgallery@2.1.8/lightgallery.min.js
+  fancybox_css: https://unpkg.zhimg.com/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.css
+  fancybox: https://unpkg.zhimg.com/@fancyapps/ui/dist/fancybox.umd.js
+  medium_zoom: https://unpkg.zhimg.com/medium-zoom/dist/medium-zoom.min.js
+  lightgallery: https://unpkg.zhimg.com/lightgallery@2.1.8/lightgallery.min.js
 
   # snackbar
-  snackbar_css: https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.css
-  snackbar: https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.js
+  snackbar_css: https://unpkg.zhimg.com/node-snackbar/dist/snackbar.min.css
+  snackbar: https://unpkg.zhimg.com/node-snackbar/dist/snackbar.min.js
 
   # effect
-  activate_power_mode: https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/activate-power-mode.min.js
-  fireworks: https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/fireworks.min.js
-  click_heart: https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/click-heart.min.js
-  ClickShowText: https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/click-show-text.min.js
+  activate_power_mode: https://unpkg.zhimg.com/butterfly-extsrc@1/dist/activate-power-mode.min.js
+  fireworks: https://unpkg.zhimg.com/butterfly-extsrc@1/dist/fireworks.min.js
+  click_heart: https://unpkg.zhimg.com/butterfly-extsrc@1/dist/click-heart.min.js
+  ClickShowText: https://unpkg.zhimg.com/butterfly-extsrc@1/dist/click-show-text.min.js
 
   # fontawesome
-  fontawesome: https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css
+  fontawesome: https://unpkg.zhimg.com/@fortawesome/fontawesome-free/css/all.min.css
 
   # Conversion between Traditional and Simplified Chinese
   translate: /js/tw_cn.js
 
   # justifiedGallery
-  justifiedGallery_js: https://cdn.jsdelivr.net/npm/justifiedGallery/dist/js/jquery.justifiedGallery.min.js
-  justifiedGallery_css: https://cdn.jsdelivr.net/npm/justifiedGallery/dist/css/justifiedGallery.min.css
+  justifiedGallery_js: https://unpkg.zhimg.com/justifiedGallery/dist/js/jquery.justifiedGallery.min.js
+  justifiedGallery_css: https://unpkg.zhimg.com/justifiedGallery/dist/css/justifiedGallery.min.css
 
   # aplayer
-  aplayer_css: https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css
-  aplayer_js: https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js
+  aplayer_css: https://unpkg.zhimg.com/aplayer/dist/APlayer.min.css
+  aplayer_js: https://unpkg.zhimg.com/aplayer/dist/APlayer.min.js
   meting_js: https://cdn.jsdelivr.net/gh/metowolf/MetingJS@1.2/dist/Meting.min.js
 
   # Prism.js
-  prismjs_js: https://cdn.jsdelivr.net/npm/prismjs/prism.min.js
-  prismjs_lineNumber_js: https://cdn.jsdelivr.net/npm/prismjs/plugins/line-numbers/prism-line-numbers.min.js
-  prismjs_autoloader: https://cdn.jsdelivr.net/npm/prismjs/plugins/autoloader/prism-autoloader.min.js
+  prismjs_js: https://unpkg.zhimg.com/prismjs/prism.min.js
+  prismjs_lineNumber_js: https://unpkg.zhimg.com/prismjs/plugins/line-numbers/prism-line-numbers.min.js
+  prismjs_autoloader: https://unpkg.zhimg.com/prismjs/plugins/autoloader/prism-autoloader.min.js

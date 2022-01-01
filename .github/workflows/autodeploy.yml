@@ -44,6 +44,7 @@ jobs:
         if: steps.cache.outputs.cache-hit != 'true'
         run: |
           npm install --save
+          npm i -g freecdn
 
       - name: 推送合并后的语雀文章及缓存
         uses: ad-m/github-push-action@master
@@ -65,6 +66,11 @@ jobs:
           hexo clean
           hexo g
           gulp
+      - name: 使用 Freecdn 调整内容
+        run: |
+          cd public
+          freecdn find --save
+          freecdn js --make
       - name: 部署博客到网络
         run: |
           cd ./public
