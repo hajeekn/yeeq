@@ -66,11 +66,6 @@ jobs:
           hexo clean
           hexo g
           gulp
-      - name: 使用 Freecdn 调整内容
-        run: |
-          cd public
-          freecdn find --save
-          freecdn js --make
       - name: 部署博客到网络
         run: |
           cd ./public
