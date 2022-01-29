@@ -1,4 +1,4 @@
-name: Build Blog
+name: 博客构建
 
 on:
   repository_dispatch:
@@ -26,7 +26,6 @@ jobs:
           npm install hexo-cli -g
           npm install gulp-cli -g
           npm install yuque-hexo -g
-
       - name: 清除语雀本地缓存并同步文档
         env:
           YUQUE_TOKEN: ${{ secrets.YUQUE_TOKEN }}
@@ -45,7 +44,6 @@ jobs:
         run: |
           npm install --save
           npm i -g freecdn
-
       - name: 推送合并后的语雀文章及缓存
         uses: ad-m/github-push-action@master
         with:
@@ -66,6 +64,7 @@ jobs:
           hexo clean
           hexo g
           gulp
+
       - name: 部署博客到网络
         run: |
           cd ./public
@@ -93,3 +92,7 @@ jobs:
           chatId: ${{ secrets.TG_CHAT_ID }}
           jobStatus: ${{ job.status }}
           skipSuccess: false
+
+      - name: Bark 通知
+        run: |
+          curl https://api.day.app/${{ secrets.BARK_TOKEN }}/博客生成任务完成啦!?icon=https://cdn.hesiy.cn/pic/logo.png;url=https://github.com/ladjeek-actions/yeeq/actions
