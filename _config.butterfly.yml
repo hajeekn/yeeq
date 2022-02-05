@@ -907,7 +907,7 @@ inject:
       - <link rel="stylesheet" href="https://npm.elemecdn.com/lightgallery@2.1.8/css/lightgallery.css"> #吼嘎 LightGallery
       - <script src="https://npm.elemecdn.com/lightgallery@2.1.8/lightgallery.min.js"></script> #吼嘎 LightGallery
       - <meta name="google-site-verification" content="qAOA3HXexaF_5uvs3Ghmqp_eB0pIzLgQ1eFRTFGb0Sk" /> #谷歌收录
-      - <link rel="stylesheet" href="https://npm.elemecdn.com/hajeekn-static/styles/resource.min.css"> #万能魔改CSS
+      - <link rel="stylesheet" href="https://unpkg.slqwq.cn/hajeekn-static/styles/resource.min.css"> #万能魔改CSS
       - <script async data-pjax src="https://npm.elemecdn.com/vue@2.6.11"></script> #虽然臃肿,不得不用🙅‍
       - <script src="https://npm.elemecdn.com/hajeekn-static/scripts/kearuty.js"></script> #IE别用了
       - <link rel="stylesheet" href="https://blog.slqwq.cn/css/pace-theme-flash.min.css">
