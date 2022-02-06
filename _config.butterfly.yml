@@ -903,39 +903,23 @@ css_prefix: true
 # 插入代码到头部 </head> 之前 和 底部 </body> 之前
 inject:
   head:
-      - <script src="/freecdn-loader.min.js"></script>
-      - <link rel="stylesheet" href="https://npm.elemecdn.com/lightgallery@2.1.8/css/lightgallery.css"> #吼嘎 LightGallery
-      - <script src="https://npm.elemecdn.com/lightgallery@2.1.8/lightgallery.min.js"></script> #吼嘎 LightGallery
-      - <meta name="google-site-verification" content="qAOA3HXexaF_5uvs3Ghmqp_eB0pIzLgQ1eFRTFGb0Sk" /> #谷歌收录
-      - <link rel="stylesheet" href="https://unpkg.slqwq.cn/hajeekn-static/styles/resource.min.css"> #万能魔改CSS
-      - <script async data-pjax src="https://npm.elemecdn.com/vue@2.6.11"></script> #虽然臃肿,不得不用🙅‍
-      - <script src="https://npm.elemecdn.com/hajeekn-static/scripts/kearuty.js"></script> #IE别用了
-      - <link rel="stylesheet" href="https://blog.slqwq.cn/css/pace-theme-flash.min.css">
-      # - <script src="http://npm.elemecdn.com/jquery"></script> #Jquery(取消)
-      - <link rel="stylesheet" href="https://npm.elemecdn.com/more-beautiful-div-framework@1.0.9/more-beautiful-div-framework.min.css"> #奇怪的文字框架
-      - <link rel="stylesheet" href="https://npm.elemecdn.com/aplayer/dist/APlayer.min.css"> #Aplayer音乐播放
-      - <meting-js server='tencent' type='playlist' id='3813658180' fixed='true'></meting-js> #metingjs操纵器
-      - <script async src="https://npm.elemecdn.com/aplayer"></script> #Aplayer音乐播放核心
-      - <script async src="https://npm.elemecdn.com/meting/dist/Meting.min.js"></script> #metingjs核心
+      - <meta name="google-site-verification" content="qAOA3HXexaF_5uvs3Ghmqp_eB0pIzLgQ1eFRTFGb0Sk">
+       - <link rel="stylesheet" href="https://unpkg.slqwq.cn/perorepe-cdn/v1/static-files/Blog/css/ping.css">
+      - <link rel="stylesheet" href="https://unpkg.slqwq.cn/hajeekn-static/styles/resource.min.css">
+      - <script src="https://unpkg.slqwq.cn/perorepe-cdn/v1/static-files/Blog/gening.js"></script>
+      - <meting-js server='tencent' type='playlist' id='3813658180' fixed='true'></meting-js>
   bottom:
-      - <script async data-pjax src="https://npm.elemecdn.com/hajeekn-static/scripts/floatpanel.js"></script> #浮动按钮效果
-      - <script async data-pjax src="../js/pace.min.js"></script> #pace进度条
       - '<div class="app-refresh" id="app-refresh"> <div class="app-refresh-wrap"> <label>✨ Hajeekn的小博客已更新最新版本 👉</label><a href="javascript:void(0)" onclick="location.reload()">🎇 要不要看看还漏不漏水啊? 🎇</a> </div></div><script>function showNotification(){if(GLOBAL_CONFIG.Snackbar){var t="light"===document.documentElement.getAttribute("data-theme")?GLOBAL_CONFIG.Snackbar.bgLight:GLOBAL_CONFIG.Snackbar.bgDark,e=GLOBAL_CONFIG.Snackbar.position;Snackbar.show({text:"已更新最新版本",backgroundColor:t,duration:5e5,pos:e,actionText:"🎇 要不要看看还漏不漏水啊? 🎇",actionTextColor:"#fff",onActionClick:function(t){location.reload()}})}else{var o=`top: 0; background: ${"light"===document.documentElement.getAttribute("data-theme")?"#49b1f5":"#1f1f1f"};`;document.getElementById("app-refresh").style.cssText=o}}"serviceWorker"in navigator&&(navigator.serviceWorker.controller&&navigator.serviceWorker.addEventListener("controllerchange",function(){showNotification()}),window.addEventListener("load",function(){navigator.serviceWorker.register("/sw.js")}));</script>'
-      - <script src="https://blog.slqwq.cn/js/request.js"></script> #奇怪的东西
 
 
 # CDN
 # Don't modify the following settings unless you know how they work
 # 非必要請不要修改
 CDN:
-  # main
-  main_css: /css/index.css
   jquery: https://npm.elemecdn.com/jquery@latest/dist/jquery.min.js
-  main: https://npm.elemecdn.com/hajeekn-static/scripts/main.js
-  utils: https://npm.elemecdn.com/hajeekn-static/scripts/utils.js
   bilibili_banner: https://npm.elemecdn.com/hajeekn-static/scripts/atuban.js
-  vue: https://npm.elemecdn.com/vue@2.6.11
-  wowjs: https://blog.slqwq.cn/js/wow.min.js
+  vue: https://npm.elemecdn.com/vue@2.6.11 #d
+  wowjs: https://npm.elemecdn.com/perorepe-cdn/Blog/wow.min.js
   wowjs_init: https://npm.elemecdn.com/hajeekn-static/scripts/wow_init.js
   animate_css: https://npm.elemecdn.com/hajeekn-static/styles/animate.min.css
 
@@ -958,8 +942,6 @@ CDN:
   sharejs_css: https://npm.elemecdn.com/social-share.js/dist/css/share.min.css
 
   # search
-  local_search: /js/search/local-search.js
-  algolia_js: /js/search/algolia.js
   algolia_search: https://npm.elemecdn.com/instantsearch.js@2.10.5/dist/instantsearch.min.js
   algolia_search_css: https://npm.elemecdn.com/instantsearch.js@2.10.5/dist/instantsearch.min.css
 
@@ -989,10 +971,6 @@ CDN:
   medium_zoom: https://npm.elemecdn.com/medium-zoom/dist/medium-zoom.min.js
   lightgallery: https://npm.elemecdn.com/lightgallery@2.1.8/lightgallery.min.js
 
-  # snackbar
-  snackbar_css: https://npm.elemecdn.com/node-snackbar/dist/snackbar.min.css
-  snackbar: https://npm.elemecdn.com/node-snackbar/dist/snackbar.min.js
-
   # effect
   activate_power_mode: https://npm.elemecdn.com/butterfly-extsrc@1/dist/activate-power-mode.min.js
   fireworks: https://npm.elemecdn.com/butterfly-extsrc@1/dist/fireworks.min.js
@@ -1003,16 +981,11 @@ CDN:
   fontawesome: https://npm.elemecdn.com/@fortawesome/fontawesome-free/css/all.min.css
 
   # Conversion between Traditional and Simplified Chinese
-  translate: /js/tw_cn.js
+  translate: https://npm.elemecdn.com/perorepe-cdn/Blog/tw_cn.js
 
   # justifiedGallery
   justifiedGallery_js: https://npm.elemecdn.com/justifiedGallery/dist/js/jquery.justifiedGallery.min.js
   justifiedGallery_css: https://npm.elemecdn.com/justifiedGallery/dist/css/justifiedGallery.min.css
-
-  # aplayer
-  aplayer_css: https://npm.elemecdn.com/aplayer/dist/APlayer.min.css
-  aplayer_js: https://npm.elemecdn.com/aplayer/dist/APlayer.min.js
-  meting_js: https://cdn.jsdelivr.net/gh/metowolf/MetingJS@1.2/dist/Meting.min.js
 
   # Prism.js
   prismjs_js: https://npm.elemecdn.com/prismjs/prism.min.js

@@ -1,6 +1,5 @@
 if theme.fireworks && theme.fireworks.enable
   canvas.fireworks(mobile=`${theme.fireworks.mobile}`)
-  script(src=url_for(theme.CDN.fireworks))
 
 if (theme.canvas_ribbon && theme.canvas_ribbon.enable)
   script(defer id="ribbon" src=url_for(theme.CDN.canvas_ribbon) size=theme.canvas_ribbon.size
