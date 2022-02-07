@@ -414,7 +414,7 @@ footer:
   owner:
     enable: true
     since: 2021
-  custom_text: <center><img src="https://cdn.jsdelivr.net/gh/TRHX/CDN-for-itrhx.com@3.0.9/images/moeicp.png" style="width:18px;height:18px;margin-bottom:-3px" alt="MOE ICP"><a href="https://icp.gov.moe" target="_blank">萌ICP备 </a><a href="https://icp.gov.moe/?keyword=20205150" target="_blank"> 20205150号</a></center><center><img src="https://cdn.jsdelivr.net/gh/slblog-github/SRCDN@master/Blog/Hosting.svg"><img src="https://cdn.jsdelivr.net/gh/slblog-github/SRCDN@master/Blog/FCDN.svg"><img src="https://cdn.jsdelivr.net/gh/slblog-github/SRCDN@master/Blog/WT.svg"><img src="https://cdn.jsdelivr.net/gh/slblog-github/SRCDN@master/Blog/cdn.svg"></center><center><a><a href="https://console.upyun.com/register/?invite=S1GEzxU2U" target="_blank"><img src="https://www.laobuluo.com/banner/upyun.png"></a></script></center><p>部分图片存储于<a href="https://www.dogedoge.com">DogeDoge</a>图床</p>
+  custom_text: <center><img src="https://cdn.jsdelivr.net/gh/TRHX/CDN-for-itrhx.com@3.0.9/images/moeicp.png" style="width:18px;height:18px;margin-bottom:-3px" alt="MOE ICP"><a href="https://icp.gov.moe" target="_blank">萌ICP备 </a><a href="https://icp.gov.moe/?keyword=20205150" target="_blank"> 20205150号</a></center><center><img src="https://cdn.jsdelivr.net/gh/slblog-github/SRCDN@master/Blog/Hosting.svg"><img src="https://cdn.jsdelivr.net/gh/slblog-github/SRCDN@master/Blog/FCDN.svg"><img src="https://cdn.jsdelivr.net/gh/slblog-github/SRCDN@master/Blog/WT.svg"><img src="https://cdn.jsdelivr.net/gh/slblog-github/SRCDN@master/Blog/cdn.svg"></center><center><a><a href="https://console.upyun.com/register/?invite=S1GEzxU2U" target="_blank"><img src="https://www.laobuluo.com/banner/upyun.png"></a></script></center><center><a href="../Helper/">博客用户端信息</a><p>部分图片存储于<a href="https://www.dogedoge.com">DogeDoge</a>图床</p>
   copyright: true # Copyright of theme and framework
   shici: true
 
@@ -612,7 +612,7 @@ font:
   code-font-size: 'Meow Font'
   font-family: 'Meow Font'
 blog_title_font:
-  font_link: https://npm.elemecdn.com/perorepe-cdn/v1/static-files/meow.ttf
+  font_link: 
   font-family: 'Meow Font'
 
 # The setting of divider icon (水平分隔線圖標設置)
@@ -903,7 +903,7 @@ css_prefix: true
 # 插入代码到头部 </head> 之前 和 底部 </body> 之前
 inject:
   head:
-      - <script src="./sw-load.js"></script>
+      - <script src="../sw-load.js"></script>
       - <meta name="google-site-verification" content="qAOA3HXexaF_5uvs3Ghmqp_eB0pIzLgQ1eFRTFGb0Sk">
       - <link rel="stylesheet" href="https://unpkg.slqwq.cn/perorepe-cdn/v1/static-files/Blog/css/ping.css">
       - <link rel="stylesheet" href="https://unpkg.slqwq.cn/hajeekn-static/styles/resource.min.css">

@@ -3,26 +3,10 @@ const cleanCSS = require('gulp-clean-css')
 const htmlmin = require('gulp-html-minifier-terser')
 const htmlclean = require('gulp-htmlclean')
 const imagemin = require('gulp-imagemin')
-const workbox = require("workbox-build");
 
 // babel
 const uglify = require('gulp-uglify');
 const babel = require('gulp-babel');
-
-//pwa
-gulp.task('generate-service-worker', () => {
-  return workbox.injectManifest({
-    swSrc: './sw-template.js',
-    swDest: './public/sw.js',
-    globDirectory: './public',
-    globPatterns: [
-        "**/*.{html,css,js,json,woff2}"
-    ],
-    modifyURLPrefix: {
-        "": "./"
-    }
-  });
-});
 
 //minify js babel
 gulp.task('compress', () =>
@@ -84,6 +68,6 @@ gulp.task('minify-images', async () => {
 });
 
 // 執行 gulp 命令時執行的任務
-gulp.task("default", gulp.series("generate-service-worker", gulp.parallel(
+gulp.task("default", gulp.parallel(
     'compress','minify-html', 'minify-css', 'minify-images'
 )));

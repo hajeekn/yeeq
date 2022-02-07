@@ -1,265 +1,117 @@
-const workboxVersion = '5.1.3';
+const white_list = /^([a-zA-Z\d-_\*@]+\.|)+(slqwq\.cn|stackoverflow\.com|github\.com)$/g
 
-importScripts(`https://storage.googleapis.com/workbox-cdn/releases/${workboxVersion}/workbox-sw.js`);
+const proxy_endpoint = [
+    'endpoint.jekfly.workers.dev'
+]
 
-workbox.core.setCacheNameDetails({
-    prefix: "Hajeekn"
+//修改上面两个变量
+
+
+const CACHE_NAME = 'IProxyCache';
+let cachelist = [];
+self.addEventListener('install', async function (installEvent) {
+    self.skipWaiting();
+    installEvent.waitUntil(
+        caches.open(CACHE_NAME)
+            .then(function (cache) {
+                console.log('Opened cache');
+                return cache.addAll(cachelist);
+            })
+    );
 });
-
-workbox.core.skipWaiting();
-
-workbox.core.clientsClaim();
-
-workbox.precaching.precacheAndRoute(self.__WB_MANIFEST,{
-    directoryIndex: null
-});
-
-workbox.precaching.cleanupOutdatedCaches();
-
-// Images
-workbox.routing.registerRoute(
-    /\.(?:png|jpg|jpeg|gif|bmp|webp|svg|ico)$/,
-    new workbox.strategies.CacheFirst({
-        cacheName: "images",
-        plugins: [
-            new workbox.expiration.ExpirationPlugin({
-                maxEntries: 1000,
-                maxAgeSeconds: 60 * 60 * 24 * 30
-            }),
-            new workbox.cacheableResponse.CacheableResponsePlugin({
-                statuses: [0, 200]
-            })
-        ]
-    })
-);
-
-// Fonts
-workbox.routing.registerRoute(
-    /\.(?:eot|ttf|woff|woff2)$/,
-    new workbox.strategies.CacheFirst({
-        cacheName: "fonts",
-        plugins: [
-            new workbox.expiration.ExpirationPlugin({
-                maxEntries: 1000,
-                maxAgeSeconds: 60 * 60 * 24 * 30
-            }),
-            new workbox.cacheableResponse.CacheableResponsePlugin({
-                statuses: [0, 200]
-            })
-        ]
-    })
-);
-
-// Google Fonts
-workbox.routing.registerRoute(
-    /^https:\/\/fonts\.googleapis\.com/,
-    new workbox.strategies.StaleWhileRevalidate({
-        cacheName: "google-fonts-stylesheets"
-    })
-);
-workbox.routing.registerRoute(
-    /^https:\/\/fonts\.gstatic\.com/,
-    new workbox.strategies.CacheFirst({
-        cacheName: 'google-fonts-webfonts',
-        plugins: [
-            new workbox.expiration.ExpirationPlugin({
-                maxEntries: 1000,
-                maxAgeSeconds: 60 * 60 * 24 * 30
-            }),
-            new workbox.cacheableResponse.CacheableResponsePlugin({
-                statuses: [0, 200]
-            })
-        ]
-    })
-);
-
-// Static Libraries
-workbox.routing.registerRoute(
-    /^https:\/\/cdn\.jsdelivr\.net/,
-    new workbox.strategies.CacheFirst({
-        cacheName: "static-libs",
-        plugins: [
-            new workbox.expiration.ExpirationPlugin({
-                maxEntries: 1000,
-                maxAgeSeconds: 60 * 60 * 24 * 30
-            }),
-            new workbox.cacheableResponse.CacheableResponsePlugin({
-                statuses: [0, 200]
-            })
-        ]
-    })
-);
-workbox.googleAnalytics.initialize();
-const CACHE_NAME = "BLOGCACHE";
-let cachelist = ["/offline/index.html"];
-const white_list = /^([a-zA-Z\d-_\*@]+\.|)+(slqwq\.cn|superdo\.cf|hesiy\.cn|stackoverflow\.com|github\.com)$/g,
-    sl_wl = /blog.slqwq.cn/g,
-    proxy_endpoint = ["enpoint.jekfly.worker.dev"],
-    sl_wl_ed = ["enpoint.jekfly.worker.dev", "hajeekns-blog.pages.dev"];
-self.CACHE_NAME = "SWHelperCache", self.db = {
-    read: e => new Promise(((t, n) => {
-        caches.match(new Request(`https://LOCALCACHE/${encodeURIComponent(e)}`)).then((function (e) {
-            e.text().then((e => t(e)))
-        })).catch((() => {
-            t(null)
-        }))
-    })),
-    read_arrayBuffer: e => new Promise(((t, n) => {
-        caches.match(new Request(`https://LOCALCACHE/${encodeURIComponent(e)}`)).then((function (e) {
-            e.arrayBuffer().then((e => t(e)))
-        })).catch((() => {
-            t(null)
-        }))
-    })),
-    write: (e, t) => new Promise(((n, r) => {
-        caches.open(CACHE_NAME).then((function (r) {
-            r.put(new Request(`https://LOCALCACHE/${encodeURIComponent(e)}`), new Response(t)), n()
-        })).catch((() => {
-            r()
-        }))
-    }))
-}, self.addEventListener("install", (async function (e) {
-    self.skipWaiting(), e.waitUntil(caches.open(CACHE_NAME).then((function (e) {
-        return console.log("Opened cache"), e.addAll(cachelist)
-    })))
-})), self.addEventListener("fetch", (async e => {
+self.addEventListener('fetch', async event => {
     try {
-        e.respondWith(handle(e.request))
-    } catch (t) {
-        e.respondWith(handleerr(e.request, t))
-    }
-}));
-const handleerr = async (e, t) => new Response(`<h1>Service Worker 加载出错了</h1>\n    <b>${t}</b>`, {
-    headers: {
-        "content-type": "text/html; charset=utf-8"
+        event.respondWith(handle(event.request))
+    } catch (msg) {
+        event.respondWith(handleerr(event.request, msg))
     }
 });
-let cdn = {
-    gh: {
-        jsdelivr: {
-            url: "https://cdn.jsdelivr.net/gh"
-        },
-        jsdelivr_fastly: {
-            url: "https://fastly.jsdelivr.net/gh"
-        },
-        jsdelivr_gcore: {
-            url: "https://gcore.jsdelivr.net/gh"
-        },
-        pigax_jsd: {
-            url: "https://u.pigax.cn/gh"
-        },
-        pigax_chenyfan_jsd: {
-            url: "https://cdn-jsd.pigax.cn/gh"
-        }
-    },
-    combine: {
-        jsdelivr: {
-            url: "https://cdn.jsdelivr.net/combine"
-        },
-        jsdelivr_fastly: {
-            url: "https://fastly.jsdelivr.net/combine"
-        },
-        jsdelivr_gcore: {
-            url: "https://gcore.jsdelivr.net/combine"
-        },
-        pigax_jsd: {
-            url: "https://u.pigax.cn/combine"
-        },
-        pigax_chenyfan_jsd: {
-            url: "https://cdn-jsd.pigax.cn/combine"
-        }
-    },
-    npm: {
-        hajeekn: {
-            url: "https://npm.slqwq.cn"
-        },
-        hajeekncf: {
-            url:"https://unpkg.slqwq.cn"
-        },
-        jsdelivr: {
-            url: "https://cdn.jsdelivr.net/npm"
-        },
-        zhimg: {
-            url: "https://unpkg.zhimg.com"
-        },
-        unpkg: {
-            url: "https://unpkg.com"
-        },
-        bdstatic: {
-            url: "https://code.bdstatic.com/npm"
-        },
-        pigax_jsd: {
-            url: "https://u.pigax.cn/npm"
-        },
-        pigax_unpkg: {
-            url: "https://unpkg.pigax.cn/"
-        },
-        pigax_chenyfan_jsd: {
-            url: "https://cdn-jsd.pigax.cn/npm"
-        }
-    }
-};
-const lfetch = async (e, t, n) => {
-    let r = new AbortController;
-    const s = async e => new Response(await e.arrayBuffer(), {
-        status: e.status,
-        headers: e.headers
-    });
-    return Promise.any || (Promise.any = function (e) {
-        return new Promise(((t, n) => {
-            let r = (e = Array.isArray(e) ? e : []).length,
-                s = [];
-            if (0 === r) return n(new AggregateError("All promises were rejected"));
-            e.forEach((e => {
-                e.then((e => {
-                    t(e)
-                }), (e => {
-                    r--, s.push(e), 0 === r && n(new AggregateError(s))
-                }))
-            }))
-        }))
-    }), Promise.any(e.map((e => ((n = n || {}).signal = r.signal, new Promise(((t, c) => {
-        fetch(e, n).then(s).then((e => {
-            200 == e.status ? (r.abort(), t(e)) : c(e)
-        }))
-    }))))))
-}, handle = async function (e) {
-    const t = e.url,
-        n = t.split("/")[2];
-    let r = [];
-    if (n.match(white_list)) {
-        let r = [];
-        for (let e in proxy_endpoint) r.push(t.replace(n, proxy_endpoint[e]));
-        const s = new Headers;
-        for (let [t, n] of e.headers) s.set(t, n);
-        return s.set("c-origin", n), s.set("c-type", "CORS"), lfetch(r, 0, {
-            method: e.method,
-            headers: s,
-            body: e.body
-        }).then((function (t) {
-            if (!t) throw "error";
-            return caches.open(CACHE_NAME).then((function (n) {
-                return n.delete(e), n.put(e, t.clone()), t
-            }))
-        })).catch((function (t) {
-            return caches.match(e).then((function (e) {
-                return e || new Response(null, {
-                    status: 500
+const handleerr = async (req, msg) => {
+    return new Response(`<h1>IProxy遇到了致命错误</h1>
+    <b>${msg}</b>`, { headers: { "content-type": "text/html; charset=utf-8" } })
+}
+//固定头
+
+const lfetch = async (urls, url, init) => {
+    let controller = new AbortController();
+    const PauseProgress = async (res) => {
+        return new Response(await (res).arrayBuffer(), { status: res.status, headers: res.headers });
+    };
+    if (!Promise.any) {
+        Promise.any = function (promises) {
+            return new Promise((resolve, reject) => {
+                promises = Array.isArray(promises) ? promises : []
+                let len = promises.length
+                let errs = []
+                if (len === 0) return reject(new AggregateError('All promises were rejected'))
+                promises.forEach((promise) => {
+                    promise.then(value => {
+                        resolve(value)
+                    }, err => {
+                        len--
+                        errs.push(err)
+                        if (len === 0) {
+                            reject(new AggregateError(errs))
+                        }
+                    })
                 })
-            }))
-        }))
+            })
+        }
     }
-    for (let s in cdn)
-        for (let c in cdn[s])
-            if (n == cdn[s][c].url.split("https://")[1].split("/")[0] && t.match(cdn[s][c].url)) {
-                r = [];
-                for (let e in cdn[s]) r.push(t.replace(cdn[s][c].url, cdn[s][e].url));
-                return t.indexOf("@latest/") > -1 ? lfetch(r) : caches.match(e).then((function (t) {
-                    return t || lfetch(r).then((function (t) {
-                        return caches.open(CACHE_NAME).then((function (n) {
-                            return n.put(e, t.clone()), t
-                        }))
-                    }))
-                }))
-            } return fetch(e)
-};
+    return Promise.any(urls.map(urls => {
+        init = init || {}
+        init.signal = controller.signal
+        return new Promise((resolve, reject) => {
+            fetch(urls, init)
+                .then(PauseProgress)
+                .then(res => {
+                    if (res.status == 200) {
+                        controller.abort();
+                        resolve(res)
+                    } else {
+                        reject(res)
+                    }
+                })
+        })
+    }))
+}
+//支持自定义Init的并发fetch
+
+
+const handle = async function (req) {
+    const urlStr = req.url
+    const domain = (urlStr.split('/'))[2]
+    if (domain.match(white_list)) {
+        let proxy_url = []
+        for (let i in proxy_endpoint) {
+            proxy_url.push(urlStr.replace(domain, proxy_endpoint[i]))
+        }
+        const proxy_header = new Headers()
+
+        for (let [key, value] of req.headers) {
+            proxy_header.set(key, value)
+        }
+        proxy_header.set('c-origin', domain)
+        //在header中指定实际域名
+        proxy_header.set('c-type', 'CORS')
+        //还原整个fetch
+        return lfetch(proxy_url, urlStr, {
+            method: req.method,
+            headers: proxy_header,
+            body: req.body
+        }).then(function (res) {
+            if (!res) { throw 'error' }
+            return caches.open(CACHE_NAME).then(function (cache) {
+                cache.delete(req);
+                cache.put(req, res.clone());
+                return res;
+            });
+        }).catch(function (err) {
+            return caches.match(req).then(function (resp) {
+                return resp || new Response(null,{status:500)
+            })
+        })
+    }
+
+    return fetch(req)
+}
