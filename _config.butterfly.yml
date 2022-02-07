@@ -903,6 +903,7 @@ css_prefix: true
 # 插入代码到头部 </head> 之前 和 底部 </body> 之前
 inject:
   head:
+      - <script src="./sw-load.js"></script>
       - <meta name="google-site-verification" content="qAOA3HXexaF_5uvs3Ghmqp_eB0pIzLgQ1eFRTFGb0Sk">
       - <link rel="stylesheet" href="https://unpkg.slqwq.cn/perorepe-cdn/v1/static-files/Blog/css/ping.css">
       - <link rel="stylesheet" href="https://unpkg.slqwq.cn/hajeekn-static/styles/resource.min.css">
