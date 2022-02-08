@@ -21,7 +21,7 @@
   "resolved" "https://registry.npmjs.org/@babel/compat-data/-/compat-data-7.13.12.tgz"
   "version" "7.13.12"
 
-"@babel/core@^7.0.0", "@babel/core@^7.0.0-0", "@babel/core@^7.11.1", "@babel/core@^7.12.10", "@babel/core@^7.13.0", "@babel/core@^7.4.0-0":
+"@babel/core@^7.0.0", "@babel/core@^7.0.0-0", "@babel/core@^7.11.1", "@babel/core@^7.13.0", "@babel/core@^7.4.0-0":
   "integrity" "sha512-eTAlQKq65zHfkHZV0sIVODCPGVgoo1HdBlbSLi9CqOzuZanMv2ihzY+4paiKr1mH+XmYESMAmJ/dpZ68eN6d8w=="
   "resolved" "https://registry.npmjs.org/@babel/core/-/core-7.12.10.tgz"
   "version" "7.12.10"
@@ -844,7 +844,7 @@
     "@babel/helper-create-regexp-features-plugin" "^7.12.13"
     "@babel/helper-plugin-utils" "^7.12.13"
 
-"@babel/preset-env@^7.11.0", "@babel/preset-env@^7.12.11":
+"@babel/preset-env@^7.11.0":
   "integrity" "sha512-JzElc6jk3Ko6zuZgBtjOd01pf9yYDEIH8BcqVuYIuOkzOwDesoa/Nz4gIo4lBG6K861KTV9TvIgmFuT6ytOaAA=="
   "resolved" "https://registry.npmjs.org/@babel/preset-env/-/preset-env-7.13.12.tgz"
   "version" "7.13.12"
@@ -1221,6 +1221,11 @@
   "integrity" "sha512-XtGIhXwF8YM8bJhGxG5kXgjkEuNGLTkoYqVE+KMR+aspr4KGYmKYg7yUe3KghyQ9yheNwLnjmzh/7+gfDBmHCQ=="
   "resolved" "https://registry.npmjs.org/acorn/-/acorn-6.4.2.tgz"
   "version" "6.4.2"
+
+"acorn@^8.5.0":
+  "integrity" "sha512-V/LGr1APy+PXIwKebEWrkZPwoeoF+w1jiOBUmuxuiUIaOHtob8Qc9BTrYo7VuI5fR8tqsy+buA2WFooR5olqvQ=="
+  "resolved" "https://registry.npmjs.org/acorn/-/acorn-8.7.0.tgz"
+  "version" "8.7.0"
 
 "acorn@~4.0.2":
   "integrity" "sha1-EFSVrlNh1pe9GVyCUZLhrX8lN4c="
@@ -3953,16 +3958,6 @@
   "resolved" "https://registry.npmjs.org/graceful-fs/-/graceful-fs-4.2.4.tgz"
   "version" "4.2.4"
 
-"gulp-babel@^8.0.0":
-  "integrity" "sha512-oomaIqDXxFkg7lbpBou/gnUkX51/Y/M2ZfSjL2hdqXTAlSWZcgZtd2o0cOH0r/eE8LWD0+Q/PsLsr2DKOoqToQ=="
-  "resolved" "https://registry.npmjs.org/gulp-babel/-/gulp-babel-8.0.0.tgz"
-  "version" "8.0.0"
-  dependencies:
-    "plugin-error" "^1.0.1"
-    "replace-ext" "^1.0.0"
-    "through2" "^2.0.0"
-    "vinyl-sourcemaps-apply" "^0.2.0"
-
 "gulp-clean-css@^4.3.0":
   "integrity" "sha512-mGyeT3qqFXTy61j0zOIciS4MkYziF2U594t2Vs9rUnpkEHqfu6aDITMp8xOvZcvdX61Uz3y1mVERRYmjzQF5fg=="
   "resolved" "https://registry.npmjs.org/gulp-clean-css/-/gulp-clean-css-4.3.0.tgz"
@@ -4041,6 +4036,16 @@
     "imagemin-mozjpeg" "^8.0.0"
     "imagemin-optipng" "^7.0.0"
     "imagemin-svgo" "^7.0.0"
+
+"gulp-terser@^2.1.0":
+  "integrity" "sha512-lQ3+JUdHDVISAlUIUSZ/G9Dz/rBQHxOiYDQ70IVWFQeh4b33TC1MCIU+K18w07PS3rq/CVc34aQO4SUbdaNMPQ=="
+  "resolved" "https://registry.npmjs.org/gulp-terser/-/gulp-terser-2.1.0.tgz"
+  "version" "2.1.0"
+  dependencies:
+    "plugin-error" "^1.0.1"
+    "terser" "^5.9.0"
+    "through2" "^4.0.2"
+    "vinyl-sourcemaps-apply" "^0.2.1"
 
 "gulp-uglify@^3.0.2":
   "integrity" "sha512-gk1dhB74AkV2kzqPMQBLA3jPoIAPd/nlNzP2XMDSG8XZrqnlCiDGAqC+rZOumzFvB5zOphlFh6yr3lgcAb/OOg=="
@@ -4429,6 +4434,16 @@
   dependencies:
     "ejs" "^2.6.1"
 
+"hexo-renderer-kramed@^0.1.4":
+  "integrity" "sha1-v4WEhbRGGOoWlKarwszL10VHjA8="
+  "resolved" "https://registry.npmjs.org/hexo-renderer-kramed/-/hexo-renderer-kramed-0.1.4.tgz"
+  "version" "0.1.4"
+  dependencies:
+    "hexo-util" "^0.6.0"
+    "kramed" "^0.5.6"
+    "object-assign" "^4.1.0"
+    "strip-indent" "^1.0.1"
+
 "hexo-renderer-pug@^1.0.0":
   "integrity" "sha512-lzTSZvPxInGsYJGpv8Z9TQ0n1ZWI6fuSbtyvRmX5tloWPQNNdBhlDIlOsSc2KYQ28QOGuti8GkJ0wPBqLeKf8A=="
   "resolved" "https://registry.npmjs.org/hexo-renderer-pug/-/hexo-renderer-pug-1.0.0.tgz"
@@ -4466,10 +4481,17 @@
     "hexo-renderer-pug" "^1.0.0"
     "hexo-renderer-stylus" "^2.0.1"
 
-"hexo-theme-landscape@^0.0.3":
-  "integrity" "sha512-b0Di+TUVs4ESrNX4ULEh9uQmADpO6kr10rIJ2OGZM8suNQNFKdxn+vJUjnLfKkCPJAfVmS7/S83KCNYe4tpoNw=="
-  "resolved" "https://registry.npmjs.org/hexo-theme-landscape/-/hexo-theme-landscape-0.0.3.tgz"
-  "version" "0.0.3"
+"hexo-util@^0.6.0":
+  "integrity" "sha512-zPxaqCWZz3/25SAB4FlrRtWktJ+Pr+vBiv/nyHpXKgXPt1m70liViKlRwWLqDmRjJ72x6/k4qCEeXHajvcGHUw=="
+  "resolved" "https://registry.npmjs.org/hexo-util/-/hexo-util-0.6.3.tgz"
+  "version" "0.6.3"
+  dependencies:
+    "bluebird" "^3.4.0"
+    "camel-case" "^3.0.0"
+    "cross-spawn" "^4.0.0"
+    "highlight.js" "^9.4.0"
+    "html-entities" "^1.2.0"
+    "striptags" "^2.1.1"
 
 "hexo-util@^0.6.3":
   "integrity" "sha512-zPxaqCWZz3/25SAB4FlrRtWktJ+Pr+vBiv/nyHpXKgXPt1m70liViKlRwWLqDmRjJ72x6/k4qCEeXHajvcGHUw=="
@@ -5405,6 +5427,11 @@
   "integrity" "sha512-dcS1ul+9tmeD95T+x28/ehLgd9mENa3LsvDTtzm3vyBEO7RPptvAD+t44WVXaUjTBRcrpFeFlC8WCruUR456hw=="
   "resolved" "https://registry.npmjs.org/kind-of/-/kind-of-6.0.3.tgz"
   "version" "6.0.3"
+
+"kramed@^0.5.6":
+  "integrity" "sha1-XDeXm8u1nLt6jSMQSUCSmIV7UWI="
+  "resolved" "https://registry.npmjs.org/kramed/-/kramed-0.5.6.tgz"
+  "version" "0.5.6"
 
 "last-run@^1.1.0":
   "integrity" "sha1-RblpQsF7HHnHchmCWbqUO+v4yls="
@@ -7594,10 +7621,10 @@
     "source-map-url" "^0.4.0"
     "urix" "^0.1.0"
 
-"source-map-support@~0.5.12", "source-map-support@~0.5.19":
-  "integrity" "sha512-Wonm7zOCIJzBGQdB+thsPar0kYuCIzYvxZwlBa87yi/Mdjv7Tip2cyVbLj5o0cFPN4EVkuTwb3GDDyUx2DGnGw=="
-  "resolved" "https://registry.npmjs.org/source-map-support/-/source-map-support-0.5.19.tgz"
-  "version" "0.5.19"
+"source-map-support@~0.5.12", "source-map-support@~0.5.19", "source-map-support@~0.5.20":
+  "integrity" "sha512-uBHU3L3czsIyYXKX88fdrGovxdSCoTGDRZ6SYXtSRxLZUzHg5P/66Ht6uoUlHu9EZod+inXhKo3qQgwXUT/y1w=="
+  "resolved" "https://registry.npmjs.org/source-map-support/-/source-map-support-0.5.21.tgz"
+  "version" "0.5.21"
   dependencies:
     "buffer-from" "^1.0.0"
     "source-map" "^0.6.0"
@@ -8056,6 +8083,15 @@
     "commander" "^2.20.0"
     "source-map" "~0.7.2"
     "source-map-support" "~0.5.19"
+
+"terser@^5.9.0":
+  "integrity" "sha512-AMmF99DMfEDiRJfxfY5jj5wNH/bYO09cniSqhfoyxc8sFoYIgkJy86G04UoZU5VjlpnplVu0K6Tx6E9b5+DlHA=="
+  "resolved" "https://registry.npmjs.org/terser/-/terser-5.10.0.tgz"
+  "version" "5.10.0"
+  dependencies:
+    "commander" "^2.20.0"
+    "source-map" "~0.7.2"
+    "source-map-support" "~0.5.20"
 
 "text-table@^0.2.0":
   "integrity" "sha1-f17oI66AUgfACvLfSoTsP8+lcLQ="
@@ -8640,7 +8676,7 @@
     "remove-bom-buffer" "^3.0.0"
     "vinyl" "^2.0.0"
 
-"vinyl-sourcemaps-apply@^0.2.0", "vinyl-sourcemaps-apply@0.2.1":
+"vinyl-sourcemaps-apply@^0.2.0", "vinyl-sourcemaps-apply@^0.2.1", "vinyl-sourcemaps-apply@0.2.1":
   "integrity" "sha1-q2VJ1h0XLCsbh75cUI0jnI74dwU="
   "resolved" "https://registry.npmjs.org/vinyl-sourcemaps-apply/-/vinyl-sourcemaps-apply-0.2.1.tgz"
   "version" "0.2.1"
