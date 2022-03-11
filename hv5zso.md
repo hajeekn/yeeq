@@ -75,4 +75,3 @@ UUP（amd64_zh cn）：[https://pan.baidu.com/s/14x2a2VhopRAS3ZOYhkBQBA](https:/
 √ 动效多样
 √ UI 好看(果里果气)
 √ 原生支持 Android APP
-​

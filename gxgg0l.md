@@ -210,7 +210,7 @@ option:
 - [Renovate](https://github.com/marketplace/renovate)
 - [Mergify](https://github.com/marketplace/mergify)
 
-当然前提是公开仓库~~​~~
+当然前提是公开仓库
 安装完成后你就可以删除你现有的名为 Waline 的仓库，再 fork [CCKNBC 的仓库](https://github.com/ccknbc-actions/waline)，然后去你的 Vercel 解绑之前的仓库，再绑定你 fork 的仓库，最后点一下重新部署即可
 但是如果你没用 tcb 就把 .github/workflows/Update Waline TCB.yml   里的文件删掉，因为涉及到自动部署更新云开发，还有环境变量问题，如果没设定会导致报错
 **_这部分照搬了 CC 的文章熬_**
@@ -234,5 +234,3 @@ Fork [CCKNBC 的仓库](https://github.com/ccknbc-actions/waline) 然后新建�
 查看，地址栏后也会显示，反正就是很多地方都在上面点一下就能看到 |
 
 ---
-
-​

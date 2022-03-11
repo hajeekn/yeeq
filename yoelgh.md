@@ -39,7 +39,7 @@ author: Hajeekn
 ![image.png](https://cdn.nlark.com/yuque/0/2021/png/12488964/1635506531550-0a56b811-5520-46e2-aeee-9a99d236da61.png#clientId=ufc97edf3-f248-4&from=paste&height=306&id=ue363b855&margin=%5Bobject%20Object%5D&name=image.png&originHeight=612&originWidth=812&originalType=binary&ratio=1&size=35146&status=done&style=none&taskId=uc8a957c0-3f70-49d7-b52f-899c38db16c&width=406)
 我们需要使用 Powershell 安装
 **用管理员打开 Powershell**
-用这个指令安装**​**
+用这个指令安装
 
 ```powershell
 add-appxpackage "文件地址"
