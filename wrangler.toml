@@ -1,9 +1,0 @@
-name = "hajeekn-blog"
-type = "webpack"
-route = ''
-zone_id = '621c45439550141e24535ea93ef5c958'
-usage_model = ''
-compatibility_flags = []
-workers_dev = true
-site = {bucket = "./public",entry-point = "workers-site"}
-compatibility_date = "2022-02-15"
