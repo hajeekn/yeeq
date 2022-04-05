@@ -24,14 +24,12 @@ Floccus 是一个在 GitHub 上的开源项目，该项目的官方简介如下
 
 # 下载并安装 Floccus 插件
 
-{% btn 'https://chrome.google.com/webstore/detail/floccus/fnaicdffflnofjppbagibeoednhnbjhg',Chrome 网上应用店,far fa-hand-point-right,orange larger %}
-{% btn 'https://addons.mozilla.org/en-US/firefox/addon/floccus',Firefox 应用程式,far fa-hand-point-right,orange larger %}
-{% btn 'https://github.com/marcelklehr/floccus/releases/',GitHub Release 下载,far fa-hand-point-right,orange larger %}
+[Chrome Store Download](https://chrome.google.com/webstore/detail/floccus/fnaicdffflnofjppbagibeoednhnbjhg)
+[GitHub Release 下载](https://github.com/marcelklehr/floccus/releases/)
 
 # 配置坚果云
 
-坚果云支持 WebDAV,并且在国内,速度快,所以我们就选用了坚果云
-{% btn 'https://jianguoyun.com/',坚果云官网,far fa-hand-point-right,blue larger %}
+坚果云支持 WebDAV,并且在国内,速度快,所以我们就选用了[坚果云](https://jianguoyun.com/)
 ![](https://cdn.nlark.com/yuque/0/2021/png/12488964/1618715005283-b7177acd-b9df-4944-98cf-3300bb5852c7.png#clientId=ub7b6890d-a77c-4&crop=0&crop=0&crop=1&crop=1&from=paste&height=416&id=ub6f124b8&margin=%5Bobject%20Object%5D&originHeight=832&originWidth=1892&originalType=binary&ratio=1&rotation=0&showTitle=false&size=453598&status=done&style=none&taskId=u281f9883-1a8a-4cde-a9b4-7aa5901cc9a&title=&width=946)
 如果你有账号点击登录
 如果你没有账号点击注册
