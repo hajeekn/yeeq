@@ -17,15 +17,11 @@ author: Hajeekn
 
 ---
 
-{% note warning simple %}
-本文章的配置页面不适用于其他主题
-{% endnote %}
-
 # 什么是友链朋友圈？
 
 **你是否经常烦恼于友链过多但没有时间浏览？那么友链朋友圈将解决这一痛点。你可以随时获取友链网站的更新内容，并了解友链的活跃情况 。**
 效果图如下：
-[![image.png](https://cdn.nlark.com/yuque/0/2021/png/8391485/1612877553087-3087b091-93ce-40fd-a49f-8baf0f0f49c4.png#align=left&display=inline&height=521&margin=%5Bobject%20Object%5D&name=image.png&originHeight=521&originWidth=386&size=161076&status=done&style=none&width=386#align=left&display=inline&height=521&margin=%5Bobject%20Object%5D&originHeight=521&originWidth=386&status=done&style=shadow&width=386)](https://cdn.nlark.com/yuque/0/2021/png/8391485/1612877553087-3087b091-93ce-40fd-a49f-8baf0f0f49c4.png#align=left&display=inline&height=521&margin=%5Bobject%20Object%5D&name=image.png&originHeight=521&originWidth=386&size=161076&status=done&style=none&width=386)
+[![image.png](https://cdn.nlark.com/yuque/0/2021/png/8391485/1612877553087-3087b091-93ce-40fd-a49f-8baf0f0f49c4.png#align=left&display=inline&height=521&margin=%5Bobject%20Object%5D&name=image.png&originHeight=521&originWidth=386&size=161076&status=done&style=none&width=386#crop=0&crop=0&crop=1&crop=1&height=521&id=Dum2r&margin=%5Bobject%20Object%5D&originHeight=521&originWidth=386&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=shadow&title=&width=386)](https://cdn.nlark.com/yuque/0/2021/png/8391485/1612877553087-3087b091-93ce-40fd-a49f-8baf0f0f49c4.png#align=left&display=inline&height=521&margin=%5Bobject%20Object%5D&name=image.png&originHeight=521&originWidth=386&size=161076&status=done&style=none&width=386)
 ~~因为是 beta 版本，所以不可避免还有错误，为了更好制作这个项目，发现 bug。我首先 release 这个 beta 版本。~~
 目前 release1.5 版本：
 ① 支持**butterfly、volantis、matery 主题**的友链获取
@@ -43,18 +39,18 @@ author: Hajeekn
 ## ① 账号的注册与登录
 
 进入[Leancloud 国际版本](https://leancloud.app)
-![image.png](https://cdn.nlark.com/yuque/0/2021/png/12488964/1615698355310-2b343322-21f7-4d8c-84ec-4e616341ec65.png#align=left&display=inline&height=434&margin=%5Bobject%20Object%5D&name=image.png&originHeight=867&originWidth=1892&size=194528&status=done&style=none&width=946)
+![image.png](https://cdn.nlark.com/yuque/0/2021/png/12488964/1615698355310-2b343322-21f7-4d8c-84ec-4e616341ec65.png#crop=0&crop=0&crop=1&crop=1&height=434&id=gFPLa&margin=%5Bobject%20Object%5D&name=image.png&originHeight=867&originWidth=1892&originalType=binary&ratio=1&rotation=0&showTitle=false&size=194528&status=done&style=none&title=&width=946)
 点击 Console
-![image.png](https://cdn.nlark.com/yuque/0/2021/png/12488964/1615698402861-e4064b2b-1293-4ba8-aca3-b2f73cbf70c5.png#align=left&display=inline&height=431&margin=%5Bobject%20Object%5D&name=image.png&originHeight=862&originWidth=1920&size=85623&status=done&style=none&width=960)
+![image.png](https://cdn.nlark.com/yuque/0/2021/png/12488964/1615698402861-e4064b2b-1293-4ba8-aca3-b2f73cbf70c5.png#crop=0&crop=0&crop=1&crop=1&height=431&id=lLGSN&margin=%5Bobject%20Object%5D&name=image.png&originHeight=862&originWidth=1920&originalType=binary&ratio=1&rotation=0&showTitle=false&size=85623&status=done&style=none&title=&width=960)
 在这个页面,如果你没有 LeanCloud 账号选择注册
 如果有就登陆
 
 ## ② 创建应用并获取 id&key
 
-![image.png](https://cdn.nlark.com/yuque/0/2021/png/12488964/1615698465602-e32cb990-20f8-451a-8cfc-bd2b30d450b0.png#align=left&display=inline&height=411&margin=%5Bobject%20Object%5D&name=image.png&originHeight=822&originWidth=1075&size=59656&status=done&style=none&width=537.5)
+![image.png](https://cdn.nlark.com/yuque/0/2021/png/12488964/1615698465602-e32cb990-20f8-451a-8cfc-bd2b30d450b0.png#crop=0&crop=0&crop=1&crop=1&height=411&id=o21zC&margin=%5Bobject%20Object%5D&name=image.png&originHeight=822&originWidth=1075&originalType=binary&ratio=1&rotation=0&showTitle=false&size=59656&status=done&style=none&title=&width=537.5)
 进入设置 -> 域名绑定绑定一个域名
 (其实也可以不绑定)
-![image.png](https://cdn.nlark.com/yuque/0/2021/png/12488964/1615698561471-c78c5e1b-70f5-487b-8049-efa1e36c38ec.png#align=left&display=inline&height=350&margin=%5Bobject%20Object%5D&name=image.png&originHeight=700&originWidth=1039&size=48369&status=done&style=none&width=519.5)
+![image.png](https://cdn.nlark.com/yuque/0/2021/png/12488964/1615698561471-c78c5e1b-70f5-487b-8049-efa1e36c38ec.png#crop=0&crop=0&crop=1&crop=1&height=350&id=R5Iji&margin=%5Bobject%20Object%5D&name=image.png&originHeight=700&originWidth=1039&originalType=binary&ratio=1&rotation=0&showTitle=false&size=48369&status=done&style=none&title=&width=519.5)
 绑定完后进入设置 -> 应用 Keys
 复制 APPID 和 APPKEY
 
@@ -63,7 +59,7 @@ author: Hajeekn
 ## ① Fork 项目
 
 进入[GitHub 项目](https://github.com/Zfour/hexo-circle-of-friends)
-![image.png](https://cdn.nlark.com/yuque/0/2021/png/12488964/1615698777342-a6fdc107-d9f7-4aa8-bee7-7956a65aafa1.png#align=left&display=inline&height=429&margin=%5Bobject%20Object%5D&name=image.png&originHeight=858&originWidth=1878&size=184575&status=done&style=none&width=939)
+![image.png](https://cdn.nlark.com/yuque/0/2021/png/12488964/1615698777342-a6fdc107-d9f7-4aa8-bee7-7956a65aafa1.png#crop=0&crop=0&crop=1&crop=1&height=429&id=HeYWc&margin=%5Bobject%20Object%5D&name=image.png&originHeight=858&originWidth=1878&originalType=binary&ratio=1&rotation=0&showTitle=false&size=184575&status=done&style=none&title=&width=939)
 Fork 此项目
 
 ## ② 配置变量
@@ -76,11 +72,11 @@ Fork 此项目
 ## ③ 修改配置文件并启用
 
 修改\_config.yml
-**如果你使用的的是**[**小康友链**](https://docs.tzki.cn/Friend)**部署，选择`type: normal` `gitee_friends_links`的`enable`改为`true`，然后填入你的 gitee 用户名、gitee 仓库名及抓取的 issue 状态即可**
-**如果你是 volantis 主题，则选择`type: volantis`，然后填入你的 gitee 用户名、gitee 仓库名及抓取的 issue 状态。**
-**你可以通过`block_word`手动屏蔽 sitemap 中的关键字。比如你想屏蔽`example.com/bookshop`这个页面和以下分类则添加`bookshop`作为屏蔽项。**
-**你可以通过`block_chars`手动屏蔽 sitemap 抓取的标题中包含的站点信息字符。比如你想屏蔽`我是鸽子|小冰博客`这篇文章的`|小冰博客`则添加`|`作为屏蔽项。（目前只支持 gbk 字符）**
-**如果你发现，你的友链中有十分 bug 的网站或者你不感兴趣的网站，你也可以添加网站屏蔽。添加  `[https://example.com/](https://example.com/)`作为屏蔽项。但为了您的友谊，我不建议屏蔽。（这个功能其实是为了减少 bug 而设计的）**
+**如果你使用的的是**[**小康友链**](https://docs.tzki.cn/Friend)**部署，选择**`**type: normal**`\*\* **`**gitee_friends_links**`**的**`**enable**`**改为**`**true**`**，然后填入你的 gitee 用户名、gitee 仓库名及抓取的 issue 状态即可\*\*
+**如果你是 volantis 主题，则选择**`**type: volantis**`**，然后填入你的 gitee 用户名、gitee 仓库名及抓取的 issue 状态。**
+**你可以通过**`**block_word**`**手动屏蔽 sitemap 中的关键字。比如你想屏蔽**`**example.com/bookshop**`**这个页面和以下分类则添加**`**bookshop**`**作为屏蔽项。**
+**你可以通过**`**block_chars**`**手动屏蔽 sitemap 抓取的标题中包含的站点信息字符。比如你想屏蔽**`**我是鸽子|小冰博客**`**这篇文章的**`**|小冰博客**`**则添加**`**|**`**作为屏蔽项。（目前只支持 gbk 字符）**
+**如果你发现，你的友链中有十分 bug 的网站或者你不感兴趣的网站，你也可以添加网站屏蔽。添加  **`**[https://example.com/](https://example.com/)**`**作为屏蔽项。但为了您的友谊，我不建议屏蔽。（这个功能其实是为了减少 bug 而设计的）**
 如果完成了上述更改就可以给自己 Fork 的项目点个 Star 就可以启用了
 
 # Config3: Config Vercel API
@@ -95,7 +91,7 @@ Fork 此项目
 点击仪表盘的 New Project -> Import Third-Party Git Repository
 然后填入冰卡诺老师的仓库
 `https://github.com/Zfour/hexo-circle-of-friends-api`
-![image.png](https://cdn.nlark.com/yuque/0/2021/png/12488964/1615699661063-982b3617-7665-40ff-8faf-bb13c1604967.png#align=left&display=inline&height=318&margin=%5Bobject%20Object%5D&name=image.png&originHeight=636&originWidth=1086&size=62734&status=done&style=none&width=543)
+![image.png](https://cdn.nlark.com/yuque/0/2021/png/12488964/1615699661063-982b3617-7665-40ff-8faf-bb13c1604967.png#crop=0&crop=0&crop=1&crop=1&height=318&id=qyUSe&margin=%5Bobject%20Object%5D&name=image.png&originHeight=636&originWidth=1086&originalType=binary&ratio=1&rotation=0&showTitle=false&size=62734&status=done&style=none&title=&width=543)
 选择个人账户(PERSONAL ACCOUNT)
 选择 GitHub 按钮后他就会克隆一份到你的 GitHub 中
 然后继续点击下一步(Continue)
@@ -114,9 +110,6 @@ Fork 此项目
 
 # Config4: Config Page
 
-{% note warning simple %}
-此部分可能不支持其他主题
-{% endnote %}
 首先前往主题目录/layout/includes/page
 新建一个 circle.pug
 里面写入
