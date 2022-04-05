@@ -34,31 +34,12 @@ var obj = {
   document.querySelector('.flink').insertAdjacentHTML('afterbegin',"<div id='friend1'></div>")
   new Friend(obj)
 </script>
-
-# 申请友链
-
-{% folding cyan open, 申请须知 %}
-
-{% checkbox green checked, 已使用HTTPS %}
-
-{% checkbox green checked, 无广告 %}
-
-{% checkbox green checked, 转载文章需留原文 %}
-
-{% checkbox green checked, 您的网站是学习/博客/日记的 %}
-
-{% checkbox red checked, 如果您长时间没有更新文章/网站无法访问/取消本站链接本站将直接移除您的友链 %}
-
-{% tabs 个人信息 %}
-<!-- tab -->
 ```yaml
 name: SL's Blog
 link: https://blog.slqwq.cn
-avatar: https://cdn.hesiy.cn/pic/logo.png
+avatar: https://npm.elemecdn.com/perorepe-cdn/v1/bigger-photos/avatar.webp
 descr: 梦中做梦,做了个白日梦
 ```
-<!-- endtab -->
-{%  endtabs %}
 
 申请方法1:
 
@@ -70,55 +51,3 @@ descr: 梦中做梦,做了个白日梦
 但在这之前，请先确保您已添加本站友链！
 
 详细申请方法已记载到仓库的README.md，按照MD指示方可完成
-
-{% endfolding %}
-
-
-
-{% folding red cyan open, 过期的友链们 %}
-
-{% timenode 萌城·博客 %}
-
-名称:萌城·博客 地址:https://men******qwq.com/
-
-{% endtimenode %}
-
-{% timenode MuXin's Blog %}
-
-名称:MuXin's Blog 地址:https://mu******14.top/
-
-{% endtimenode %}
-
-{% timenode xiaoxu博客 %}
-
-名称:xiaoxu博客 地址:https://www.x******og.cn/
-
-{% endtimenode %}
-
-{% timenode amemz的博客 %}
-
-名称:amemz的博客 地址:https://www.j***.tk/
-
-{% endtimenode %}
-
-{% timenode xiaoxu博客 %}
-
-名称:xiaoxu博客 地址:https://www.x******og.cn/
-
-{% endtimenode %}
-
-{% timenode ilyfairy's Blog %}
-
-名称:ilyfairy's Blog 地址:https://ily******ry.com/
-
-{% endtimenode %}
-
-{% timenode xiaoxu博客 %}
-
-名称:Zoom 地址:https://zoom1******ub.io/
-
-{% endtimenode %}
-
-过期的友链请尽快找我重新申请
-
-{% endfolding %}
