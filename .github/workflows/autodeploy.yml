@@ -61,6 +61,7 @@ jobs:
 
       - name: 生成文件和压缩
         run: |
+          git clone https://github.com/ladjeek-actions/butterfly.git themes/butterfly
           hexo clean
           hexo g
           gulp
