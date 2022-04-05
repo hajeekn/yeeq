@@ -15,16 +15,8 @@ id: 27
 
 本文章首发于[语雀](https://www.yuque.com/ladjeek/ygg4q6)!
 通过各种高科技功能同步到[Hajeekn 的博客](https://blog.slqwq.cn)
-{% note green 'fab fa-internet-explorer' simple %}
-本文章大部分功能涉及到魔改,如果您无法掌握 pug、stylus 等文件的缩进格式，可以直接前往我的博客源码拿取。
-{% endnote %}
-{% btn 'https://github.com/ladjeek-actions/blogsour',这里是我的博客源码哦~,far fa-hand-point-right,orange larger %}
-{% note warning simple %}
-由于每个人的博客目录都不相同，这里博客目录使用%brt%代替
-{% endnote %}
-{% note danger simple %}
-本文章除 Pace wowjs 普通引入法以外,其他魔改都不适合 Butterfly3.6.0 及以上
-{% endnote %}
+**由于每个人的博客目录都不相同，这里博客目录使用%brt%代替**
+**本文章除 Pace wowjs 普通引入法以外,其他魔改都不适合 Butterfly3.6.0 及以上**
 
 # 通过 wowjs 给博客添加好看的样式
 
@@ -167,9 +159,7 @@ wowjs:
 
 ## 浮动样式篇
 
-{% note info simple %}
 浮动样式篇参考[Aklilar](https://akilar.top/)大佬的文章[给博客元素添加浮动特效](https://akilar.top/posts/9e3bccc6)和[洪哥](https://blog.zhheo.com/)的博客效果
-{% endnote %}
 
 - 1.前往`%brt%\themes\butterfly\source\js\`目录,新建一个名为`floatpanel.js`的文件
 
@@ -254,7 +244,7 @@ _**当你完成了基础样式篇时,其实你可以直接将浮动效果看成�
 ```
 
 添加完成后 wowjs 的配置项应该与下面的截图类似
-![image.png](https://cdn.nlark.com/yuque/0/2021/png/12488964/1611663209876-8bc916b7-8a68-4ff4-9fad-d3b65be99d6f.png#align=left&display=inline&height=331&margin=%5Bobject%20Object%5D&name=image.png&originHeight=662&originWidth=950&size=154327&status=done&style=none&width=475)
+![image.png](https://cdn.nlark.com/yuque/0/2021/png/12488964/1611663209876-8bc916b7-8a68-4ff4-9fad-d3b65be99d6f.png#crop=0&crop=0&crop=1&crop=1&height=331&id=K0vsD&margin=%5Bobject%20Object%5D&name=image.png&originHeight=662&originWidth=950&originalType=binary&ratio=1&rotation=0&showTitle=false&size=154327&status=done&style=none&title=&width=475)
 如果报错,请检查你的配置缩进是否正确 ✔,这里博主推荐使用微软爸爸出品的 VSC 编辑对于缩进格式邀请很强的文件格式
 以下代码供您用来参考:
 
@@ -295,9 +285,7 @@ wowjs:
 
 # 添加 BiliBili 同款的动态 Banner
 
-{% note warning simple %}
 由于每个人的博客目录都不相同，这里博客目录使用%brt%代替
-{% endnote %}
 
 <div class="btns"><a href="https://slqwq.lanzous.com/i94DIkvxz6f" title="下载Bilibili的Banner" one-link-mark="yes" data-pjax-state=""><i class="far fa-hand-point-right"></i>下载Bilibili的Banner</a></div>
 
@@ -522,7 +510,7 @@ if (winterBanner) {
 bilibili_banner: /js/bilibili-banner.js
 ```
 
-- _**添加  \*\***`css`\***\*  配置项。此处使用了异步加载，同时做了媒体选择，对手机是不会生效的。因为手机的  \*\***`banner`\***\*  高度会导致适配效果很差。**_
+- _**添加  **_`_**css**_`_**  配置项。此处使用了异步加载，同时做了媒体选择，对手机是不会生效的。因为手机的  **_`_**banner**_`_**  高度会导致适配效果很差。**_
 
 我们找到 inject 配置大项的 head 小项,在其内部添加以下配置:
 
