@@ -107,9 +107,7 @@ PROJECT NAME 可以随便填写一个
 这边用国际版演示
 进入选择 [Console](https://console.leancloud.app/)
 如果没有创建一个应用
-{% note danger simple %}
-注意 ⚠: 如果您之前用了 Valine 评论系统 就不用创建了,因为 Waline 评论数据与 Valine 评论数据可以共用
-{% endnote %}
+**注意 ⚠: 如果您之前用了 Valine 评论系统 就不用创建了,因为 Waline 评论数据与 Valine 评论数据可以共用**
 ![image.png](https://cdn.nlark.com/yuque/0/2021/png/12488964/1613909677182-c35bb1a1-54ea-45d6-81bc-30dea4281bc2.png#crop=0&crop=0&crop=1&crop=1&height=213&id=vGRQH&margin=%5Bobject%20Object%5D&name=image.png&originHeight=426&originWidth=305&originalType=binary&ratio=1&rotation=0&showTitle=false&size=12887&status=done&style=none&title=&width=152.5)
 进入应用设置后选择 设置 -> 应用 Keys
 ![image.png](https://cdn.nlark.com/yuque/0/2021/png/12488964/1613909849497-15dd6d3d-8a8c-47bc-8f23-52812d4659e8.png#crop=0&crop=0&crop=1&crop=1&height=256&id=OhNdC&margin=%5Bobject%20Object%5D&name=image.png&originHeight=512&originWidth=915&originalType=binary&ratio=1&rotation=0&showTitle=false&size=39747&status=done&style=none&title=&width=457.5)
