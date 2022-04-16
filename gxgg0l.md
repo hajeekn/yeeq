@@ -229,3 +229,5 @@ Fork [CCKNBC 的仓库](https://github.com/ccknbc-actions/waline) 然后新建�
 查看，地址栏后也会显示，反正就是很多地方都在上面点一下就能看到 |
 
 ---
+
+我的博客即将同步至腾讯云+社区，邀请大家一同入驻：[https://cloud.tencent.com/developer/support-plan?invite_code=3gll8aqhc2kgg](https://cloud.tencent.com/developer/support-plan?invite_code=3gll8aqhc2kgg)
