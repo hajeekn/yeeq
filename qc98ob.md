@@ -157,13 +157,13 @@ allowed_users(允许使用 bot 的用户 telegram id)(可忽略(为空时所有�
 以下部分截图和文章来自[Spoience 的博客](https://www.dejavu.moe/)
 打开 Telegram 搜索 @BotFather
 
-![](https://cdn.nlark.com/yuque/0/2021/png/12488964/1613639972440-ba09c84b-a571-4141-9037-9c0ece992d55.png#height=203&id=SrWxp&originHeight=203&originWidth=351&originalType=binary&ratio=1&size=0&status=done&style=none&width=351)
+![](https://rmt.ladydaily.com/fetch/hajeekn/storage/202204171105160.png#crop=0&crop=0&crop=1&crop=1&id=rJkSB&originHeight=203&originWidth=351&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=)
 
 点击 Start，发送 /newbot
-![](https://cdn.nlark.com/yuque/0/2021/png/12488964/1613639979319-4c416a05-c890-44a5-ae56-c14da42f82af.png#height=711&id=HHZ9P&originHeight=711&originWidth=637&originalType=binary&ratio=1&size=0&status=done&style=none&width=637)
+![](https://rmt.ladydaily.com/fetch/hajeekn/storage/202204171105356.png#crop=0&crop=0&crop=1&crop=1&id=e7ELr&originHeight=711&originWidth=637&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=)
 
 然后给你的 Telegram Bot 取一个昵称和名字，框中马赛克部分就是创建的 Telegram Bot Token，请妥善保管该 Token：
-![](https://cdn.nlark.com/yuque/0/2021/png/12488964/1613639986411-19a7f2dd-238c-45a9-b40e-8b1cb0a02bbf.png#height=763&id=q5Vsh&originHeight=763&originWidth=643&originalType=binary&ratio=1&size=0&status=done&style=none&width=643)
+![](https://rmt.ladydaily.com/fetch/hajeekn/storage/202204171105882.png#crop=0&crop=0&crop=1&crop=1&id=lsW1L&originHeight=763&originWidth=643&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=)
 
 # 申请 Telegraph Token
 
@@ -180,7 +180,6 @@ curl https://api.telegra.ph/createAccount?short_name=DaiRSS_Bot&author_name=Spoi
 
 | 默认的配置是允许所有用户使用我们刚刚创建的 Telegram RSS Bot，但为了安全、防止被滥用我们可以设置指定 ID 的 Telegram 用户能够使用该 Bot，获取允许使用用户（比如自己）的 Telegram ID 并填入配置文件的 allowed_users 字段
 获取 Telegram ID：[https://t.me/getmyid_bot?start=botostore](https://t.me/getmyid_bot?start=botostore)
-![5(ZSYVG[72)ANM}@N9_5Z8R.png](https://cdn.nlark.com/yuque/0/2021/png/12488964/1613640126118-e819956a-ba3e-4948-97c1-582ae1ee78bf.png#height=729&id=ZCroy&margin=%5Bobject%20Object%5D&name=5%28ZSYVG%5B72%29ANM%7D%40N9_5Z8R.png&originHeight=729&originWidth=632&originalType=binary&ratio=1&size=267703&status=done&style=none&width=632)
 
 # 使用
 

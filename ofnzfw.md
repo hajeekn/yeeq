@@ -23,7 +23,8 @@ comments: true
 
 这个也是最头疼的事情
 在我同步文章上去后，文章的 cover 地址全部亮亮的，起初我没注意，不过 GitHub Actions 编译静态文件的时候我注意到了。
-![image.png](https://cdn.nlark.com/yuque/0/2021/png/12488964/1611116028792-8d1892e2-87b3-402f-a417-8b8d94476b44.png#align=left&display=inline&height=270&margin=%5Bobject%20Object%5D&name=image.png&originHeight=540&originWidth=1059&size=61678&status=done&style=none&width=529.5)**请大家注意看!**
+![](https://npm.elemecdn.com/wytong-source/photos/PicGo/202204171051645.png#crop=0&crop=0&crop=1&crop=1&id=YzTPz&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=)
+**请大家注意看!**
 在 cover 处
 原本的
 

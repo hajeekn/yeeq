@@ -244,7 +244,7 @@ _**当你完成了基础样式篇时,其实你可以直接将浮动效果看成�
 ```
 
 添加完成后 wowjs 的配置项应该与下面的截图类似
-![image.png](https://cdn.nlark.com/yuque/0/2021/png/12488964/1611663209876-8bc916b7-8a68-4ff4-9fad-d3b65be99d6f.png#crop=0&crop=0&crop=1&crop=1&height=331&id=K0vsD&margin=%5Bobject%20Object%5D&name=image.png&originHeight=662&originWidth=950&originalType=binary&ratio=1&rotation=0&showTitle=false&size=154327&status=done&style=none&title=&width=475)
+![](https://npm.elemecdn.com/wytong-source/photos/PicGo/202204171055304.png#crop=0&crop=0&crop=1&crop=1&id=DBS7C&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=)
 如果报错,请检查你的配置缩进是否正确 ✔,这里博主推荐使用微软爸爸出品的 VSC 编辑对于缩进格式邀请很强的文件格式
 以下代码供您用来参考:
 

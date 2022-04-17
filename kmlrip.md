@@ -4,8 +4,8 @@ sticky: 1
 tags: [windows]
 description:
 categories: [windows]
-cover: https://cdn.nlark.com/yuque/0/2021/jpeg/12488964/1629617347893-5c5589d2-9f1d-49c4-b111-f70e2219a6c5.jpeg
-photos: https://cdn.nlark.com/yuque/0/2021/jpeg/12488964/1629617347893-5c5589d2-9f1d-49c4-b111-f70e2219a6c5.jpeg
+cover: https://rmt.ladydaily.com/fetch/hajeekn/storage/202204171122924.png
+photos: https://rmt.ladydaily.com/fetch/hajeekn/storage/202204171122924.png
 abbrlink: kmlrip
 date: 2021-08-22 14:08:23
 copyright_author_href: https://blog.slqwq.cn

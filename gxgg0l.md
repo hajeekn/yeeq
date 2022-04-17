@@ -77,22 +77,22 @@ id: 33
 [ ](https://vercel.com/import/project?template=https://github.com/lizheming/waline/tree/master/example)![](https://cdn.nlark.com/yuque/0/2021/svg/12488964/1613908946082-2b97a876-6dcf-437c-8b06-d1be78602a82.svg#crop=0&crop=0&crop=1&crop=1&height=32&id=SkrZu&originHeight=32&originWidth=92&originalType=binary&ratio=1&rotation=0&showTitle=false&size=0&status=done&style=none&title=&width=92)
 点击上面的 Deploy 按钮就可以快速跳转到 Vercel 部署辣
 如果你没有 Vercel 账号,可能提示你需要注册一个,这里不要用 QQ 邮箱因为他们会认为 QQ 邮箱是一个垃圾邮箱
-![image.png](https://cdn.nlark.com/yuque/0/2021/png/12488964/1613909023497-ab411446-d589-4927-8df2-4886c39402b6.png#crop=0&crop=0&crop=1&crop=1&height=438&id=VrVvx&margin=%5Bobject%20Object%5D&name=image.png&originHeight=875&originWidth=1896&originalType=binary&ratio=1&rotation=0&showTitle=false&size=99588&status=done&style=none&title=&width=948)
+![](https://rmt.ladydaily.com/fetch/hajeekn/storage/202204171106702.png#crop=0&crop=0&crop=1&crop=1&id=nd4Cj&originHeight=875&originWidth=1896&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=)
 PROJECT NAME 可以随便填写一个
 这就是项目名称,不过为了之后好辩别,还是写一个方便记住的吧
 输入了你的项目名称后点击 Continue 进入下一步
-![image.png](https://cdn.nlark.com/yuque/0/2021/png/12488964/1613909193383-cb9ecd5e-0053-454c-97d0-320afffb7643.png#crop=0&crop=0&crop=1&crop=1&height=437&id=j89Py&margin=%5Bobject%20Object%5D&name=image.png&originHeight=874&originWidth=1898&originalType=binary&ratio=1&rotation=0&showTitle=false&size=128274&status=done&style=none&title=&width=949)
+![](https://rmt.ladydaily.com/fetch/hajeekn/storage/202204171107459.png#crop=0&crop=0&crop=1&crop=1&id=GLi6Z&originHeight=874&originWidth=1898&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=)
 不过可能会提示你要选择一个
 随便来一个就是(前提是你有对应的账号,否则老老实实选择 GitHub
-![image.png](https://cdn.nlark.com/yuque/0/2021/png/12488964/1613909252053-9fc1fa53-acbb-4943-ace2-4da719cf31e7.png#crop=0&crop=0&crop=1&crop=1&height=433&id=fIWob&margin=%5Bobject%20Object%5D&name=image.png&originHeight=865&originWidth=1891&originalType=binary&ratio=1&rotation=0&showTitle=false&size=153178&status=done&style=none&title=&width=945.5)
+![](https://rmt.ladydaily.com/fetch/hajeekn/storage/202204171107509.png#crop=0&crop=0&crop=1&crop=1&id=uKJnF&originHeight=429&originWidth=937&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=)
 进入下一步后会让你填写创建的 Git 仓库名称
 点击你的用户名可以显示出你账号绑定的 GitHub 账号
 这样就可以自定义创建的账号
-![image.png](https://cdn.nlark.com/yuque/0/2021/png/12488964/1613909328118-b9dfb65e-332b-42af-bb24-90d8eb349b3a.png#crop=0&crop=0&crop=1&crop=1&height=105&id=u6dtZ&margin=%5Bobject%20Object%5D&name=image.png&originHeight=210&originWidth=911&originalType=binary&ratio=1&rotation=0&showTitle=false&size=17563&status=done&style=none&title=&width=455.5)
+
 下方 👇 的 Create private Git Repository 如果勾选上创建的时候就会创建一个私有仓库
 然后再次点击 Continue 进行下一步
 然后就会出现这个页面
-![image.png](https://cdn.nlark.com/yuque/0/2021/png/12488964/1613909407484-c0b00d5d-f2c7-49a7-9009-309deda773ea.png#crop=0&crop=0&crop=1&crop=1&height=432&id=e46Qq&margin=%5Bobject%20Object%5D&name=image.png&originHeight=863&originWidth=1895&originalType=binary&ratio=1&rotation=0&showTitle=false&size=109164&status=done&style=none&title=&width=947.5)
+![](https://rmt.ladydaily.com/fetch/hajeekn/storage/202204171107245.png#crop=0&crop=0&crop=1&crop=1&id=ARA2n&originHeight=863&originWidth=1895&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=)
 不管他,下滑
 找到 Environment Variables 配置环境变量
 默认需要的环境变量如下:
@@ -108,9 +108,8 @@ PROJECT NAME 可以随便填写一个
 进入选择 [Console](https://console.leancloud.app/)
 如果没有创建一个应用
 **注意 ⚠: 如果您之前用了 Valine 评论系统 就不用创建了,因为 Waline 评论数据与 Valine 评论数据可以共用**
-![image.png](https://cdn.nlark.com/yuque/0/2021/png/12488964/1613909677182-c35bb1a1-54ea-45d6-81bc-30dea4281bc2.png#crop=0&crop=0&crop=1&crop=1&height=213&id=vGRQH&margin=%5Bobject%20Object%5D&name=image.png&originHeight=426&originWidth=305&originalType=binary&ratio=1&rotation=0&showTitle=false&size=12887&status=done&style=none&title=&width=152.5)
 进入应用设置后选择 设置 -> 应用 Keys
-![image.png](https://cdn.nlark.com/yuque/0/2021/png/12488964/1613909849497-15dd6d3d-8a8c-47bc-8f23-52812d4659e8.png#crop=0&crop=0&crop=1&crop=1&height=256&id=OhNdC&margin=%5Bobject%20Object%5D&name=image.png&originHeight=512&originWidth=915&originalType=binary&ratio=1&rotation=0&showTitle=false&size=39747&status=done&style=none&title=&width=457.5)
+![](https://rmt.ladydaily.com/fetch/hajeekn/storage/202204171107450.png#crop=0&crop=0&crop=1&crop=1&id=N57mx&originHeight=512&originWidth=915&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=)
 复制并保存 Credentials 的所有配置
 你看不到我的是因为我遮掉了
 顺便教各位在拍摄截图时怎么遮掉重要内容
@@ -124,19 +123,14 @@ background: 网页背景颜色;
 创建变量填写就 OK
 这里的变量需要一个一个填
 你填完一个点击 ADD 然后就会填的数据就会在下方,但是上面的输入框会没有文字,这点就很棒(๑•̀ㅂ•́)و✧
-![image.png](https://cdn.nlark.com/yuque/0/2021/png/12488964/1613910013751-e00121dd-7dfe-4e56-b1ee-40691c9fcc4b.png#crop=0&crop=0&crop=1&crop=1&height=188&id=hhguh&margin=%5Bobject%20Object%5D&name=image.png&originHeight=376&originWidth=948&originalType=binary&ratio=1&rotation=0&showTitle=false&size=24926&status=done&style=none&title=&width=474)
+![](https://rmt.ladydaily.com/fetch/hajeekn/storage/202204171108331.png#crop=0&crop=0&crop=1&crop=1&id=JpTSM&originHeight=376&originWidth=948&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=)
 设置都完成后就可以点击 Deploy 了
-![image.png](https://cdn.nlark.com/yuque/0/2021/png/12488964/1613910102015-2562fb37-76d0-4a93-b7bb-a2911baf4e4c.png#crop=0&crop=0&crop=1&crop=1&height=331&id=Q0Qts&margin=%5Bobject%20Object%5D&name=image.png&originHeight=662&originWidth=1873&originalType=binary&ratio=1&rotation=0&showTitle=false&size=117647&status=done&style=none&title=&width=936.5)
 在这里稍等一会儿就可以部署完成
 部署完成后 Vercel 会放烟花 🎇 庆祝一下
 然后在接下来的页面点击 Visit
-![image.png](https://cdn.nlark.com/yuque/0/2021/png/12488964/1613910224658-f33ff25b-db0b-4dcd-8c35-5b0a7c75bb98.png#crop=0&crop=0&crop=1&crop=1&height=47&id=Hm4vB&margin=%5Bobject%20Object%5D&name=image.png&originHeight=93&originWidth=213&originalType=binary&ratio=1&rotation=0&showTitle=false&size=2440&status=done&style=none&title=&width=106.5)
 就可以打开部署好的示例网页
-![image.png](https://cdn.nlark.com/yuque/0/2021/png/12488964/1613910331384-6fa0648d-519e-42b6-b5b0-4f4c005c9e29.png#crop=0&crop=0&crop=1&crop=1&height=437&id=PGrvH&margin=%5Bobject%20Object%5D&name=image.png&originHeight=873&originWidth=1887&originalType=binary&ratio=1&rotation=0&showTitle=false&size=75171&status=done&style=none&title=&width=943.5)
 然后你需要注册一个账号
 在 Vercel 分配的域名后面加上/ui/register
-如下
-![image.png](https://cdn.nlark.com/yuque/0/2021/png/12488964/1613910413806-e7da23e0-e79c-4045-bc60-a7e306206916.png#crop=0&crop=0&crop=1&crop=1&height=19&id=bSx0U&margin=%5Bobject%20Object%5D&name=image.png&originHeight=37&originWidth=436&originalType=binary&ratio=1&rotation=0&showTitle=false&size=3756&status=done&style=none&title=&width=218)
 第一个注册的会成为管理员哦~
 如果你想要自定义管理员头衔
 可以在客户端脚本中用`langMode.admin`配置哦

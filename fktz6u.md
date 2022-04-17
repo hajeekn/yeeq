@@ -4,8 +4,8 @@ sticky: 1
 tags: [cloudflare]
 description: "白嫖一个免费的内网穿透(bushi"
 categories: [cloudflare]
-cover: https://cdn.nlark.com/yuque/0/2021/png/12488964/1628248322189-058ec486-b73f-4025-a37e-833a664f5ff5.png?x-oss-process=image%2Fresize%2Cw_900
-photos: https://cdn.nlark.com/yuque/0/2021/png/12488964/1628248322189-058ec486-b73f-4025-a37e-833a664f5ff5.png?x-oss-process=image%2Fresize%2Cw_900
+cover: https://rmt.ladydaily.com/fetch/hajeekn/storage/202204171115038.png
+photos: https://rmt.ladydaily.com/fetch/hajeekn/storage/202204171115038.png
 abbrlink: fktz6u
 date: 2021-08-06 18:38:20
 copyright_author_href: https://blog.slqwq.cn
@@ -20,7 +20,6 @@ Cloudflare 是一个知名的老牌 CDN 厂商了,相信很多人应该都知道
 
 本次以 Windows 11 演示
 通过[GitHub](https://github.com/cloudflare/cloudflared/releases)下载适用于 Windows 的安装包
-![image.png](https://cdn.nlark.com/yuque/0/2021/png/12488964/1628246651880-b5e4827c-efa4-4157-b80f-2d5421bdea41.png#clientId=ub3757772-b494-4&from=paste&height=83&id=u39b95159&margin=%5Bobject%20Object%5D&name=image.png&originHeight=166&originWidth=1215&originalType=binary&ratio=1&size=20490&status=done&style=none&taskId=u9d1a74a4-085a-4072-b064-bf864c9429a&width=607.5)
 这里包含了两种版本
 386=i1386 也就是 32 位的 Windows 系统
 amd64 也就是 64 位的 Windows 系统
@@ -42,7 +41,7 @@ amd64 也就是 64 位的 Windows 系统
 如果跳出版本号就成功了
 接着你需要打开[Cloudflare Argo Tunnel 的授权页面](https://dash.cloudflare.com/argotunnel)
 在里面点击你要授权 Argo Tunnel 的域名
-接着会弹出来一个弹窗![image.png](https://cdn.nlark.com/yuque/0/2021/png/12488964/1628247054857-35afc7b1-e473-4211-bf69-f98d21fe75e4.png#clientId=ub3757772-b494-4&from=paste&height=110&id=ub5914682&margin=%5Bobject%20Object%5D&name=image.png&originHeight=219&originWidth=1050&originalType=binary&ratio=1&size=19285&status=done&style=none&taskId=u9dea5b35-bf8e-4aef-998d-edf79d74c81&width=525)
+接着会弹出来一个弹窗![](https://rmt.ladydaily.com/fetch/hajeekn/storage/202204171116532.png#crop=0&crop=0&crop=1&crop=1&id=y8s2F&originHeight=219&originWidth=1050&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=)
 提示你点击授权,照着文字点就行
 然后你的浏览器会自动下载一个叫 cert.pem 的文件
 复制它
@@ -85,4 +84,4 @@ Hexo 一般是 localhost:4000
 其他项目就填进去就好了,记住不带 http 和 https 的协议头,也不带后缀 /
 填写完成后回车,等它连接好
 然后你打开你刚才创建的子域名,就会出现页面了
-~~今天又水了一篇文章~~![@8(Y5HV)DT(%{5~@0M25)I4.gif](https://cdn.nlark.com/yuque/0/2021/gif/12488964/1628247726025-22597ed9-3fb3-4eb5-b690-37112eb445e2.gif#clientId=ub3757772-b494-4&from=drop&id=u9fb28481&margin=%5Bobject%20Object%5D&name=%408%28Y5HV%29DT%28%25%7B5~%400M25%29I4.gif&originHeight=43&originWidth=42&originalType=binary&ratio=1&size=3918&status=done&style=none&taskId=uab4ac732-772f-485d-b2ec-72f2d37c7c5)
+~~今天又水了一篇文章~~![](https://rmt.ladydaily.com/fetch/hajeekn/storage/202204171116141.png#crop=0&crop=0&crop=1&crop=1&id=OXws5&originHeight=43&originWidth=42&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=)
