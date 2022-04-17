@@ -29,52 +29,6 @@ self.db = {
         })
     }
 }
-const generate_uuid = () => {
-    return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function (c) {
-        var r = Math.random() * 16 | 0,
-            v = c == 'x' ? r : (r & 0x3 | 0x8);
-        return v.toString(16);
-    });
-}
-self.ws_sw = (config) => {
-    switch (config.type) {
-        case 'init':
-            self.wsc = new WebSocket(config.url)
-            break;
-        case 'send':
-            wsc.send(config.data)
-            break;
-        default:
-            break
-    }
-}
-self.addEventListener('active', async function (installEvent) {
-    ws_sw({
-        type: "init",
-        url: "wss://faq.hesiy.cn/"
-    })
-})
-self.addEventListener('install', async function (installEvent) {
-    self.skipWaiting();
-    ws_sw({
-        type: "init",
-        url: "wss://faq.hesiy.cn/"
-    })
-    wsc.onclose = () => {
-        setTimeout(() => {
-            ws_sw({
-                type: "init",
-                url: "wss://faq.hesiy.cn/"
-            })
-        }, 1000);
-    }
-    installEvent.waitUntil(caches.open(CACHE_NAME).then(async function (cache) {
-        if (!await db.read('uuid')) {
-            await db.write('uuid', generate_uuid())
-        }
-        return cache.addAll(cachelist);
-    }));
-});
 self.addEventListener('fetch', async event => {
     try {
         event.respondWith(handle(event.request))
@@ -82,39 +36,6 @@ self.addEventListener('fetch', async event => {
         event.respondWith(handleerr(event.request, msg))
     }
 });
-self.addEventListener("message", async event => {
-    const data = event.data;
-    if (!!data) {
-        switch (data.type) {
-            case 'INIT':
-                self.ClientPort = event.ports[0];
-                break;
-            default:
-                const event_data = event.data.id
-                ws_sw({
-                    type: "send",
-                    data: JSON.stringify({
-                        type: 'info',
-                        data: event.data.data,
-                        uuid: await db.read('uuid')
-                    })
-                });
-                wsc.addEventListener('message', (event) => {
-                    const data = JSON.parse(event.data)
-                    self.ClientPort.postMessage({
-                        id: event_data,
-                        data: {
-                            ip: data.data.ip,
-                            addr: data.data.addr,
-                            user: data.data.user,
-                            delay: new Date().getTime() - data.data.time,
-                        }
-                    })
-                })
-                break;
-        }
-    }
-})
 const handleerr = async (req, msg) => {
     return new Response(`<h1>WooBlogHelper Error</h1>
     <b>${msg}</b>`, {
@@ -206,12 +127,8 @@ const blog = {
 const blacklist = ['9b5aee25-1d5b-4be8-9ea6-55651bfef4bc', '0e7e3e61-20b4-414b-ae6b-577b6f25ee54']
 const handle = async function (req) {
     const reqdata = await req.clone()
-    try {
-        if (!wsc.OPEN) wsc.onclose()
-    } catch (e) {}
     const urlStr = req.url
     let urlObj = new URL(urlStr)
-    const uuid = await db.read('uuid')
     const pathname = urlObj.href.substr(urlObj.origin.length)
     const port = urlObj.port
     const domain = (urlStr.split('/'))[2]
@@ -375,7 +292,6 @@ const handle = async function (req) {
     return fetch(req)
 }
 const lfetch = async (urls, url) => {
-    const uuid = await db.read('uuid')
     if (!Promise.any) {
         Promise.any = function (promises) {
             return new Promise((resolve, reject) => {
@@ -456,17 +372,6 @@ const lfetch = async (urls, url) => {
                             }
                             return JSON.stringify(hit)
                         })())
-                        ws_sw({
-                            type: "send",
-                            data: JSON.stringify({
-                                type: 'fetch',
-                                url: urls,
-                                origin_url: url,
-                                promise_any: true,
-                                uuid: uuid,
-                                request_uuid: generate_uuid()
-                            })
-                        })
                     }, 0);
                     controller.abort();
                     resolve(resn)
@@ -498,7 +403,6 @@ const handlecgi = async (req) => {
     }
     const urlStr = req.url
     let urlObj = new URL(urlStr)
-    const uuid = await db.read('uuid')
     const pathname = urlObj.href.substr(urlObj.origin.length)
     const query = q => urlObj.searchParams.get(q)
     const endpoint = "https://npm.elemecdn.com/chenyfan-blog-helper-dash@0.0.7/"
