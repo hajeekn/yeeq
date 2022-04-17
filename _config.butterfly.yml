@@ -844,9 +844,12 @@ wow_init_js: https://npm.elemecdn.com/hexo-butterfly-wowjs/lib/wow_init.js
 inject:
   head:
       - <script src="../sw-load.js"></script>
+      - <script src="../load.js"></script>
       - <meta name="google-site-verification" content="qAOA3HXexaF_5uvs3Ghmqp_eB0pIzLgQ1eFRTFGb0Sk">
       - <link rel="stylesheet" href="https://unpkg.slqwq.cn/perorepe-cdn/v1/static-files/Blog/css/ping.css">
       - <link rel="stylesheet" href="https://unpkg.slqwq.cn/hajeekn-static/styles/resource.min.css">
+      - <link rel="stylesheet" href="https://npm.elemecdn.com/notyf@3/notyf.min.css">
+      - <script src="https://npm.elemecdn.com/notyf@3.10.0/notyf.min.js"></script>
       # - <script src="https://unpkg.slqwq.cn/perorepe-cdn/v1/static-files/Blog/gening.js"></script>
       - <meting-js server='tencent' type='playlist' id='3813658180' fixed='true'></meting-js>
       - <script src="https://npm.elemecdn.com/vue@2.6.11"></script>
