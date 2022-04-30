@@ -401,7 +401,7 @@ footer:
   owner:
     enable: true
     since: 2021
-  custom_text: <center><img src="https://cdn.jsdelivr.net/gh/TRHX/CDN-for-itrhx.com@3.0.9/images/moeicp.png" style="width:18px;height:18px;margin-bottom:-3px" alt="MOE ICP"><a href="https://icp.gov.moe" target="_blank">萌ICP备 </a><a href="https://icp.gov.moe/?keyword=20205150" target="_blank"> 20205150号</a></center><center><img src="https://cdn.jsdelivr.net/gh/slblog-github/SRCDN@master/Blog/Hosting.svg"><img src="https://cdn.jsdelivr.net/gh/slblog-github/SRCDN@master/Blog/FCDN.svg"><img src="https://cdn.jsdelivr.net/gh/slblog-github/SRCDN@master/Blog/WT.svg"><img src="https://cdn.jsdelivr.net/gh/slblog-github/SRCDN@master/Blog/cdn.svg"></center><center><a><a href="https://www.upyun.com/?utm_source=lianmeng&utm_medium=referral" target="_blank"><img src="../images/upyunlogo.png"></a></script></center><center><a href="../Helper/">博客用户端信息</a><p>部分图片存储于<a href="https://www.dogedoge.com">DogeDoge</a>图床</p>
+  custom_text: <center><img src="https://cdn.jsdelivr.net/gh/TRHX/CDN-for-itrhx.com@3.0.9/images/moeicp.png" style="width:18px;height:18px;margin-bottom:-3px" alt="MOE ICP"><a href="https://icp.gov.moe" target="_blank">萌ICP备 </a><a href="https://icp.gov.moe/?keyword=20205150" target="_blank"> 20205150号</a></center><center><img src="https://cdn.jsdelivr.net/gh/slblog-github/SRCDN@master/Blog/Hosting.svg"><img src="https://cdn.jsdelivr.net/gh/slblog-github/SRCDN@master/Blog/FCDN.svg"><img src="https://cdn.jsdelivr.net/gh/slblog-github/SRCDN@master/Blog/WT.svg"><img src="https://cdn.jsdelivr.net/gh/slblog-github/SRCDN@master/Blog/cdn.svg"></center><center><a><a href="https://www.upyun.com/?utm_source=lianmeng&utm_medium=referral" target="_blank"><img src="https://blog.slqwq.cn/images/upyunlogo.png"></a></script></center><center><a href="../Helper/">博客用户端信息</a><p>部分图片存储于<a href="https://www.dogedoge.com">DogeDoge</a>图床</p>
   copyright: true # Copyright of theme and framework
 
 # Analysis
@@ -425,7 +425,7 @@ cloudflare_analytics:
 
 # Microsoft Clarity
 # https://clarity.microsoft.com/
-microsoft_clarity:
+microsoft_clarity: bovtpg5urc
 
 # Advertisement
 # --------------------------------------
@@ -765,7 +765,7 @@ note:
 # It may contain bugs and unstable, give feedback when you find the bugs.
 # https://github.com/MoOx/pjax
 pjax:
-  enable: false
+  enable: true
   exclude:
     - /link/
     - /circle/
