@@ -14,6 +14,7 @@
     "mdNameFormat": "slug",
     "adapter": "markdown",
     "concurrency": 5,
+    "token": "BYAaF1fPkMrotgUUVj6wUTGIU7GwuTCKv3HTCUIF",
     "baseUrl": "https://www.yuque.com/api/v2",
     "login": "ladjeek",
     "repo": "ygg4q6",

@@ -609,7 +609,11 @@ subtitle:
     - 梦中做梦&#44;做了个白日梦
     - Dreaming in a dream&#44;daydreaming
 # Loading Animation (加載動畫)
-preloader: false
+preloader:
+  enable: true # true|false
+  load_color: '#000000' # '#37474f'
+  load_style: pokemon
+  load_image:  # url
 
 # aside (側邊欄)
 # --------------------------------------
@@ -726,11 +730,11 @@ rightside_item_order:
 
 # medium-zoom
 # https://github.com/francoischalifour/medium-zoom
-medium_zoom: false
+medium_zoom: true
 
 # fancybox
 # http://fancyapps.com/fancybox/3/
-fancybox: true
+fancybox: false
 
 # Tag Plugins settings (標籤外掛)
 # --------------------------------------
@@ -765,7 +769,7 @@ note:
 # It may contain bugs and unstable, give feedback when you find the bugs.
 # https://github.com/MoOx/pjax
 pjax:
-  enable: true
+  enable: false
   exclude:
     - /link/
     - /circle/
@@ -785,7 +789,7 @@ snackbar:
   bg_light: 'var(--loger-theme)' # The background color of Toast Notification in light mode
   bg_dark: 'var(--loger-theme)' # The background color of Toast Notification in dark mode
 
-# https://instant.page/
+# https://instant.page/d
 # prefetch (預加載)
 instantpage: true
 
@@ -799,9 +803,9 @@ pangu:
 # https://github.com/verlok/vanilla-lazyload
 lazyload:
   enable: true
-  field: post # site/post
+  field: site # site/post
   placeholder:
-  blur: false
+  blur: true
 
 # PWA
 # See https://github.com/JLHwung/hexo-offline
@@ -835,9 +839,6 @@ wowjs:
     - class: card-widget
       style: animate__zoomIn
     - class: card-info
-      style: wowpanels
-    - class: flink-list-item
-      style: wowpanels
 animate_css: https://npm.elemecdn.com/hexo-butterfly-wowjs/lib/animate.min.css
 wow_js: https://npm.elemecdn.com/hexo-butterfly-wowjs/lib/wow.min.js
 wow_init_js: https://npm.elemecdn.com/hexo-butterfly-wowjs/lib/wow_init.js
@@ -852,17 +853,14 @@ inject:
       - <meta name="google-site-verification" content="qAOA3HXexaF_5uvs3Ghmqp_eB0pIzLgQ1eFRTFGb0Sk">
       - <link rel="stylesheet" href="https://unpkg.slqwq.cn/perorepe-cdn/v1/static-files/Blog/css/ping.css">
       - <link rel="stylesheet" href="https://unpkg.slqwq.cn/hajeekn-static/styles/resource.min.css">
-      - <link rel="stylesheet" href="https://npm.elemecdn.com/notyf@3/notyf.min.css">
-      - <script src="https://npm.elemecdn.com/notyf@3.10.0/notyf.min.js"></script>
       # - <script src="https://unpkg.slqwq.cn/perorepe-cdn/v1/static-files/Blog/gening.js"></script>
-      - <meting-js server='tencent' type='playlist' id='3813658180' fixed='true'></meting-js>
       - <script src="https://npm.elemecdn.com/vue@2.6.11"></script>
       - <link rel="stylesheet" href="https://npm.elemecdn.com/wytong-source@1.6.49078015225/styles/pace-theme-flash.min.css">
       - <link rel="stylesheet" href="https://npm.elemecdn.com/wytong-source@1.6.49078015225/styles/plugins.css">
 
   bottom:
-      - '<div class="app-refresh" id="app-refresh"> <div class="app-refresh-wrap"> <label>✨ Hajeekn的小博客已更新最新版本 👉</label><a href="javascript:void(0)" onclick="location.reload()">🎇 要不要看看还漏不漏水啊? 🎇</a> </div></div><script>function showNotification(){if(GLOBAL_CONFIG.Snackbar){var t="light"===document.documentElement.getAttribute("data-theme")?GLOBAL_CONFIG.Snackbar.bgLight:GLOBAL_CONFIG.Snackbar.bgDark,e=GLOBAL_CONFIG.Snackbar.position;Snackbar.show({text:"已更新最新版本",backgroundColor:t,duration:5e5,pos:e,actionText:"🎇 要不要看看还漏不漏水啊? 🎇",actionTextColor:"#fff",onActionClick:function(t){location.reload()}})}else{var o=`top: 0; background: ${"light"===document.documentElement.getAttribute("data-theme")?"#49b1f5":"#1f1f1f"};`;document.getElementById("app-refresh").style.cssText=o}}"serviceWorker"in navigator&&(navigator.serviceWorker.controller&&navigator.serviceWorker.addEventListener("controllerchange",function(){showNotification()}),window.addEventListener("load",function(){navigator.serviceWorker.register("/sw.js")}));</script>'
-
+      - <link rel="stylesheet" href="https://npm.elemecdn.com/notyf@3/notyf.min.css">
+      - <script async src="https://npm.elemecdn.com/notyf@3.10.0/notyf.min.js"></script>
 # CDN
 # Don't modify the following settings unless you know how they work
 # 非必要請不要修改
