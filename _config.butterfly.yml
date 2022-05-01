@@ -801,7 +801,7 @@ lazyload:
   enable: true
   field: post # site/post
   placeholder:
-  blur: true
+  blur: false
 
 # PWA
 # See https://github.com/JLHwung/hexo-offline
