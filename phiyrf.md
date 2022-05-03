@@ -4,7 +4,7 @@ sticky: 1
 tags: [cloudreve]
 description:
 categories: [cloudreve]
-cover:
+cover: https://rmt.ladydaily.com/fetch/hajeekn/storage/202205031220844.png
 abbrlink: phiyrf
 date: 2022-05-02 10:26:46
 copyright_author_href: https://blog.slqwq.cn
