@@ -1,16 +1,14 @@
 ---
-
 title: IPFS - 一个基于点对点网络的超媒体协议
 sticky: 1
-tags:[p2p,peertopeer]
+tags: [p2p, peertopeer]
 description:
-categories: [p2p,ipfs]
+categories: [p2p, ipfs]
 cover: https://rmt.ladydaily.com/fetch/hajeekn/storage/202205031336998.JPG
 abbrlink: ys6wh9
 date: 2022-05-03 20:00:46
 copyright_author_href: https://blog.slqwq.cn
 author: Hajeekn
-
 ---
 
 本文章首发于[语雀](https://www.yuque.com/ladjeek/ygg4q6)!
