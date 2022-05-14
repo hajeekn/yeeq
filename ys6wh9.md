@@ -121,14 +121,4 @@ addEventListener("fetch", (event) => {
 
 # Use IPFS - Build Blog
 
->
-
-### dnslink 绑定
-
-> **这个方法无论你的 dns 服务商在哪都能绑定，只不过不在 CloudFlare 托管的用户要多一步。** > **1.将需要绑定的域名,以 CNAME 形式指向 www.cloudflare-ipfs.com ,比如我需要让 showtime.cyfan.top 成为 ipfs 出口，则这么设置。** > [![image.png](https://cdn.nlark.com/yuque/0/2022/png/12488964/1651555656264-a0b7414b-e677-4095-aa3c-438457ea4b6a.png#clientId=u046e5d8f-d2c4-4&crop=0&crop=0&crop=1&crop=1&from=paste&id=u339277ea&name=image.png&originHeight=32&originWidth=1025&originalType=url&ratio=1&rotation=0&showTitle=false&size=5133&status=done&style=none&taskId=ufa67f11d-7dcb-4165-969e-419bb67d4b2&title=)](https://npm.elemecdn.com/chenyfan-oss@1.0.0/pic/post/pasted-191.png) > **2.使用 txt 记录绑定 ipfs hash，新建 txt 记录，名字是 \_dnslink.yourwebsite 一定要加上 yourwebsite！比如我绑定的是 showtime.cyfan.top ，则名称一行填上 \_dnslink.showtime !接着内容是 dnslink=/ipfs/ 后面接上 hash，比如 showtimehtml 的 hash 是： QmWAvNck7QBhUAYAEgBFvbvvsMxDC9s55NXVJXeJTjTM1Y 则大概这么填:** > [![image.png](https://cdn.nlark.com/yuque/0/2022/png/12488964/1651555656248-734246a7-fc0a-45a7-b8a3-e29cf071752a.png#clientId=u046e5d8f-d2c4-4&crop=0&crop=0&crop=1&crop=1&from=paste&id=ude3ef351&name=image.png&originHeight=399&originWidth=816&originalType=url&ratio=1&rotation=0&showTitle=false&size=28588&status=done&style=none&taskId=uc9a35331-e84c-462e-96a3-2205c8cffba&title=)](https://npm.elemecdn.com/chenyfan-oss@1.0.0/pic/post/pasted-192.png) > **3.如果你本来就是托管在 CloudFlare 上的,到此为止就可以了,如果不是托管在 Cloudflare 上,类似 dnspod\alicdn 之类的,那还要获取证书,进入**[https://www.cloudflare.com/distributed-web-gateway/](https://www.cloudflare.com/distributed-web-gateway/)** 拉到最底下** > [![image.png](https://cdn.nlark.com/yuque/0/2022/png/12488964/1651555656315-b061963d-525d-42e2-a63e-c6bbc4bd72bd.png#clientId=u046e5d8f-d2c4-4&crop=0&crop=0&crop=1&crop=1&from=paste&id=u60a8f843&name=image.png&originHeight=319&originWidth=1101&originalType=url&ratio=1&rotation=0&showTitle=false&size=37278&status=done&style=none&taskId=u25eb7a8c-c39d-42bf-aa37-baf21a01544&title=)](https://npm.elemecdn.com/chenyfan-oss@1.0.0/pic/post/pasted-193.png) > **输入域名，获取证书即可。** > **但问题是，www.cloudflare-ipfs.com 已经被 dns 污染了，你用 cname 绑定是无法正常访问的啦！所以只能用 Workers 绕路啦！**
-
-### JSProxy 反代 ipfs.io
-
-> **老办法，Workersjsproxy 反向代理 ipfs 网关，解决**[![image.png](https://cdn.nlark.com/yuque/0/2022/png/12488964/1651555656749-83fe5400-1fb1-4d07-9256-730355325fd4.png#clientId=u046e5d8f-d2c4-4&crop=0&crop=0&crop=1&crop=1&from=paste&id=u7f5b9e19&name=image.png&originHeight=808&originWidth=686&originalType=url&ratio=1&rotation=0&showTitle=false&size=415957&status=done&style=none&taskId=u5897f376-890b-40bd-90d0-36494dec20f&title=)](https://npm.elemecdn.com/chenyfan-oss@1.0.0/pic/moji/wc.jpg)
-
-**依然来自 **[**ChenYFan の Blog**](https://blog.cyfan.top)
+搭建博客就等下次吧
