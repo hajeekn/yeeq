@@ -1,3 +1,18 @@
+---
+
+**title: **那些奇奇怪怪的图床**
+sticky: 3
+tags: [picgo]
+description:
+categories: [picgo]
+cover: **https://i0.hdslb.com/bfs/album/4b212e3692523c9baa9bfb4415b89c68fff44557.png**
+abbrlink: **nvz8s3**
+date: 2022-05-15 11:17:12
+copyright_author_href: https://blog.slqwq.cn
+author: Hajeekn**
+
+---
+
 本文章首发于[语雀](https://www.yuque.com/ladjeek/ygg4q6)!
 
 通过各种高科技功能同步到[Hajeekn 的博客](https://blog.slqwq.cn)
