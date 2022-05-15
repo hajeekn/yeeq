@@ -76,7 +76,7 @@ katex:
 # --------------------------------------
 
 # Favicon（網站圖標）
-favicon: ttps://npm.elemecdn.com/perorepe-cdn@1.0.0/v1/static-files/avatar.webp
+favicon: https://npm.elemecdn.com/perorepe-cdn@1.0.0/v1/static-files/avatar.webp
 
 # Avatar (頭像)
 avatar:
