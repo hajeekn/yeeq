@@ -25,13 +25,12 @@ jobs:
           export TZ='Asia/Shanghai'
           npm install hexo-cli -g
           npm install gulp-cli -g
-          npm install yuque-hexo -g
-      - name: 清除语雀本地缓存并同步文档
-        env:
-          YUQUE_TOKEN: ${{ secrets.YUQUE_TOKEN }}
-        run: |
-          yuque-hexo clean
-          yuque-hexo sync
+#      - name: 清除语雀本地缓存并同步文档
+#        env:
+#          YUQUE_TOKEN: ${{ secrets.YUQUE_TOKEN }}
+#        run: |
+#          yuque-hexo clean
+#          yuque-hexo sync
       - name: 缓存 Hexo
         uses: actions/cache@v1
         id: cache
@@ -42,22 +41,21 @@ jobs:
       - name: 安装其他库
         if: steps.cache.outputs.cache-hit != 'true'
         run: |
-          npm install --save
-          npm i -g freecdn
-      - name: 推送合并后的语雀文章及缓存
-        uses: ad-m/github-push-action@master
-        with:
-          github_token: ${{ secrets.GET }}
+          npm install
+#      - name: 推送合并后的语雀文章及缓存
+#        uses: ad-m/github-push-action@master
+#        with:
+#          github_token: ${{ secrets.GET }}
 
-      - name: 上传语雀文章到指定分支
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          github_token: ${{ secrets.GET }}
-          publish_branch: posts
-          publish_dir: ./source/_posts
-          user_name: 'github-actions[bot]'
-          user_email: 'github-actions[bot]@users.noreply.github.com'
-          full_commit_message: ${{ github.event.head_commit.message }}
+#      - name: 上传语雀文章到指定分支
+#        uses: peaceiris/actions-gh-pages@v3
+#        with:
+#          github_token: ${{ secrets.GET }}
+#          publish_branch: posts
+#          publish_dir: ./source/_posts
+#          user_name: 'github-actions[bot]'
+#          user_email: 'github-actions[bot]@users.noreply.github.com'
+#          full_commit_message: ${{ github.event.head_commit.message }}
 
       - name: 生成文件和压缩
         run: |
@@ -75,7 +73,7 @@ jobs:
           git init
           git add --all
           git branch -m master
-          git commit -m "更新: ${{ github.event.head_commit.message }} 于 $(date +"%Z %Y-%m-%d %A %H:%M:%S")在 GitHub Actions 上执行"
+          git commit -m "这次的更新内容: ${{ github.event.head_commit.message }} 于 $(date +"%Z %Y-%m-%d %A %H:%M:%S") 在 GitHub Actions 上执行并推送"
           git push --force --quiet "https://slblog-github:${{ secrets.DP_TOKEN }}@github.com/slblog-github/Blog.git" master:master
 
       - name: 删除工作流信息
@@ -91,8 +89,8 @@ jobs:
           botToken: ${{ secrets.TG_BOT_TOKEN }}
           chatId: ${{ secrets.TG_CHAT_ID }}
           jobStatus: ${{ job.status }}
-          skipSuccess: false
+          skipSuccess: true
 
       - name: Bark 通知
         run: |
-          curl https://api.day.app/${{ secrets.BARK_TOKEN }}/博客生成任务完成啦!?icon=https://cdn.hesiy.cn/pic/logo.png;url=https://github.com/ladjeek-actions/yeeq/actions
+          curl https://api.day.app/${{ secrets.BARK_TOKEN }}/博客生成任务完成!?icon=https://cdn.hesiy.cn/pic/logo.png;url=https://github.com/ladjeek-actions/yeeq/actions

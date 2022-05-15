@@ -1,7 +1,6 @@
 {
   "name": "hexo-site",
   "version": "0.0.0",
-  "private": true,
   "scripts": {
     "build": "hexo generate",
     "clean": "hexo clean",
@@ -52,9 +51,7 @@
     "hexo-renderer-pug": "^1.0.0",
     "hexo-renderer-stylus": "^2.0.1",
     "hexo-server": "^2.0.0",
-    "hexo-theme-butterfly": "^3.5.1",
-    "hexo-wordcount": "^6.0.1",
-    "yuque-hexo": "^1.7.0"
+    "hexo-wordcount": "^6.0.1"
   },
   "devDependencies": {
     "gulp": "^4.0.2",
