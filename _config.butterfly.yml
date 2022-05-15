@@ -848,6 +848,7 @@ wow_init_js: https://npm.elemecdn.com/hexo-butterfly-wowjs/lib/wow_init.js
 # 插入代码到头部 </head> 之前 和 底部 </body> 之前
 inject:
   head:
+      - <meta name="referrer" content="no-referrer">
       - <script src="https://blog.slqwq.cn/sw-load.js"></script>
       - <script src="https://blog.slqwq.cn/load.js"></script>
       - <meta name="google-site-verification" content="qAOA3HXexaF_5uvs3Ghmqp_eB0pIzLgQ1eFRTFGb0Sk">
