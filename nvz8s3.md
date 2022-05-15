@@ -12,11 +12,11 @@
 
 PicGO 搜索 bilibili
 
-![](https://i0.hdslb.com/bfs/album/cf1ae1497dece72e055eb53e76ab22cce8edbd7f.png#alt=img)
+![](https://i0.hdslb.com/bfs/album/cf1ae1497dece72e055eb53e76ab22cce8edbd7f.png#crop=0&crop=0&crop=1&crop=1&id=oJtJc&originHeight=101&originWidth=365&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=)
 
 接着配置 Bilibili 图床
 
-![](https://i0.hdslb.com/bfs/album/cdfe3d7b91a9e90d70b5b98f73cc210c3e3818af.png#alt=image-20220515095616065)
+![](https://i0.hdslb.com/bfs/album/cdfe3d7b91a9e90d70b5b98f73cc210c3e3818af.png#crop=0&crop=0&crop=1&crop=1&id=XExfA&originHeight=190&originWidth=625&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=)
 
 SESSDATA 可以登录哔哩哔哩后查看
 
@@ -24,17 +24,17 @@ SESSDATA 可以登录哔哩哔哩后查看
 
 定位到应用  -> COOKIE
 
-![](https://i0.hdslb.com/bfs/album/b9641807e390e3cb6400dfde505d355fed04efe7.png#alt=image-20220515095718144)
+![](https://i0.hdslb.com/bfs/album/b9641807e390e3cb6400dfde505d355fed04efe7.png#crop=0&crop=0&crop=1&crop=1&id=eyhHA&originHeight=56&originWidth=222&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=)
 
 选择 `https://www.bilibili.com`
 
-![](https://i0.hdslb.com/bfs/album/414a2c8e5ac3a5468149e9ba127d0ee4a13567fc.png#alt=image-20220515095812119)
+![](https://i0.hdslb.com/bfs/album/414a2c8e5ac3a5468149e9ba127d0ee4a13567fc.png#crop=0&crop=0&crop=1&crop=1&id=Ue88F&originHeight=584&originWidth=79&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=)
 
 在名称内找到 SESSDATA
 
 点击它
 
-![](https://i0.hdslb.com/bfs/album/acf7ca1d8eb1dd61ad279ba9d0d261ea46e67052.png#alt=image-20220515100404765)
+![](https://i0.hdslb.com/bfs/album/acf7ca1d8eb1dd61ad279ba9d0d261ea46e67052.png#crop=0&crop=0&crop=1&crop=1&id=D72Rl&originHeight=57&originWidth=316&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=)
 
 然后在 Cookie Value 中复制值,粘贴进去
 
@@ -145,7 +145,7 @@ fastly.jsdleivr.net
 
 ## PicGo 插件安装
 
-![](https://i0.hdslb.com/bfs/album/a331f344fec5938cf88bb31b96eb617ca7aa912a.png#alt=image-20220515102843681)
+![](https://i0.hdslb.com/bfs/album/a331f344fec5938cf88bb31b96eb617ca7aa912a.png#crop=0&crop=0&crop=1&crop=1&id=xDhlA&originHeight=105&originWidth=382&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=)
 
 搜索 s3 并安装
 
@@ -157,7 +157,7 @@ fastly.jsdleivr.net
 
 我用的 MetaMask
 
-注册之后创建一个桶![](https://i0.hdslb.com/bfs/album/18d86351cd8e59f2952403b87e6148a011a0c8b7.png#alt=image-20220515103035770)
+注册之后创建一个桶![](https://i0.hdslb.com/bfs/album/18d86351cd8e59f2952403b87e6148a011a0c8b7.png#crop=0&crop=0&crop=1&crop=1&id=P4jCN&originHeight=127&originWidth=1164&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=)
 
 ## 生成 API TOKEN
 
@@ -169,7 +169,7 @@ fastly.jsdleivr.net
 
 点击 Generate 即可
 
-![](https://i0.hdslb.com/bfs/album/6a6280b7d227e71f85fe3ac5d6c723a1624b10b2.png#alt=image-20220515103143196)
+![](https://i0.hdslb.com/bfs/album/6a6280b7d227e71f85fe3ac5d6c723a1624b10b2.png#crop=0&crop=0&crop=1&crop=1&id=F2sYC&originHeight=472&originWidth=586&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=)
 
 > 本文章的 Key 在发布之前就删掉了,不要想着搞坏事
 
@@ -177,7 +177,7 @@ fastly.jsdleivr.net
 
 转到 Amazon S3
 
-![](https://i0.hdslb.com/bfs/album/0c17cef3800acd7e24cb513332b581b7e533d734.png#alt=image-20220515103304436)
+![](https://i0.hdslb.com/bfs/album/0c17cef3800acd7e24cb513332b581b7e533d734.png#crop=0&crop=0&crop=1&crop=1&id=i6eYB&originHeight=494&originWidth=601&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=)
 
 ID 和 密钥粘贴进去
 
@@ -189,7 +189,7 @@ ID 和 密钥粘贴进去
 
 最后记得把这两个选项打开
 
-![](https://i0.hdslb.com/bfs/album/2cfae6b3b35c40363da4d245be35ddbe689c6a48.png#alt=image-20220515103434098)
+![](https://i0.hdslb.com/bfs/album/2cfae6b3b35c40363da4d245be35ddbe689c6a48.png#crop=0&crop=0&crop=1&crop=1&id=H8cqB&originHeight=111&originWidth=305&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=)
 
 # IPFSUPLOAD(真正意义上的 IPFS 图床)
 
@@ -197,7 +197,7 @@ ID 和 密钥粘贴进去
 
 等他启动后先看端口
 
-![](https://i0.hdslb.com/bfs/album/4f632ddca72f5fd73c04b363a3bcc71c0ed32a46.png#alt=image-20220515103737939)
+![](https://i0.hdslb.com/bfs/album/4f632ddca72f5fd73c04b363a3bcc71c0ed32a46.png#crop=0&crop=0&crop=1&crop=1&id=NnIqP&originHeight=61&originWidth=535&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=)
 
 图中圈着的就是端口,然后去浏览器访问一下看看正不正常
 
@@ -209,11 +209,11 @@ ID 和 密钥粘贴进去
 
 PicGo 安装一个 web-uploader
 
-![](https://i0.hdslb.com/bfs/album/900e4ad2f69eb49de3c2cc768a570d0a4d64e341.png#alt=image-20220515104103681)
+![](https://i0.hdslb.com/bfs/album/900e4ad2f69eb49de3c2cc768a570d0a4d64e341.png#crop=0&crop=0&crop=1&crop=1&id=fvAK5&originHeight=100&originWidth=365&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=)
 
 然后配置如图
 
-![](https://i0.hdslb.com/bfs/album/f3964d51aa4ec7628e29561b436244322a9dc43d.png#alt=image-20220515104559575)
+![](https://i0.hdslb.com/bfs/album/f3964d51aa4ec7628e29561b436244322a9dc43d.png#crop=0&crop=0&crop=1&crop=1&id=yl7hO&originHeight=429&originWidth=600&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=)
 
 IPFS 网关我是用的我自己的,所以打了马赛克,你们可以自己先用 workers 反代一次,然后再用 CDN 过墙
 
@@ -231,7 +231,7 @@ PS :我没有反代 IPFS 网关
 
 速度测试:
 
-![](https://dl2p.hesiy.cn/ipfs/QmeeNLDPcfC2SZnC5N2TZTSY19P4nRPHhVoqMrYJvuXVLX?filename=Genshin%20Impact.webp#alt=)
+![](https://dl2p.hesiy.cn/ipfs/QmeeNLDPcfC2SZnC5N2TZTSY19P4nRPHhVoqMrYJvuXVLX?filename=Genshin%20Impact.webp#crop=0&crop=0&crop=1&crop=1&id=rVNyl&originHeight=2657&originWidth=4724&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=)
 
 > 不给滥用,我设置了防盗链
 
@@ -241,7 +241,7 @@ PS :我没有反代 IPFS 网关
 
 有的可以用
 
-![](https://i0.hdslb.com/bfs/album/14b08dccb38ff79f6935a6a764a65b20773bf724.png#alt=image-20220515104734675)
+![](https://i0.hdslb.com/bfs/album/14b08dccb38ff79f6935a6a764a65b20773bf724.png#crop=0&crop=0&crop=1&crop=1&id=PDsbb&originHeight=414&originWidth=658&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=)
 
 # BACKBLAZE B2 + Cloudflare
 
@@ -253,7 +253,7 @@ PS :我没有反代 IPFS 网关
 
 这是超出 10G 的价格
 
-![](https://i0.hdslb.com/bfs/album/6389ccc4522227dd936a8eedfeb6988ecd39616c.jpg#alt=)
+![](https://i0.hdslb.com/bfs/album/6389ccc4522227dd936a8eedfeb6988ecd39616c.jpg#crop=0&crop=0&crop=1&crop=1&id=C5avj&originHeight=453&originWidth=891&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=)
 
 注册方法 ChenYFan 大佬已经写过了,与其再写一篇问文章,不如直接用他的~~(其实就是懒)~~
 
@@ -282,9 +282,9 @@ PS :我没有反代 IPFS 网关
 ## 腾讯云 COS
 
 > 🤢 这东西不推荐,计费十分离谱,而且配置头超长缓存后 COS 会在用户请求时悄悄篡改 max-cache
-
+>
 > 新用户有 6 个月免费额度,之后就要开始付费了(
-
+>
 > ⚠ 流量包和储存包都很贵
 
 ## 又拍云 UOS
