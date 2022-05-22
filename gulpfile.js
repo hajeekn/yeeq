@@ -3,6 +3,7 @@ var gulp = require('gulp');
 var cleanCSS = require('gulp-clean-css');
 var htmlmin = require('gulp-html-minifier-terser');
 var htmlclean = require('gulp-htmlclean');
+var replace = require('gulp-replace');
 // gulp-tester
 var terser = require('gulp-terser');
 // 压缩js
@@ -40,7 +41,12 @@ gulp.task('minify-html', () => {
         }))
         .pipe(gulp.dest('./public'))
 });
+gulp.task('jsdelivr', async() => {
+    gulp.src('public/**/*.*')
+        .pipe(replace('cdn.jsdelivr.net', 'gcore.jsdelivr.net'))
+        .pipe(gulp.dest('public/')),  { overwrite: true };
+})
 // 运行gulp命令时依次执行以下任务
 gulp.task('default', gulp.parallel(
-  'compress', 'minify-css', 'minify-html'
+    'compress', 'minify-css', 'minify-html', 'jsdelivr'
 ))

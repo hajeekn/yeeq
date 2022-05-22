@@ -3,11 +3,11 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: SL's Blog
-subtitle: SL's Blog
+title: Hajeekn's Blog
+subtitle: Hajeekn's Blog
 description: 梦中做梦，做了个白日梦
 key'words: 杂物、乱事分享
-author: SL
+author: Hajeekn
 language: zh-CN
 timezone: 'UTC'
 
@@ -157,3 +157,31 @@ githubcalendar:
   # api: https://python-gitee-calendar-api.vercel.app/api
   calendar_js: https://cdn.jsdelivr.net/gh/Zfour/hexo-github-calendar@1.21/hexo_githubcalendar.js
   plus_style: ""
+
+# Markdown config
+markdown_it_plus:
+  render:
+    html: true
+    xhtmlOut: false
+    breaks: true
+    linkify: true
+    typographer: false
+  plugins:
+    - markdown-it-sub
+    - markdown-it-sup
+    - markdown-it-emoji
+    - markdown-it-footnote
+    - markdown-it-ins
+    - markdown-it-mark
+    - markdown-it-katex
+    - markdown-it-deflist
+    - markdown-it-abbr
+  anchors:
+    level: 2
+    collisionSuffix: '-'
+    permalink: true,
+    permalinkClass: 'header-anchor'
+    permalinkSide: 'right'
+    permalinkSymbol: '#'
+    case: 0
+    separator: '-'
