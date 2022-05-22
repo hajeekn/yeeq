@@ -41,7 +41,7 @@ jobs:
       - name: 安装其他库
         if: steps.cache.outputs.cache-hit != 'true'
         run: |
-          npm install
+          npm install -f
 #      - name: 推送合并后的语雀文章及缓存
 #        uses: ad-m/github-push-action@master
 #        with:
