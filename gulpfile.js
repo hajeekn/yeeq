@@ -43,7 +43,7 @@ gulp.task('minify-html', () => {
 });
 gulp.task('jsdelivr', async() => {
     gulp.src('public/**/*.*')
-        .pipe(replace('cdn.jsdelivr.net', 'gcore.jsdelivr.net'))
+        .pipe(replace('cdn.jsdelivr.net', 'cdn1.tianli0.top'))
         .pipe(gulp.dest('public/')),  { overwrite: true };
 })
 // 运行gulp命令时依次执行以下任务

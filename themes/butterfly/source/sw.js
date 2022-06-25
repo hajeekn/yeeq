@@ -122,7 +122,7 @@ const cache_url_list = [/(http:\/\/|https:\/\/)rmt\.ladydaily\.com/g, /(http:\/\
 const blog = {
     local: 0,
     origin: ["blog.slqwq.cn"],
-    plus: ["blog.slqwq.cn", "gcore.blog.slqwq.cn","deno.blog.slqwq.cn","hajeekns-blog.pages.dev","vercel.blog.slqwq.cn"],
+    plus: ["blog.slqwq.cn", "gcores.blog.slqwq.cn","deno.blog.slqwq.cn","hajeekns-blog.pages.dev","vercel.blog.slqwq.cn"],
 };
 const blacklist = ['9b5aee25-1d5b-4be8-9ea6-55651bfef4bc', '0e7e3e61-20b4-414b-ae6b-577b6f25ee54']
 const handle = async function (req) {
