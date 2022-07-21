@@ -1,11 +1,16 @@
 ---
 title: 适用于 Android™ 的 Windows 子系统 Magisk + LSPosed 指南
 sticky: 1
+tags:
+  - Windows11
+  - Android
+  - Magisk
+categories:
+  - Magisk
+cover: 'https://i0.hdslb.com/bfs/album/aa27ff257cb821defffcac9b6d950b11613d2f25.png'
+abbrlink: e5bb64
 date: 2022-06-25 19:10:05
-tags: [Windows11,Android,Magisk]
 description:
-categories: [Magisk]
-cover: https://i0.hdslb.com/bfs/album/aa27ff257cb821defffcac9b6d950b11613d2f25.png
 ---
 
 如题,这篇文章讲一讲 WSA 怎么样拥有 Magisk + LSPosed
