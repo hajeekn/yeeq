@@ -848,18 +848,16 @@ wow_init_js: https://npm.elemecdn.com/hexo-butterfly-wowjs/lib/wow_init.js
 # 插入代码到头部 </head> 之前 和 底部 </body> 之前
 inject:
   head:
-      - <meta name="referrer" content="no-referrer">
+      - <meta name="google-site-verification" content="qAOA3HXexaF_5uvs3Ghmqp_eB0pIzLgQ1eFRTFGb0Sk">
       - <script src="https://blog.slqwq.cn/sw-load.js"></script>
       - <script src="https://blog.slqwq.cn/load.js"></script>
-      - <meta name="google-site-verification" content="qAOA3HXexaF_5uvs3Ghmqp_eB0pIzLgQ1eFRTFGb0Sk">
       - <link rel="stylesheet" href="https://unpkg.slqwq.cn/perorepe-cdn/v1/static-files/Blog/css/ping.css">
       - <link rel="stylesheet" href="https://unpkg.slqwq.cn/aliener@latest/resources/import.min.css">
       - <link rel="stylesheet" href="https://npm.elemecdn.com/notyf@3/notyf.min.css">
-      - <script async src="https://npm.elemecdn.com/notyf@3.10.0/notyf.min.js"></script>
-      # - <script src="https://unpkg.slqwq.cn/perorepe-cdn/v1/static-files/Blog/gening.js"></script>
-      - <script src="https://npm.elemecdn.com/vue@2.6.11"></script>
       - <link rel="stylesheet" href="https://npm.elemecdn.com/wytong-source@1.6.49078015225/styles/pace-theme-flash.min.css">
       - <link rel="stylesheet" href="https://npm.elemecdn.com/wytong-source@1.6.49078015225/styles/plugins.css">
+      - <script async src="https://npm.elemecdn.com/notyf@3.10.0/notyf.min.js"></script>
+      - <script src="https://npm.elemecdn.com/vue@2.6.11"></script>
 
   bottom:
 # CDN
