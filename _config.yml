@@ -142,7 +142,7 @@ baidusitemap:
 # Author: Ice Kano
 # Modify: Lete乐特
 githubcalendar:
-  enable: false
+  enable: true
   enable_page: /
   user: slblog-github
   layout:
@@ -155,7 +155,7 @@ githubcalendar:
   color: "['#ebedf0', '#f1f8ff', '#dbedff', '#c8e1ff', '#79b8ff', '#2188ff', '#0366d6', '#005cc5', '#044289', '#032f62', '#05264c']" #天青色调
   api: https://getjt.slqwq.cn/api
   # api: https://python-gitee-calendar-api.vercel.app/api
-  calendar_js: https://cdn.jsdelivr.net/gh/Zfour/hexo-github-calendar@1.21/hexo_githubcalendar.js
+  calendar_js: https://gcore.jsdelivr.net/gh/Zfour/hexo-github-calendar@1.21/hexo_githubcalendar.js
   plus_style: ""
 
 # Markdown config
