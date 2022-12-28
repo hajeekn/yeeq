@@ -1,14 +1,12 @@
 ---
 title: 搭建 Hexo
 sticky: 1
-cover: https://cdn.jsdelivr.net/gh/slblog-github/BlogFlies/Blog/Pic/20818Cover.png
-photos: https://cdn.jsdelivr.net/gh/slblog-github/BlogFlies/Blog/Pic/20818Cover.png
+cover: https://i0.hdslb.com/bfs/album/39546ccc52c43f00101b16a481aa5f86c68445d5.png
 abbrlink: 731e29be
 date: 2020-08-19 15:29:37
 tags:
 description:
 categories:
-copyright_author_href: https://blog.slqwq.cn
 author: Hajeekn
 ---
 

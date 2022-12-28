@@ -12,8 +12,6 @@ copyright_author_href: https://blog.slqwq.cn
 author: Hajeekn
 ---
 
-本文章首发于[语雀](https://www.yuque.com/ladjeek/ygg4q6)!
-通过各种高科技功能同步到[Hajeekn 的博客](https://blog.slqwq.cn)
 Cloudflare 是一个知名的老牌 CDN 厂商了,相信很多人应该都知道,今天我在逛 Cloudflare の Docs 时发现了个 Argo Tunnel 试用了一下,还可以,并且免费,于是~~水~~写了一篇文章介绍给大家
 
 # 安装 Argo Tunnel

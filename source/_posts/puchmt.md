@@ -85,5 +85,3 @@ HTML 引入方法:
 
 如果你要达到本博客的刷新不断歌(除主动刷新或刷新 JavaScript 脚本)
 需要开启 Pjax 功能
-
-# Thanks for you

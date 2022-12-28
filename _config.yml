@@ -6,7 +6,7 @@
 title: Hajeekn's Blog
 subtitle: Hajeekn's Blog
 description: 梦中做梦，做了个白日梦
-key'words: 杂物、乱事分享
+keywords: 咕咕咕
 author: Hajeekn
 language: zh-CN
 timezone: 'UTC'
@@ -142,7 +142,7 @@ baidusitemap:
 # Author: Ice Kano
 # Modify: Lete乐特
 githubcalendar:
-  enable: true
+  enable: false
   enable_page: /
   user: slblog-github
   layout:
@@ -185,3 +185,13 @@ markdown_it_plus:
     permalinkSymbol: '#'
     case: 0
     separator: '-'
+
+suka_theme:
+  search:
+    enable: true
+    path: search.json
+    field: post # Page | Post | All. Default post
+  prism:
+    enable: false
+    line_number: true
+    theme: default

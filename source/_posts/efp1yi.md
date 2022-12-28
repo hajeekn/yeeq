@@ -13,8 +13,6 @@ author: Hajeekn
 id: 27
 ---
 
-本文章首发于[语雀](https://www.yuque.com/ladjeek/ygg4q6)!
-通过各种高科技功能同步到[Hajeekn 的博客](https://blog.slqwq.cn)
 **由于每个人的博客目录都不相同，这里博客目录使用%brt%代替**
 **本文章除 Pace wowjs 普通引入法以外,其他魔改都不适合 Butterfly3.6.0 及以上**
 

@@ -13,6 +13,12 @@ date: 2022-06-25 19:10:05
 description:
 ---
 
+> ⚠ 更新于2022/12/28 19:28 注意,MagiskOnWSA 已经被 GitHub 封禁
+>
+> 如果有需要,可以尝试另一个项目 [PeterNjeim/MagiskOnWSA](https://github.com/PeterNjeim/MagiskOnWSA/releases/latest)
+>
+> 此 `repo` 已经禁止 `fork` 有需要可以使用 GitHub 的 import 导入
+
 如题,这篇文章讲一讲 WSA 怎么样拥有 Magisk + LSPosed
 
 # 构建并安装你自己的 WSA

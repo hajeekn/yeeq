@@ -6,9 +6,7 @@ date: 2020-08-19 16:02:36
 tags:
 description:
 categories:
-cover: https://cdn.jsdelivr.net/gh/slblog-github/BlogFlies/Blog/Pic/20819Cover.png
-photos: https://cdn.jsdelivr.net/gh/slblog-github/BlogFlies/Blog/Pic/20819Cover.png
-copyright_author_href: https://blog.slqwq.cn
+cover: https://i0.hdslb.com/bfs/album/14cf0fc9743e17a5922cfc84e75d9ff141d8a8b2.png
 author: Hajeekn
 ---
 
@@ -16,15 +14,15 @@ author: Hajeekn
 
 即走即编辑，就算你是手机也可以在线编辑文件，免去配置环境。
 
-所以今天我教大家如何使用持续集成工具----Travis CI 来部署 Hexo
+所以今天我教大家如何使用持续集成工具 — Travis CI 来部署 `Hexo`
 
 # 创建仓库
 
 我们首先打开[GitHub](https://github.com/)
 
-选择![](https://cdn.jsdelivr.net/gh/slblog-github/BlogFlies/Blog/Pic/image-20200819161129222.png#alt=image-20200819161129222#align=left&display=inline&height=51&margin=%5Bobject%20Object%5D&originHeight=51&originWidth=128&status=done&style=none&width=128)
+选择![](https://i0.hdslb.com/bfs/album/3f5f3270d62ba5ebe01d38c73497795b2ba92225.png)
 
-![](https://cdn.jsdelivr.net/gh/slblog-github/BlogFlies/Blog/Pic/image-20200819161148025.png#alt=image-20200819161148025#align=left&display=inline&height=879&margin=%5Bobject%20Object%5D&originHeight=879&originWidth=1600&status=done&style=none&width=1600)
+![](https://i0.hdslb.com/bfs/album/fa1732c3e3532924df85d276a9efc6a0b87d9782.png)
 
 仓库名称可以随意
 
@@ -32,7 +30,7 @@ author: Hajeekn
 
 创建完成后复制你的仓库克隆地址
 
-在 Hexo 根目录下打开终端
+在 `Hexo` 根目录下打开终端
 
 输入
 
@@ -42,7 +40,7 @@ git add travis 复制的仓库克隆地址
 
 # 创建 Travis CI 配置
 
-接着去创建一个文件:".travis.yml"
+接着去创建一个文件:`.travis.yml`
 
 里面输入
 
@@ -87,7 +85,7 @@ branches:
 
 权限直接全选
 
-然后把你 Hexo 配置 GitHub 的 SSH/HTTPS 部署地址改为
+然后把你 `Hexo` 配置 GitHub 的 SSH/HTTPS 部署地址改为
 
 ```
 https://你的token@github.com/用户名/仓库.git
@@ -97,7 +95,7 @@ https://你的token@github.com/用户名/仓库.git
 
 进入 Coding 企业
 
-![](https://cdn.jsdelivr.net/gh/slblog-github/BlogFlies/Blog/Pic/20200819172348.png#alt=image-20200819172330736#align=left&display=inline&height=432&margin=%5Bobject%20Object%5D&originHeight=432&originWidth=296&status=done&style=none&width=296)
+![](https://i0.hdslb.com/bfs/album/3b2a825fbe3cae36f5bef56cec594081ae998601.png)
 
 右上角找到个人账户设置
 
@@ -107,7 +105,7 @@ https://你的token@github.com/用户名/仓库.git
 
 权限依然全选
 
-选择完后将你 Hexo 的 codingSSH/HTTPS 部署地址改为
+选择完后将你 `Hexo` 的 coding SSH/HTTPS 部署地址改为
 
 ```
 https://username:password@e.coding.net/用户名/仓库名.git
@@ -135,4 +133,5 @@ git commit -m "这里随便"
 git push -u travis master -f
 ```
 
-提交完成后就刷新看看你的 Travis 吧
+提交完成后稍等片刻,在 Travis 后台就会出现部署了
+

@@ -3,11 +3,8 @@ title: 推荐一些实用工具
 sticky: 1
 tags: [干货]
 categories: [实用工具]
-cover: https://cdn.jsdelivr.net/gh/slblog-github/BlogFlies/Blog/Pic/20828Cover.png
-photos: https://cdn.jsdelivr.net/gh/slblog-github/BlogFlies/Blog/Pic/20828Cover.png
-abbrlink: c5ef192c
+cover: https://i0.hdslb.com/bfs/album/1c8ed9180b43b9bf25d173c16e6dfc9a073aadc2.png
 date: 2020-08-28 10:09:19
-copyright_author_href: https://blog.slqwq.cn
 author: Hajeekn
 description:
 ---
@@ -16,7 +13,7 @@ description:
 
 官网:[https://www.raidrive.com/download](https://www.raidrive.com/download)
 
-![](https://cdn.jsdelivr.net/gh/slblog-github/BlogFlies/Blog/Pic/image-20200828101623691.png#alt=image-20200828101623691#height=537&id=IB4oW&originHeight=537&originWidth=580&originalType=binary&ratio=1&status=done&style=none&width=580)
+![](https://i0.hdslb.com/bfs/album/3d345a244c023cfd2d55c884f50aa7ea79c3af63.png)
 
 这款软件可以帮你把 NAS、OneDrive、Google Drive 等网盘映射到本地，目前博主正在用，非常好评!
 
@@ -24,7 +21,7 @@ description:
 
 官网:[http://www.internetdownloadmanager.com/](http://www.internetdownloadmanager.com/)
 
-![](https://cdn.jsdelivr.net/gh/slblog-github/BlogFlies/Blog/Pic/image-20200828101808831.png#alt=image-20200828101808831#height=467&id=ptqgi&originHeight=467&originWidth=794&originalType=binary&ratio=1&status=done&style=none&width=794)
+![](https://i0.hdslb.com/bfs/album/a09734ffbb40a0617278941ef94d9a4bfad9ebe0.png)
 
 这是一款多线程下载器，最高支持 32 线程
 
@@ -34,7 +31,7 @@ description:
 
 官网:[https://www.typora.io/](https://www.typora.io/)
 
-![](https://cdn.jsdelivr.net/gh/slblog-github/BlogFlies/Blog/Pic/image-20200828101944979.png#alt=image-20200828101944979#height=694&id=sk6eN&originHeight=694&originWidth=800&originalType=binary&ratio=1&status=done&style=none&width=800)
+![](https://i0.hdslb.com/bfs/album/f7285a48e030b8d6385094d4900d9e93571de249.png)
 
 一款 MarkDown 写作工具，支持自定义主题
 
@@ -46,7 +43,7 @@ description:
 
 GitHub:[https://github.com/NickeManarin/ScreenToGif](https://github.com/NickeManarin/ScreenToGif)
 
-![](https://cdn.jsdelivr.net/gh/slblog-github/BlogFlies/Blog/Pic/image-20200828102043926.png#alt=image-20200828102043926#height=211&id=YrDnA&originHeight=211&originWidth=485&originalType=binary&ratio=1&status=done&style=none&width=485)
+![](https://i0.hdslb.com/bfs/album/d6d15367aa64cf201e735445fd2b62ea129bee2f.png)
 
 可以录制高帧率的 GIF
 
@@ -64,44 +61,18 @@ GitHub:[https://github.com/NickeManarin/ScreenToGif](https://github.com/NickeMan
 
 GitHub:[https://github.com/lyswhut/lx-music-desktop](https://github.com/lyswhut/lx-music-desktop)
 
-![](https://cdn.jsdelivr.net/gh/slblog-github/BlogFlies/Blog/Pic/image-20200828102439336.png#alt=image-20200828102439336#height=634&id=xO3mT&originHeight=634&originWidth=1000&originalType=binary&ratio=1&status=done&style=none&width=1000)
+![](https://i0.hdslb.com/bfs/album/9475b788989c5ffd0fc14b08eaad4e582b336d88.png)
 
 支持酷我、酷狗、企鹅、网易等音乐平台的歌曲搜索
 
 还支持显示歌词、下载歌词、收藏等操作
 
-# 火绒
-
-官网:[https://www.huorong.cn/](https://www.huorong.cn/)
-
-![](https://cdn.jsdelivr.net/gh/slblog-github/BlogFlies/Blog/Pic/image-20200828102602239.png#alt=image-20200828102602239#height=540&id=lNdIO&originHeight=540&originWidth=820&originalType=binary&ratio=1&status=done&style=none&width=820)
-
-一款安全软件，不流氓，清爽
-
-并且还包含各种小工具
-
-如:漏洞修复、系统修复、弹窗拦截、右键管理
-
 # Blockbench
 
 GitHub:[https://github.com/JannisX11/blockbench](https://github.com/JannisX11/blockbench)
 
-![](https://cdn.jsdelivr.net/gh/slblog-github/BlogFlies/Blog/Pic/image-20200828102825058.png#alt=image-20200828102825058#height=859&id=QM5gH&originHeight=859&originWidth=1600&originalType=binary&ratio=1&status=done&style=none&width=1600)
+![](https://i0.hdslb.com/bfs/album/f4cdbb39b7723edb2a78c01386f89fe80013baa9.png)
 
 一款模型制作工具
 
 支持制作著名游戏 Minecraft 的模型和制作其它引擎的模型
-
-# Google Chrome
-
-官网:[https://google.cn/chrome](https://google.cn/chrome)
-
-![](https://cdn.jsdelivr.net/gh/slblog-github/BlogFlies/Blog/Pic/image-20200828103150832.png#alt=image-20200828103150832#height=862&id=LLGcM&originHeight=862&originWidth=1600&originalType=binary&ratio=1&status=done&style=none&width=1600)
-
-由谷歌团队开发的一款浏览器
-
-因为其清爽简洁的 UI 和琳琅满目的扩展支持让他成为大众的不二之选
-
-缺点:
-
-- CPU/内存占用超大

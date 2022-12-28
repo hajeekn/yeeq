@@ -6,9 +6,7 @@ date: 2020-08-04 15:41:39
 tags: [魔改, Hexo]
 categories: [魔改, 评论]
 description:
-cover: https://cdn.jsdelivr.net/gh/slblog-github/BlogFlies/Blog/Pic/2084Cover.png
-photos: https://cdn.jsdelivr.net/gh/slblog-github/BlogFlies/Blog/Pic/2084Cover.png
-copyright_author_href: https://blog.slqwq.cn
+cover: https://i0.hdslb.com/bfs/album/28bab3b588500cd6e97fecd8dcc11d0b83decb1a.png
 author: Hajeekn
 ---
 

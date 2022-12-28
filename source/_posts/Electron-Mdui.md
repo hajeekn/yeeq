@@ -36,7 +36,7 @@ cover: https://i0.hdslb.com/bfs/album/b30c5328ccd565a31e3c9b2ae7cd107a0698fc60.p
 $ npm install @vue/cli --global
 ```
 
-安装 Vue-cli
+安装 `vue-cli`
 
 # Part 3: 创建项目
 

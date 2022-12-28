@@ -93,9 +93,5 @@ VUE_APP_ELECTRON_API_URL=后的数据填写/
 构建完成后上传到 GitHub 启动 Pages 服务就可以愉快的用了
 如果想让这个 YesPlayMusic 支持播放灰色音乐还需要搭建 UnlockNeteaseMusic
 各位可以自行去摸索
-这边放上一个我搭建的网页
-https://music.slqwq.cn
-
-# Thanks for you
 
 啊对了,今天是新年,祝各位新年快乐哦!

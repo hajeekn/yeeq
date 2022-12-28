@@ -13,8 +13,6 @@ author: Hajeekn
 id: 33
 ---
 
-本文章首发于[语雀](https://www.yuque.com/ladjeek/ygg4q6)!
-通过各种高科技功能同步到[Hajeekn 的博客](https://blog.slqwq.cn)
 **本文基于**[@CCKNBC](https://blog.ccknbc.cc/posts/waline-commens-system-deployment-logs/)**的日志**[@Waline 官方文档](https://waline.js.org/)和博主自己部署时的实际情况编写
 如果需要最详细的配置请前往 [@Waline 官方文档](https://waline.js.org/)
 
@@ -94,14 +92,14 @@ PROJECT NAME 可以随便填写一个
 然后就会出现这个页面
 ![](https://rmt.ladydaily.com/fetch/hajeekn/storage/202204171107245.png#crop=0&crop=0&crop=1&crop=1&id=ARA2n&originHeight=863&originWidth=1895&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=)
 不管他,下滑
-找到 Environment Variables 配置环境变量
+找到 `Environment Variables` 配置环境变量
 默认需要的环境变量如下:
 
 - LEAN_ID
 - LEAN_KEY
 - LEAN_MASTER_KEY
 
-它们的值分别对应上一步在 LeanCloud 中获得的 APPID APPKEY MasterKey
+它们的值分别对应上一步在 `LeanCloud` 中获得的 `APPID` `APPKEY` `MasterKey`
 获取方法:
 进入 LeanCloud
 这边用国际版演示
@@ -111,26 +109,14 @@ PROJECT NAME 可以随便填写一个
 进入应用设置后选择 设置 -> 应用 Keys
 ![](https://rmt.ladydaily.com/fetch/hajeekn/storage/202204171107450.png#crop=0&crop=0&crop=1&crop=1&id=N57mx&originHeight=512&originWidth=915&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=)
 复制并保存 Credentials 的所有配置
-你看不到我的是因为我遮掉了
-顺便教各位在拍摄截图时怎么遮掉重要内容
-F12 找到重要内容的文字标签
-这里是 code
-然后加上
-color: 网页背景颜色; 和
-background: 网页背景颜色;
-这样就行辣
-我们获取到了 APPID APPKEY MasterKey
-创建变量填写就 OK
-这里的变量需要一个一个填
-你填完一个点击 ADD 然后就会填的数据就会在下方,但是上面的输入框会没有文字,这点就很棒(๑•̀ㅂ•́)و✧
+然后把获取到的变量依次填入环境变量中
 ![](https://rmt.ladydaily.com/fetch/hajeekn/storage/202204171108331.png#crop=0&crop=0&crop=1&crop=1&id=JpTSM&originHeight=376&originWidth=948&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=)
-设置都完成后就可以点击 Deploy 了
+设置都完成后就可以点击 `Deploy` 了
 在这里稍等一会儿就可以部署完成
-部署完成后 Vercel 会放烟花 🎇 庆祝一下
-然后在接下来的页面点击 Visit
+部署完成后在接下来的页面点击 Visit
 就可以打开部署好的示例网页
 然后你需要注册一个账号
-在 Vercel 分配的域名后面加上/ui/register
+在 `Vercel` 分配的域名后面加上/ui/register
 第一个注册的会成为管理员哦~
 如果你想要自定义管理员头衔
 可以在客户端脚本中用`langMode.admin`配置哦
@@ -141,12 +127,12 @@ function waline() {
   const Waline = require("@waline/client");
   new Waline({
     el: "#waline-comment",
-    serverURL: "https://logwaline.vercel.app",
+    serverURL: %WALINEURL%,
     path: window.location.pathname,
     visitor: true,
     lang: location.pathname.startsWith("/en/") ? "en" : "zh-CN",
     langMode: {
-      admin: location.pathname.startsWith("/en/") ? "Administrator" : "Hajeekn",
+      admin: location.pathname.startsWith("/en/") ? "Admin" : "Hajeekn",
     },
   });
 }
@@ -156,20 +142,16 @@ function waline() {
 具体去看看[Waline 文档](https://waline.js.org/)或者[@CCKNBC](https://blog.ccknbc.cc/)
 当然如果你和我一样用的是 Butterfly
 那么可以找到 Waline 配置项
-在`option`配置项下面加入
-    langMode:
-     admin: Hajeekn
-即可
+在`option`配置项加入配置即可
+
+    langMode:
+     admin: Hajeekn
 示例:
 
 ```yaml
 option:
   pageSize: 10
-  requiredFields: mail
-  # anonymous: false
-  placeholder: 社交登录可助您快速录入信息，可匿名评论，但您的评论必须经人工审核通过后才会显示，并可收到相关回复邮件通知，因此邮箱为必填项
-  # avatarCDN: https://sdn.geekzu.org/avatar/
-  #https://valinecdn.bili33.top/
+  ·····
   langMode:
     admin: Hajeekn
 ```
@@ -177,7 +159,7 @@ option:
 当然 Waline 现在也可以更改邮件模板
 只需要在环境变量内写入就行
 但是环境变量限制大小,推荐按照[issues/106](https://github.com/lizheming/waline/issues/106)配置
-当然如果你的评论不是很多，并且之前配置过 Valine-Admin，那么你仍然可以使用 LeanCloud 来做异步发送通知，关闭默认的通知配置，或者使用 js 推送
+当然如果你的评论不是很多，并且之前配置过 Valine-Admin，那么你仍然可以使用 `LeanCloud` 异步发送通知
 
 ## 表情包配置(Butterfly)
 
@@ -193,21 +175,20 @@ option:
 
 ## Vercel
 
-这里照搬[@CCKNBC](https://blog.ccknbc.cc/posts/waline-commens-system-deployment-logs/#CloudBase-%E4%BA%91%E5%BC%80%E5%8F%91%E9%83%A8%E7%BD%B2)の
 所需要的工具
 
 - [Renovate](https://github.com/marketplace/renovate)
 - [Mergify](https://github.com/marketplace/mergify)
 
-当然前提是公开仓库
-安装完成后你就可以删除你现有的名为 Waline 的仓库，再 fork [CCKNBC 的仓库](https://github.com/ccknbc-actions/waline)，然后去你的 Vercel 解绑之前的仓库，再绑定你 fork 的仓库，最后点一下重新部署即可
-但是如果你没用 tcb 就把 .github/workflows/Update Waline TCB.yml   里的文件删掉，因为涉及到自动部署更新云开发，还有环境变量问题，如果没设定会导致报错
-**_这部分照搬了 CC 的文章熬_**
+!在这之前仓库必须公开!
+安装完成后就可以删除 `Waline` 仓库，再 fork [CC 的仓库](https://github.com/ccknbc-actions/waline)，之后绑定到 fork 的仓库并重新部署即可
 
-## Tencent CloudBase
+但是如果你没用 腾讯云开发 就把 `.github/workflows/Update Waline TCB.yml`   里的文件删掉，因为涉及到自动部署更新云开发，还有环境变量，如果没设定会导致报错
+
+## Tencent Cloudbase
 
 和上面一样
-Fork [CCKNBC 的仓库](https://github.com/ccknbc-actions/waline) 然后新建几个变量
+Fork [CC 的仓库](https://github.com/ccknbc-actions/waline) 然后新建几个变量
 进入你的仓库/settings/secrets/actions
 
 | 变量名                                         | 变量解释                                                                   |
@@ -224,4 +205,7 @@ Fork [CCKNBC 的仓库](https://github.com/ccknbc-actions/waline) 然后新建�
 
 ---
 
+AD!
+
 我的博客即将同步至腾讯云+社区，邀请大家一同入驻：[https://cloud.tencent.com/developer/support-plan?invite_code=3gll8aqhc2kgg](https://cloud.tencent.com/developer/support-plan?invite_code=3gll8aqhc2kgg)
+

@@ -12,8 +12,6 @@ copyright_author_href: https://blog.slqwq.cn
 author: Hajeekn
 ---
 
-本文章首发于[语雀](https://www.yuque.com/ladjeek/ygg4q6)!
-通过各种高科技功能同步到[Hajeekn 的博客](https://blog.slqwq.cn)
 本篇文章参考 [Dejavu](https://www.dejavu.moe/posts/windows-scoop/) 的文章和 [Scoop](https://scoop-docs.vercel.app/) 官方文档
 Windows 和 MacOS Linux 不一样
 Windows 安装软件的途径一般是搜索引擎/软件管家

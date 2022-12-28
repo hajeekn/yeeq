@@ -27,7 +27,7 @@ Fork 仓库
 然后部署到各种平台
 以 CloudFlare 为例子
 进入 [CloudFlare Dashbord](https://service-dali9563-1259647411.sh.apigw.tencentcs.com/?link=a0la4la4la8la7l55l38l38la4l96l37la7l97la9la3la9l37l92l95l38l94la8l89l38l49&hex=11&xor=6)
-选择 'Pages'
+选择 `Pages`
 选择![](https://rmt.ladydaily.com/fetch/hajeekn/storage/202204171138892.png#crop=0&crop=0&crop=1&crop=1&id=cERjd&originHeight=58&originWidth=124&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=)
 存储库选择 Fork 的仓库
 然后一直下一步,等到部署完成就可以访问了

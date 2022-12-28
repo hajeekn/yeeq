@@ -15,7 +15,7 @@ id: 31
 
 本文章首发于[语雀](https://www.yuque.com/ladjeek/ygg4q6)!
 通过各种高科技功能同步到[Hajeekn 的博客](https://blog.slqwq.cn)
-转眼望去,离上一篇已经有 7 天左右了,今天入手了一位大神写的[flowerss bot](https://github.com/indes/flowerss-bot)
+[flowerss bot](https://github.com/indes/flowerss-bot)
 挺好用的,今天给大家安利一下搭建方法( 白 嫖 )
 首先呢，各位要注意下，flowerss bot 需要依赖一个 VPS，我知道你没钱买<s>其实我也是辣</s>，所以这篇教程用 Euserv 示范
 白嫖 Euserv 鸡子的教程挺多的，各位可以自行 Bing 一下这边就不讲了。
@@ -67,7 +67,7 @@ $ rm flowerss-bot-v0.8.3-linux-amd64.tar.gz
 $ rm flowerss-bot-v0.8.3-linux-amd386.tar.gz
 ```
 
-然后执行 ls 查看文件
+然后执行 `ls` 查看文件
 如果正确的话,目录结构应该如下
 
 ```
@@ -77,7 +77,7 @@ flbot                          # 文件所在的目录
 |         |——flowerss-bot      # 程序的文件
 ```
 
-然后你需要用 mv 指令去重命名 config.yml.sample
+然后你需要用 mv 指令去重命名 `config.yml.sample`
 
 ```bash
 $ mv config.yml.sample config.yml
@@ -134,7 +134,7 @@ $ apt-get install screen
 $ screen
 ```
 
-创建一个 screen 窗口
+创建一个 `screen` 窗口
 然后在里面启动就可以了
 
 # 配置项说明
@@ -152,9 +152,26 @@ sqlite(SQLite 配置)(可忽略(已配置 mysql 时，该项失效))
 telegram.endpoint(自定义 telegram bot api url)(可忽略)
 allowed_users(允许使用 bot 的用户 telegram id)(可忽略(为空时所有用户都能使用 bot))
 
+| 项                       | 说明                                                  | 状态 |
+| ------------------------ | ----------------------------------------------------- | ---- |
+| bot_token                | Telegram 机器人令牌                                   | 必须 |
+| telegraph_token          | 转存原文到 Telegraph                                  | 可选 |
+| preview_text             | 纯文字预览字数                                        | 可选 |
+| user_agent               | 用户代理                                              | 可选 |
+| disable_web_page_preview | 禁用 Web 页面预览                                     | 可选 |
+| update_interval          | RSS 源扫描间隔(单位: 分钟)                            | 可选 |
+| error_threshold          | RSS 源最大出错次数                                    | 可选 |
+| socks5                   | 代理(适用于无法访问 Telegram 的机器)                  | 可选 |
+| mysql                    | 数据库配置(二选一)                                    | 可选 |
+| sqlite                   | 数据库配置(二选一)                                    | 失效 |
+| telegram.endpoint        | 自定义 Telegram API 地址(用于反代 API 给国内机器使用) | 可选 |
+| allowed_users            | 允许的用户,不填写代表所有用户均可以使用               | 可选 |
+
+
+
 # 申请 Telegram Bot Token
 
-以下部分截图和文章来自[Spoience 的博客](https://www.dejavu.moe/)
+以下截图和内容来自[Spoience 的博客](https://www.dejavu.moe/)
 打开 Telegram 搜索 @BotFather
 
 ![](https://rmt.ladydaily.com/fetch/hajeekn/storage/202204171105160.png#crop=0&crop=0&crop=1&crop=1&id=rJkSB&originHeight=203&originWidth=351&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=)
@@ -199,5 +216,4 @@ curl https://api.telegra.ph/createAccount?short_name=DaiRSS_Bot&author_name=Spoi
 ```
 
 然后这样一个机器人就配置好啦，你可以把它拉入你的频道,然后自己配置下 RSS
-配置完成后你就可以看到更新文章时你的频道会有提示辣
-Spoience 的频道: [Click Me](https://t.me/Spoience_com)
+配置完成后你就可以看到更新文章时你的频道会有提示

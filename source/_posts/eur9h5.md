@@ -12,15 +12,14 @@ copyright_author_href: https://blog.slqwq.cn
 author: Hajeekn
 ---
 
-本文章首发于[语雀](https://www.yuque.com/ladjeek/ygg4q6)!
-通过各种高科技功能同步到[Hajeekn 的博客](https://blog.slqwq.cn)
-| 演示过程基于 Twinkstar(星愿)浏览器,其他浏览器可能大致步骤一样
+> 演示过程基于 Twinkstar(星愿)浏览器,其他浏览器可能大致步骤一样
 
 # 什么是 Floccus
 
 Floccus 是一个在 GitHub 上的开源项目，该项目的官方简介如下
-| Sync your bookmarks across browsers via Nextcloud, WebDAV or a local file (and thus any file sync solution).
-简单的说它就是一个支持 Google Chrome 和 Mozilla Firefox 跨平台同步的一个插件，依赖于 WebDAV、nextcloud、本地文件等
+
+> Sync your bookmarks across browsers via Nextcloud, WebDAV or a local file (and thus any file sync solution).
+> 简单的说它就是一个支持 Google Chrome 和 Mozilla Firefox 跨平台同步的一个插件，依赖于 WebDAV、nextcloud、本地文件等
 
 # 下载并安装 Floccus 插件
 
