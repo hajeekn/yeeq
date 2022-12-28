@@ -154,6 +154,12 @@ class2:
       link: https://blog.leonus.cn/
       avatar: https://q1.qlogo.cn/g?b=qq&nk=553344777&s=5
       descr: 进一寸有进一寸的欢喜。
+    14:
+      name: Acozycotage
+      link: https://www.acozycotage.net/
+      avatar: https://lskypro.acozycotage.net/LightPicture/2022/12/6a6fe6ebfd19c465.jpg
+      descr: 寄言燕雀莫相唣，自有云霄万里高，给时光以生命，给岁月以文明 
+      siteshot: https://lskypro.acozycotage.net/LightPicture/2022/12/e4ac5837ed7e8051.png
 
 class3:
   class_name: 个人项目&很棒的工具
