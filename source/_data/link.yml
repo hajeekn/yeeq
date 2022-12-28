@@ -56,6 +56,15 @@ class:
       color: "#f19ec2"
       custom: link_custom 1s infinite alternate
       rotate: 360deg
+    10: name: Shine
+      link: https://shineyull.github.io/
+      avatar: https://s3.uuu.ovh/imgs/2022/11/23/129c19d56d22c637.png
+      descr: "Let's go! Target: The Vast Stars!"
+      width: 2px
+      style: solid
+      color: "#f19ec2"
+      custom: link_custom 1s infinite alternate
+      rotate: 360deg
 
 class2:
   class_name: 跟着大佬走，那岂不轻而易举当上小大佬?
@@ -140,6 +149,11 @@ class2:
       link: https://noionion.top/
       avatar: https://pub-noionion.oss-cn-hangzhou.aliyuncs.com/head.jpg
       descr: 用这生命中的每一秒钟,给自己一个不后悔的未来
+    13:
+      name: Leonus
+      link: https://blog.leonus.cn/
+      avatar: https://q1.qlogo.cn/g?b=qq&nk=553344777&s=5
+      descr: 进一寸有进一寸的欢喜。
 
 class3:
   class_name: 个人项目&很棒的工具
