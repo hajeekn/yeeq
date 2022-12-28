@@ -56,7 +56,8 @@ class:
       color: "#f19ec2"
       custom: link_custom 1s infinite alternate
       rotate: 360deg
-    10: name: Shine
+    10: 
+      name: Shine
       link: https://shineyull.github.io/
       avatar: https://s3.uuu.ovh/imgs/2022/11/23/129c19d56d22c637.png
       descr: "Let's go! Target: The Vast Stars!"
