@@ -53,7 +53,7 @@ self.addEventListener('fetch', async (event) => {
 })
 const handleerr = async (req, msg) => {
 	return new Response(
-		`<h1>WooBlogHelper Error</h1>
+		`<h1>BlogHelper Error</h1>
     <b>${msg}</b>`,
 		{
 			headers: {
