@@ -1,11 +1,14 @@
 ---
 title: Electron + Vue + Mdui
 sticky: 1
+tags:
+  - electron
+categories:
+  - electron
+cover: 'https://i0.hdslb.com/bfs/album/b30c5328ccd565a31e3c9b2ae7cd107a0698fc60.png'
+abbrlink: 6bd0d2ac
 date: 2022-07-22 16:23:03
-tags: [electron]
 description:
-categories: [electron]
-cover: https://i0.hdslb.com/bfs/album/b30c5328ccd565a31e3c9b2ae7cd107a0698fc60.png
 ---
 
 > 开始前注意,这是将 Electron 集成到 Vue 项目中的演示,如果你没有基础,建议使用[样板代码](https://github.com/SimulatedGREG/electron-vue)
