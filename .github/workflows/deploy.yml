@@ -1,0 +1,96 @@
+name: 博客构建
+
+on:
+  repository_dispatch:
+  workflow_dispatch:
+  push:
+    branches: master
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 检查分支
+        uses: actions/checkout@v2
+        with:
+          ref: master
+
+      - name: 安装 Node.js
+        uses: actions/setup-node@v1
+        with:
+          node-version: "12.x"
+
+      - name: 安装 Hexo 库
+        run: |
+          export TZ='Asia/Shanghai'
+          npm install hexo-cli -g
+          npm install gulp-cli -g
+#      - name: 清除语雀本地缓存并同步文档
+#        env:
+#          YUQUE_TOKEN: ${{ secrets.YUQUE_TOKEN }}
+#        run: |
+#          yuque-hexo clean
+#          yuque-hexo sync
+      - name: 缓存 Hexo
+        uses: actions/cache@v1
+        id: cache
+        with:
+          path: node_modules
+          key: ${{runner.OS}}-${{hashFiles('**/package-lock.json')}}
+
+      - name: 安装其他库
+        if: steps.cache.outputs.cache-hit != 'true'
+        run: |
+          npm install -f
+#      - name: 推送合并后的语雀文章及缓存
+#        uses: ad-m/github-push-action@master
+#        with:
+#          github_token: ${{ secrets.GET }}
+
+#      - name: 上传语雀文章到指定分支
+#        uses: peaceiris/actions-gh-pages@v3
+#        with:
+#          github_token: ${{ secrets.GET }}
+#          publish_branch: posts
+#          publish_dir: ./source/_posts
+#          user_name: 'github-actions[bot]'
+#          user_email: 'github-actions[bot]@users.noreply.github.com'
+#          full_commit_message: ${{ github.event.head_commit.message }}
+
+      - name: 生成文件和压缩
+        run: |
+          hexo clean
+          hexo g
+          gulp
+
+      - name: 部署博客到网络
+        run: |
+          cd ./public
+          git config --global init.defaultBranch master
+          git config --global http.postBuffer 524288000
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git init
+          git add --all
+          git branch -m master
+          git commit -m "这次的更新内容: ${{ github.event.head_commit.message }} 于 $(date +"%Z %Y-%m-%d %A %H:%M:%S") 在 GitHub Actions 上执行并推送"
+          git push --force --quiet "https://slblog-github:${{ secrets.DP_TOKEN }}@github.com/slblog-github/Blog.git" master:master
+
+      - name: 删除工作流信息
+        uses: Mattraks/delete-workflow-runs@main
+        with:
+          retain_days: 1
+          keep_minimum_runs: 1
+
+      - name: 推送消息到作者电报
+        if: cancelled() == false
+        uses: xinthink/action-telegram@v1.1
+        with:
+          botToken: ${{ secrets.TG_BOT_TOKEN }}
+          chatId: ${{ secrets.TG_CHAT_ID }}
+          jobStatus: ${{ job.status }}
+          skipSuccess: true
+
+      - name: Bark 通知
+        run: |
+          curl https://api.day.app/${{ secrets.BARK_TOKEN }}/博客生成任务完成!?icon=https://cdn.hesiy.cn/pic/logo.png;url=https://github.com/ladjeek-actions/yeeq/actions

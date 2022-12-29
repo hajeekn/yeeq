@@ -1,0 +1,88 @@
+- class_name: 友情链接(排名按顺序，并没任何意思)
+  class_desc: 朋友们!
+  link_list:
+    - name: bmyjacks
+      link: https://bmyjacks.cn/
+      avatar: https://cdn-bmyjacks-io.oss-accelerate.aliyuncs.com/favicon/android-chrome-512x512.png?x-oss-process=style/favicon
+      descr: 分享一些学习经历以及一些比较有意思的东西
+    - name: MBRJun
+      link: https://mbrjun.cn/
+      avatar: https://cos.mbrjun.cn/PICS/LG4v3avatar144px.jpg
+      descr: Touching Fish
+    - name: 璃心
+      link: https://luoyou.art/
+      avatar: https://user-images.githubusercontent.com/60562661/74096556-7c5f5e80-4b3b-11ea-817b-b289ffba24a3.jpg
+      descr: 人工智能-深度学习，计算机视觉，算法，数学
+    - name: impdx-忧郁的派大星
+      link: https://www.impdx.vip/
+      avatar: https://www.impdx.vip/img/avatar.png
+      descr: 越学习，越发现自己的无知——笛卡尔
+    - name: 保温杯的小栈
+      link: https://1357.ga/
+      avatar: https://cdn.jsdelivr.net/gh/hanghang0891/hanghang0891.github.io/img/avatar.jpg
+      descr: 就是俺啦！
+    - name: FadeAway
+      link: https://fadeawayol.github.io/
+      avatar: https://i.loli.net/2020/06/23/kfrgHqSe8tEhX9F.jpg
+      descr: 相遇总有原因，不是恩赐就是教训
+    - name: Shine
+      link: https://shineyull.github.io/
+      avatar: https://s3.uuu.ovh/imgs/2022/11/23/129c19d56d22c637.png
+      descr: "Let's go! Target: The Vast Stars!"
+
+- class_name: 跟着大佬走，那岂不轻而易举当上小大佬?
+  class_desc: 大佬们!
+  link_list:
+    - name: 小康博客
+      link: https://www.antmoe.com/
+      avatar: https://cdn.jsdelivr.net/gh/sviptzk/HexoStaticFile@latest/avatar.jpg
+      descr: 一个收藏回忆与分享技术的地方！
+    - name: 依尘
+      link: https://www.yichen.online/
+      avatar: https://moecdn.slqwq.cn/pic/YiChen.png/
+      descr: Ting 花落的声音
+    - name: Uncle_drew
+      link: https://cndrew.cn/
+      avatar: https://cdn.jsdelivr.net/gh/drew233/cdn/dreww.webp
+      descr: Hand down,man down
+    - name: PluShine
+      link: https://plushine.cn
+      avatar: https://cdn.jsdelivr.net/gh/xingjiahui/CDN@latest/touxiang.jpg
+      descr: 💕菜徐坤💕
+    - name: 云淡风轻
+      link: https://ioliu.cn/
+      avatar: https://ioliu.cn/images/avatar.jpg
+      descr: 一个安静的角落
+    - name: CC的部落格
+      link: https://blog.ccknbc.cc
+      avatar: https://cdn.jsdelivr.net/gh/ccknbc-backup/cdn/logo/ccknbc.png
+      descr: CC康纳百川
+    - name: Heo
+      link: https://blog.zhheo.com/
+      avatar: https://blog.zhheo.com/img/avatar.png
+      descr: 爱折腾的设计师
+
+    - name: Ln's Blog
+      link: https://weilining.cf
+      avatar: https://cdn.jsdelivr.net/gh/weilining/img@main/img/20201120235415.png
+      descr: 时不我待
+    - name: 学习与生活
+      link: https://ql-isaac.cn/
+      avatar: https://image.ql-isaac.cn/站长头像.jpg
+      descr: It’s a beautiful day!
+    - name: Wlog
+      link: https://blog.wmza.cn
+      avatar: https://blog.wmza.cn/wsimg/favicon72x72.svg
+      descr: 一个普通人
+    - name: 贰猹的小窝
+      link: https://noionion.top/
+      avatar: https://pub-noionion.oss-cn-hangzhou.aliyuncs.com/head.jpg
+      descr: 用这生命中的每一秒钟,给自己一个不后悔的未来
+    - name: Leonus
+      link: https://blog.leonus.cn/
+      avatar: https://q1.qlogo.cn/g?b=qq&nk=553344777&s=5
+      descr: 进一寸有进一寸的欢喜。
+    - name: Acozycotage
+      link: https://www.acozycotage.net/
+      avatar: https://lskypro.acozycotage.net/LightPicture/2022/12/6a6fe6ebfd19c465.jpg
+      descr: 寄言燕雀莫相唣，自有云霄万里高，给时光以生命，给岁月以文明 
