@@ -1,202 +1,88 @@
-class:
-  class_name: 友情链接(排名按顺序，并没任何意思)
+- class_name: 友情链接(排名按顺序，并没任何意思)
+  class_desc: 朋友们!
   link_list:
-    1:
-      name: YellowFace的博客
-      link: https://www.136588.club/
-      avatar: https://moecdn.slqwq.cn/pic/XIO.png
-      descr:  一个小小小白～
-    2:
-      name: bmyjacks的博客
-      link: https://www.bmyjacks.cn/
-      avatar: https://moecdn.slqwq.cn/pic/bmyjacks.png
-      descr: 寻找互联网上的新奇消息，发现编程世界的大门，了解程序员们的日常工作，探讨互联网时代的小技巧
-    3:
-      name: MBRjun的博客
-      link: https://blog.mbrjun.cn/
-      avatar: https://moecdn.slqwq.cn/pic/MBRjun.png
-      descr: LLLL 一只萌萌的MBR LLLL
-    4:
-      name: Cnoim's Blog
-      link: https://blog.233.chat/
-      avatar: https://moecdn.slqwq.cn/pic/NT.png
-      descr: 别恰我（
-    5:
-      name: Fachep's Blog
-      link: https://blog.fachep.com/
-      avatar: https://sdn.geekzu.org/avatar/a428c2d6dd92b2dfcfa8aec470bd4088
-      descr: lolololololol
-    6:
-      name: 璃心
+    - name: bmyjacks
+      link: https://bmyjacks.cn/
+      avatar: https://cdn-bmyjacks-io.oss-accelerate.aliyuncs.com/favicon/android-chrome-512x512.png?x-oss-process=style/favicon
+      descr: 分享一些学习经历以及一些比较有意思的东西
+    - name: MBRJun
+      link: https://mbrjun.cn/
+      avatar: https://cos.mbrjun.cn/PICS/LG4v3avatar144px.jpg
+      descr: Touching Fish
+    - name: 璃心
       link: https://luoyou.art/
       avatar: https://user-images.githubusercontent.com/60562661/74096556-7c5f5e80-4b3b-11ea-817b-b289ffba24a3.jpg
       descr: 人工智能-深度学习，计算机视觉，算法，数学
-    7:
-      name: impdx-忧郁的派大星
+    - name: impdx-忧郁的派大星
       link: https://www.impdx.vip/
       avatar: https://www.impdx.vip/img/avatar.png
       descr: 越学习，越发现自己的无知——笛卡尔
-    8:
-      name: 保温杯的小栈
+    - name: 保温杯的小栈
       link: https://1357.ga/
       avatar: https://cdn.jsdelivr.net/gh/hanghang0891/hanghang0891.github.io/img/avatar.jpg
       descr: 就是俺啦！
-      width: 2px
-      style: solid
-      color: "#abff07"
-      custom: link_custom 1s infinite alternate
-      rotate: 520deg
-    9:
-      name: FadeAway
+    - name: FadeAway
       link: https://fadeawayol.github.io/
       avatar: https://i.loli.net/2020/06/23/kfrgHqSe8tEhX9F.jpg
       descr: 相遇总有原因，不是恩赐就是教训
-      width: 2px
-      style: solid
-      color: "#f19ec2"
-      custom: link_custom 1s infinite alternate
-      rotate: 360deg
-    10: 
-      name: Shine
+    - name: Shine
       link: https://shineyull.github.io/
       avatar: https://s3.uuu.ovh/imgs/2022/11/23/129c19d56d22c637.png
       descr: "Let's go! Target: The Vast Stars!"
-      width: 2px
-      style: solid
-      color: "#f19ec2"
-      custom: link_custom 1s infinite alternate
-      rotate: 360deg
 
-class2:
-  class_name: 跟着大佬走，那岂不轻而易举当上小大佬?
+- class_name: 跟着大佬走，那岂不轻而易举当上小大佬?
+  class_desc: 大佬们!
   link_list:
-    1:
-      name: 小康博客
+    - name: 小康博客
       link: https://www.antmoe.com/
       avatar: https://cdn.jsdelivr.net/gh/sviptzk/HexoStaticFile@latest/avatar.jpg
       descr: 一个收藏回忆与分享技术的地方！
-      width: 1px (代表边框的大小border-width)
-      color: "#881B12"
-    2:
-      name: 依尘
+    - name: 依尘
       link: https://www.yichen.online/
       avatar: https://moecdn.slqwq.cn/pic/YiChen.png/
       descr: Ting 花落的声音
-    3:
-      name: Uncle_drew
+    - name: Uncle_drew
       link: https://cndrew.cn/
       avatar: https://cdn.jsdelivr.net/gh/drew233/cdn/dreww.webp
       descr: Hand down,man down
-      width: 2px
-      style: solid
-      color: "#FFD700"
-      custom: link_custom
-      rotate: 250deg
-    4:
-      name: PluShine
+    - name: PluShine
       link: https://plushine.cn
       avatar: https://cdn.jsdelivr.net/gh/xingjiahui/CDN@latest/touxiang.jpg
       descr: 💕菜徐坤💕
-      width: 3px
-      style: solid
-      color: "#FFD700"
-      custom: link_custom
-      rotate: 360deg
-    5:
-      name: 云淡风轻
+    - name: 云淡风轻
       link: https://ioliu.cn/
       avatar: https://ioliu.cn/images/avatar.jpg
       descr: 一个安静的角落
-      width: 3px
-      style: solid
-      color: "#FFD700"
-      custom: link_custom
-      rotate: 360deg
-    6:
-      name: CC的部落格
+    - name: CC的部落格
       link: https://blog.ccknbc.cc
       avatar: https://cdn.jsdelivr.net/gh/ccknbc-backup/cdn/logo/ccknbc.png
       descr: CC康纳百川
-    7:
-      name: Heo
+    - name: Heo
       link: https://blog.zhheo.com/
       avatar: https://blog.zhheo.com/img/avatar.png
       descr: 爱折腾的设计师
-      --primary-color: '#49b1f5'
-      custom: link_custom
-      rotate: 360deg
-    8:
-      name: Ln's Blog
+
+    - name: Ln's Blog
       link: https://weilining.cf
       avatar: https://cdn.jsdelivr.net/gh/weilining/img@main/img/20201120235415.png
       descr: 时不我待
-    9:
-      name: 学习与生活
+    - name: 学习与生活
       link: https://ql-isaac.cn/
       avatar: https://image.ql-isaac.cn/站长头像.jpg
       descr: It’s a beautiful day!
-    10:
-      name: Spoience
-      link: https://www.spoience.com/
-      avatar: https://spoience.com/images/avatar.webp
-      descr: 记录我的碎碎念
-    11:
-      name: Wlog
+    - name: Wlog
       link: https://blog.wmza.cn
       avatar: https://blog.wmza.cn/wsimg/favicon72x72.svg
       descr: 一个普通人
-    12:
-      name: 贰猹的小窝
+    - name: 贰猹的小窝
       link: https://noionion.top/
       avatar: https://pub-noionion.oss-cn-hangzhou.aliyuncs.com/head.jpg
       descr: 用这生命中的每一秒钟,给自己一个不后悔的未来
-    13:
-      name: Leonus
+    - name: Leonus
       link: https://blog.leonus.cn/
       avatar: https://q1.qlogo.cn/g?b=qq&nk=553344777&s=5
       descr: 进一寸有进一寸的欢喜。
-    14:
-      name: Acozycotage
+    - name: Acozycotage
       link: https://www.acozycotage.net/
       avatar: https://lskypro.acozycotage.net/LightPicture/2022/12/6a6fe6ebfd19c465.jpg
       descr: 寄言燕雀莫相唣，自有云霄万里高，给时光以生命，给岁月以文明 
-      siteshot: https://lskypro.acozycotage.net/LightPicture/2022/12/e4ac5837ed7e8051.png
-
-class3:
-  class_name: 个人项目&很棒的工具
-  link_list:
-    1:
-      name: 音乐解锁
-      link: https://moecdn.slqwq.cn/unmusic/
-      avatar: https://moecdn.slqwq.cn/unmusic/img/icons/favicon-32x32.png
-      descr: 加密音乐去屎吧
-    2:
-      name: 状态显示服务
-      link: https://status.ytuty-blog.ga/
-      avatar: https://uptimerobot.com/assets/ico/favicon.ico
-      descr: 本站各项服务的监控
-    3:
-      name: Mikutap
-      link: https://moecdn.slqwq.cn/Mikutap/
-      avatar: /img/miicon.png
-      descr: 玩了就绝对停不下来的网页小游戏
-    4:
-      name: more-beautiful-div-framework(个人项目)
-      link: https://mdbf-css.js.org
-      avatar: https://static.npmjs.com/58a19602036db1daee0d7863c94673a4.png
-      descr: 个人CSS项目-more-beautiful-div-framework
-      width: 2px
-      style: solid
-      color: "#FFD700"
-      custom: link_custom
-      rotate: 360deg
-    5:
-      name: 博客分站(感谢impdx提供域名、Upyun提供CDN加速)
-      link: https://sblfz.impdx.vip/
-      avatar: https://moecdn.slqwq.cn/pic/logo.png
-      descr: 梦中做梦，做了个白日梦
-      width: 2px
-      style: solid
-      color: "#FFD700"
-      custom: link_custom
-      rotate: 250deg

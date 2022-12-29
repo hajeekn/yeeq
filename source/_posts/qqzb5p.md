@@ -1,11 +1,14 @@
 ---
 title: 推荐一些实用工具
 sticky: 1
-tags: [干货]
-categories: [实用工具]
-cover: https://i0.hdslb.com/bfs/album/1c8ed9180b43b9bf25d173c16e6dfc9a073aadc2.png
-date: 2020-08-28 10:09:19
+tags:
+  - 干货
+categories:
+  - 实用工具
+cover: 'https://i0.hdslb.com/bfs/album/1c8ed9180b43b9bf25d173c16e6dfc9a073aadc2.png'
 author: Hajeekn
+abbrlink: c5ef192c
+date: 2020-08-28 10:09:19
 description:
 ---
 

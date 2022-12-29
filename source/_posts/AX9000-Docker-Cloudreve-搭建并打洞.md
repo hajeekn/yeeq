@@ -1,11 +1,14 @@
 ---
 title: AX9000 Docker - Cloudreve 搭建并打洞
 sticky: 1
-date: 2022-12-10 12:31:55
-tags: [docker]
+tags:
+  - docker
 description: cloudreve
-categories: [docker]
-cover: https://i0.hdslb.com/bfs/album/1781eea40778e6f1220ed4063bf3f4d1a7448d41.png
+categories:
+  - docker
+cover: 'https://i0.hdslb.com/bfs/album/1781eea40778e6f1220ed4063bf3f4d1a7448d41.png'
+abbrlink: 4e18cfcd
+date: 2022-12-10 12:31:55
 ---
 
 接上次,我们在 `AX9000` 中安装了 `Docker`,我们可以用它搭建一个网盘,并且打洞映射到外网(`Cloudflare Argo Tunnel`)
