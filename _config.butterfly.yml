@@ -608,12 +608,16 @@ subtitle:
   sub:
     - 梦中做梦&#44;做了个白日梦
     - Dreaming in a dream&#44;daydreaming
-# Loading Animation (加載動畫)
+# Loading Animation (加载动画)
 preloader:
-  enable: false # true|false
-  load_color: '#000000' # '#37474f'
-  load_style: pokemon
-  load_image:  # url
+  enable: true
+  # source
+  # 1. fullpage-loading
+  # 2. pace (progress bar)
+  # else all
+  source: 3
+  # pace theme (see https://codebyzach.github.io/pace/)
+  pace_css_url: /css/progress_bar.css
 
 # aside (側邊欄)
 # --------------------------------------
@@ -623,7 +627,7 @@ aside:
   hide: false
   button: true
   mobile: true # display on mobile
-  position: right # left or right
+  position: left # left or right
   archives: true
   card_author:
     enable: true
@@ -709,7 +713,7 @@ readmode: true
 darkmode:
   enable: true
   # Toggle Button to switch dark/light mode
-  button: false
+  button: true
   # Switch dark/light mode automatically (自動切換 dark mode和 light mode)
   # autoChangeMode: 1  Following System Settings, if the system doesn't support dark mode, it will switch dark mode between 6 pm to 6 am
   # autoChangeMode: 2  Switch dark mode between 6 pm to 6 am
@@ -769,7 +773,7 @@ note:
 # It may contain bugs and unstable, give feedback when you find the bugs.
 # https://github.com/MoOx/pjax
 pjax:
-  enable: false
+  enable: true
   exclude:
     - /link/
     - /circle/
@@ -849,16 +853,11 @@ wow_init_js: https://npm.elemecdn.com/hexo-butterfly-wowjs/lib/wow_init.js
 inject:
   head:
       - <meta name="referrer" content="no-referrer">
-      - <script src="https://blog.slqwq.cn/sw-load.js"></script>
-      - <script src="https://blog.slqwq.cn/load.js"></script>
+      - <script src="../sw-load.js"></script>
       - <meta name="google-site-verification" content="qAOA3HXexaF_5uvs3Ghmqp_eB0pIzLgQ1eFRTFGb0Sk">
-      - <link rel="stylesheet" href="https://unpkg.slqwq.cn/perorepe-cdn/v1/static-files/Blog/css/ping.css">
+      - <link rel="stylesheet" href="https://unpkg.slqwq.cn/patch-css@latest/main.min.css">
       - <link rel="stylesheet" href="https://unpkg.slqwq.cn/aliener@latest/resources/import.min.css">
-      - <link rel="stylesheet" href="https://npm.elemecdn.com/notyf@3/notyf.min.css">
-      - <script async src="https://npm.elemecdn.com/notyf@3.10.0/notyf.min.js"></script>
-      # - <script src="https://unpkg.slqwq.cn/perorepe-cdn/v1/static-files/Blog/gening.js"></script>
       - <script src="https://npm.elemecdn.com/vue@2.6.11"></script>
-      - <link rel="stylesheet" href="https://npm.elemecdn.com/wytong-source@1.6.49078015225/styles/pace-theme-flash.min.css">
       - <link rel="stylesheet" href="https://npm.elemecdn.com/wytong-source@1.6.49078015225/styles/plugins.css">
 
   bottom:
