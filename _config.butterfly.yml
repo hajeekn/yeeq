@@ -626,8 +626,8 @@ aside:
   enable: true
   hide: false
   button: true
-  mobile: true # display on mobile
-  position: left # left or right
+  mobile: false # display on mobile
+  position: rigiht # left or right
   archives: true
   card_author:
     enable: true
@@ -636,10 +636,10 @@ aside:
       enable: true
       icon: fab fa-github
       text: Follow Me
-      link: https://github.com/slblog-github/
+      link: https://github.com/ladjeek-actions/
   card_announcement:
-    enable: true
-    content: <center><br><div class="btns"><a href="/update" title="看看更新日志吧" one-link-mark="yes"><i class="far fa-hand-point-right"></i>看看更新日志吧</a></div></center>
+    enable: false
+    content: az
   card_recent_post:
     enable: true
     limit: 5 # if set 0 will show all
@@ -855,8 +855,7 @@ inject:
       - <meta name="referrer" content="no-referrer">
       - <script src="../sw-load.js"></script>
       - <meta name="google-site-verification" content="qAOA3HXexaF_5uvs3Ghmqp_eB0pIzLgQ1eFRTFGb0Sk">
-      - <link rel="stylesheet" href="https://unpkg.slqwq.cn/patch-css@latest/main.min.css">
-      - <link rel="stylesheet" href="https://unpkg.slqwq.cn/aliener@latest/resources/import.min.css">
+      - <link rel="stylesheet" href="https://unpkg.slqwq.cn/patch-css@1.0.4/main.min.css">
       - <script src="https://npm.elemecdn.com/vue@2.6.11"></script>
       - <link rel="stylesheet" href="https://npm.elemecdn.com/wytong-source@1.6.49078015225/styles/plugins.css">
 
