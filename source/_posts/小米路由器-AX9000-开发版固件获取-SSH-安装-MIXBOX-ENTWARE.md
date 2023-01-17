@@ -173,7 +173,7 @@ source /etc/profile
 ```bash
 mv /data/opt 新路径
 rm -f /data/opt
-In -s 新路径 /opt
+ln -s 新路径 /opt
 ```
 
 # 参考内容
