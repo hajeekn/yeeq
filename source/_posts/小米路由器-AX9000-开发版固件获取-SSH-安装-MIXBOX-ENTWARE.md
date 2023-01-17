@@ -188,6 +188,4 @@ In -s 新路径 /opt
 
 [monlor/MIXBOX-ARCHIVE: 一款基于Shell的小米路由器工具箱，原为Monlor-Tools，A tool box for XiaoMi Router base on Shell. (github.com)](https://github.com/monlor/MIXBOX-ARCHIVE)
 
-# 链接引用
-
 [mitool]: https://github.com/paldier/ax3600_tool/releases	"mitool releases"
